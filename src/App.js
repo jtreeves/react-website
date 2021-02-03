@@ -1,22 +1,44 @@
+import { Route } from 'react-router-dom'
 import './App.css'
+import About from './components/pages/About'
+import Blog from './components/pages/Blog'
+import Connect from './components/pages/Connect'
+import Contact from './components/pages/Contact'
+import Portfolio from './components/pages/Portfolio'
+import Resume from './components/pages/Resume'
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
+        <>
+            <Route 
+                exact path="/" 
+                component={Portfolio}
+            />
+            <Route 
+                path="/about" 
+                component={About}
+            />
+            <Route 
+                path="/contact" 
+                component={Contact}
+            />
+            <Route 
+                path="/connect" 
+                component={Connect}
+            />
+            <Route 
+                path="/blog" 
+                component={Blog}
+            />
+            <Route 
+                path="/portfolio" 
+                component={Portfolio}
+            />
+            <Route 
+                path="/resume" 
+                component={Resume}
+            />
+        </>
     )
 }
 
