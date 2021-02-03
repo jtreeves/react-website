@@ -1,5 +1,5 @@
 import { Route } from 'react-router-dom'
-import './App.css'
+
 import Footer from './components/elements/Footer'
 import Header from './components/elements/Header'
 import About from './components/pages/About'
@@ -8,6 +8,8 @@ import Connect from './components/pages/Connect'
 import Contact from './components/pages/Contact'
 import Portfolio from './components/pages/Portfolio'
 import Resume from './components/pages/Resume'
+
+import './App.css'
 
 function App() {
     return (
