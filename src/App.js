@@ -1,5 +1,7 @@
 import { Route } from 'react-router-dom'
 import './App.css'
+import Footer from './components/elements/Footer'
+import Header from './components/elements/Header'
 import About from './components/pages/About'
 import Blog from './components/pages/Blog'
 import Connect from './components/pages/Connect'
@@ -10,6 +12,7 @@ import Resume from './components/pages/Resume'
 function App() {
     return (
         <>
+            <Header />
             <Route 
                 exact path="/" 
                 component={Portfolio}
@@ -38,6 +41,7 @@ function App() {
                 path="/resume" 
                 component={Resume}
             />
+            <Footer />
         </>
     )
 }
