@@ -1,4 +1,5 @@
 import GitHub from '../elements/GitHub'
+import Tumblr from '../elements/Tumblr'
 import Twitter from '../elements/Twitter'
 
 function Connect() {
@@ -8,6 +9,7 @@ function Connect() {
             <p>Get in touch with me on social media.</p>
             <GitHub />
             <Twitter />
+            <Tumblr />
         </div>
     )
 }
