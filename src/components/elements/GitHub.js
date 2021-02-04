@@ -18,6 +18,7 @@ function GitHub() {
                         <div key={index}>
                             {commit.payload.commits[0].message}
                             Link: {commit.repo.name}
+                            Date: {commit.created_at}
                         </div>
                     )
                 } else {
