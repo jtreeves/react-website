@@ -12,13 +12,17 @@ function GitHub() {
                 appServer + '/github'
             )
             const resultData = result.data
-            const resultDataArray = resultData.map((commit, index) => {
-                return (
-                    <div key={index}>
-                        {commit.payload.commits[0].message}
-                        Link: {commit.repo.name}
-                    </div>
-                )
+            const resultDataArray = resultData.commits.map((commit, index) => {
+                if (commit.payload.commits) {
+                    return (
+                        <div key={index}>
+                            {commit.payload.commits[0].message}
+                            Link: {commit.repo.name}
+                        </div>
+                    )
+                } else {
+                    return null
+                }
             })
             setCommits(resultDataArray)
         } catch (error) {
