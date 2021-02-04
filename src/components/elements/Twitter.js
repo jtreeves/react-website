@@ -21,7 +21,9 @@ function Twitter() {
             )
             const resultData = result.data
             console.log(`RESULT.DATA: ${resultData}`)
-            const resultDataArray = resultData.map((tweet, index) => {
+            console.log(`RESULT.DATA.TWEETS: ${resultData.tweets}`)
+            console.log(`RESULT.DATA KEYS: ${Object.keys(resultData)}`)
+            const resultDataArray = resultData.tweets.map((tweet, index) => {
                 return (
                     <div key={index}>
                         {tweet.text}
