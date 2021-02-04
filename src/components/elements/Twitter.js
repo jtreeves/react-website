@@ -16,6 +16,8 @@ function Twitter() {
                 return (
                     <div key={index}>
                         {tweet.text}
+                        {tweet.id}
+                        {tweet.created_at}
                     </div>
                 )
             })
