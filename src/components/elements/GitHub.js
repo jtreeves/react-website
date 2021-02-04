@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 const appServer = process.env.REACT_APP_SERVER_URL
+const link = 'https://github.com/'
 
 function GitHub() {
     const [commits, setCommits] = useState([])
@@ -15,9 +16,9 @@ function GitHub() {
                 if (commit.payload.commits) {
                     return (
                         <div key={index}>
-                            {commit.payload.commits[0].message}
-                            Link: {commit.repo.name}
-                            Date: {commit.created_at}
+                            COMMIT: {commit.payload.commits[0].message}
+                            DATE: {commit.created_at}
+                            LINK: {link}{commit.repo.name}
                         </div>
                     )
                 } else {

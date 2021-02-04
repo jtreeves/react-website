@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 
 const appServer = process.env.REACT_APP_SERVER_URL
+const link = 'https://twitter.com/JTReeves/status/'
 
 function Twitter() {
     const [tweets, setTweets] = useState([])
@@ -14,9 +15,9 @@ function Twitter() {
             const resultArray = result.data.tweets.map((tweet, index) => {
                 return (
                     <div key={index}>
-                        {tweet.text}
-                        {tweet.id}
-                        {tweet.created_at}
+                        TWEET: {tweet.text}
+                        DATE: {tweet.created_at}
+                        LINK: {link}{tweet.id}
                     </div>
                 )
             })

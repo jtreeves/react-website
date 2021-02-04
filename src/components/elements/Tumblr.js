@@ -14,10 +14,10 @@ function Tumblr() {
             const resultArray = result.data.posts.map((post, index) => {
                 return (
                     <div key={index}>
-                        {post.title}
-                        {post.body}
-                        {post.date}
-                        {post.post_url}
+                        TITLE: {post.title}
+                        BODY: {post.body}
+                        DATE: {post.date}
+                        LINK: {post.post_url}
                     </div>
                 )
             })
