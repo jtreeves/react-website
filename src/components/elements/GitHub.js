@@ -6,13 +6,12 @@ const appServer = process.env.REACT_APP_SERVER_URL
 function GitHub() {
     const [commits, setCommits] = useState([])
 
-    async function gettingInfo() {
+    async function getCommits() {
         try {
             const result = await axios.get(
                 appServer + '/github'
             )
-            const resultData = result.data
-            const resultDataArray = resultData.commits.map((commit, index) => {
+            const resultArray = result.data.commits.map((commit, index) => {
                 if (commit.payload.commits) {
                     return (
                         <div key={index}>
@@ -25,14 +24,14 @@ function GitHub() {
                     return null
                 }
             })
-            setCommits(resultDataArray)
+            setCommits(resultArray)
         } catch (error) {
             console.log(error)
         }
     }
 
     useEffect(() => {
-        gettingInfo()
+        getCommits()
     }, [])
     
     return (

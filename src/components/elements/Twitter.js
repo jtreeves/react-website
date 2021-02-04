@@ -6,13 +6,12 @@ const appServer = process.env.REACT_APP_SERVER_URL
 function Twitter() {
     const [tweets, setTweets] = useState([])
     
-    async function gettingTwitter() {
+    async function getTweets() {
         try {
             const result = await axios.get(
                 appServer + '/twitter'
             )
-            const resultData = result.data
-            const resultDataArray = resultData.tweets.map((tweet, index) => {
+            const resultArray = result.data.tweets.map((tweet, index) => {
                 return (
                     <div key={index}>
                         {tweet.text}
@@ -21,14 +20,14 @@ function Twitter() {
                     </div>
                 )
             })
-            setTweets(resultDataArray)
+            setTweets(resultArray)
         } catch (error) {
             console.log(error)
         }
     }
 
     useEffect(() => {
-        gettingTwitter()
+        getTweets()
     }, [])
     
     return (

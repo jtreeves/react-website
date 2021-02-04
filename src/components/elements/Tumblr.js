@@ -6,13 +6,12 @@ const appServer = process.env.REACT_APP_SERVER_URL
 function Tumblr() {
     const [posts, setPosts] = useState([])
 
-    async function gettingInfo() {
+    async function getPosts() {
         try {
             const result = await axios.get(
                 appServer + '/tumblr'
             )
-            const resultData = result.data
-            const resultDataArray = resultData.posts.map((post, index) => {
+            const resultArray = result.data.posts.map((post, index) => {
                 return (
                     <div key={index}>
                         {post.title}
@@ -22,14 +21,14 @@ function Tumblr() {
                     </div>
                 )
             })
-            setPosts(resultDataArray)
+            setPosts(resultArray)
         } catch (error) {
             console.log(error)
         }
     }
 
     useEffect(() => {
-        gettingInfo()
+        getPosts()
     }, [])
     
     return (
