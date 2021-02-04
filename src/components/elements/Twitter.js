@@ -16,7 +16,9 @@ function Twitter() {
             url: twitterUrl,
             headers: twitterHeaders
         })
+        console.log(`RESULT: ${result}`)
         const resultData = result.data
+        console.log(`RESULT.DATA: ${resultData}`)
         const resultDataArray = resultData.map((tweet, index) => {
             return (
                 <div key={index}>
