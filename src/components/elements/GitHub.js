@@ -1,25 +1,29 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+const appServer = process.env.REACT_APP_SERVER_URL
+
 function GitHub() {
     const [commits, setCommits] = useState([])
 
     async function gettingInfo() {
-        const result = await axios.get('https://api.github.com/users/jtreeves/events')
-        const resultData = result.data
-        const resultDataArray = resultData.map((commit, index) => {
-            if (commit.payload.commits) {
+        try {
+            const result = await axios.get(
+                appServer + '/github'
+            )
+            const resultData = result.data
+            const resultDataArray = resultData.map((commit, index) => {
                 return (
                     <div key={index}>
                         {commit.payload.commits[0].message}
                         Link: {commit.repo.name}
                     </div>
                 )
-            } else {
-                return index
-            }
-        })
-        setCommits(resultDataArray)
+            })
+            setCommits(resultDataArray)
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     useEffect(() => {
