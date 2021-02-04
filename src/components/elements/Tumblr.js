@@ -11,15 +11,14 @@ function Tumblr() {
             const result = await axios.get(
                 appServer + '/tumblr'
             )
-            console.log(`RESULT: ${result}`)
-            console.log(`RESULT KEYS: ${Object.keys(result)}`)
-            console.log(`RESULT.DATA: ${result.data}`)
-            console.log(`RESULT.DATA KEYS: ${Object.keys(result.data)}`)
             const resultData = result.data
-            const resultDataArray = resultData.commits.map((post, index) => {
+            const resultDataArray = resultData.posts.map((post, index) => {
                 return (
                     <div key={index}>
                         {post.title}
+                        {post.body}
+                        {post.date}
+                        {post.post_url}
                     </div>
                 )
             })
