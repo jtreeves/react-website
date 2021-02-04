@@ -8,11 +8,14 @@ function GitHub() {
         const result = await axios.get('https://api.github.com/users/jtreeves/events')
         const resultData = result.data
         const resultDataArray = resultData.map((commit, index) => {
-            return (
-                <div key={index}>
-                    {commit.id}
-                </div>
-            )
+            if (commit.payload.commits) {
+                return (
+                    <div key={index}>
+                        {commit.payload.commits[0].message}
+                        Link: {commit.repo.name}
+                    </div>
+                )
+            }
         })
         setCommits(resultDataArray)
     }
