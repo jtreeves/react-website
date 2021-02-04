@@ -15,6 +15,8 @@ function GitHub() {
                         Link: {commit.repo.name}
                     </div>
                 )
+            } else {
+                return index
             }
         })
         setCommits(resultDataArray)
