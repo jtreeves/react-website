@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 
-import Form from '../elements/Form'
+import FormItem from '../elements/FormItem'
 
 const appServer = process.env.REACT_APP_SERVER_URL
 
@@ -47,7 +47,7 @@ function Mail() {
     
     return (
         <form onSubmit={hanldeSubmit}>
-            <Form
+            <FormItem
                 type="text"
                 label="name"
                 value={name}
@@ -55,7 +55,7 @@ function Mail() {
                 onChange={handleName}
             />
 
-            <Form
+            <FormItem
                 type="email"
                 label="email"
                 value={email}
@@ -63,14 +63,14 @@ function Mail() {
                 onChange={handleEmail}
             />
 
-            <Form
+            <FormItem
                 type="text"
                 label="subject"
                 value={subject}
                 display="Subject"
                 onChange={handleSubject}
             />
-
+            
             <label htmlFor="message">Message</label>
             <textarea
                 name="message" 

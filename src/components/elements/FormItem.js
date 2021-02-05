@@ -1,4 +1,4 @@
-function Form(props) {
+function FormItem(props) {
     return (
         <div>
             <label htmlFor={props.label}>{props.display}</label>
@@ -12,4 +12,4 @@ function Form(props) {
     )
 }
 
-export default Form
+export default FormItem
