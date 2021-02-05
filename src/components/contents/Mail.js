@@ -54,6 +54,7 @@ function Mail() {
                 display="Name"
                 onChange={handleName}
             />
+
             <Form
                 type="email"
                 label="email"
@@ -61,6 +62,7 @@ function Mail() {
                 display="Email"
                 onChange={handleEmail}
             />
+
             <Form
                 type="text"
                 label="subject"
@@ -68,6 +70,7 @@ function Mail() {
                 display="Subject"
                 onChange={handleSubject}
             />
+
             <label htmlFor="message">Message</label>
             <textarea
                 name="message" 
@@ -76,6 +79,7 @@ function Mail() {
                 value={message}
                 onChange={handleMessage}
             />
+            
             <button type="submit">Submit</button>
         </form>
     )

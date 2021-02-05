@@ -16,34 +16,42 @@ function App() {
     return (
         <>
             <Header />
+
             <Route 
                 exact path="/" 
                 component={Home}
             />
+
             <Route 
                 path="/about" 
                 component={About}
             />
+
             <Route 
                 path="/contact" 
                 component={Contact}
             />
+
             <Route 
                 path="/connect" 
                 component={Connect}
             />
+
             <Route 
                 path="/blog" 
                 component={Blog}
             />
+
             <Route 
                 path="/portfolio" 
                 component={Portfolio}
             />
+
             <Route 
                 path="/resume" 
                 component={Resume}
             />
+            
             <Footer />
         </>
     )

@@ -11,6 +11,7 @@ function Contact() {
                 name={name}
                 description={description}
             />
+            
             <Mail />
         </div>
     )

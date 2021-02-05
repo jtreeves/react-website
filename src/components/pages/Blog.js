@@ -11,6 +11,7 @@ function Blog() {
                 name={name}
                 description={description}
             />
+            
             <Tumblr />
         </div>
     )
