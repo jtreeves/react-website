@@ -27,17 +27,22 @@ function Mail() {
         setMessage(e.target.value)
     }
 
-    function hanldeSubmit(e) {
+    async function hanldeSubmit(e) {
         e.preventDefault()
-        axios.post(
-            appServer + '/mail', {
-                name, email, subject, message
-            }
-        )
-        setName('') 
-        setEmail('') 
-        setSubject('') 
-        setMessage('') 
+        try {
+            const result = await axios.post(
+                appServer + '/mail', {
+                    name, email, subject, message
+                }
+            )
+            alert(result.data.msg)
+            setName('') 
+            setEmail('') 
+            setSubject('') 
+            setMessage('') 
+        } catch (error) {
+            alert(error)
+        }
     }
     
     return (
