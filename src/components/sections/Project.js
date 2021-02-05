@@ -17,11 +17,11 @@ function Project(props) {
                     target="_blank" 
                     rel="noreferrer"
                 >
-                    <strong>App</strong>
+                    <strong>{props.type}</strong>
                 </a>
 
                 &nbsp;|&nbsp;
-                
+
                 <a 
                     href={props.repositoryLink} 
                     target="_blank" 

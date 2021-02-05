@@ -8,6 +8,7 @@ function Portfolio() {
     const kaleidoscope = {
         name: 'Kaleidoscope',
         description: 'A budget app',
+        type: 'App',
         image: '/images/kaleidoscope.png',
         deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/budget-frontend'
@@ -16,6 +17,7 @@ function Portfolio() {
     const tiresias = {
         name: 'Tiresias',
         description: 'An app for generating regressions models',
+        type: 'App',
         image: '/images/tiresias.png',
         deployedLink: 'https://tiresias-predictions.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/predictions-frontend'
@@ -24,6 +26,7 @@ function Portfolio() {
     const matchesAndPatches = {
         name: 'Matches and Patches',
         description: 'A game involving elements of Dominoes and Uno',
+        type: 'App',
         image: '/images/matches-and-patches.png',
         deployedLink: 'https://jtreeves.github.io',
         repositoryLink: 'https://github.com/jtreeves/matches-and-patches'
@@ -32,6 +35,7 @@ function Portfolio() {
     const readThisNext = {
         name: 'Read This next',
         description: 'A reading app',
+        type: 'App',
         image: '/images/read-this-next.png',
         deployedLink: 'https://read-this-next.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/read-this-next'
@@ -47,6 +51,7 @@ function Portfolio() {
             <Project
                 name={kaleidoscope.name}
                 description={kaleidoscope.description}
+                type={kaleidoscope.type}
                 image={kaleidoscope.image}
                 deployedLink={kaleidoscope.deployedLink}
                 repositoryLink={kaleidoscope.repositoryLink}
@@ -55,6 +60,7 @@ function Portfolio() {
             <Project
                 name={tiresias.name}
                 description={tiresias.description}
+                type={tiresias.type}
                 image={tiresias.image}
                 deployedLink={tiresias.deployedLink}
                 repositoryLink={tiresias.repositoryLink}
@@ -63,14 +69,16 @@ function Portfolio() {
             <Project
                 name={matchesAndPatches.name}
                 description={matchesAndPatches.description}
+                type={matchesAndPatches.type}
                 image={matchesAndPatches.image}
                 deployedLink={matchesAndPatches.deployedLink}
                 repositoryLink={matchesAndPatches.repositoryLink}
             />
-            
+
             <Project
                 name={readThisNext.name}
                 description={readThisNext.description}
+                type={readThisNext.type}
                 image={readThisNext.image}
                 deployedLink={readThisNext.deployedLink}
                 repositoryLink={readThisNext.repositoryLink}
