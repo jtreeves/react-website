@@ -10,7 +10,7 @@ function Project(props) {
                 alt={props.name} 
                 className="project"
             />
-            
+
             <p>
                 <a 
                     href={props.deployedLink} 
@@ -19,7 +19,9 @@ function Project(props) {
                 >
                     <strong>App</strong>
                 </a>
+
                 &nbsp;|&nbsp;
+                
                 <a 
                     href={props.repositoryLink} 
                     target="_blank" 
