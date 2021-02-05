@@ -1,8 +1,12 @@
+import Introduction from '../sections/Introduction'
+
 function About() {
     return (
         <div>
-            <h2>About</h2>
-            <p>My name is Jackson Reeves, and I'm a programmer.</p>
+            <Introduction 
+                name="About"
+                description="My name is Jackson Reeves, and I'm a programmer."
+            />
         </div>
     )
 }

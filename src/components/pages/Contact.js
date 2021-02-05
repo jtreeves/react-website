@@ -1,10 +1,13 @@
-import Mail from "../contents/Mail";
+import Introduction from '../sections/Introduction'
+import Mail from '../contents/Mail'
 
 function Contact() {
     return (
         <div>
-            <h2>Contact</h2>
-            <p>Email me directly.</p>
+            <Introduction 
+                name="Contact"
+                description="Email me directly."
+            />
             <Mail />
         </div>
     )

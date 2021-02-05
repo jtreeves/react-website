@@ -1,8 +1,12 @@
+import Introduction from '../sections/Introduction'
+
 function Resume() {
     return (
         <div>
-            <h2>Resume</h2>
-            <p>Here is my current resume.</p>
+            <Introduction 
+                name="Resume"
+                description="Here is my current resume."
+            />
         </div>
     )
 }

@@ -1,10 +1,13 @@
-import Tumblr from "../contents/Tumblr";
+import Introduction from '../sections/Introduction'
+import Tumblr from '../contents/Tumblr'
 
 function Blog() {
     return (
         <div>
-            <h2>Blog</h2>
-            <p>Here are my most recent blog posts.</p>
+            <Introduction 
+                name="Blog"
+                description="Here are my most recent blog posts"
+            />
             <Tumblr />
         </div>
     )

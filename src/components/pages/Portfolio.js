@@ -1,8 +1,12 @@
+import Introduction from '../sections/Introduction'
+
 function Portfolio() {
     return (
         <div>
-            <h2>Portfolio</h2>
-            <p>Here are some of my recent projects.</p>
+            <Introduction 
+                name="Portfolio"
+                description="Here are some of my recent projects."
+            />
         </div>
     )
 }

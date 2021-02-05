@@ -1,13 +1,16 @@
-import GitHub from '../contents/GitHub'
+import Introduction from '../sections/Introduction'
 import Twitter from '../contents/Twitter'
+import GitHub from '../contents/GitHub'
 
 function Connect() {
     return (
         <div>
-            <h2>Connect</h2>
-            <p>Get in touch with me on social media.</p>
-            <GitHub />
+            <Introduction 
+                name="Connect"
+                description="Get in touch with me on social media."
+            />
             <Twitter />
+            <GitHub />
         </div>
     )
 }
