@@ -1,4 +1,4 @@
-function FormGroup(props) {
+function Form(props) {
     return (
         <div>
             <label htmlFor={props.label}>{props.display}</label>
@@ -12,4 +12,4 @@ function FormGroup(props) {
     )
 }
 
-export default FormGroup
+export default Form

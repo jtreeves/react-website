@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 
-import FormGroup from '../sections/FormGroup'
+import Form from '../elements/Form'
 
 const appServer = process.env.REACT_APP_SERVER_URL
 
@@ -47,21 +47,21 @@ function Mail() {
     
     return (
         <form onSubmit={hanldeSubmit}>
-            <FormGroup
+            <Form
                 type="text"
                 label="name"
                 value={name}
                 display="Name"
                 onChange={handleName}
             />
-            <FormGroup
+            <Form
                 type="email"
                 label="email"
                 value={email}
                 display="Email"
                 onChange={handleEmail}
             />
-            <FormGroup
+            <Form
                 type="text"
                 label="subject"
                 value={subject}

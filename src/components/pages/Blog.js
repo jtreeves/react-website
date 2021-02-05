@@ -1,4 +1,4 @@
-import Tumblr from "../elements/Tumblr";
+import Tumblr from "../contents/Tumblr";
 
 function Blog() {
     return (

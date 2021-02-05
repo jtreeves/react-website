@@ -1,4 +1,4 @@
-import Mail from "../elements/Mail";
+import Mail from "../contents/Mail";
 
 function Contact() {
     return (

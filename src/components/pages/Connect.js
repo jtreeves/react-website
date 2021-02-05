@@ -1,5 +1,5 @@
-import GitHub from '../elements/GitHub'
-import Twitter from '../elements/Twitter'
+import GitHub from '../contents/GitHub'
+import Twitter from '../contents/Twitter'
 
 function Connect() {
     return (
