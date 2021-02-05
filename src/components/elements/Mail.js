@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import FormGroup from './FormGroup'
 
@@ -29,7 +29,7 @@ function Mail() {
 
     async function hanldeSubmit(e) {
         e.preventDefault()
-        await axios.post(
+        const result = await axios.post(
             appServer + '/mail', {
                 headers: {
                     'Content-Type': 'application/json'
@@ -39,6 +39,7 @@ function Mail() {
                 })
             }
         )
+        console.log(`RESULT: ${result}`)
         setName() 
         setEmail() 
         setSubject() 
@@ -68,18 +69,16 @@ function Mail() {
                 display="Subject"
                 onChange={handleSubject}
             />
-            <FormGroup
-                type="text"
-                label="message"
-                value={message}
-                display="Message"
+            <label htmlFor="message">Message</label>
+            <textarea
+                name="message" 
+                cols="30" 
+                rows="10" 
                 onChange={handleMessage}
-            />
-            <button
-                type="submit"
             >
-                Submit
-            </button>
+                {message}
+            </textarea>
+            <button type="submit">Submit</button>
         </form>
     )
 }
