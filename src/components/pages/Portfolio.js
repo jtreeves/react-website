@@ -5,6 +5,15 @@ function Portfolio() {
     const name = 'Portfolio'
     const description = 'Here are some of my recent projects.'
 
+    const regressions = {
+        name: 'Regressions',
+        description: 'A Python library of algorithms to calculate regression models',
+        type: 'Library',
+        image: '/images/regressions.png',
+        deployedLink: 'https://pypi.org/project/regressions/',
+        repositoryLink: 'https://github.com/jtreeves/regressions_library'
+    }
+
     const kaleidoscope = {
         name: 'Kaleidoscope',
         description: 'A budget app',
@@ -48,6 +57,15 @@ function Portfolio() {
                 description={description}
             />
 
+            <Project
+                name={regressions.name}
+                description={regressions.description}
+                type={regressions.type}
+                image={regressions.image}
+                deployedLink={regressions.deployedLink}
+                repositoryLink={regressions.repositoryLink}
+            />
+            
             <Project
                 name={kaleidoscope.name}
                 description={kaleidoscope.description}
