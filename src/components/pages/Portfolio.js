@@ -13,6 +13,14 @@ function Portfolio() {
         repositoryLink: 'https://github.com/jtreeves/budget-frontend'
     }
 
+    const tiresias = {
+        name: 'Tiresias',
+        description: 'An app for generating regressions models',
+        image: '/images/tiresias.png',
+        deployedLink: 'https://tiresias-predictions.herokuapp.com',
+        repositoryLink: 'https://github.com/jtreeves/predictions-frontend'
+    }
+
     const readThisNext = {
         name: 'Read This next',
         description: 'A reading app',
@@ -33,6 +41,13 @@ function Portfolio() {
                 image={kaleidoscope.image}
                 deployedLink={kaleidoscope.deployedLink}
                 repositoryLink={kaleidoscope.repositoryLink}
+            />
+            <Project
+                name={tiresias.name}
+                description={tiresias.description}
+                image={tiresias.image}
+                deployedLink={tiresias.deployedLink}
+                repositoryLink={tiresias.repositoryLink}
             />
             <Project
                 name={readThisNext.name}
