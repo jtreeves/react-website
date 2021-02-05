@@ -1,11 +1,14 @@
 import Introduction from '../sections/Introduction'
 
 function About() {
+    const name = 'About'
+    const description = 'My name is Jackson Reeves, and I am a programmer.'
+    
     return (
         <div>
             <Introduction 
-                name="About"
-                description="My name is Jackson Reeves, and I'm a programmer."
+                name={name}
+                description={description}
             />
         </div>
     )

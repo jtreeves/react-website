@@ -1,11 +1,14 @@
 import Introduction from '../sections/Introduction'
 
 function Portfolio() {
+    const name = 'Portfolio'
+    const description = 'Here are some of my recent projects.'
+
     return (
         <div>
             <Introduction 
-                name="Portfolio"
-                description="Here are some of my recent projects."
+                name={name}
+                description={description}
             />
         </div>
     )
