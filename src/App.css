@@ -1,0 +1,14 @@
+.connect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.twitter {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.github {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}

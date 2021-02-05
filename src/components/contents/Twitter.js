@@ -32,7 +32,7 @@ function Twitter() {
     }, [])
     
     return (
-        <div>
+        <div className="twitter">
             {tweets}
         </div>
     )

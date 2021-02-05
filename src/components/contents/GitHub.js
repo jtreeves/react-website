@@ -36,7 +36,7 @@ function GitHub() {
     }, [])
     
     return (
-        <div>
+        <div className="github">
             {commits}
         </div>
     )

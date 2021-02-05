@@ -12,8 +12,10 @@ function Connect() {
                 name={name}
                 description={description}
             />
-            <Twitter />
-            <GitHub />
+            <div className="connect">
+                <Twitter />
+                <GitHub />
+            </div>
         </div>
     )
 }
