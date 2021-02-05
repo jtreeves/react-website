@@ -21,6 +21,14 @@ function Portfolio() {
         repositoryLink: 'https://github.com/jtreeves/predictions-frontend'
     }
 
+    const matchesAndPatches = {
+        name: 'Matches and Patches',
+        description: 'A game involving elements of Dominoes and Uno',
+        image: '/images/matches-and-patches.png',
+        deployedLink: 'https://jtreeves.github.io',
+        repositoryLink: 'https://github.com/jtreeves/matches-and-patches'
+    }
+
     const readThisNext = {
         name: 'Read This next',
         description: 'A reading app',
@@ -35,6 +43,7 @@ function Portfolio() {
                 name={name}
                 description={description}
             />
+
             <Project
                 name={kaleidoscope.name}
                 description={kaleidoscope.description}
@@ -42,6 +51,7 @@ function Portfolio() {
                 deployedLink={kaleidoscope.deployedLink}
                 repositoryLink={kaleidoscope.repositoryLink}
             />
+
             <Project
                 name={tiresias.name}
                 description={tiresias.description}
@@ -49,6 +59,15 @@ function Portfolio() {
                 deployedLink={tiresias.deployedLink}
                 repositoryLink={tiresias.repositoryLink}
             />
+
+            <Project
+                name={matchesAndPatches.name}
+                description={matchesAndPatches.description}
+                image={matchesAndPatches.image}
+                deployedLink={matchesAndPatches.deployedLink}
+                repositoryLink={matchesAndPatches.repositoryLink}
+            />
+            
             <Project
                 name={readThisNext.name}
                 description={readThisNext.description}
