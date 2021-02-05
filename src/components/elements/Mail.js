@@ -41,7 +41,7 @@ function Mail() {
             setSubject('') 
             setMessage('') 
         } catch (error) {
-            alert(error)
+            alert(error.response.data.msg)
         }
     }
     
