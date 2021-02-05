@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 
-import FormGroup from './FormGroup'
+import FormGroup from '../sections/FormGroup'
 
 const appServer = process.env.REACT_APP_SERVER_URL
 

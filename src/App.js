@@ -1,7 +1,7 @@
 import { Route } from 'react-router-dom'
 
-import Footer from './components/elements/Footer'
-import Header from './components/elements/Header'
+import Footer from './components/sections/Footer'
+import Header from './components/sections/Header'
 import About from './components/pages/About'
 import Blog from './components/pages/Blog'
 import Connect from './components/pages/Connect'
