@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 
-import FormItem from '../elements/FormItem'
+import FormItem from '../sections/FormItem'
 
 const appServer = process.env.REACT_APP_SERVER_URL
 
@@ -79,7 +79,7 @@ function Mail() {
                 value={message}
                 onChange={handleMessage}
             />
-            
+
             <button type="submit">Submit</button>
         </form>
     )
