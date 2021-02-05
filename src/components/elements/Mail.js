@@ -6,44 +6,44 @@ import FormGroup from './FormGroup'
 const appServer = process.env.REACT_APP_SERVER_URL
 
 function Mail() {
-    const [name, setName] = useState()
-    const [email, setEmail] = useState()
-    const [subject, setSubject] = useState()
-    const [message, setMessage] = useState()
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
     
     function handleName(e) {
         setName(e.target.value)
+        console.log(`NAME: ${name}`)
     }
 
     function handleEmail(e) {
         setEmail(e.target.value)
+        console.log(`EMAIL: ${email}`)
     }
 
     function handleSubject(e) {
         setSubject(e.target.value)
+        console.log(`SUBJECT: ${subject}`)
     }
 
     function handleMessage(e) {
         setMessage(e.target.value)
+        console.log(`MESSAGE: ${message}`)
     }
 
-    async function hanldeSubmit(e) {
+    function hanldeSubmit(e) {
         e.preventDefault()
-        const result = await axios.post(
+        console.log(`UPON SUBMIT >> NAME = ${name}, EMAIL = ${email}, SUBJECT = ${subject}, AND MESSAGE = ${message}`)
+        axios.post(
             appServer + '/mail', {
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    name, email, subject, message
-                })
+                name, email, subject, message
             }
         )
-        console.log(`RESULT: ${result}`)
-        setName() 
-        setEmail() 
-        setSubject() 
-        setMessage() 
+        // console.log(`RESULT: ${result}`)
+        setName('') 
+        setEmail('') 
+        setSubject('') 
+        setMessage('') 
     }
     
     return (
@@ -74,10 +74,9 @@ function Mail() {
                 name="message" 
                 cols="30" 
                 rows="10" 
+                value={message}
                 onChange={handleMessage}
-            >
-                {message}
-            </textarea>
+            />
             <button type="submit">Submit</button>
         </form>
     )
