@@ -7,56 +7,6 @@ function Portfolio() {
     const name = 'Portfolio'
     const description = 'Here are some of my recent projects.'
 
-    const regressions = {
-        name: 'Regressions',
-        description: 'A Python library of algorithms to calculate regression models',
-        skills: projects.regressions,
-        type: 'Library',
-        image: '/images/regressions.png',
-        deployedLink: 'https://pypi.org/project/regressions/',
-        repositoryLink: 'https://github.com/jtreeves/regressions_library'
-    }
-
-    const kaleidoscope = {
-        name: 'Kaleidoscope',
-        description: 'A budget app',
-        skills: projects.kaleidoscope,
-        type: 'App',
-        image: '/images/kaleidoscope.png',
-        deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
-        repositoryLink: 'https://github.com/jtreeves/budget-frontend'
-    }
-
-    const tiresias = {
-        name: 'Tiresias',
-        description: 'An app for generating regressions models',
-        skills: projects.tiresias,
-        type: 'App',
-        image: '/images/tiresias.png',
-        deployedLink: 'https://tiresias-predictions.herokuapp.com',
-        repositoryLink: 'https://github.com/jtreeves/predictions-frontend'
-    }
-
-    const matchesAndPatches = {
-        name: 'Matches and Patches',
-        description: 'A game involving elements of Dominoes and Uno',
-        skills: projects.matchesAndPatches,
-        type: 'App',
-        image: '/images/matches-and-patches.png',
-        deployedLink: 'https://jtreeves.github.io',
-        repositoryLink: 'https://github.com/jtreeves/matches-and-patches'
-    }
-
-    const readThisNext = {
-        name: 'Read This next',
-        description: 'A reading app',
-        skills: projects.readThisNext,
-        type: 'App',
-        image: '/images/read-this-next.png',
-        deployedLink: 'https://read-this-next.herokuapp.com',
-        repositoryLink: 'https://github.com/jtreeves/read-this-next'
-    }
-
     return (
         <div>
             <Introduction 
@@ -65,53 +15,53 @@ function Portfolio() {
             />
 
             <Project
-                name={regressions.name}
-                description={regressions.description}
-                skills={regressions.skills}
-                type={regressions.type}
-                image={regressions.image}
-                deployedLink={regressions.deployedLink}
-                repositoryLink={regressions.repositoryLink}
+                name={projects.regressions.name}
+                description={projects.regressions.description}
+                skills={projects.regressions.skills}
+                type={projects.regressions.type}
+                image={projects.regressions.image}
+                deployedLink={projects.regressions.deployedLink}
+                repositoryLink={projects.regressions.repositoryLink}
             />
             
             <Project
-                name={kaleidoscope.name}
-                description={kaleidoscope.description}
-                skills={kaleidoscope.skills}
-                type={kaleidoscope.type}
-                image={kaleidoscope.image}
-                deployedLink={kaleidoscope.deployedLink}
-                repositoryLink={kaleidoscope.repositoryLink}
+                name={projects.kaleidoscope.name}
+                description={projects.kaleidoscope.description}
+                skills={projects.kaleidoscope.skills}
+                type={projects.kaleidoscope.type}
+                image={projects.kaleidoscope.image}
+                deployedLink={projects.kaleidoscope.deployedLink}
+                repositoryLink={projects.kaleidoscope.repositoryLink}
             />
 
             <Project
-                name={tiresias.name}
-                description={tiresias.description}
-                skills={tiresias.skills}
-                type={tiresias.type}
-                image={tiresias.image}
-                deployedLink={tiresias.deployedLink}
-                repositoryLink={tiresias.repositoryLink}
+                name={projects.tiresias.name}
+                description={projects.tiresias.description}
+                skills={projects.tiresias.skills}
+                type={projects.tiresias.type}
+                image={projects.tiresias.image}
+                deployedLink={projects.tiresias.deployedLink}
+                repositoryLink={projects.tiresias.repositoryLink}
             />
 
             <Project
-                name={matchesAndPatches.name}
-                description={matchesAndPatches.description}
-                skills={matchesAndPatches.skills}
-                type={matchesAndPatches.type}
-                image={matchesAndPatches.image}
-                deployedLink={matchesAndPatches.deployedLink}
-                repositoryLink={matchesAndPatches.repositoryLink}
+                name={projects.matchesAndPatches.name}
+                description={projects.matchesAndPatches.description}
+                skills={projects.matchesAndPatches.skills}
+                type={projects.matchesAndPatches.type}
+                image={projects.matchesAndPatches.image}
+                deployedLink={projects.matchesAndPatches.deployedLink}
+                repositoryLink={projects.matchesAndPatches.repositoryLink}
             />
 
             <Project
-                name={readThisNext.name}
-                description={readThisNext.description}
-                skills={readThisNext.skills}
-                type={readThisNext.type}
-                image={readThisNext.image}
-                deployedLink={readThisNext.deployedLink}
-                repositoryLink={readThisNext.repositoryLink}
+                name={projects.readThisNext.name}
+                description={projects.readThisNext.description}
+                skills={projects.readThisNext.skills}
+                type={projects.readThisNext.type}
+                image={projects.readThisNext.image}
+                deployedLink={projects.readThisNext.deployedLink}
+                repositoryLink={projects.readThisNext.repositoryLink}
             />
         </div>
     )
