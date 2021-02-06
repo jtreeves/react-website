@@ -20,7 +20,7 @@ function Portfolio() {
     const kaleidoscope = {
         name: 'Kaleidoscope',
         description: 'A budget app',
-        skills: ['JavaScript', 'React', 'Express', 'MongoDB'],
+        skills: projects.kaleidoscope,
         type: 'App',
         image: '/images/kaleidoscope.png',
         deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
@@ -30,7 +30,7 @@ function Portfolio() {
     const tiresias = {
         name: 'Tiresias',
         description: 'An app for generating regressions models',
-        skills: ['JavaScript', 'React', 'Express', 'MongoDB'],
+        skills: projects.tiresias,
         type: 'App',
         image: '/images/tiresias.png',
         deployedLink: 'https://tiresias-predictions.herokuapp.com',
@@ -40,7 +40,7 @@ function Portfolio() {
     const matchesAndPatches = {
         name: 'Matches and Patches',
         description: 'A game involving elements of Dominoes and Uno',
-        skills: ['JavaScript', 'HTML', 'CSS'],
+        skills: projects.matchesAndPatches,
         type: 'App',
         image: '/images/matches-and-patches.png',
         deployedLink: 'https://jtreeves.github.io',
@@ -50,7 +50,7 @@ function Portfolio() {
     const readThisNext = {
         name: 'Read This next',
         description: 'A reading app',
-        skills: ['JavaScript', 'Express', 'SQL'],
+        skills: projects.readThisNext,
         type: 'App',
         image: '/images/read-this-next.png',
         deployedLink: 'https://read-this-next.herokuapp.com',
