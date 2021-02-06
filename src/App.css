@@ -18,3 +18,9 @@
     height: 400px;
     object-fit: cover;
 }
+
+.skill {
+    border: solid black;
+    padding: 2px;
+    margin: 2px;
+}
