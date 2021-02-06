@@ -1,3 +1,5 @@
+import List from './List'
+
 function Education(props) {
     return (
         <div>
@@ -6,7 +8,10 @@ function Education(props) {
             <p>{props.degree}</p>
             <p>{props.specialization}</p>
             <p>{props.date}</p>
-            <p>{props.courses}</p>
+
+            <List 
+                items={props.courses}
+            />
         </div>
     )
 }

@@ -48,6 +48,28 @@ function Resume() {
         'Wireframing'
     ]
 
+    const hyperionDirector = {
+        company: 'Hyperion Academics',
+        position: 'Director',
+        date: 'September 2017–present',
+        items: [
+            'Help clients excel in all areas of the curriculum',
+            'Coordinate schedules across multiple parties',
+            'Manage all financial matters, including billing and advertising'
+        ]
+    }
+
+    const bachelor = {
+        school: 'Vassar College',
+        degree: 'Bachelor of Arts',
+        specialization: 'Media Studies',
+        date: 'May 2009',
+        courses: [
+            'Media Theory',
+            'Sociology of Media'
+        ]
+    }
+
     return (
         <div>
             <Introduction 
@@ -90,9 +112,20 @@ function Resume() {
                 />
             </div>
 
-            {/* <Job />
+            <Job 
+                company={hyperionDirector.company}
+                position={hyperionDirector.position}
+                date={hyperionDirector.date}
+                items={hyperionDirector.items}
+            />
 
-            <Education /> */}
+            <Education 
+                school={bachelor.school}
+                degree={bachelor.degree}
+                specialization={bachelor.specialization}
+                date={bachelor.date}
+                courses={bachelor.courses}
+            />
         </div>
     )
 }
