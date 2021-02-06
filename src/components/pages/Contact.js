@@ -6,14 +6,14 @@ function Contact() {
     const description = 'Email me directly.'
 
     return (
-        <div>
+        <main>
             <Introduction 
                 name={name}
                 description={description}
             />
             
             <Mail />
-        </div>
+        </main>
     )
 }
 

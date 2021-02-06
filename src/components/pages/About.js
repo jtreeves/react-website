@@ -5,12 +5,12 @@ function About() {
     const description = 'My name is Jackson Reeves, and I am a programmer.'
     
     return (
-        <div>
+        <main>
             <Introduction 
                 name={name}
                 description={description}
             />
-        </div>
+        </main>
     )
 }
 

@@ -8,7 +8,7 @@ function Portfolio() {
     const description = 'Here are some of my recent projects.'
 
     return (
-        <div>
+        <main>
             <Introduction 
                 name={name}
                 description={description}
@@ -63,7 +63,7 @@ function Portfolio() {
                 deployedLink={projects.readThisNext.deployedLink}
                 repositoryLink={projects.readThisNext.repositoryLink}
             />
-        </div>
+        </main>
     )
 }
 
