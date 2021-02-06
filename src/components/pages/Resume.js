@@ -58,6 +58,43 @@ function Resume() {
             'Manage all financial matters, including billing and advertising'
         ]
     }
+    
+    const tutorSenior = {
+        company: 'Atlanta Tutors',
+        position: 'Senior Educator',
+        date: 'January 2013–September 2017',
+        items: [
+            'Helped clients raise failing grades to As in algebra, geometry, and calculus',
+            'Enabled clients to increase their GPAs by up to 1.7 points',
+            'Coached clients to obtain top scores on the SAT and ACT standardized tests',
+            'Used online platforms and customized lessons to maximize success rates',
+            'Guided clients in developing organizational strategies and long-term plans'
+        ]
+    }
+    
+    const magazineDigital = {
+        company: 'Atlanta Magazine',
+        position: 'Digital Media Producer',
+        date: 'April 2011–September 2013',
+        items: [
+            'Doubled the the magazine’s Facebook followers and tripled its Twitter followers',
+            'Increased profitability of email newsletters by raising click-through rates',
+            'Raised site page-views by 27 percent using social media and email marketing',
+            'Produced internal reports on the website’s usage, traffic patterns, and trends',
+            'Used content management systems to design and populate the website',
+            'Coordinated promotional events in tandem with the marketing team'
+        ]
+    }
+    
+    const magazineEditor = {
+        company: 'Atlanta Magazine',
+        position: 'Assistant Editor',
+        date: 'April 2010–March 2011',
+        items: [
+            'Managed sections of the magazine, which involved writing and editing articles',
+            'Interviewed Atlanta leaders and gathered public data to add substance to stories'
+        ]
+    }
 
     const certificate = {
         school: 'General Assembly',
@@ -143,6 +180,27 @@ function Resume() {
                 position={hyperionDirector.position}
                 date={hyperionDirector.date}
                 items={hyperionDirector.items}
+            />
+
+            <Job 
+                company={tutorSenior.company}
+                position={tutorSenior.position}
+                date={tutorSenior.date}
+                items={tutorSenior.items}
+            />
+            
+            <Job 
+                company={magazineDigital.company}
+                position={magazineDigital.position}
+                date={magazineDigital.date}
+                items={magazineDigital.items}
+            />
+
+            <Job 
+                company={magazineEditor.company}
+                position={magazineEditor.position}
+                date={magazineEditor.date}
+                items={magazineEditor.items}
             />
 
             <h3>Education</h3>
