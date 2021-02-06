@@ -1,6 +1,8 @@
 import Introduction from '../sections/Introduction'
 import Project from '../sections/Project'
 
+import projects from '../../database/projects'
+
 function Portfolio() {
     const name = 'Portfolio'
     const description = 'Here are some of my recent projects.'
@@ -8,7 +10,7 @@ function Portfolio() {
     const regressions = {
         name: 'Regressions',
         description: 'A Python library of algorithms to calculate regression models',
-        skills: ['Python', 'PyPi'],
+        skills: projects.regressions,
         type: 'Library',
         image: '/images/regressions.png',
         deployedLink: 'https://pypi.org/project/regressions/',
