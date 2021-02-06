@@ -53,3 +53,9 @@ main {
     height: 400px;
     object-fit: cover;
 }
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
