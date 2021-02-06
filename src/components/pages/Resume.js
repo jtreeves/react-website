@@ -3,50 +3,11 @@ import Introduction from '../sections/Introduction'
 import Job from '../sections/Job'
 import SkillSet from '../elements/SkillSet'
 
+import types from '../../database/types'
+
 function Resume() {
     const name = 'Resume'
     const description = 'I am a programmer with experience in JavaScript, Python, Ruby, and SQL.'
-    
-    const languages = [
-        'JavaScript', 
-        'Python', 
-        'Ruby', 
-        'HTML', 
-        'CSS'
-    ]
-
-    const frameworks = [
-        'Node', 
-        'React', 
-        'Express', 
-        'Django', 
-        'Flask', 
-        'Bootstrap'
-    ]
-
-    const management = [
-        'Git', 
-        'GitHub', 
-        'Heroku',
-        'Command Line'
-    ]
-
-    const databases = [
-        'SQL',
-        'Postgres', 
-        'Sequelize', 
-        'MongoDB',
-        'Mongoose'
-    ]
-
-    const methodologies = [
-        'Object-Oriented Programming',
-        'Agile Development', 
-        'MVC Pattern', 
-        'Responsive Design', 
-        'User Stories', 
-        'Wireframing'
-    ]
 
     const hyperionDirector = {
         company: 'Hyperion Academics',
@@ -141,35 +102,35 @@ function Resume() {
             <div>
                 <strong>Languages</strong>
                 <SkillSet
-                    skills={languages}
+                    skills={types.languages}
                 />
             </div>
             
             <div>
                 <strong>Frameworks</strong>
                 <SkillSet
-                    skills={frameworks}
+                    skills={types.frameworks}
                 />
             </div>
             
             <div>
                 <strong>Management</strong>
                 <SkillSet
-                    skills={management}
+                    skills={types.management}
                 />
             </div>
 
             <div>
                 <strong>Databases</strong>
                 <SkillSet
-                    skills={databases}
+                    skills={types.databases}
                 />
             </div>
 
             <div>
                 <strong>Methodologies</strong>
                 <SkillSet
-                    skills={methodologies}
+                    skills={types.methodologies}
                 />
             </div>
 
