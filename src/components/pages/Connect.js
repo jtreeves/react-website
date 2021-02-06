@@ -7,7 +7,7 @@ function Connect() {
     const description = 'Get in touch with me on social media.'
 
     return (
-        <main>
+        <div>
             <Introduction 
                 name={name}
                 description={description}
@@ -17,7 +17,7 @@ function Connect() {
                 <Twitter />
                 <GitHub />
             </div>
-        </main>
+        </div>
     )
 }
 

@@ -29,14 +29,14 @@ function Skill() {
     })
 
     return (
-        <main>
+        <div>
             <Introduction 
                 name={name}
                 description={description}
             />
 
             {projectList}
-        </main>
+        </div>
     )
 }
 

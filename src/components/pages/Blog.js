@@ -6,14 +6,14 @@ function Blog() {
     const description = 'Here are my most recent blog posts'
     
     return (
-        <main>
+        <div>
             <Introduction 
                 name={name}
                 description={description}
             />
             
             <Tumblr />
-        </main>
+        </div>
     )
 }
 

@@ -7,14 +7,14 @@ import Contact from './Contact'
 
 function Home() {
     return (
-        <main>
+        <div>
             <Portfolio />
             <About />
             <Resume />
             <Blog />
             <Connect />
             <Contact />
-        </main>
+        </div>
     )
 }
 

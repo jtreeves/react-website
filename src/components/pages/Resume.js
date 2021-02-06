@@ -91,7 +91,7 @@ function Resume() {
     }
 
     return (
-        <main>
+        <div>
             <Introduction 
                 name={name}
                 description={description}
@@ -197,7 +197,7 @@ function Resume() {
             >
                 <button>View as PDF</button>
             </a>
-        </main>
+        </div>
     )
 }
 

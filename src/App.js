@@ -18,45 +18,47 @@ function App() {
         <>
             <Header />
 
-            <Route 
-                exact path="/" 
-                component={Home}
-            />
+            <main>
+                <Route 
+                    exact path="/" 
+                    component={Home}
+                />
 
-            <Route 
-                path="/about" 
-                component={About}
-            />
+                <Route 
+                    path="/about" 
+                    component={About}
+                />
 
-            <Route 
-                path="/contact" 
-                component={Contact}
-            />
+                <Route 
+                    path="/contact" 
+                    component={Contact}
+                />
 
-            <Route 
-                path="/connect" 
-                component={Connect}
-            />
+                <Route 
+                    path="/connect" 
+                    component={Connect}
+                />
 
-            <Route 
-                path="/blog" 
-                component={Blog}
-            />
+                <Route 
+                    path="/blog" 
+                    component={Blog}
+                />
 
-            <Route 
-                path="/portfolio" 
-                component={Portfolio}
-            />
+                <Route 
+                    path="/portfolio" 
+                    component={Portfolio}
+                />
 
-            <Route 
-                path="/resume" 
-                component={Resume}
-            />
-            
-            <Route 
-                path="/skill" 
-                component={Skill}
-            />
+                <Route 
+                    path="/resume" 
+                    component={Resume}
+                />
+                
+                <Route 
+                    path="/skill" 
+                    component={Skill}
+                />
+            </main>
             
             <Footer />
         </>
