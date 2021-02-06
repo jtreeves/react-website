@@ -1,6 +1,6 @@
 const skills = {
-    Python: ['Regressions'],
-    JavaScript: ['Tiresias', 'Kaleidoscope']
+    Python: ['regressions'],
+    JavaScript: ['tiresias', 'kaleidoscope']
 }
 
 export default skills
