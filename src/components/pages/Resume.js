@@ -5,7 +5,7 @@ import SkillSet from '../elements/SkillSet'
 
 function Resume() {
     const name = 'Resume'
-    const description = 'Here is my current resume.'
+    const description = 'I am a programmer with experience in JavaScript, Python, Ruby, and SQL.'
     
     const languages = [
         'JavaScript', 
@@ -59,6 +59,17 @@ function Resume() {
         ]
     }
 
+    const certificate = {
+        school: 'General Assembly',
+        degree: 'Software Engineering Certificate',
+        specialization: 'Full-Stack Development',
+        date: 'January 2021',
+        courses: [
+            'JavaScript',
+            'Python'
+        ]
+    }
+
     const bachelor = {
         school: 'Vassar College',
         degree: 'Bachelor of Arts',
@@ -69,6 +80,17 @@ function Resume() {
             'Sociology of Media'
         ]
     }
+    
+    const program = {
+        school: 'New York University',
+        degree: 'Business Program',
+        specialization: 'Marketing and Journalism',
+        date: 'August 2007',
+        courses: [
+            'Marketing',
+            'Journalism'
+        ]
+    }
 
     return (
         <div>
@@ -76,6 +98,8 @@ function Resume() {
                 name={name}
                 description={description}
             />
+
+            <h3>Skills</h3>
 
             <div>
                 <strong>Languages</strong>
@@ -112,6 +136,8 @@ function Resume() {
                 />
             </div>
 
+            <h3>Experience</h3>
+
             <Job 
                 company={hyperionDirector.company}
                 position={hyperionDirector.position}
@@ -119,12 +145,30 @@ function Resume() {
                 items={hyperionDirector.items}
             />
 
+            <h3>Education</h3>
+
+            <Education 
+                school={certificate.school}
+                degree={certificate.degree}
+                specialization={certificate.specialization}
+                date={certificate.date}
+                courses={certificate.courses}
+            />
+            
             <Education 
                 school={bachelor.school}
                 degree={bachelor.degree}
                 specialization={bachelor.specialization}
                 date={bachelor.date}
                 courses={bachelor.courses}
+            />
+            
+            <Education 
+                school={program.school}
+                degree={program.degree}
+                specialization={program.specialization}
+                date={program.date}
+                courses={program.courses}
             />
         </div>
     )
