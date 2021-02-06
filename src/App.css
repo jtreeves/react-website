@@ -18,13 +18,3 @@
     height: 400px;
     object-fit: cover;
 }
-
-.skill-set {
-    margin: 10px 0;
-}
-
-.skill {
-    border: solid black;
-    padding: 2px;
-    margin: 2px;
-}
