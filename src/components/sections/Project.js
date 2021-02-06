@@ -1,4 +1,4 @@
-import SkillSet from './SkillSet'
+import SkillSet from '../elements/SkillSet'
 
 function Project(props) {
     return (

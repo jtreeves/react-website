@@ -1,7 +1,7 @@
 import Education from '../sections/Education'
 import Introduction from '../sections/Introduction'
 import Job from '../sections/Job'
-import SkillSet from '../sections/SkillSet'
+import SkillSet from '../elements/SkillSet'
 
 function Resume() {
     const name = 'Resume'

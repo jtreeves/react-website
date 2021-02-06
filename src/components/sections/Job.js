@@ -1,4 +1,4 @@
-import List from './List'
+import List from '../elements/List'
 
 function Job(props) {
     return (
@@ -7,7 +7,7 @@ function Job(props) {
 
             <p>{props.position}</p>
             <p>{props.date}</p>
-            
+
             <List 
                 items={props.items}
             />

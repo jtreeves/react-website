@@ -1,4 +1,4 @@
-import List from './List'
+import List from '../elements/List'
 
 function Education(props) {
     return (

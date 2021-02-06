@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 
-import FormItem from '../sections/FormItem'
+import FormItem from '../elements/FormItem'
 
 const appServer = process.env.REACT_APP_SERVER_URL
 
