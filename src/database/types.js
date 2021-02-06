@@ -2,7 +2,6 @@ const types = {
     languages: [
         'JavaScript', 
         'Python', 
-        'Ruby', 
         'HTML', 
         'CSS'
     ],
@@ -10,8 +9,6 @@ const types = {
         'Node', 
         'React', 
         'Express', 
-        'Django', 
-        'Flask', 
         'Bootstrap'
     ],
     management: [
