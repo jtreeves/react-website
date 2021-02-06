@@ -170,6 +170,14 @@ function Resume() {
                 date={program.date}
                 courses={program.courses}
             />
+
+            <a 
+                href="/resume.pdf" 
+                target="_blank" 
+                rel="noreferrer"
+            >
+                <button>View as PDF</button>
+            </a>
         </div>
     )
 }
