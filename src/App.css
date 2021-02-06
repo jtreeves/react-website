@@ -19,6 +19,10 @@
     object-fit: cover;
 }
 
+.skillSet {
+    margin: 10px 0;
+}
+
 .skill {
     border: solid black;
     padding: 2px;
