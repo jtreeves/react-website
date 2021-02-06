@@ -1,43 +1,18 @@
-import SkillSet from './SkillSet'
+import List from './List'
 
-function Project(props) {
+function Job(props) {
     return (
         <div>
-            <h3>{props.name}</h3>
+            <h3>{props.company}</h3>
 
-            <p>{props.description}</p>
-
-            <SkillSet 
-                skills={props.skills}
+            <p>{props.position}</p>
+            <p>{props.date}</p>
+            
+            <List 
+                items={props.items}
             />
-
-            <img 
-                src={props.image} 
-                alt={props.name} 
-                className="project"
-            />
-
-            <p>
-                <a 
-                    href={props.deployedLink} 
-                    target="_blank" 
-                    rel="noreferrer"
-                >
-                    <strong>{props.type}</strong>
-                </a>
-
-                &nbsp;|&nbsp;
-
-                <a 
-                    href={props.repositoryLink} 
-                    target="_blank" 
-                    rel="noreferrer"
-                >
-                    <strong>Code</strong>
-                </a>
-            </p>
         </div>
     )
 }
 
-export default Project
+export default Job
