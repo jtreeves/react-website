@@ -8,6 +8,7 @@ function Portfolio() {
     const regressions = {
         name: 'Regressions',
         description: 'A Python library of algorithms to calculate regression models',
+        skills: ['Python', 'PyPi'],
         type: 'Library',
         image: '/images/regressions.png',
         deployedLink: 'https://pypi.org/project/regressions/',
@@ -17,6 +18,7 @@ function Portfolio() {
     const kaleidoscope = {
         name: 'Kaleidoscope',
         description: 'A budget app',
+        skills: ['JavaScript', 'React', 'Express', 'MongoDB'],
         type: 'App',
         image: '/images/kaleidoscope.png',
         deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
@@ -26,6 +28,7 @@ function Portfolio() {
     const tiresias = {
         name: 'Tiresias',
         description: 'An app for generating regressions models',
+        skills: ['JavaScript', 'React', 'Express', 'MongoDB'],
         type: 'App',
         image: '/images/tiresias.png',
         deployedLink: 'https://tiresias-predictions.herokuapp.com',
@@ -35,6 +38,7 @@ function Portfolio() {
     const matchesAndPatches = {
         name: 'Matches and Patches',
         description: 'A game involving elements of Dominoes and Uno',
+        skills: ['JavaScript', 'HTML', 'CSS'],
         type: 'App',
         image: '/images/matches-and-patches.png',
         deployedLink: 'https://jtreeves.github.io',
@@ -44,6 +48,7 @@ function Portfolio() {
     const readThisNext = {
         name: 'Read This next',
         description: 'A reading app',
+        skills: ['JavaScript', 'Express', 'SQL'],
         type: 'App',
         image: '/images/read-this-next.png',
         deployedLink: 'https://read-this-next.herokuapp.com',
@@ -60,6 +65,7 @@ function Portfolio() {
             <Project
                 name={regressions.name}
                 description={regressions.description}
+                skills={regressions.skills}
                 type={regressions.type}
                 image={regressions.image}
                 deployedLink={regressions.deployedLink}
@@ -69,6 +75,7 @@ function Portfolio() {
             <Project
                 name={kaleidoscope.name}
                 description={kaleidoscope.description}
+                skills={kaleidoscope.skills}
                 type={kaleidoscope.type}
                 image={kaleidoscope.image}
                 deployedLink={kaleidoscope.deployedLink}
@@ -78,6 +85,7 @@ function Portfolio() {
             <Project
                 name={tiresias.name}
                 description={tiresias.description}
+                skills={tiresias.skills}
                 type={tiresias.type}
                 image={tiresias.image}
                 deployedLink={tiresias.deployedLink}
@@ -87,6 +95,7 @@ function Portfolio() {
             <Project
                 name={matchesAndPatches.name}
                 description={matchesAndPatches.description}
+                skills={matchesAndPatches.skills}
                 type={matchesAndPatches.type}
                 image={matchesAndPatches.image}
                 deployedLink={matchesAndPatches.deployedLink}
@@ -96,6 +105,7 @@ function Portfolio() {
             <Project
                 name={readThisNext.name}
                 description={readThisNext.description}
+                skills={readThisNext.skills}
                 type={readThisNext.type}
                 image={readThisNext.image}
                 deployedLink={readThisNext.deployedLink}
