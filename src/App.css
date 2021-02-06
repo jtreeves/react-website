@@ -4,13 +4,15 @@ body {
     background-attachment: fixed;
 }
 
-/* header {
+header {
     position: fixed;
+    top: 0;
 }
 
 footer {
     position: fixed;
-} */
+    bottom: 0;
+}
 
 main {
     background: white;
