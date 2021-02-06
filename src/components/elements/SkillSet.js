@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function SkillSet(props) {    
     const skillSet = props.skills.map((skill, index) => {    
         return (
@@ -5,7 +7,12 @@ function SkillSet(props) {
                 key={index}
                 className="skill" 
             >
-                {skill}
+                <Link to={{
+                    pathname: "/skill",
+                    state: {skill}
+                }}>
+                    {skill}
+                </Link>
             </span>
         )
     })
