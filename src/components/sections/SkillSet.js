@@ -11,7 +11,7 @@ function SkillSet(props) {
     })
 
     return (
-        <div className="skillSet">
+        <div className="skill-set">
             {skillSet}
         </div>
     )
