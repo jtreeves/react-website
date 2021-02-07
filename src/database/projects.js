@@ -12,21 +12,6 @@ const projects = {
         repositoryLink: 'https://github.com/jtreeves/regressions_library',
         date: 'January 2021'
     },
-    kaleidoscope: {
-        name: 'Kaleidoscope',
-        description: 'A budget app',
-        skills: [
-            'JavaScript', 
-            'React', 
-            'Express', 
-            'MongoDB'
-        ],
-        type: 'App',
-        image: '/images/kaleidoscope.png',
-        deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
-        repositoryLink: 'https://github.com/jtreeves/budget-frontend',
-        date: 'December 2020'
-    },
     tiresias: {
         name: 'Tiresias',
         description: 'An app for generating regressions models',
@@ -42,19 +27,20 @@ const projects = {
         repositoryLink: 'https://github.com/jtreeves/predictions-frontend',
         date: 'January 2021'
     },
-    matchesAndPatches: {
-        name: 'Matches and Patches',
-        description: 'A game involving elements of Dominoes and Uno',
+    kaleidoscope: {
+        name: 'Kaleidoscope',
+        description: 'A budget app',
         skills: [
             'JavaScript', 
-            'HTML', 
-            'CSS'
+            'React', 
+            'Express', 
+            'MongoDB'
         ],
         type: 'App',
-        image: '/images/matches-and-patches.png',
-        deployedLink: 'https://jtreeves.github.io',
-        repositoryLink: 'https://github.com/jtreeves/matches-and-patches',
-        date: 'October 2020'
+        image: '/images/kaleidoscope.png',
+        deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
+        repositoryLink: 'https://github.com/jtreeves/budget-frontend',
+        date: 'December 2020'
     },
     readThisNext: {
         name: 'Read This Next',
@@ -69,6 +55,20 @@ const projects = {
         deployedLink: 'https://read-this-next.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/read-this-next',
         date: 'November 2020'
+    },
+    matchesAndPatches: {
+        name: 'Matches and Patches',
+        description: 'A game involving elements of Dominoes and Uno',
+        skills: [
+            'JavaScript', 
+            'HTML', 
+            'CSS'
+        ],
+        type: 'App',
+        image: '/images/matches-and-patches.png',
+        deployedLink: 'https://jtreeves.github.io',
+        repositoryLink: 'https://github.com/jtreeves/matches-and-patches',
+        date: 'October 2020'
     }
 }
 
