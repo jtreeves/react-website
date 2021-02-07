@@ -53,7 +53,7 @@ const projects = {
         repositoryLink: 'https://github.com/jtreeves/matches-and-patches'
     },
     readThisNext: {
-        name: 'Read This next',
+        name: 'Read This Next',
         description: 'A reading app',
         skills: [
             'JavaScript', 
