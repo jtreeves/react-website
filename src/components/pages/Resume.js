@@ -195,7 +195,11 @@ function Resume() {
                 target="_blank" 
                 rel="noreferrer"
             >
-                <button>View as PDF</button>
+                <button
+                    className="btn btn-primary center"
+                >
+                    View as PDF
+                    </button>
             </a>
         </div>
     )

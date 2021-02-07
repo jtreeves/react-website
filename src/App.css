@@ -87,3 +87,8 @@ h1, h2, h3 {
 .skill:not(:first-child,:last-child) {
     margin: 5px;
 }
+
+.center {
+    width: 20%;
+    margin: 0 40%;
+}
