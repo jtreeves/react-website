@@ -75,3 +75,15 @@ h1, h2, h3 {
 .card-lock {
     position: static;
 }
+
+.skill:first-child {
+    margin: 5px 5px 5px 0;
+}
+
+.skill:last-child {
+    margin: 5px 0 5px 5px;
+}
+
+.skill:not(:first-child,:last-child) {
+    margin: 5px;
+}

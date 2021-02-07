@@ -5,6 +5,7 @@ function SkillSet(props) {
         return (
             <button 
                 key={index}
+                className="btn btn-light skill"
             >
                 <Link to={{
                     pathname: "/skill",
