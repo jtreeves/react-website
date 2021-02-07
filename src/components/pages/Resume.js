@@ -199,7 +199,7 @@ function Resume() {
                     className="btn btn-primary center"
                 >
                     View as PDF
-                    </button>
+                </button>
             </a>
         </div>
     )

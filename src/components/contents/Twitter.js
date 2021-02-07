@@ -48,6 +48,17 @@ function Twitter() {
     return (
         <div className="twitter">
             {tweets}
+            <a 
+                href="https://twitter.com/JTReeves" 
+                target="_blank" 
+                rel="noreferrer"
+            >
+                <button
+                    className="btn btn-primary center social"
+                >
+                    Read more tweets
+                </button>
+            </a>
         </div>
     )
 }

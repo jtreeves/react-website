@@ -15,9 +15,7 @@ function Tumblr() {
             )
             const resultArray = result.data.posts.map((post, index) => {
                 const date = post.date
-                console.log(`DATE: ${date}`)
                 const correctTime = convertTime(date)
-                console.log(`CORRECTTIME: ${correctTime}`)
                 return (
                     <div 
                         key={index}
@@ -46,6 +44,17 @@ function Tumblr() {
     return (
         <div>
             {posts}
+            <a 
+                href="https://programming10101.tumblr.com" 
+                target="_blank" 
+                rel="noreferrer"
+            >
+                <button
+                    className="btn btn-primary center"
+                >
+                    Read more posts
+                </button>
+            </a>
         </div>
     )
 }

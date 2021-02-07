@@ -57,6 +57,17 @@ function GitHub() {
     return (
         <div className="github">
             {commits}
+            <a 
+                href="https://github.com/jtreeves" 
+                target="_blank" 
+                rel="noreferrer"
+            >
+                <button
+                    className="btn btn-primary center social"
+                >
+                    Read more commits
+                </button>
+            </a>
         </div>
     )
 }
