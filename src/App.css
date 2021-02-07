@@ -67,3 +67,7 @@ main {
     display: inline;
     padding: 10px;
 }
+
+h1, h2, h3 {
+    text-align: center;
+}
