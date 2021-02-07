@@ -11,7 +11,7 @@ function Tumblr() {
     async function getPosts() {
         try {
             const result = await axios.get(
-                appServer + '/tumblr'
+                appServer + '/tumblr/thoughts'
             )
             const resultArray = result.data.posts.map((post, index) => {
                 const date = post.date
