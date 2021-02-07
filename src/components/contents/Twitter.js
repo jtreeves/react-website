@@ -16,7 +16,7 @@ function Twitter() {
                 return (
                     <div 
                         key={index}
-                        className="card card-body card-lock"
+                        className="card card-body card-lock card-connect"
                     >
                         TWEET: {tweet.text}
                         DATE: {tweet.created_at}
