@@ -60,7 +60,7 @@ function Tumblr() {
             const resultArray = result.data.posts.map((post, index) => {
                 const body = post.body
                 const date = post.date
-                const textSubstrings = extractFromPost(body, 250)
+                const textSubstrings = extractFromPost(body, 500)
                 const correctTime = convertTime(date)
                 if (index < 5) {
                     return (
