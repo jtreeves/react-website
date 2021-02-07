@@ -52,6 +52,11 @@ main {
 }
 
 .project {
+    width: 100%;
+    text-align: center;
+}
+
+img.project {
     width:  600px;
     height: 400px;
     object-fit: cover;

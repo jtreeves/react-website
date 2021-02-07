@@ -2,7 +2,7 @@ import SkillSet from '../elements/SkillSet'
 
 function Project(props) {
     return (
-        <div>
+        <div className="project">
             <h3>{props.name}</h3>
 
             <p>{props.description}</p>
