@@ -38,7 +38,7 @@ function GitHub() {
                     let meridiemHour = null
                     if (correctHour > 12) {
                         meridiemHour = correctHour - 12
-                    } else if (correctHour == 0) {
+                    } else if (correctHour === 0) {
                         meridiemHour = 12
                     } else {
                         meridiemHour = correctHour
@@ -51,12 +51,12 @@ function GitHub() {
                     }
                     let checkDay = null
                     let correctMonth = null
-                    if (correctDay == 0) {
+                    if (correctDay === 0) {
                         correctMonth = month -1
-                        if (correctMonth == 1 || 3 || 5 || 7 || 8 || 10 || 0) {
+                        if (correctMonth === 1 || 3 || 5 || 7 || 8 || 10 || 0) {
                             checkDay = 31
-                        } else if (correctMonth == 2) {
-                            if (correctMonth % 4 == 0) {
+                        } else if (correctMonth === 2) {
+                            if (correctMonth % 4 === 0) {
                                 checkDay = 29
                             } else {
                                 checkDay = 28
@@ -70,7 +70,7 @@ function GitHub() {
                     }
                     let checkMonth = null
                     let correctYear = null
-                    if (correctMonth == 0) {
+                    if (correctMonth === 0) {
                         checkMonth = 12
                         correctYear = year - 1
                     } else {
@@ -78,29 +78,29 @@ function GitHub() {
                         correctYear = year
                     }
                     let spelledMonth = ''
-                    if (checkMonth == 1) {
+                    if (checkMonth === 1) {
                         spelledMonth = 'January'
-                    } else if (checkMonth == 2) {
+                    } else if (checkMonth === 2) {
                         spelledMonth = 'February'
-                    } else if (checkMonth == 3) {
+                    } else if (checkMonth === 3) {
                         spelledMonth = 'March'
-                    } else if (checkMonth == 4) {
+                    } else if (checkMonth === 4) {
                         spelledMonth = 'April'
-                    } else if (checkMonth == 5) {
+                    } else if (checkMonth === 5) {
                         spelledMonth = 'May'
-                    } else if (checkMonth == 6) {
+                    } else if (checkMonth === 6) {
                         spelledMonth = 'June'
-                    } else if (checkMonth == 7) {
+                    } else if (checkMonth === 7) {
                         spelledMonth = 'July'
-                    } else if (checkMonth == 8) {
+                    } else if (checkMonth === 8) {
                         spelledMonth = 'August'
-                    } else if (checkMonth == 9) {
+                    } else if (checkMonth === 9) {
                         spelledMonth = 'September'
-                    } else if (checkMonth == 10) {
+                    } else if (checkMonth === 10) {
                         spelledMonth = 'October'
-                    } else if (checkMonth == 11) {
+                    } else if (checkMonth === 11) {
                         spelledMonth = 'November'
-                    } else if (checkMonth == 12) {
+                    } else if (checkMonth === 12) {
                         spelledMonth = 'December'
                     }
                     const fullDate = `${meridiemHour}:${minute}${lettersForHours} on ${spelledMonth} ${checkDay}, ${correctYear}`
