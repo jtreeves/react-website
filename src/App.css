@@ -52,6 +52,22 @@ main {
     grid-column-end: 4;
 }
 
+.posts {
+    display: grid;
+    grid-template-columns: 50% 4% 46%;
+    width: 100%;
+}
+
+.thoughts {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.notes {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
 .project {
     width: 100%;
     text-align: center;

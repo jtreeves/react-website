@@ -6,9 +6,10 @@ import convertTime from '../../utilities/time'
 const appServer = process.env.REACT_APP_SERVER_URL
 
 function Tumblr() {
-    const [posts, setPosts] = useState([])
+    const [thoughts, setThoughts] = useState([])
+    const [notes, setNotes] = useState([])
 
-    async function getPosts() {
+    async function getThoughts() {
         try {
             const result = await axios.get(
                 appServer + '/tumblr/thoughts'
@@ -42,19 +43,66 @@ function Tumblr() {
                     </div>
                 )
             })
-            setPosts(resultArray)
+            setThoughts(resultArray)
+        } catch (error) {
+            alert(error.response.data.msg)
+        }
+    }
+    
+    async function getNotes() {
+        try {
+            const result = await axios.get(
+                appServer + '/tumblr/notes'
+            )
+            const resultArray = result.data.posts.map((post, index) => {
+                const date = post.date
+                const body = post.body
+                const bodyString = body.substring(0, 100) + '...'
+                const correctTime = convertTime(date)
+                return (
+                    <div 
+                        key={index}
+                    >
+                        <Card 
+                            image={false}
+                            title={post.title}
+                            danger={true}
+                            text={bodyString}
+                            source="Jackson Reeves"
+                            cloud={false}
+                            link={post.post_url}
+                            button="View full post"
+                            otherLink={false}
+                            otherButton={false}
+                            time={correctTime}
+                        />
+                    </div>
+                )
+            })
+            setNotes(resultArray)
         } catch (error) {
             alert(error.response.data.msg)
         }
     }
 
     useEffect(() => {
-        getPosts()
+        getThoughts()
+    }, [])
+    
+    useEffect(() => {
+        getNotes()
     }, [])
     
     return (
         <div>
-            {posts}
+            <div className="posts">
+                <div className="thoughts">
+                    {thoughts}
+                </div>
+                <div className="notes">
+                    {notes}
+                </div>
+            </div>
             <a 
                 href="https://programming10101.tumblr.com" 
                 target="_blank" 
