@@ -28,6 +28,7 @@ function GitHub() {
                                 key={index}
                             >
                                 <Card 
+                                    image={false}
                                     title={false}
                                     danger={false}
                                     text={message}

@@ -15,15 +15,22 @@ function Tumblr() {
             )
             const resultArray = result.data.posts.map((post, index) => {
                 const date = post.date
+                const body = post.body
+                const bodyIndex = body.indexOf('</p>') + 4
+                const bodyString = body.substring(bodyIndex)
+                const imgBegin = body.indexOf('img src=') + 9
+                const imgEnd = body.indexOf('alt=') - 2
+                const imgString = body.substring(imgBegin, imgEnd)
                 const correctTime = convertTime(date)
                 return (
                     <div 
                         key={index}
                     >
                         <Card 
+                            image={imgString}
                             title={post.title}
                             danger={true}
-                            text={post.body}
+                            text={bodyString}
                             source="Jackson Reeves"
                             link={post.post_url}
                             button="View full post"

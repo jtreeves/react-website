@@ -3,6 +3,12 @@ function Card(props) {
         <div 
             className="card card-lock card-connect"
         >
+            {props.image !== false && 
+                <img 
+                    className="card-img-top" 
+                    src={props.image}
+                />
+            }
             <div 
                 className="card-body"
             >

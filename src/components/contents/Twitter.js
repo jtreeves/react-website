@@ -25,6 +25,7 @@ function Twitter() {
                         key={index}
                     >
                         <Card 
+                            image={false}
                             title={false}
                             danger={false}
                             text={text}
