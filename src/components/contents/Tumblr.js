@@ -33,7 +33,7 @@ function Tumblr() {
                             text={bodyString}
                             source="Jackson Reeves"
                             link={post.post_url}
-                            button="View full post"
+                            button="View post"
                             time={correctTime}
                         />
                     </div>
