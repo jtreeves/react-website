@@ -106,6 +106,11 @@ h1, h2, h3 {
     margin: 20px 0;
 }
 
+.card-footer-connect {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
 .center {
     width: 20%;
     margin: 0 40%;

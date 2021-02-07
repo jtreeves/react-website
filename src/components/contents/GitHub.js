@@ -14,15 +14,35 @@ function GitHub() {
             )
             const resultArray = result.data.commits.map((commit, index) => {
                 if (commit.payload.commits) {
+                    const fullLink = link + commit.repo.name
                     if (index < 20) {
                         return (
                             <div 
                                 key={index}
-                                className="card card-body card-lock card-connect"
+                                className="card card-lock card-connect"
                             >
-                                COMMIT: {commit.payload.commits[0].message}
-                                DATE: {commit.created_at}
-                                LINK: {link}{commit.repo.name}
+                                <div className="card-body">
+                                    {commit.payload.commits[0].message}
+                                    <div
+                                        className="blockquote-footer"
+                                    >
+                                        {commit.repo.name}
+                                    </div>
+                                </div>
+                                <div className="card-footer">
+                                    <a 
+                                        href={fullLink} 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                    >
+                                        <button className="btn btn-primary float-left">
+                                            View repo
+                                        </button>
+                                    </a>
+                                    <div className="float-right text-muted card-footer-connect">
+                                        {commit.created_at}
+                                    </div>
+                                </div>
                             </div>
                         )
                     } else {
