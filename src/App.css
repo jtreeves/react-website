@@ -38,7 +38,7 @@ main {
 
 .connect {
     display: grid;
-    grid-template-columns: 45% 10% 45%;
+    grid-template-columns: 48% 4% 48%;
     width: 100%;
 }
 
