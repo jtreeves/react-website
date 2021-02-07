@@ -9,7 +9,7 @@ import projects from '../../database/projects'
 function Skill() {
     const location = useLocation()
     const specificSkill = location.state.skill
-    const name = 'Skill'
+    const name = specificSkill
     const description = `Here are some projects I have built using ${specificSkill}.`
 
     const projectList = skills[specificSkill].map((project, index) => {
