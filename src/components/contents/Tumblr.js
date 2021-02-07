@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, createElement } from 'react'
 import axios from 'axios'
 import Card from '../elements/Card'
 import convertTime from '../../utilities/time'
@@ -22,6 +22,7 @@ function Tumblr() {
                     >
                         <Card 
                             title={post.title}
+                            danger={true}
                             text={post.body}
                             source="Jackson Reeves"
                             link={post.post_url}

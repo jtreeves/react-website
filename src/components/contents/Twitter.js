@@ -26,6 +26,7 @@ function Twitter() {
                     >
                         <Card 
                             title={false}
+                            danger={false}
                             text={text}
                             source="@JTReeves"
                             link={fullLink}

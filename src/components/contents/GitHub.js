@@ -29,6 +29,7 @@ function GitHub() {
                             >
                                 <Card 
                                     title={false}
+                                    danger={false}
                                     text={message}
                                     source={source}
                                     link={fullLink}

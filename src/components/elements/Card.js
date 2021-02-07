@@ -13,7 +13,14 @@ function Card(props) {
                         {props.title}
                     </h4>
                 }
-                    {props.text}
+                {props.danger
+                    ? <div 
+                        dangerouslySetInnerHTML={{
+                            __html: props.text
+                        }} 
+                    />
+                    : props.text
+                }
                 <div
                     className="blockquote-footer"
                 >
