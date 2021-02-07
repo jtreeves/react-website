@@ -13,7 +13,7 @@ function Card(props) {
                         {props.title}
                     </h4>
                 }
-                {props.text}
+                    {props.text}
                 <div
                     className="blockquote-footer"
                 >
