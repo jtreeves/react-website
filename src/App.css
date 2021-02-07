@@ -83,15 +83,15 @@ h1, h2, h3 {
 }
 
 .skill:first-child {
-    margin: 5px 5px 5px 0;
+    margin: 10px 5px 0 0;
 }
 
 .skill:last-child {
-    margin: 5px 0 5px 5px;
+    margin: 10px 0 0 5px;
 }
 
 .skill:not(:first-child,:last-child) {
-    margin: 5px;
+    margin: 10px 5px 0 5px;
 }
 
 .card-connect:first-child {
@@ -119,4 +119,8 @@ h1, h2, h3 {
 .social {
     width: 50%;
     margin: 0 25%;
+}
+
+.other-button {
+    margin-left: 10px;
 }

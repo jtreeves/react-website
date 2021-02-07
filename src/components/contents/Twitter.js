@@ -30,8 +30,11 @@ function Twitter() {
                             danger={false}
                             text={text}
                             source="@JTReeves"
+                            cloud={false}
                             link={fullLink}
                             button="View tweet"
+                            otherLink={false}
+                            otherButton={false}
                             time={correctTime}
                         />
                     </div>

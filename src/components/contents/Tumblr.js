@@ -32,8 +32,11 @@ function Tumblr() {
                             danger={true}
                             text={bodyString}
                             source="Jackson Reeves"
+                            cloud={false}
                             link={post.post_url}
                             button="View post"
+                            otherLink={false}
+                            otherButton={false}
                             time={correctTime}
                         />
                     </div>

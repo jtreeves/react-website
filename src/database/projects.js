@@ -9,7 +9,8 @@ const projects = {
         type: 'Library',
         image: '/images/regressions.png',
         deployedLink: 'https://pypi.org/project/regressions/',
-        repositoryLink: 'https://github.com/jtreeves/regressions_library'
+        repositoryLink: 'https://github.com/jtreeves/regressions_library',
+        date: 'January 2021'
     },
     kaleidoscope: {
         name: 'Kaleidoscope',
@@ -23,7 +24,8 @@ const projects = {
         type: 'App',
         image: '/images/kaleidoscope.png',
         deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
-        repositoryLink: 'https://github.com/jtreeves/budget-frontend'
+        repositoryLink: 'https://github.com/jtreeves/budget-frontend',
+        date: 'December 2020'
     },
     tiresias: {
         name: 'Tiresias',
@@ -37,7 +39,8 @@ const projects = {
         type: 'App',
         image: '/images/tiresias.png',
         deployedLink: 'https://tiresias-predictions.herokuapp.com',
-        repositoryLink: 'https://github.com/jtreeves/predictions-frontend'
+        repositoryLink: 'https://github.com/jtreeves/predictions-frontend',
+        date: 'January 2021'
     },
     matchesAndPatches: {
         name: 'Matches and Patches',
@@ -50,7 +53,8 @@ const projects = {
         type: 'App',
         image: '/images/matches-and-patches.png',
         deployedLink: 'https://jtreeves.github.io',
-        repositoryLink: 'https://github.com/jtreeves/matches-and-patches'
+        repositoryLink: 'https://github.com/jtreeves/matches-and-patches',
+        date: 'October 2020'
     },
     readThisNext: {
         name: 'Read This Next',
@@ -63,7 +67,8 @@ const projects = {
         type: 'App',
         image: '/images/read-this-next.png',
         deployedLink: 'https://read-this-next.herokuapp.com',
-        repositoryLink: 'https://github.com/jtreeves/read-this-next'
+        repositoryLink: 'https://github.com/jtreeves/read-this-next',
+        date: 'November 2020'
     }
 }
 

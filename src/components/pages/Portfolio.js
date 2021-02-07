@@ -1,5 +1,6 @@
 import Introduction from '../sections/Introduction'
 import Project from '../sections/Project'
+import Card from '../elements/Card'
 
 import projects from '../../database/projects'
 
@@ -14,54 +15,74 @@ function Portfolio() {
                 description={description}
             />
 
-            <Project
-                name={projects.regressions.name}
-                description={projects.regressions.description}
-                skills={projects.regressions.skills}
-                type={projects.regressions.type}
+            <Card
                 image={projects.regressions.image}
-                deployedLink={projects.regressions.deployedLink}
-                repositoryLink={projects.regressions.repositoryLink}
+                title={projects.regressions.name}
+                danger={false}
+                text={projects.regressions.description}
+                source={false}
+                cloud={projects.regressions.skills}
+                link={projects.regressions.deployedLink}
+                button={projects.regressions.type}
+                otherLink={projects.regressions.repositoryLink}
+                otherButton="Repo"
+                time={projects.regressions.date}
             />
             
-            <Project
-                name={projects.kaleidoscope.name}
-                description={projects.kaleidoscope.description}
-                skills={projects.kaleidoscope.skills}
-                type={projects.kaleidoscope.type}
+            <Card
                 image={projects.kaleidoscope.image}
-                deployedLink={projects.kaleidoscope.deployedLink}
-                repositoryLink={projects.kaleidoscope.repositoryLink}
+                title={projects.kaleidoscope.name}
+                danger={false}
+                text={projects.kaleidoscope.description}
+                source={false}
+                cloud={projects.kaleidoscope.skills}
+                link={projects.kaleidoscope.deployedLink}
+                button={projects.kaleidoscope.type}
+                otherLink={projects.kaleidoscope.repositoryLink}
+                otherButton="Repo"
+                time={projects.kaleidoscope.date}
             />
 
-            <Project
-                name={projects.tiresias.name}
-                description={projects.tiresias.description}
-                skills={projects.tiresias.skills}
-                type={projects.tiresias.type}
+            <Card
                 image={projects.tiresias.image}
-                deployedLink={projects.tiresias.deployedLink}
-                repositoryLink={projects.tiresias.repositoryLink}
+                title={projects.tiresias.name}
+                danger={false}
+                text={projects.tiresias.description}
+                source={false}
+                cloud={projects.tiresias.skills}
+                link={projects.tiresias.deployedLink}
+                button={projects.tiresias.type}
+                otherLink={projects.tiresias.repositoryLink}
+                otherButton="Repo"
+                time={projects.tiresias.date}
             />
 
-            <Project
-                name={projects.matchesAndPatches.name}
-                description={projects.matchesAndPatches.description}
-                skills={projects.matchesAndPatches.skills}
-                type={projects.matchesAndPatches.type}
+            <Card
                 image={projects.matchesAndPatches.image}
-                deployedLink={projects.matchesAndPatches.deployedLink}
-                repositoryLink={projects.matchesAndPatches.repositoryLink}
+                title={projects.matchesAndPatches.name}
+                danger={false}
+                text={projects.matchesAndPatches.description}
+                source={false}
+                cloud={projects.matchesAndPatches.skills}
+                link={projects.matchesAndPatches.deployedLink}
+                button={projects.matchesAndPatches.type}
+                otherLink={projects.matchesAndPatches.repositoryLink}
+                otherButton="Repo"
+                time={projects.matchesAndPatches.date}
             />
 
-            <Project
-                name={projects.readThisNext.name}
-                description={projects.readThisNext.description}
-                skills={projects.readThisNext.skills}
-                type={projects.readThisNext.type}
+            <Card
                 image={projects.readThisNext.image}
-                deployedLink={projects.readThisNext.deployedLink}
-                repositoryLink={projects.readThisNext.repositoryLink}
+                title={projects.readThisNext.name}
+                danger={false}
+                text={projects.readThisNext.description}
+                source={false}
+                cloud={projects.readThisNext.skills}
+                link={projects.readThisNext.deployedLink}
+                button={projects.readThisNext.type}
+                otherLink={projects.readThisNext.repositoryLink}
+                otherButton="Repo"
+                time={projects.readThisNext.date}
             />
         </div>
     )

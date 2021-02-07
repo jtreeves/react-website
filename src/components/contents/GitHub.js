@@ -33,8 +33,11 @@ function GitHub() {
                                     danger={false}
                                     text={message}
                                     source={source}
+                                    cloud={false}
                                     link={fullLink}
                                     button="View repo"
+                                    otherLink={false}
+                                    otherButton={false}
                                     time={correctTime}
                                 />
                             </div>

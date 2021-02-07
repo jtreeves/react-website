@@ -1,3 +1,5 @@
+import SkillSet from "./SkillSet"
+
 function Card(props) {
     return (
         <div 
@@ -10,6 +12,7 @@ function Card(props) {
                     alt={props.title}
                 />
             }
+
             <div 
                 className="card-body"
             >
@@ -28,12 +31,20 @@ function Card(props) {
                     />
                     : props.text
                 }
-                <div
-                    className="blockquote-footer"
-                >
-                    {props.source}
-                </div>
+                {props.source !==false &&
+                    <div
+                        className="blockquote-footer"
+                    >
+                        {props.source}
+                    </div>
+                }
+                {props.cloud !==false &&
+                    <SkillSet 
+                        skills={props.cloud}
+                    />
+                }
             </div>
+
             <div 
                 className="card-footer"
             >
@@ -48,6 +59,19 @@ function Card(props) {
                         {props.button}
                     </button>
                 </a>
+                {props.otherButton !== false &&
+                    <a 
+                        href={props.otherLink} 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <button 
+                            className="btn btn-primary float-left other-button"
+                        >
+                            {props.otherButton}
+                        </button>
+                    </a>
+                }
                 <div 
                     className="float-right text-muted card-footer-connect"
                 >
