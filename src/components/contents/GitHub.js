@@ -14,13 +14,17 @@ function GitHub() {
             )
             const resultArray = result.data.commits.map((commit, index) => {
                 if (commit.payload.commits) {
-                    return (
-                        <div key={index}>
-                            COMMIT: {commit.payload.commits[0].message}
-                            DATE: {commit.created_at}
-                            LINK: {link}{commit.repo.name}
-                        </div>
-                    )
+                    if (index < 20) {
+                        return (
+                            <div key={index}>
+                                COMMIT: {commit.payload.commits[0].message}
+                                DATE: {commit.created_at}
+                                LINK: {link}{commit.repo.name}
+                            </div>
+                        )
+                    } else {
+                        return null
+                    }
                 } else {
                     return null
                 }
