@@ -14,7 +14,10 @@ function Twitter() {
             )
             const resultArray = result.data.tweets.map((tweet, index) => {
                 return (
-                    <div key={index}>
+                    <div 
+                        key={index}
+                        className="card card-body card-lock"
+                    >
                         TWEET: {tweet.text}
                         DATE: {tweet.created_at}
                         LINK: {link}{tweet.id}

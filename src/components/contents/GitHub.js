@@ -16,7 +16,10 @@ function GitHub() {
                 if (commit.payload.commits) {
                     if (index < 20) {
                         return (
-                            <div key={index}>
+                            <div 
+                                key={index}
+                                className="card card-body card-lock"
+                            >
                                 COMMIT: {commit.payload.commits[0].message}
                                 DATE: {commit.created_at}
                                 LINK: {link}{commit.repo.name}
