@@ -38,7 +38,8 @@ main {
 
 .connect {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45% 10% 45%;
+    width: 100%;
 }
 
 .twitter {
@@ -47,8 +48,8 @@ main {
 }
 
 .github {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 .project {
