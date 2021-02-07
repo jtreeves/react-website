@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+
 import Card from '../elements/Card'
+
+import extractPostPortions from '../../utilities/post'
 import convertTime from '../../utilities/time'
 
 const appServer = process.env.REACT_APP_SERVER_URL
@@ -15,27 +18,23 @@ function Tumblr() {
                 appServer + '/tumblr/thoughts'
             )
             const resultArray = result.data.posts.map((post, index) => {
-                const date = post.date
                 const body = post.body
-                const bodyIndex = body.indexOf('</p>') + 4
-                const bodyString = body.substring(bodyIndex)
-                const imgBegin = body.indexOf('img src=') + 9
-                const imgEnd = body.indexOf('alt=') - 2
-                const imgString = body.substring(imgBegin, imgEnd)
+                const date = post.date
+                const textSubstrings = extractPostPortions(body)
                 const correctTime = convertTime(date)
                 return (
                     <div 
                         key={index}
                     >
                         <Card 
-                            image={imgString}
+                            image={textSubstrings.image}
                             title={post.title}
                             danger={true}
-                            text={bodyString}
-                            source="Jackson Reeves"
+                            text={textSubstrings.body}
+                            source={false}
                             cloud={false}
                             link={post.post_url}
-                            button="View post"
+                            button="View full post"
                             otherLink={false}
                             otherButton={false}
                             time={correctTime}
@@ -55,9 +54,9 @@ function Tumblr() {
                 appServer + '/tumblr/notes'
             )
             const resultArray = result.data.posts.map((post, index) => {
-                const date = post.date
                 const body = post.body
-                const bodyString = body.substring(0, 100) + '...'
+                const date = post.date
+                const textSubstrings = extractPostPortions(body)
                 const correctTime = convertTime(date)
                 return (
                     <div 
@@ -67,8 +66,8 @@ function Tumblr() {
                             image={false}
                             title={post.title}
                             danger={true}
-                            text={bodyString}
-                            source="Jackson Reeves"
+                            text={textSubstrings.body}
+                            source={false}
                             cloud={false}
                             link={post.post_url}
                             button="View full post"
@@ -97,9 +96,11 @@ function Tumblr() {
         <div>
             <div className="posts">
                 <div className="thoughts">
+                    <h3>Thoughts</h3>
                     {thoughts}
                 </div>
                 <div className="notes">
+                    <h3>Notes</h3>
                     {notes}
                 </div>
             </div>
