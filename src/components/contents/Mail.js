@@ -46,7 +46,10 @@ function Mail() {
     }
     
     return (
-        <form onSubmit={hanldeSubmit}>
+        <form 
+            onSubmit={hanldeSubmit}
+            className="card card-body card-lock"
+        >
             <FormItem
                 type="text"
                 label="name"
@@ -71,16 +74,24 @@ function Mail() {
                 onChange={handleSubject}
             />
             
-            <label htmlFor="message">Message</label>
-            <textarea
-                name="message" 
-                cols="30" 
-                rows="10" 
-                value={message}
-                onChange={handleMessage}
-            />
+            <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                    name="message" 
+                    cols="30" 
+                    rows="10" 
+                    value={message}
+                    onChange={handleMessage}
+                    className="form-control"
+                />
+            </div>
 
-            <button type="submit">Submit</button>
+            <button 
+                type="submit"
+                className="btn btn-primary float-right"
+            >
+                Submit
+            </button>
         </form>
     )
 }
