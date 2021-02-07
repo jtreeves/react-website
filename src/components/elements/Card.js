@@ -6,6 +6,13 @@ function Card(props) {
             <div 
                 className="card-body"
             >
+                {props.title !== false &&
+                    <h4
+                        className="card-title"
+                    >
+                        {props.title}
+                    </h4>
+                }
                 {props.text}
                 <div
                     className="blockquote-footer"

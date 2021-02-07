@@ -25,6 +25,7 @@ function Twitter() {
                         key={index}
                     >
                         <Card 
+                            title={false}
                             text={text}
                             source="@JTReeves"
                             link={fullLink}
