@@ -1,5 +1,4 @@
 import Introduction from '../sections/Introduction'
-import Project from '../sections/Project'
 import Card from '../elements/Card'
 
 import projects from '../../database/projects'

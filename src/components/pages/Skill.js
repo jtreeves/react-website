@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom'
 
 import Introduction from '../sections/Introduction'
-import Project from '../sections/Project'
+import Card from '../elements/Card'
 
 import skills from '../../database/skills'
 import projects from '../../database/projects'
@@ -15,14 +15,18 @@ function Skill() {
     const projectList = skills[specificSkill].map((project, index) => {
         return (
             <div key={index}>
-                <Project
-                    name={projects[project].name}
-                    description={projects[project].description}
-                    skills={projects[project].skills}
-                    type={projects[project].type}
+                <Card
                     image={projects[project].image}
-                    deployedLink={projects[project].deployedLink}
-                    repositoryLink={projects[project].repositoryLink}
+                    title={projects[project].name}
+                    danger={false}
+                    text={projects[project].description}
+                    source={false}
+                    cloud={projects[project].skills}
+                    link={projects[project].deployedLink}
+                    button={projects[project].type}
+                    otherLink={projects[project].repositoryLink}
+                    otherButton="Repo"
+                    time={projects[project].date}
                 />
             </div>
         )
