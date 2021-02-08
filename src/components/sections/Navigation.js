@@ -8,7 +8,7 @@ function Navigation() {
                     exact to="/about" 
                     style={{ 
                         textDecoration: "none", 
-                        color: "white" 
+                        color: "black" 
                     }}
                 >
                     About
@@ -20,7 +20,7 @@ function Navigation() {
                     exact to="/contact" 
                     style={{ 
                         textDecoration: "none", 
-                        color: "white" 
+                        color: "black" 
                     }}
                 >
                     Contact
@@ -32,7 +32,7 @@ function Navigation() {
                     exact to="/connect" 
                     style={{ 
                         textDecoration: "none", 
-                        color: "white" 
+                        color: "black" 
                     }}
                 >
                     Connect
@@ -44,7 +44,7 @@ function Navigation() {
                     exact to="/blog" 
                     style={{ 
                         textDecoration: "none", 
-                        color: "white" 
+                        color: "black" 
                     }}
                 >
                     Blog
@@ -56,7 +56,7 @@ function Navigation() {
                     exact to="/portfolio" 
                     style={{ 
                         textDecoration: "none", 
-                        color: "white" 
+                        color: "black" 
                     }}
                 >
                     Portfolio
@@ -68,7 +68,7 @@ function Navigation() {
                     exact to="/resume" 
                     style={{ 
                         textDecoration: "none", 
-                        color: "white" 
+                        color: "black" 
                     }}
                 >
                     Resume

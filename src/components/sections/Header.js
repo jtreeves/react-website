@@ -8,7 +8,7 @@ function Header() {
                 to="/" 
                 style={{ 
                     textDecoration: "none", 
-                    color: "white" 
+                    color: "black" 
                 }}
             >
                 <h1>Jackson Reeves</h1> 
