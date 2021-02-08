@@ -54,6 +54,7 @@ function Mail() {
                 type="text"
                 label="name"
                 value={name}
+                placeholder="Your Name"
                 display="Name"
                 onChange={handleName}
             />
@@ -62,6 +63,7 @@ function Mail() {
                 type="email"
                 label="email"
                 value={email}
+                placeholder="your@email.com"
                 display="Email"
                 onChange={handleEmail}
             />
@@ -70,6 +72,7 @@ function Mail() {
                 type="text"
                 label="subject"
                 value={subject}
+                placeholder="Your specific subject"
                 display="Subject"
                 onChange={handleSubject}
             />
@@ -81,6 +84,7 @@ function Mail() {
                     cols="30" 
                     rows="10" 
                     value={message}
+                    placeholder="Your general message can be as long as you would like."
                     onChange={handleMessage}
                     className="form-control"
                 />
@@ -88,7 +92,7 @@ function Mail() {
 
             <button 
                 type="submit"
-                className="btn btn-primary float-right"
+                className="btn btn-primary center"
             >
                 Submit
             </button>

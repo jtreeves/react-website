@@ -6,6 +6,7 @@ function FormItem(props) {
                 type={props.type}
                 name={props.label}
                 value={props.value}
+                placeholder={props.placeholder}
                 onChange={props.onChange}
                 className="form-control"
             />
