@@ -23,8 +23,8 @@ footer {
     text-align: center;
     width: 100%;
     height: 100px;
-    line-height: 100px;
-    background: black;
+    /* line-height: 100px; */
+    background: gray;
     color: white;
     font-style: italic;
 }
@@ -72,6 +72,10 @@ img.project {
 .navigation li {
     display: inline;
     padding: 10px;
+}
+
+.navigation li img {
+    width: 50px;
 }
 
 h1, h2, h3 {
