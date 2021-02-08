@@ -31,6 +31,21 @@ footer {
     font-style: italic;
 }
 
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    padding: 10px;
+}
+
+footer img {
+    width: 50px;
+}
+
 main {
     background: white;
     padding: 25px 50px 50px 50px;
@@ -74,10 +89,6 @@ img.project {
 .navigation li {
     display: inline;
     padding: 10px;
-}
-
-.navigation li img {
-    width: 50px;
 }
 
 h1, h2, h3 {

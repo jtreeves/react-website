@@ -4,8 +4,8 @@ function Footer() {
             <p>
                 © 2021 Jackson Reeves
             </p>
-            
-            <ul className="navigation">
+
+            <ul>
                 <li>
                     <a 
                         href="https://github.com/jtreeves" 
