@@ -4,33 +4,58 @@ function Footer() {
             <p>
                 © 2021 Jackson Reeves
             </p>
+            
             <ul className="navigation">
                 <li>
-                    <img 
-                        src="/images/social/github.png" 
-                        alt="GitHub"
-                    />
+                    <a 
+                        href="https://github.com/jtreeves" 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <img 
+                            src="/images/social/github.png" 
+                            alt="GitHub"
+                        />
+                    </a>
                 </li>
                 
                 <li>
-                    <img 
-                        src="/images/social/linkedin.png" 
-                        alt="LinkedIn"
-                    />
+                    <a 
+                        href="https://www.linkedin.com/in/jacksonreeves/" 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <img 
+                            src="/images/social/linkedin.png" 
+                            alt="LinkedIn"
+                        />
+                    </a>
                 </li>
                 
                 <li>
-                    <img 
-                        src="/images/social/twitter.png" 
-                        alt="Twitter"
-                    />
+                    <a 
+                        href="https://twitter.com/JTReeves" 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <img 
+                            src="/images/social/twitter.png" 
+                            alt="Twitter"
+                        />
+                    </a>
                 </li>
                 
                 <li>
-                    <img 
-                        src="/images/social/tumblr.png" 
-                        alt="Tumblr"
-                    />
+                    <a 
+                        href="https://programming10101.tumblr.com" 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <img 
+                            src="/images/social/tumblr.png" 
+                            alt="Tumblr"
+                        />
+                    </a>
                 </li>
             </ul>
         </footer>
