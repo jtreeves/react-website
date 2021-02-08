@@ -128,3 +128,9 @@ h1, h2, h3 {
 .top-margin {
     margin-top: 20px;
 }
+
+.headshot {
+    width: 50%;
+    float: left;
+    margin: 0 20px 20px 0;
+}
