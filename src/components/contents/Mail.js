@@ -86,7 +86,7 @@ function Mail() {
                         Message
                     </strong>
                 </label>
-                
+
                 <div className="col-sm-10 card-lock">
                     <textarea
                         name="message" 
@@ -104,7 +104,7 @@ function Mail() {
                 type="submit"
                 className="btn btn-primary center"
             >
-                Submit
+                Send
             </button>
         </form>
     )
