@@ -107,165 +107,171 @@ function Resume() {
                 I am a programmer with experience in JavaScript, Python, Ruby, and SQL.
             </p>
 
-            <h3>Skills</h3>
+            <div className="contains-columns">
+                <div className="left-column">
+                    <h3>Experience</h3>
+        
+                    <Card 
+                        image={hyperionDirector.image}
+                        title={hyperionDirector.position}
+                        subtitle={hyperionDirector.company}
+                        lead={false}
+                        danger={false}
+                        list={true}
+                        text={hyperionDirector.items}
+                        source={false}
+                        cloud={false}
+                        link={hyperionDirector.link}
+                        button="Company"
+                        otherLink={false}
+                        otherButton={false}
+                        time={hyperionDirector.date}
+                    />
+                    
+                    <Card 
+                        image={tutorSenior.image}
+                        title={tutorSenior.position}
+                        subtitle={tutorSenior.company}
+                        lead={false}
+                        danger={false}
+                        list={true}
+                        text={tutorSenior.items}
+                        source={false}
+                        cloud={false}
+                        link={tutorSenior.link}
+                        button="Company"
+                        otherLink={false}
+                        otherButton={false}
+                        time={tutorSenior.date}
+                    />
+                    
+                    <Card 
+                        image={magazineDigital.image}
+                        title={magazineDigital.position}
+                        subtitle={magazineDigital.company}
+                        lead={false}
+                        danger={false}
+                        list={true}
+                        text={magazineDigital.items}
+                        source={false}
+                        cloud={false}
+                        link={magazineDigital.link}
+                        button="Company"
+                        otherLink={false}
+                        otherButton={false}
+                        time={magazineDigital.date}
+                    />
+                    
+                    <Card 
+                        image={magazineEditor.image}
+                        title={magazineEditor.position}
+                        subtitle={magazineEditor.company}
+                        lead={false}
+                        danger={false}
+                        list={true}
+                        text={magazineEditor.items}
+                        source={false}
+                        cloud={false}
+                        link={magazineEditor.link}
+                        button="Company"
+                        otherLink={false}
+                        otherButton={false}
+                        time={magazineEditor.date}
+                    />
+                </div>
 
-            <div>
-                <strong>Languages</strong>
-                <SkillSet
-                    skills={types.languages}
-                />
+                <div className="right-column">
+                    <h3>Skills</h3>
+
+                    <div>
+                        <strong>Languages</strong>
+                        <SkillSet
+                            skills={types.languages}
+                        />
+                    </div>
+                    
+                    <div>
+                        <strong>Frameworks</strong>
+                        <SkillSet
+                            skills={types.frameworks}
+                        />
+                    </div>
+                    
+                    <div>
+                        <strong>Management</strong>
+                        <SkillSet
+                            skills={types.management}
+                        />
+                    </div>
+
+                    <div>
+                        <strong>Databases</strong>
+                        <SkillSet
+                            skills={types.databases}
+                        />
+                    </div>
+
+                    <div>
+                        <strong>Methodologies</strong>
+                        <SkillSet
+                            skills={types.methodologies}
+                        />
+                    </div>
+
+                    <h3>Education</h3>
+                    
+                    <Card 
+                        image={certificate.image}
+                        title={certificate.degree}
+                        subtitle={certificate.school}
+                        lead={certificate.specialization}
+                        danger={false}
+                        list={true}
+                        text={certificate.courses}
+                        source={false}
+                        cloud={false}
+                        link={certificate.link}
+                        button="Company"
+                        otherLink={false}
+                        otherButton={false}
+                        time={certificate.date}
+                    />
+
+                    <Card 
+                        image={bachelor.image}
+                        title={bachelor.degree}
+                        subtitle={bachelor.school}
+                        lead={bachelor.specialization}
+                        danger={false}
+                        list={true}
+                        text={bachelor.courses}
+                        source={false}
+                        cloud={false}
+                        link={bachelor.link}
+                        button="Company"
+                        otherLink={false}
+                        otherButton={false}
+                        time={bachelor.date}
+                    />
+                    
+                    <Card 
+                        image={program.image}
+                        title={program.degree}
+                        subtitle={program.school}
+                        lead={program.specialization}
+                        danger={false}
+                        list={true}
+                        text={program.courses}
+                        source={false}
+                        cloud={false}
+                        link={program.link}
+                        button="Company"
+                        otherLink={false}
+                        otherButton={false}
+                        time={program.date}
+                    />
+                </div>
             </div>
-            
-            <div>
-                <strong>Frameworks</strong>
-                <SkillSet
-                    skills={types.frameworks}
-                />
-            </div>
-            
-            <div>
-                <strong>Management</strong>
-                <SkillSet
-                    skills={types.management}
-                />
-            </div>
-
-            <div>
-                <strong>Databases</strong>
-                <SkillSet
-                    skills={types.databases}
-                />
-            </div>
-
-            <div>
-                <strong>Methodologies</strong>
-                <SkillSet
-                    skills={types.methodologies}
-                />
-            </div>
-
-            <h3>Experience</h3>
-
-            <Card 
-                image={hyperionDirector.image}
-                title={hyperionDirector.position}
-                subtitle={hyperionDirector.company}
-                lead={false}
-                danger={false}
-                list={true}
-                text={hyperionDirector.items}
-                source={false}
-                cloud={false}
-                link={hyperionDirector.link}
-                button="Company"
-                otherLink={false}
-                otherButton={false}
-                time={hyperionDirector.date}
-            />
-            
-            <Card 
-                image={tutorSenior.image}
-                title={tutorSenior.position}
-                subtitle={tutorSenior.company}
-                lead={false}
-                danger={false}
-                list={true}
-                text={tutorSenior.items}
-                source={false}
-                cloud={false}
-                link={tutorSenior.link}
-                button="Company"
-                otherLink={false}
-                otherButton={false}
-                time={tutorSenior.date}
-            />
-            
-            <Card 
-                image={magazineDigital.image}
-                title={magazineDigital.position}
-                subtitle={magazineDigital.company}
-                lead={false}
-                danger={false}
-                list={true}
-                text={magazineDigital.items}
-                source={false}
-                cloud={false}
-                link={magazineDigital.link}
-                button="Company"
-                otherLink={false}
-                otherButton={false}
-                time={magazineDigital.date}
-            />
-            
-            <Card 
-                image={magazineEditor.image}
-                title={magazineEditor.position}
-                subtitle={magazineEditor.company}
-                lead={false}
-                danger={false}
-                list={true}
-                text={magazineEditor.items}
-                source={false}
-                cloud={false}
-                link={magazineEditor.link}
-                button="Company"
-                otherLink={false}
-                otherButton={false}
-                time={magazineEditor.date}
-            />
-            
-            <h3>Education</h3>
-            
-            <Card 
-                image={certificate.image}
-                title={certificate.degree}
-                subtitle={certificate.school}
-                lead={certificate.specialization}
-                danger={false}
-                list={true}
-                text={certificate.courses}
-                source={false}
-                cloud={false}
-                link={certificate.link}
-                button="Company"
-                otherLink={false}
-                otherButton={false}
-                time={certificate.date}
-            />
-
-            <Card 
-                image={bachelor.image}
-                title={bachelor.degree}
-                subtitle={bachelor.school}
-                lead={bachelor.specialization}
-                danger={false}
-                list={true}
-                text={bachelor.courses}
-                source={false}
-                cloud={false}
-                link={bachelor.link}
-                button="Company"
-                otherLink={false}
-                otherButton={false}
-                time={bachelor.date}
-            />
-            
-            <Card 
-                image={program.image}
-                title={program.degree}
-                subtitle={program.school}
-                lead={program.specialization}
-                danger={false}
-                list={true}
-                text={program.courses}
-                source={false}
-                cloud={false}
-                link={program.link}
-                button="Company"
-                otherLink={false}
-                otherButton={false}
-                time={program.date}
-            />
 
             <a 
                 href="/resume.pdf" 
@@ -273,7 +279,7 @@ function Resume() {
                 rel="noreferrer"
             >
                 <button
-                    className="btn btn-primary center"
+                    className="btn btn-primary center top-margin"
                 >
                     View as PDF
                 </button>
