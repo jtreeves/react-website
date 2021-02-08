@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom'
 
 import Card from '../elements/Card'
+import SkillSet from '../elements/SkillSet'
 
 import skills from '../../database/skills'
 import projects from '../../database/projects'
@@ -8,6 +9,7 @@ import projects from '../../database/projects'
 function Skill() {
     const location = useLocation()
     const specificSkill = location.state.skill
+    const skillsArray = Object.keys(skills)
 
     const projectList = skills[specificSkill].map((project, index) => {
         return (
@@ -37,10 +39,39 @@ function Skill() {
             <h2>{specificSkill}</h2>
 
             <p>
-                Here are some projects I have built using {specificSkill}.
+                Check out these projects I built using {specificSkill}.
             </p>
 
-            {projectList}
+            <div className="contains-columns">
+                <div className="left-column">
+                    {projectList}
+                </div>
+
+                <div className="right-column">
+                    <div className="card card-connect card-lock">
+                        <strong className="card-header">
+                            My Other Skills
+                        </strong>
+                        <div className="card-body">
+                            <SkillSet
+                                skills={skillsArray}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a 
+                href="https://github.com/jtreeves" 
+                target="_blank" 
+                rel="noreferrer"
+            >
+                <button
+                    className="btn btn-primary center top-margin"
+                >
+                    View more projects
+                </button>
+            </a>
         </div>
     )
 }
