@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
 body {
     background: url("./painting.jpg");
     background-size: cover;
@@ -79,6 +81,7 @@ img.project {
 }
 
 h1, h2, h3 {
+    font-family: 'Galada', cursive;
     text-align: center;
 }
 
