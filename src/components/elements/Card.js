@@ -31,6 +31,13 @@ function Card(props) {
                         {props.subtitle}
                     </h5>
                 }
+                {props.lead !== false &&
+                    <h6
+                        className="lead"
+                    >
+                        {props.lead}
+                    </h6>
+                }
                 {props.danger !== false &&
                     <div 
                         dangerouslySetInnerHTML={{

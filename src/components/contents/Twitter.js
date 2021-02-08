@@ -28,6 +28,7 @@ function Twitter() {
                             image={false}
                             title={false}
                             subtitle={false}
+                            lead={false}
                             danger={false}
                             list={false}
                             text={text}

@@ -13,6 +13,7 @@ function Portfolio() {
                         image={projects.regressions.image}
                         title={projects.regressions.name}
                         subtitle={false}
+                        lead={false}
                         danger={false}
                         list={false}
                         text={projects.regressions.description}
@@ -29,6 +30,7 @@ function Portfolio() {
                         image={projects.tiresias.image}
                         title={projects.tiresias.name}
                         subtitle={false}
+                        lead={false}
                         danger={false}
                         list={false}
                         text={projects.tiresias.description}
@@ -47,6 +49,7 @@ function Portfolio() {
                         image={projects.kaleidoscope.image}
                         title={projects.kaleidoscope.name}
                         subtitle={false}
+                        lead={false}
                         danger={false}
                         list={false}
                         text={projects.kaleidoscope.description}
@@ -63,6 +66,7 @@ function Portfolio() {
                         image={projects.readThisNext.image}
                         title={projects.readThisNext.name}
                         subtitle={false}
+                        lead={false}
                         danger={false}
                         list={false}
                         text={projects.readThisNext.description}

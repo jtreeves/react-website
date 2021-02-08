@@ -31,6 +31,7 @@ function Tumblr() {
                                 image={textSubstrings.image}
                                 title={post.title}
                                 subtitle={false}
+                                lead={false}
                                 danger={true}
                                 list={false}
                                 text={textSubstrings.body}
@@ -73,6 +74,7 @@ function Tumblr() {
                                 image={textSubstrings.image}
                                 title={post.title}
                                 subtitle={false}
+                                lead={false}
                                 danger={true}
                                 list={false}
                                 text={textSubstrings.body}

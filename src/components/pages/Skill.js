@@ -16,6 +16,7 @@ function Skill() {
                     image={projects[project].image}
                     title={projects[project].name}
                     subtitle={false}
+                    lead={false}
                     danger={false}
                     list={false}
                     text={projects[project].description}

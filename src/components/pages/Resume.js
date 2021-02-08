@@ -1,6 +1,5 @@
 import SkillSet from '../elements/SkillSet'
 import Card from '../elements/Card'
-import Education from '../sections/Education'
 
 import types from '../../database/types'
 
@@ -65,6 +64,8 @@ function Resume() {
         school: 'General Assembly',
         degree: 'Software Engineering Certificate',
         specialization: 'Full-Stack Development',
+        link: 'https://generalassemb.ly',
+        image: '/images/companies/general-assembly.png',
         date: 'January 2021',
         courses: [
             'JavaScript',
@@ -76,6 +77,8 @@ function Resume() {
         school: 'Vassar College',
         degree: 'Bachelor of Arts',
         specialization: 'Media Studies',
+        link: 'https://www.vassar.edu',
+        image: '/images/companies/vassar.png',
         date: 'May 2009',
         courses: [
             'Media Theory',
@@ -87,6 +90,8 @@ function Resume() {
         school: 'New York University',
         degree: 'Business Program',
         specialization: 'Marketing and Journalism',
+        link: 'http://www.nyu.edu',
+        image: '/images/companies/nyu.png',
         date: 'August 2007',
         courses: [
             'Marketing',
@@ -145,6 +150,7 @@ function Resume() {
                 image={hyperionDirector.image}
                 title={hyperionDirector.position}
                 subtitle={hyperionDirector.company}
+                lead={false}
                 danger={false}
                 list={true}
                 text={hyperionDirector.items}
@@ -161,6 +167,7 @@ function Resume() {
                 image={tutorSenior.image}
                 title={tutorSenior.position}
                 subtitle={tutorSenior.company}
+                lead={false}
                 danger={false}
                 list={true}
                 text={tutorSenior.items}
@@ -177,6 +184,7 @@ function Resume() {
                 image={magazineDigital.image}
                 title={magazineDigital.position}
                 subtitle={magazineDigital.company}
+                lead={false}
                 danger={false}
                 list={true}
                 text={magazineDigital.items}
@@ -193,6 +201,7 @@ function Resume() {
                 image={magazineEditor.image}
                 title={magazineEditor.position}
                 subtitle={magazineEditor.company}
+                lead={false}
                 danger={false}
                 list={true}
                 text={magazineEditor.items}
@@ -204,31 +213,58 @@ function Resume() {
                 otherButton={false}
                 time={magazineEditor.date}
             />
-
+            
             <h3>Education</h3>
+            
+            <Card 
+                image={certificate.image}
+                title={certificate.degree}
+                subtitle={certificate.school}
+                lead={certificate.specialization}
+                danger={false}
+                list={true}
+                text={certificate.courses}
+                source={false}
+                cloud={false}
+                link={certificate.link}
+                button="Company"
+                otherLink={false}
+                otherButton={false}
+                time={certificate.date}
+            />
 
-            <Education 
-                school={certificate.school}
-                degree={certificate.degree}
-                specialization={certificate.specialization}
-                date={certificate.date}
-                courses={certificate.courses}
+            <Card 
+                image={bachelor.image}
+                title={bachelor.degree}
+                subtitle={bachelor.school}
+                lead={bachelor.specialization}
+                danger={false}
+                list={true}
+                text={bachelor.courses}
+                source={false}
+                cloud={false}
+                link={bachelor.link}
+                button="Company"
+                otherLink={false}
+                otherButton={false}
+                time={bachelor.date}
             />
             
-            <Education 
-                school={bachelor.school}
-                degree={bachelor.degree}
-                specialization={bachelor.specialization}
-                date={bachelor.date}
-                courses={bachelor.courses}
-            />
-            
-            <Education 
-                school={program.school}
-                degree={program.degree}
-                specialization={program.specialization}
-                date={program.date}
-                courses={program.courses}
+            <Card 
+                image={program.image}
+                title={program.degree}
+                subtitle={program.school}
+                lead={program.specialization}
+                danger={false}
+                list={true}
+                text={program.courses}
+                source={false}
+                cloud={false}
+                link={program.link}
+                button="Company"
+                otherLink={false}
+                otherButton={false}
+                time={program.date}
             />
 
             <a 
