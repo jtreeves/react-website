@@ -37,7 +37,7 @@ function Resume() {
         company: 'Atlanta Magazine',
         position: 'Digital Media Producer',
         link: 'https://www.atlantamagazine.com',
-        image: '/images/companies/atlanta-magazine.png',
+        image: '/images/companies/atlanta-magazine2.png',
         date: 'April 2011–September 2013',
         items: [
             'Doubled the the magazine’s Facebook followers and tripled its Twitter followers',
@@ -53,7 +53,7 @@ function Resume() {
         company: 'Atlanta Magazine',
         position: 'Assistant Editor',
         link: 'https://www.atlantamagazine.com',
-        image: '/images/companies/atlanta-magazine.png',
+        image: '/images/companies/atlanta-magazine1.png',
         date: 'April 2010–March 2011',
         items: [
             'Managed sections of the magazine, which involved writing and editing articles',
