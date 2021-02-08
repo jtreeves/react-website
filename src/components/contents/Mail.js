@@ -49,7 +49,7 @@ function Mail() {
         <form 
             onSubmit={hanldeSubmit}
             className="card card-body card-lock"
-        >
+        >   
             <FormItem
                 type="text"
                 label="name"
@@ -77,17 +77,27 @@ function Mail() {
                 onChange={handleSubject}
             />
             
-            <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                    name="message" 
-                    cols="30" 
-                    rows="10" 
-                    value={message}
-                    placeholder="Your general message can be as long as you would like."
-                    onChange={handleMessage}
-                    className="form-control"
-                />
+            <div className="form-group row card-lock">
+                <label 
+                    htmlFor="message"
+                    className="col-sm-2 col-form-label card-lock"
+                >
+                    <strong>
+                        Message
+                    </strong>
+                </label>
+                
+                <div className="col-sm-10 card-lock">
+                    <textarea
+                        name="message" 
+                        cols="30" 
+                        rows="10" 
+                        value={message}
+                        placeholder="Your general message can be as long as you would like."
+                        onChange={handleMessage}
+                        className="form-control card-lock"
+                    />
+                </div>
             </div>
 
             <button 
