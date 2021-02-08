@@ -104,7 +104,7 @@ function Resume() {
             <h2>Resume</h2>
 
             <p>
-                I am a programmer with experience in JavaScript, Python, Ruby, and SQL.
+                I am a programmer with experience in JavaScript, Python, and SQL.
             </p>
 
             <div className="contains-columns">
@@ -183,39 +183,59 @@ function Resume() {
                 <div className="right-column">
                     <h3>Skills</h3>
 
-                    <div>
-                        <strong>Languages</strong>
-                        <SkillSet
-                            skills={types.languages}
-                        />
+                    <div className="card card-connect card-lock">
+                        <strong className="card-header">
+                            Languages
+                        </strong>
+                        <div className="card-body">
+                            <SkillSet
+                                skills={types.languages}
+                            />
+                        </div>
                     </div>
                     
-                    <div>
-                        <strong>Frameworks</strong>
-                        <SkillSet
-                            skills={types.frameworks}
-                        />
+                    <div className="card card-connect card-lock">
+                        <strong className="card-header">
+                            Frameworks
+                        </strong>
+                        <div className="card-body">
+                            <SkillSet
+                                skills={types.frameworks}
+                            />
+                        </div>
                     </div>
                     
-                    <div>
-                        <strong>Management</strong>
-                        <SkillSet
-                            skills={types.management}
-                        />
+                    <div className="card card-connect card-lock">
+                        <strong className="card-header">
+                            Management
+                        </strong>
+                        <div className="card-body">
+                            <SkillSet
+                                skills={types.management}
+                            />
+                        </div>
                     </div>
 
-                    <div>
-                        <strong>Databases</strong>
-                        <SkillSet
-                            skills={types.databases}
-                        />
+                    <div className="card card-connect card-lock">
+                        <strong className="card-header">
+                            Databases
+                        </strong>
+                        <div className="card-body">
+                            <SkillSet
+                                skills={types.databases}
+                            />
+                        </div>
                     </div>
 
-                    <div>
-                        <strong>Methodologies</strong>
-                        <SkillSet
-                            skills={types.methodologies}
-                        />
+                    <div className="card card-connect card-lock">
+                        <strong className="card-header">
+                            Methodologies
+                        </strong>
+                        <div className="card-body">
+                            <SkillSet
+                                skills={types.methodologies}
+                            />
+                        </div>
                     </div>
 
                     <h3>Education</h3>
