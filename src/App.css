@@ -82,16 +82,8 @@ h1, h2, h3 {
     position: static;
 }
 
-.skill:first-child {
-    margin: 10px 5px 0 0;
-}
-
-.skill:last-child {
-    margin: 10px 0 0 5px;
-}
-
-.skill:not(:first-child,:last-child) {
-    margin: 10px 5px 0 5px;
+.skill {
+    margin: 10px 10px 0 0;
 }
 
 .card-connect:first-child {
