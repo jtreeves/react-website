@@ -51,7 +51,7 @@ function Twitter() {
     }, [])
     
     return (
-        <div className="twitter">
+        <div className="left-column">
             {tweets}
             <a 
                 href="https://twitter.com/JTReeves" 

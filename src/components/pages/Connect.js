@@ -13,7 +13,7 @@ function Connect() {
                 description={description}
             />
             
-            <div className="connect">
+            <div className="contains-columns">
                 <Twitter />
                 <GitHub />
             </div>

@@ -102,12 +102,12 @@ function Tumblr() {
     
     return (
         <div>
-            <div className="posts">
-                <div className="thoughts">
+            <div className="contains-columns">
+                <div className="left-column">
                     <h3>Thoughts</h3>
                     {thoughts}
                 </div>
-                <div className="notes">
+                <div className="right-column">
                     <h3>Notes</h3>
                     {notes}
                 </div>

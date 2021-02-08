@@ -36,34 +36,18 @@ main {
     border-radius: 10px;
 }
 
-.connect {
+.contains-columns {
     display: grid;
     grid-template-columns: 48% 4% 48%;
     width: 100%;
 }
 
-.twitter {
+.left-column {
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
-.github {
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-
-.posts {
-    display: grid;
-    grid-template-columns: 48% 4% 48%;
-    width: 100%;
-}
-
-.thoughts {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.notes {
+.right-column {
     grid-column-start: 3;
     grid-column-end: 4;
 }

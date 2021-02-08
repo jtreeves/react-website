@@ -60,7 +60,7 @@ function GitHub() {
     }, [])
     
     return (
-        <div className="github">
+        <div className="right-column">
             {commits}
             <a 
                 href="https://github.com/jtreeves" 
