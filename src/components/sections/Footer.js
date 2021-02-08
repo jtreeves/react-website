@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer>Copyright Jackson Reeves 2021</footer>
+        <footer>© 2021 Jackson Reeves</footer>
     )
 }
 
