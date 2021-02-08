@@ -4,7 +4,7 @@ import axios from 'axios'
 import Card from '../elements/Card'
 import convertTime from '../../utilities/time'
 
-const appServer = process.env.REACT_APP_SERVER_URL
+const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 const link = 'https://github.com/'
 
 function GitHub() {
@@ -13,7 +13,7 @@ function GitHub() {
     async function getCommits() {
         try {
             const result = await axios.get(
-                appServer + '/github'
+                REACT_APP_SERVER_URL + '/github'
             )
             const resultArray = result.data.commits.map((commit, index) => {
                 if (commit.payload.commits) {

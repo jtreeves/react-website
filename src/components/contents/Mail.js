@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import FormItem from '../elements/FormItem'
 
-const appServer = process.env.REACT_APP_SERVER_URL
+const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
 function Mail() {
     const [name, setName] = useState('')
@@ -31,7 +31,7 @@ function Mail() {
         e.preventDefault()
         try {
             const result = await axios.post(
-                appServer + '/mail', {
+                REACT_APP_SERVER_URL + '/mail', {
                     name, email, subject, message
                 }
             )

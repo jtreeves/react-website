@@ -6,7 +6,7 @@ import Card from '../elements/Card'
 import extractFromPost from '../../utilities/post'
 import convertTime from '../../utilities/time'
 
-const appServer = process.env.REACT_APP_SERVER_URL
+const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
 function Tumblr() {
     const [thoughts, setThoughts] = useState([])
@@ -15,7 +15,7 @@ function Tumblr() {
     async function getThoughts() {
         try {
             const result = await axios.get(
-                appServer + '/tumblr/thoughts'
+                REACT_APP_SERVER_URL + '/tumblr/thoughts'
             )
             const resultArray = result.data.posts.map((post, index) => {
                 const body = post.body
@@ -58,7 +58,7 @@ function Tumblr() {
     async function getNotes() {
         try {
             const result = await axios.get(
-                appServer + '/tumblr/notes'
+                REACT_APP_SERVER_URL + '/tumblr/notes'
             )
             const resultArray = result.data.posts.map((post, index) => {
                 const body = post.body

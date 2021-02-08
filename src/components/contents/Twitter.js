@@ -4,7 +4,7 @@ import axios from 'axios'
 import convertTime from '../../utilities/time'
 import Card from '../elements/Card'
 
-const appServer = process.env.REACT_APP_SERVER_URL
+const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 const link = 'https://twitter.com/JTReeves/status/'
 
 function Twitter() {
@@ -13,7 +13,7 @@ function Twitter() {
     async function getTweets() {
         try {
             const result = await axios.get(
-                appServer + '/twitter'
+                REACT_APP_SERVER_URL + '/twitter'
             )
             const resultArray = result.data.tweets.map((tweet, index) => {
                 const text = tweet.text
