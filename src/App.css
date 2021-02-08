@@ -124,3 +124,7 @@ h1, h2, h3 {
 .other-button {
     margin-left: 10px;
 }
+
+.top-margin {
+    margin-top: 10px;
+}
