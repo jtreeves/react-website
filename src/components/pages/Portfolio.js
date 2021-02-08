@@ -1,18 +1,11 @@
-import Introduction from '../sections/Introduction'
 import Card from '../elements/Card'
 
 import projects from '../../database/projects'
 
 function Portfolio() {
-    const name = 'Portfolio'
-    const description = 'Here are some of my recent projects.'
-
     return (
         <div>
-            <Introduction 
-                name={name}
-                description={description}
-            />
+            <h2>Portfolio</h2>
 
             <div className="contains-columns">
                 <div className="left-column">

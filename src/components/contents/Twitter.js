@@ -52,7 +52,10 @@ function Twitter() {
     
     return (
         <div className="left-column">
+            <h3>Twitter</h3>
+
             {tweets}
+            
             <a 
                 href="https://twitter.com/JTReeves" 
                 target="_blank" 

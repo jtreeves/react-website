@@ -1,14 +1,10 @@
-import Education from '../sections/Education'
-import Introduction from '../sections/Introduction'
-import Job from '../sections/Job'
 import SkillSet from '../elements/SkillSet'
+import Job from '../sections/Job'
+import Education from '../sections/Education'
 
 import types from '../../database/types'
 
 function Resume() {
-    const name = 'Resume'
-    const description = 'I am a programmer with experience in JavaScript, Python, Ruby, and SQL.'
-
     const hyperionDirector = {
         company: 'Hyperion Academics',
         position: 'Director',
@@ -92,10 +88,11 @@ function Resume() {
 
     return (
         <div>
-            <Introduction 
-                name={name}
-                description={description}
-            />
+            <h2>Resume</h2>
+
+            <p>
+                I am a programmer with experience in JavaScript, Python, Ruby, and SQL.
+            </p>
 
             <h3>Skills</h3>
 

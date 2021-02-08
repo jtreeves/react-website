@@ -61,7 +61,10 @@ function GitHub() {
     
     return (
         <div className="right-column">
+            <h3>GitHub</h3>
+
             {commits}
+            
             <a 
                 href="https://github.com/jtreeves" 
                 target="_blank" 
