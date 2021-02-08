@@ -22,7 +22,7 @@ function Skill() {
                     link={projects[project].deployedLink}
                     button={projects[project].type}
                     otherLink={projects[project].repositoryLink}
-                    otherButton="Repo"
+                    otherButton="Code"
                     time={projects[project].date}
                 />
             </div>

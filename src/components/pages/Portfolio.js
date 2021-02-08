@@ -19,7 +19,7 @@ function Portfolio() {
                         link={projects.regressions.deployedLink}
                         button={projects.regressions.type}
                         otherLink={projects.regressions.repositoryLink}
-                        otherButton="Repo"
+                        otherButton="Code"
                         time={projects.regressions.date}
                     />
                     
@@ -33,7 +33,7 @@ function Portfolio() {
                         link={projects.tiresias.deployedLink}
                         button={projects.tiresias.type}
                         otherLink={projects.tiresias.repositoryLink}
-                        otherButton="Repo"
+                        otherButton="Code"
                         time={projects.tiresias.date}
                     />
                 </div>
@@ -49,7 +49,7 @@ function Portfolio() {
                         link={projects.kaleidoscope.deployedLink}
                         button={projects.kaleidoscope.type}
                         otherLink={projects.kaleidoscope.repositoryLink}
-                        otherButton="Repo"
+                        otherButton="Code"
                         time={projects.kaleidoscope.date}
                     />
 
@@ -63,7 +63,7 @@ function Portfolio() {
                         link={projects.readThisNext.deployedLink}
                         button={projects.readThisNext.type}
                         otherLink={projects.readThisNext.repositoryLink}
-                        otherButton="Repo"
+                        otherButton="Code"
                         time={projects.readThisNext.date}
                     />
                 </div>
