@@ -112,17 +112,6 @@ function Tumblr() {
                     {notes}
                 </div>
             </div>
-            <a 
-                href="https://programming10101.tumblr.com" 
-                target="_blank" 
-                rel="noreferrer"
-            >
-                <button
-                    className="btn btn-primary center"
-                >
-                    Read more posts
-                </button>
-            </a>
         </div>
     )
 }
