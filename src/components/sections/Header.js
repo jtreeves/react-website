@@ -4,10 +4,10 @@ import Navigation from './Navigation'
 function Header() {
     return (
         <header>
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: 'none' }}>
                 <h1>Jackson Reeves</h1> 
             </Link>
-            
+
             <Navigation />
         </header>
     )
