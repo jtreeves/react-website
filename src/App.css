@@ -15,8 +15,6 @@ header {
     height: 100px;
     padding: 10px;
     background: gray;
-    color: black;
-    opacity: 90%;
 }
 
 footer {
@@ -28,9 +26,7 @@ footer {
     height: 100px;
     padding: 10px;
     background: gray;
-    color: black;
     font-style: italic;
-    opacity: 90%;
 }
 
 header li:hover {

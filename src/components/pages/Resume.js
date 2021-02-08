@@ -251,7 +251,7 @@ function Resume() {
                         source={false}
                         cloud={false}
                         link={certificate.link}
-                        button="Company"
+                        button="School"
                         otherLink={false}
                         otherButton={false}
                         time={certificate.date}
@@ -268,7 +268,7 @@ function Resume() {
                         source={false}
                         cloud={false}
                         link={bachelor.link}
-                        button="Company"
+                        button="School"
                         otherLink={false}
                         otherButton={false}
                         time={bachelor.date}
@@ -285,7 +285,7 @@ function Resume() {
                         source={false}
                         cloud={false}
                         link={program.link}
-                        button="Company"
+                        button="School"
                         otherLink={false}
                         otherButton={false}
                         time={program.date}
