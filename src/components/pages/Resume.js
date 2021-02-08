@@ -1,5 +1,5 @@
 import SkillSet from '../elements/SkillSet'
-import Job from '../sections/Job'
+import Card from '../elements/Card'
 import Education from '../sections/Education'
 
 import types from '../../database/types'
@@ -8,6 +8,8 @@ function Resume() {
     const hyperionDirector = {
         company: 'Hyperion Academics',
         position: 'Director',
+        link: 'https://hyperionacademics.tumblr.com/',
+        image: '/images/companies/hyperion-academics.jpg',
         date: 'September 2017–present',
         items: [
             'Help clients excel in all areas of the curriculum',
@@ -19,6 +21,8 @@ function Resume() {
     const tutorSenior = {
         company: 'Atlanta Tutors',
         position: 'Senior Educator',
+        link: 'https://atlantatutors.net',
+        image: '/images/companies/atlanta-tutors.jpg',
         date: 'January 2013–September 2017',
         items: [
             'Helped clients raise failing grades to As in algebra, geometry, and calculus',
@@ -32,6 +36,8 @@ function Resume() {
     const magazineDigital = {
         company: 'Atlanta Magazine',
         position: 'Digital Media Producer',
+        link: 'https://www.atlantamagazine.com',
+        image: '/images/companies/atlanta-magazine.png',
         date: 'April 2011–September 2013',
         items: [
             'Doubled the the magazine’s Facebook followers and tripled its Twitter followers',
@@ -46,6 +52,8 @@ function Resume() {
     const magazineEditor = {
         company: 'Atlanta Magazine',
         position: 'Assistant Editor',
+        link: 'https://www.atlantamagazine.com',
+        image: '/images/companies/atlanta-magazine.png',
         date: 'April 2010–March 2011',
         items: [
             'Managed sections of the magazine, which involved writing and editing articles',
@@ -133,32 +141,68 @@ function Resume() {
 
             <h3>Experience</h3>
 
-            <Job 
-                company={hyperionDirector.company}
-                position={hyperionDirector.position}
-                date={hyperionDirector.date}
-                items={hyperionDirector.items}
-            />
-
-            <Job 
-                company={tutorSenior.company}
-                position={tutorSenior.position}
-                date={tutorSenior.date}
-                items={tutorSenior.items}
+            <Card 
+                image={hyperionDirector.image}
+                title={hyperionDirector.position}
+                subtitle={hyperionDirector.company}
+                danger={false}
+                list={true}
+                text={hyperionDirector.items}
+                source={false}
+                cloud={false}
+                link={hyperionDirector.link}
+                button="Company"
+                otherLink={false}
+                otherButton={false}
+                time={hyperionDirector.date}
             />
             
-            <Job 
-                company={magazineDigital.company}
-                position={magazineDigital.position}
-                date={magazineDigital.date}
-                items={magazineDigital.items}
+            <Card 
+                image={tutorSenior.image}
+                title={tutorSenior.position}
+                subtitle={tutorSenior.company}
+                danger={false}
+                list={true}
+                text={tutorSenior.items}
+                source={false}
+                cloud={false}
+                link={tutorSenior.link}
+                button="Company"
+                otherLink={false}
+                otherButton={false}
+                time={tutorSenior.date}
             />
-
-            <Job 
-                company={magazineEditor.company}
-                position={magazineEditor.position}
-                date={magazineEditor.date}
-                items={magazineEditor.items}
+            
+            <Card 
+                image={magazineDigital.image}
+                title={magazineDigital.position}
+                subtitle={magazineDigital.company}
+                danger={false}
+                list={true}
+                text={magazineDigital.items}
+                source={false}
+                cloud={false}
+                link={magazineDigital.link}
+                button="Company"
+                otherLink={false}
+                otherButton={false}
+                time={magazineDigital.date}
+            />
+            
+            <Card 
+                image={magazineEditor.image}
+                title={magazineEditor.position}
+                subtitle={magazineEditor.company}
+                danger={false}
+                list={true}
+                text={magazineEditor.items}
+                source={false}
+                cloud={false}
+                link={magazineEditor.link}
+                button="Company"
+                otherLink={false}
+                otherButton={false}
+                time={magazineEditor.date}
             />
 
             <h3>Education</h3>

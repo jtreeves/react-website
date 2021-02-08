@@ -12,7 +12,9 @@ function Portfolio() {
                     <Card
                         image={projects.regressions.image}
                         title={projects.regressions.name}
+                        subtitle={false}
                         danger={false}
+                        list={false}
                         text={projects.regressions.description}
                         source={false}
                         cloud={projects.regressions.skills}
@@ -26,7 +28,9 @@ function Portfolio() {
                     <Card
                         image={projects.tiresias.image}
                         title={projects.tiresias.name}
+                        subtitle={false}
                         danger={false}
+                        list={false}
                         text={projects.tiresias.description}
                         source={false}
                         cloud={projects.tiresias.skills}
@@ -42,7 +46,9 @@ function Portfolio() {
                     <Card
                         image={projects.kaleidoscope.image}
                         title={projects.kaleidoscope.name}
+                        subtitle={false}
                         danger={false}
+                        list={false}
                         text={projects.kaleidoscope.description}
                         source={false}
                         cloud={projects.kaleidoscope.skills}
@@ -56,7 +62,9 @@ function Portfolio() {
                     <Card
                         image={projects.readThisNext.image}
                         title={projects.readThisNext.name}
+                        subtitle={false}
                         danger={false}
+                        list={false}
                         text={projects.readThisNext.description}
                         source={false}
                         cloud={projects.readThisNext.skills}

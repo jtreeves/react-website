@@ -27,7 +27,9 @@ function Twitter() {
                         <Card 
                             image={false}
                             title={false}
+                            subtitle={false}
                             danger={false}
+                            list={false}
                             text={text}
                             source="@JTReeves"
                             cloud={false}

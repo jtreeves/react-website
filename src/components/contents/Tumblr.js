@@ -30,7 +30,9 @@ function Tumblr() {
                             <Card 
                                 image={textSubstrings.image}
                                 title={post.title}
+                                subtitle={false}
                                 danger={true}
+                                list={false}
                                 text={textSubstrings.body}
                                 source={false}
                                 cloud={false}
@@ -70,7 +72,9 @@ function Tumblr() {
                             <Card 
                                 image={textSubstrings.image}
                                 title={post.title}
+                                subtitle={false}
                                 danger={true}
+                                list={false}
                                 text={textSubstrings.body}
                                 source={false}
                                 cloud={false}

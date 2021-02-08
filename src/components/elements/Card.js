@@ -1,3 +1,4 @@
+import List from "./List"
 import SkillSet from "./SkillSet"
 
 function Card(props) {
@@ -23,13 +24,27 @@ function Card(props) {
                         {props.title}
                     </h4>
                 }
-                {props.danger
-                    ? <div 
+                {props.subtitle !== false &&
+                    <h5
+                        className="card-subtitle text-muted"
+                    >
+                        {props.subtitle}
+                    </h5>
+                }
+                {props.danger !== false &&
+                    <div 
                         dangerouslySetInnerHTML={{
                             __html: props.text
                         }} 
                     />
-                    : props.text
+                }
+                {props.list !== false &&
+                    <List 
+                        items={props.text}
+                    />
+                }
+                {props.danger === false && props.list === false &&
+                    props.text
                 }
                 {props.source !==false &&
                     <div

@@ -15,7 +15,9 @@ function Skill() {
                 <Card
                     image={projects[project].image}
                     title={projects[project].name}
+                    subtitle={false}
                     danger={false}
+                    list={false}
                     text={projects[project].description}
                     source={false}
                     cloud={projects[project].skills}

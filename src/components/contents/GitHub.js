@@ -30,7 +30,9 @@ function GitHub() {
                                 <Card 
                                     image={false}
                                     title={false}
+                                    subtitle={false}
                                     danger={false}
+                                    list={false}
                                     text={message}
                                     source={source}
                                     cloud={false}
