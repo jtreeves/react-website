@@ -9,10 +9,15 @@ function Home() {
     return (
         <div>
             <Portfolio />
+            <hr />
             <About />
+            <hr />
             <Resume />
+            <hr />
             <Blog />
+            <hr />
             <Connect />
+            <hr />
             <Contact />
         </div>
     )
