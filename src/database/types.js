@@ -32,6 +32,7 @@ const types = {
         'Git', 
         'GitHub', 
         'Heroku',
+        'PyPi',
         'Command Line',
         'Visual Studio Code'
     ],
