@@ -50,7 +50,7 @@ function Skill() {
                 <div className="right-column">
                     <div className="card card-connect card-lock">
                         <strong className="card-header">
-                            My Other Skills
+                            All My Skills
                         </strong>
                         <div className="card-body">
                             <SkillSet
