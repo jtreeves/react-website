@@ -10,11 +10,13 @@ const types = {
         'Node', 
         'React', 
         'Express',
+        'Mocha',
         'Sass'
     ],
 
     libraries: [
         'Numpy',
+        'Chai',
         'Bootstrap'
     ],
 
@@ -30,15 +32,18 @@ const types = {
         'Git', 
         'GitHub', 
         'Heroku',
-        'Command Line'
+        'Command Line',
+        'Visual Studio Code'
     ],
 
     methodologies: [
         'Object-Oriented Programming',
+        'Test-Driven Development',
+        'Behavior-Driven Development',
         'Agile Development', 
         'MVC Pattern', 
         'Responsive Design', 
-        'User Stories', 
+        'User Experience Design', 
         'Wireframing'
     ]
 }

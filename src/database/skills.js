@@ -2,17 +2,26 @@ const skills = {
     'Agile Development': [
         'kaleidoscope'
     ],
+    
+    'Behavior-Driven Development': [
+        'kaleidoscope'
+    ],
 
     'Bootstrap': [
         'readThisNext'
     ],
+    
+    'Chai': [
+        'tiresias',
+        'kaleidoscope'
+    ],
 
     'Command Line': [
         'regressions', 
-        'kaleidoscope', 
         'tiresias', 
-        'matchesAndPatches', 
-        'readThisNext'
+        'kaleidoscope', 
+        'readThisNext',
+        'matchesAndPatches'
     ],
 
     'CSS': [
@@ -20,30 +29,30 @@ const skills = {
     ],
 
     'Express': [
-        'kaleidoscope', 
         'tiresias', 
+        'kaleidoscope', 
         'readThisNext'
     ],
 
     'Git': [
         'regressions', 
-        'kaleidoscope', 
         'tiresias', 
-        'matchesAndPatches', 
-        'readThisNext'
+        'kaleidoscope', 
+        'readThisNext',
+        'matchesAndPatches'
     ],
 
     'GitHub': [
         'regressions', 
-        'kaleidoscope', 
         'tiresias', 
-        'matchesAndPatches', 
-        'readThisNext'
+        'kaleidoscope', 
+        'readThisNext',
+        'matchesAndPatches'
     ],
 
     'Heroku': [
-        'kaleidoscope', 
         'tiresias', 
+        'kaleidoscope', 
         'readThisNext'
     ],
 
@@ -52,31 +61,36 @@ const skills = {
     ],
 
     'JavaScript': [
-        'kaleidoscope', 
         'tiresias', 
-        'matchesAndPatches', 
-        'readThisNext'
+        'kaleidoscope', 
+        'readThisNext',
+        'matchesAndPatches'
     ],
 
+    'Mocha': [
+        'tiresias',
+        'kaleidoscope'
+    ],
+    
     'MongoDB': [
-        'kaleidoscope', 
-        'tiresias'
+        'tiresias',
+        'kaleidoscope' 
     ],
 
     'Mongoose': [
-        'kaleidoscope', 
-        'tiresias'
+        'tiresias',
+        'kaleidoscope'
     ],
 
     'MVC Pattern': [
-        'kaleidoscope', 
         'tiresias', 
+        'kaleidoscope', 
         'readThisNext'
     ],
 
     'Node': [
-        'kaleidoscope', 
         'tiresias', 
+        'kaleidoscope', 
         'readThisNext'
     ],
 
@@ -86,10 +100,10 @@ const skills = {
 
     'Object-Oriented Programming': [
         'regressions', 
-        'kaleidoscope', 
         'tiresias', 
-        'matchesAndPatches', 
-        'readThisNext'
+        'kaleidoscope', 
+        'readThisNext',
+        'matchesAndPatches'
     ],
 
     'Postgres': [
@@ -105,8 +119,8 @@ const skills = {
     ],
 
     'React': [
-        'kaleidoscope', 
-        'tiresias'
+        'tiresias',
+        'kaleidoscope'
     ],
 
     'Responsive Design': [
@@ -124,21 +138,33 @@ const skills = {
     'SQL': [
         'readThisNext'
     ],
+    
+    'Test-Driven Development': [
+        'kaleidoscope'
+    ],
 
-    'User Stories': [
+    'User Experience Design': [
         'regressions', 
-        'kaleidoscope', 
         'tiresias', 
-        'matchesAndPatches', 
-        'readThisNext'
+        'kaleidoscope', 
+        'readThisNext',
+        'matchesAndPatches'
+    ],
+    
+    'Visual Studio Code': [
+        'regressions', 
+        'tiresias', 
+        'kaleidoscope', 
+        'readThisNext',
+        'matchesAndPatches'
     ],
 
     'Wireframing': [
         'regressions', 
-        'kaleidoscope', 
         'tiresias', 
-        'matchesAndPatches', 
-        'readThisNext'
+        'kaleidoscope', 
+        'readThisNext',
+        'matchesAndPatches'
     ]
 }
 
