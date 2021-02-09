@@ -12,6 +12,7 @@ const projects = {
         repositoryLink: 'https://github.com/jtreeves/regressions_library',
         date: 'January 2021'
     },
+
     tiresias: {
         name: 'Tiresias',
         description: 'An app for generating regressions models',
@@ -27,6 +28,7 @@ const projects = {
         repositoryLink: 'https://github.com/jtreeves/predictions-frontend',
         date: 'January 2021'
     },
+
     kaleidoscope: {
         name: 'Kaleidoscope',
         description: 'A budget app',
@@ -43,6 +45,7 @@ const projects = {
         repositoryLink: 'https://github.com/jtreeves/budget-frontend',
         date: 'December 2020'
     },
+
     readThisNext: {
         name: 'Read This Next',
         description: 'A reading app',
@@ -57,6 +60,7 @@ const projects = {
         repositoryLink: 'https://github.com/jtreeves/read-this-next',
         date: 'November 2020'
     },
+    
     matchesAndPatches: {
         name: 'Matches and Patches',
         description: 'A game involving elements of Dominoes and Uno',
