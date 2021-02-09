@@ -18,13 +18,6 @@ const types = {
         'Bootstrap'
     ],
 
-    management: [
-        'Git', 
-        'GitHub', 
-        'Heroku',
-        'Command Line'
-    ],
-
     databases: [
         'SQL',
         'Postgres', 
@@ -32,7 +25,14 @@ const types = {
         'MongoDB',
         'Mongoose'
     ],
-    
+
+    tools: [
+        'Git', 
+        'GitHub', 
+        'Heroku',
+        'Command Line'
+    ],
+
     methodologies: [
         'Object-Oriented Programming',
         'Agile Development', 

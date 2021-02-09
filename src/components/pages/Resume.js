@@ -125,22 +125,22 @@ function Resume() {
                     
                     <div className="card card-connect card-lock">
                         <strong className="card-header">
-                            Management
+                            Databases
                         </strong>
                         <div className="card-body">
                             <SkillSet
-                                skills={types.management}
+                                skills={types.databases}
                             />
                         </div>
                     </div>
 
                     <div className="card card-connect card-lock">
                         <strong className="card-header">
-                            Databases
+                            Tools
                         </strong>
                         <div className="card-body">
                             <SkillSet
-                                skills={types.databases}
+                                skills={types.tools}
                             />
                         </div>
                     </div>
