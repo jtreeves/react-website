@@ -1,104 +1,11 @@
-import SkillSet from '../elements/SkillSet'
 import Card from '../elements/Card'
+import SkillSet from '../elements/SkillSet'
 
+import experience from '../../database/experience'
+import education from '../../database/education'
 import types from '../../database/types'
 
 function Resume() {
-    const hyperionDirector = {
-        company: 'Hyperion Academics',
-        position: 'Director',
-        link: 'https://hyperionacademics.tumblr.com/',
-        image: '/images/companies/hyperion-academics.jpg',
-        date: 'September 2017–present',
-        items: [
-            'Help clients excel in all areas of the curriculum',
-            'Coordinate schedules across multiple parties',
-            'Manage all financial matters, including billing and advertising'
-        ]
-    }
-    
-    const tutorSenior = {
-        company: 'Atlanta Tutors',
-        position: 'Senior Educator',
-        link: 'https://atlantatutors.net',
-        image: '/images/companies/atlanta-tutors.jpg',
-        date: 'January 2013–September 2017',
-        items: [
-            'Helped clients raise failing grades to As in algebra, geometry, and calculus',
-            'Enabled clients to increase their GPAs by up to 1.7 points',
-            'Coached clients to obtain top scores on the SAT and ACT standardized tests',
-            'Used online platforms and customized lessons to maximize success rates',
-            'Guided clients in developing organizational strategies and long-term plans'
-        ]
-    }
-    
-    const magazineDigital = {
-        company: 'Atlanta Magazine',
-        position: 'Digital Media Producer',
-        link: 'https://www.atlantamagazine.com',
-        image: '/images/companies/atlanta-magazine2.png',
-        date: 'April 2011–September 2013',
-        items: [
-            'Doubled the the magazine’s Facebook followers and tripled its Twitter followers',
-            'Increased profitability of email newsletters by raising click-through rates',
-            'Raised site page-views by 27 percent using social media and email marketing',
-            'Produced internal reports on the website’s usage, traffic patterns, and trends',
-            'Used content management systems to design and populate the website',
-            'Coordinated promotional events in tandem with the marketing team'
-        ]
-    }
-    
-    const magazineEditor = {
-        company: 'Atlanta Magazine',
-        position: 'Assistant Editor',
-        link: 'https://www.atlantamagazine.com',
-        image: '/images/companies/atlanta-magazine1.png',
-        date: 'April 2010–March 2011',
-        items: [
-            'Managed sections of the magazine, which involved writing and editing articles',
-            'Interviewed Atlanta leaders and gathered public data to add substance to stories'
-        ]
-    }
-
-    const certificate = {
-        school: 'General Assembly',
-        degree: 'Software Engineering Certificate',
-        specialization: 'Full-Stack Development',
-        link: 'https://generalassemb.ly',
-        image: '/images/companies/general-assembly.png',
-        date: 'January 2021',
-        courses: [
-            'JavaScript',
-            'Python'
-        ]
-    }
-
-    const bachelor = {
-        school: 'Vassar College',
-        degree: 'Bachelor of Arts',
-        specialization: 'Media Studies',
-        link: 'https://www.vassar.edu',
-        image: '/images/companies/vassar.png',
-        date: 'May 2009',
-        courses: [
-            'Media Theory',
-            'Sociology of Media'
-        ]
-    }
-    
-    const program = {
-        school: 'New York University',
-        degree: 'Business Program',
-        specialization: 'Marketing and Journalism',
-        link: 'http://www.nyu.edu',
-        image: '/images/companies/nyu.png',
-        date: 'August 2007',
-        courses: [
-            'Marketing',
-            'Journalism'
-        ]
-    }
-
     return (
         <div>
             <h2>Resume</h2>
@@ -112,71 +19,71 @@ function Resume() {
                     <h3>Experience</h3>
         
                     <Card 
-                        image={hyperionDirector.image}
-                        title={hyperionDirector.position}
-                        subtitle={hyperionDirector.company}
+                        image={experience.hyperionDirector.image}
+                        title={experience.hyperionDirector.position}
+                        subtitle={experience.hyperionDirector.company}
                         lead={false}
                         danger={false}
                         list={true}
-                        text={hyperionDirector.items}
+                        text={experience.hyperionDirector.items}
                         source={false}
                         cloud={false}
-                        link={hyperionDirector.link}
+                        link={experience.hyperionDirector.link}
                         button="Company"
                         otherLink={false}
                         otherButton={false}
-                        time={hyperionDirector.date}
+                        time={experience.hyperionDirector.date}
                     />
                     
                     <Card 
-                        image={tutorSenior.image}
-                        title={tutorSenior.position}
-                        subtitle={tutorSenior.company}
+                        image={experience.tutorSenior.image}
+                        title={experience.tutorSenior.position}
+                        subtitle={experience.tutorSenior.company}
                         lead={false}
                         danger={false}
                         list={true}
-                        text={tutorSenior.items}
+                        text={experience.tutorSenior.items}
                         source={false}
                         cloud={false}
-                        link={tutorSenior.link}
+                        link={experience.tutorSenior.link}
                         button="Company"
                         otherLink={false}
                         otherButton={false}
-                        time={tutorSenior.date}
+                        time={experience.tutorSenior.date}
                     />
                     
                     <Card 
-                        image={magazineDigital.image}
-                        title={magazineDigital.position}
-                        subtitle={magazineDigital.company}
+                        image={experience.magazineDigital.image}
+                        title={experience.magazineDigital.position}
+                        subtitle={experience.magazineDigital.company}
                         lead={false}
                         danger={false}
                         list={true}
-                        text={magazineDigital.items}
+                        text={experience.magazineDigital.items}
                         source={false}
                         cloud={false}
-                        link={magazineDigital.link}
+                        link={experience.magazineDigital.link}
                         button="Company"
                         otherLink={false}
                         otherButton={false}
-                        time={magazineDigital.date}
+                        time={experience.magazineDigital.date}
                     />
                     
                     <Card 
-                        image={magazineEditor.image}
-                        title={magazineEditor.position}
-                        subtitle={magazineEditor.company}
+                        image={experience.magazineEditor.image}
+                        title={experience.magazineEditor.position}
+                        subtitle={experience.magazineEditor.company}
                         lead={false}
                         danger={false}
                         list={true}
-                        text={magazineEditor.items}
+                        text={experience.magazineEditor.items}
                         source={false}
                         cloud={false}
-                        link={magazineEditor.link}
+                        link={experience.magazineEditor.link}
                         button="Company"
                         otherLink={false}
                         otherButton={false}
-                        time={magazineEditor.date}
+                        time={experience.magazineEditor.date}
                     />
                 </div>
 
@@ -241,54 +148,54 @@ function Resume() {
                     <h3>Education</h3>
                     
                     <Card 
-                        image={certificate.image}
-                        title={certificate.degree}
-                        subtitle={certificate.school}
-                        lead={certificate.specialization}
+                        image={education.certificate.image}
+                        title={education.certificate.degree}
+                        subtitle={education.certificate.school}
+                        lead={education.certificate.specialization}
                         danger={false}
                         list={true}
-                        text={certificate.courses}
+                        text={education.certificate.courses}
                         source={false}
                         cloud={false}
-                        link={certificate.link}
+                        link={education.certificate.link}
                         button="School"
                         otherLink={false}
                         otherButton={false}
-                        time={certificate.date}
+                        time={education.certificate.date}
                     />
 
                     <Card 
-                        image={bachelor.image}
-                        title={bachelor.degree}
-                        subtitle={bachelor.school}
-                        lead={bachelor.specialization}
+                        image={education.bachelor.image}
+                        title={education.bachelor.degree}
+                        subtitle={education.bachelor.school}
+                        lead={education.bachelor.specialization}
                         danger={false}
                         list={true}
-                        text={bachelor.courses}
+                        text={education.bachelor.courses}
                         source={false}
                         cloud={false}
-                        link={bachelor.link}
+                        link={education.bachelor.link}
                         button="School"
                         otherLink={false}
                         otherButton={false}
-                        time={bachelor.date}
+                        time={education.bachelor.date}
                     />
                     
                     <Card 
-                        image={program.image}
-                        title={program.degree}
-                        subtitle={program.school}
-                        lead={program.specialization}
+                        image={education.program.image}
+                        title={education.program.degree}
+                        subtitle={education.program.school}
+                        lead={education.program.specialization}
                         danger={false}
                         list={true}
-                        text={program.courses}
+                        text={education.program.courses}
                         source={false}
                         cloud={false}
-                        link={program.link}
+                        link={education.program.link}
                         button="School"
                         otherLink={false}
                         otherButton={false}
-                        time={program.date}
+                        time={education.program.date}
                     />
                 </div>
             </div>
