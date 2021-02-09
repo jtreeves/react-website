@@ -5,7 +5,8 @@ const projects = {
         skills: [
             'Python', 
             'PyPi',
-            'Numpy'
+            'Numpy',
+            'Algorithms'
         ],
         type: 'Library',
         image: '/images/regressions.png',
@@ -21,7 +22,8 @@ const projects = {
             'JavaScript', 
             'React', 
             'Express', 
-            'MongoDB'
+            'MongoDB',
+            'APIs'
         ],
         type: 'App',
         image: '/images/tiresias.png',
@@ -53,7 +55,8 @@ const projects = {
         skills: [
             'JavaScript', 
             'Express', 
-            'SQL'
+            'SQL',
+            'APIs'
         ],
         type: 'App',
         image: '/images/read-this-next.png',

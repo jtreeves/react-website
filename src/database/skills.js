@@ -3,6 +3,15 @@ const skills = {
         'kaleidoscope'
     ],
     
+    'Algorithms': [
+        'regressions'
+    ],
+    
+    'APIs': [
+        'tiresias',
+        'readThisNext'
+    ],
+    
     'Behavior-Driven Development': [
         'kaleidoscope'
     ],
@@ -23,11 +32,28 @@ const skills = {
         'readThisNext',
         'matchesAndPatches'
     ],
+    
+    'Computer Science': [
+        'regressions', 
+        'tiresias'
+    ],
 
     'CSS': [
         'matchesAndPatches'
     ],
 
+    'Design Patterns': [
+        'tiresias', 
+        'kaleidoscope'
+    ],
+    
+    'Error Handling': [
+        'tiresias', 
+        'kaleidoscope', 
+        'readThisNext',
+        'matchesAndPatches'
+    ],
+    
     'Express': [
         'tiresias', 
         'kaleidoscope', 
@@ -60,6 +86,12 @@ const skills = {
         'matchesAndPatches'
     ],
 
+    'Information Architecture': [
+        'tiresias', 
+        'kaleidoscope', 
+        'readThisNext'
+    ],
+    
     'JavaScript': [
         'tiresias', 
         'kaleidoscope', 
@@ -149,6 +181,12 @@ const skills = {
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'
+    ],
+    
+    'Version Control': [
+        'regressions', 
+        'tiresias', 
+        'kaleidoscope'
     ],
     
     'Visual Studio Code': [

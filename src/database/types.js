@@ -42,6 +42,13 @@ const types = {
         'Behavior-Driven Development',
         'Agile Development', 
         'MVC Pattern', 
+        'Algorithms',
+        'APIs',
+        'Computer Science',
+        'Error Handling',
+        'Version Control',
+        'Information Architecture',
+        'Design Patterns',
         'Responsive Design', 
         'User Experience Design', 
         'Wireframing'
