@@ -80,6 +80,10 @@ const skills = {
         'readThisNext'
     ],
 
+    'Numpy': [
+        'regressions'
+    ],
+
     'Object-Oriented Programming': [
         'regressions', 
         'kaleidoscope', 
@@ -128,7 +132,7 @@ const skills = {
         'matchesAndPatches', 
         'readThisNext'
     ],
-    
+
     'Wireframing': [
         'regressions', 
         'kaleidoscope', 

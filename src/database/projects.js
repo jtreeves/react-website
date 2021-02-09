@@ -4,7 +4,8 @@ const projects = {
         description: 'A Python library of algorithms to calculate regression models',
         skills: [
             'Python', 
-            'PyPi'
+            'PyPi',
+            'Numpy'
         ],
         type: 'Library',
         image: '/images/regressions.png',
@@ -60,7 +61,7 @@ const projects = {
         repositoryLink: 'https://github.com/jtreeves/read-this-next',
         date: 'November 2020'
     },
-    
+
     matchesAndPatches: {
         name: 'Matches and Patches',
         description: 'A game involving elements of Dominoes and Uno',

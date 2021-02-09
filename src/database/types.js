@@ -5,21 +5,26 @@ const types = {
         'HTML', 
         'CSS'
     ],
+
     frameworks: [
         'Node', 
         'React', 
-        'Express'
+        'Express',
+        'Sass'
     ],
+
     libraries: [
-        'Sass',
+        'Numpy',
         'Bootstrap'
     ],
+
     management: [
         'Git', 
         'GitHub', 
         'Heroku',
         'Command Line'
     ],
+
     databases: [
         'SQL',
         'Postgres', 
@@ -27,6 +32,7 @@ const types = {
         'MongoDB',
         'Mongoose'
     ],
+    
     methodologies: [
         'Object-Oriented Programming',
         'Agile Development', 
