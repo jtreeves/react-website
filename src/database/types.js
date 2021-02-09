@@ -8,7 +8,10 @@ const types = {
     frameworks: [
         'Node', 
         'React', 
-        'Express', 
+        'Express'
+    ],
+    libraries: [
+        'Sass',
         'Bootstrap'
     ],
     management: [

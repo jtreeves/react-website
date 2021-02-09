@@ -114,6 +114,17 @@ function Resume() {
                     
                     <div className="card card-connect card-lock">
                         <strong className="card-header">
+                            Libraries
+                        </strong>
+                        <div className="card-body">
+                            <SkillSet
+                                skills={types.libraries}
+                            />
+                        </div>
+                    </div>
+                    
+                    <div className="card card-connect card-lock">
+                        <strong className="card-header">
                             Management
                         </strong>
                         <div className="card-body">

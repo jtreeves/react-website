@@ -89,6 +89,9 @@ const skills = {
     'Responsive Design': [
         'kaleidoscope'
     ],
+    'Sass': [
+        'kaleidoscope'
+    ],
     'Sequelize': [
         'readThisNext'
     ],

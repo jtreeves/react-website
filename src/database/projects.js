@@ -34,7 +34,8 @@ const projects = {
             'JavaScript', 
             'React', 
             'Express', 
-            'MongoDB'
+            'MongoDB',
+            'Sass'
         ],
         type: 'App',
         image: '/images/kaleidoscope.png',
