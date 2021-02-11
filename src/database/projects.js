@@ -5,7 +5,7 @@ const projects = {
         skills: [
             'Python', 
             'PyPi',
-            'Numpy',
+            'NumPy',
             'Algorithms'
         ],
         type: 'Library',

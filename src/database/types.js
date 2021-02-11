@@ -2,6 +2,7 @@ const types = {
     languages: [
         'JavaScript', 
         'Python', 
+        'SQL',
         'HTML', 
         'CSS'
     ],
@@ -15,17 +16,16 @@ const types = {
     ],
 
     libraries: [
-        'Numpy',
+        'NumPy',
+        'Sequelize', 
+        'Mongoose',
         'Chai',
         'Bootstrap'
     ],
 
     databases: [
-        'SQL',
         'Postgres', 
-        'Sequelize', 
-        'MongoDB',
-        'Mongoose'
+        'MongoDB'
     ],
 
     tools: [
@@ -33,16 +33,22 @@ const types = {
         'GitHub', 
         'Heroku',
         'PyPi',
+        'NPM',
+        'Mongo Atlas',
         'Command Line',
         'Visual Studio Code'
     ],
 
     methodologies: [
         'Object-Oriented Programming',
+        'Functional Programming',
+        'Authentication',
         'Test-Driven Development',
         'Behavior-Driven Development',
         'Agile Development', 
         'MVC Pattern', 
+        'REST Pattern',
+        'CRUD Pattern',
         'Algorithms',
         'APIs',
         'Computer Science',

@@ -12,6 +12,12 @@ const skills = {
         'readThisNext'
     ],
     
+    'Authentication': [
+        'tiresias',
+        'kaleidoscope',
+        'readThisNext'
+    ],
+    
     'Behavior-Driven Development': [
         'kaleidoscope'
     ],
@@ -38,6 +44,11 @@ const skills = {
         'tiresias'
     ],
 
+    'CRUD Pattern': [
+        'kaleidoscope',
+        'readThisNext'
+    ],
+
     'CSS': [
         'matchesAndPatches'
     ],
@@ -58,6 +69,10 @@ const skills = {
         'tiresias', 
         'kaleidoscope', 
         'readThisNext'
+    ],
+
+    'Functional Programming': [
+        'regressions'
     ],
 
     'Git': [
@@ -104,6 +119,11 @@ const skills = {
         'kaleidoscope'
     ],
     
+    'Mongo Atlas': [
+        'tiresias',
+        'kaleidoscope' 
+    ],
+    
     'MongoDB': [
         'tiresias',
         'kaleidoscope' 
@@ -125,8 +145,14 @@ const skills = {
         'kaleidoscope', 
         'readThisNext'
     ],
+    
+    'NPM': [
+        'tiresias', 
+        'kaleidoscope', 
+        'readThisNext'
+    ],
 
-    'Numpy': [
+    'NumPy': [
         'regressions'
     ],
 
@@ -157,6 +183,11 @@ const skills = {
 
     'Responsive Design': [
         'kaleidoscope'
+    ],
+    
+    'REST Pattern': [
+        'kaleidoscope',
+        'readThisNext'
     ],
 
     'Sass': [
