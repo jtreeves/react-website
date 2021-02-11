@@ -1,16 +1,14 @@
 import { NavLink } from 'react-router-dom'
 
-function Navigation() {
-    function scrollToTop() {
-        window.scrollTo(0, 0)
-    }
+import scroll from '../../utilities/scroll'
 
+function Navigation() {
     return (
         <ul className="navigation">
             <li>
                 <NavLink 
                     exact to="/about" 
-                    onClick={scrollToTop}
+                    onClick={scroll}
                     style={{ 
                         textDecoration: "none", 
                         color: "black" 
@@ -23,7 +21,7 @@ function Navigation() {
             <li>
                 <NavLink 
                     exact to="/contact" 
-                    onClick={scrollToTop}
+                    onClick={scroll}
                     style={{ 
                         textDecoration: "none", 
                         color: "black" 
@@ -36,7 +34,7 @@ function Navigation() {
             <li>
                 <NavLink 
                     exact to="/connect" 
-                    onClick={scrollToTop}
+                    onClick={scroll}
                     style={{ 
                         textDecoration: "none", 
                         color: "black" 
@@ -49,7 +47,7 @@ function Navigation() {
             <li>
                 <NavLink 
                     exact to="/blog" 
-                    onClick={scrollToTop}
+                    onClick={scroll}
                     style={{ 
                         textDecoration: "none", 
                         color: "black" 
@@ -62,7 +60,7 @@ function Navigation() {
             <li>
                 <NavLink 
                     exact to="/portfolio" 
-                    onClick={scrollToTop}
+                    onClick={scroll}
                     style={{ 
                         textDecoration: "none", 
                         color: "black" 
@@ -75,7 +73,7 @@ function Navigation() {
             <li>
                 <NavLink 
                     exact to="/resume" 
-                    onClick={scrollToTop}
+                    onClick={scroll}
                     style={{ 
                         textDecoration: "none", 
                         color: "black" 

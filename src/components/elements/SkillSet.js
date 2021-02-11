@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom'
 
-function SkillSet(props) {    
-    function scrollToTop() {
-        window.scrollTo(0, 0)
-    }
+import scroll from '../../utilities/scroll'
 
+function SkillSet(props) {    
     const skillSet = props.skills.map((skill, index) => {    
         return (
             <Link 
@@ -12,7 +10,7 @@ function SkillSet(props) {
                     pathname: "/skill",
                     state: {skill}
                 }}
-                onClick={scrollToTop}
+                onClick={scroll}
             >
                 <button 
                     key={index}
