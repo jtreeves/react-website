@@ -6,7 +6,7 @@ function About() {
             <div className="contains-columns">
                 <div className="left-column">
                     <img 
-                        src="/images/headshot.png" 
+                        src="/images/headshot.jpg" 
                         alt="Jackson Reeves" 
                         className="headshot"
                     />

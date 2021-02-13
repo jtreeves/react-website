@@ -26,10 +26,7 @@ function Header() {
                                 target="_blank" 
                                 rel="noreferrer"
                             >
-                                <img 
-                                    src="/images/social/github.png" 
-                                    alt="GitHub"
-                                />
+                                <i className="fab fa-github-square fa-lg" />
                             </a>
                         </li>
                         
@@ -39,10 +36,7 @@ function Header() {
                                 target="_blank" 
                                 rel="noreferrer"
                             >
-                                <img 
-                                    src="/images/social/linkedin.png" 
-                                    alt="LinkedIn"
-                                />
+                                <i className="fab fa-linkedin fa-lg" />
                             </a>
                         </li>
                         
@@ -52,10 +46,7 @@ function Header() {
                                 target="_blank" 
                                 rel="noreferrer"
                             >
-                                <img 
-                                    src="/images/social/twitter.png" 
-                                    alt="Twitter"
-                                />
+                                <i className="fab fa-twitter-square fa-lg" />
                             </a>
                         </li>
                         
@@ -65,10 +56,27 @@ function Header() {
                                 target="_blank" 
                                 rel="noreferrer"
                             >
-                                <img 
-                                    src="/images/social/tumblr.png" 
-                                    alt="Tumblr"
-                                />
+                                <i className="fab fa-tumblr-square fa-lg" />
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a 
+                                href="mailto:jr@jacksonreeves.com" 
+                                target="_blank" 
+                                rel="noreferrer"
+                            >
+                                <i className="fas fa-envelope-square fa-lg" />
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a 
+                                href="/resume.pdf" 
+                                target="_blank" 
+                                rel="noreferrer"
+                            >
+                                <i className="fas fa-external-link-square-alt fa-lg" />
                             </a>
                         </li>
                     </ul>
