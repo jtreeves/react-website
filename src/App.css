@@ -77,31 +77,37 @@ main {
 }
 
 .project-highlight {
-    width: 400px;
-    height: 400px;
-    /* object-fit: cover; */
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background: white;
 }
 
 .project-image {
     height: 100%;
     width: 100%;
-    /* object-fit: cover; */
-    display: block;
+    transition: 1s ease;
 }
 
 .project-overlay {
+    position: absolute;
+    top: 0;
     height: 100%;
     width: 100%;
-    /* object-fit: cover; */
-    display: none;
+    opacity: 0;
+    transition: 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
 }
 
 .project-highlight:hover .project-overlay {
-    display: block;
+    opacity: 1;
 }
 
 .project-highlight:hover .project-image {
-    display: none;
+    opacity: 0.5;
 }
 
 .contains-columns {

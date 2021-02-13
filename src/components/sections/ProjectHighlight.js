@@ -1,61 +1,31 @@
-import SkillSet from '../elements/SkillSet'
+import { Link } from 'react-router-dom'
+
+import scroll from '../../utilities/scroll'
 
 function ProjectHighlight(props) {
+    const projectName = props.name
+
     return (
-        <div className="project-highlight">
-            <div className="card card-lock project-image">
-                <img 
-                    src={props.image} 
-                    alt={props.name} 
-                    className="card-img-top"
-                />
-            </div>
-
-            <div className="card card-lock project-overlay">
-                <div className="card-header">
-                    {props.name}
-                </div>
-
-                <div className="card-body">
-                    {props.description}
-                    <SkillSet 
-                        skills={props.skills}
+        <Link
+            to={{
+                pathname: "/project",
+                state: {projectName}
+            }}
+            onClick={scroll}
+        >
+            <div className="project-highlight card-connect">
+                <div className="card project-image">
+                    <img 
+                        src={props.image} 
+                        alt={props.name} 
                     />
                 </div>
 
-                <div className="card-footer">
-                    <a 
-                        href={props.deployedLink} 
-                        target="_blank" 
-                        rel="noreferrer"
-                    >
-                        <button 
-                            className="btn btn-primary float-left"
-                        >
-                            {props.deployedText}
-                        </button>
-                    </a>
-
-                    <a 
-                        href={props.repositoryLink} 
-                        target="_blank" 
-                        rel="noreferrer"
-                    >
-                        <button 
-                            className="btn btn-primary float-left other-button"
-                        >
-                            {props.repositoryText}
-                        </button>
-                    </a>
-
-                    <div 
-                        className="float-right text-muted card-footer-connect"
-                    >
-                        {props.date}
-                    </div>
+                <div className="card project-overlay">
+                    <h4>{props.name}</h4>
                 </div>
-            </div>
-       </div>            
+        </div>            
+        </Link>
     )
 }
 

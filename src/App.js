@@ -9,6 +9,7 @@ import Blog from './components/pages/Blog'
 import Portfolio from './components/pages/Portfolio'
 import Resume from './components/pages/Resume'
 import Skill from './components/pages/Skill'
+import Project from './components/pages/Project'
 import Footer from './components/sections/Footer'
 
 import './App.css'
@@ -57,6 +58,11 @@ function App() {
                 <Route 
                     path="/skill" 
                     component={Skill}
+                />
+                
+                <Route 
+                    path="/project" 
+                    component={Project}
                 />
             </main>
             
