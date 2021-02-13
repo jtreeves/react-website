@@ -76,6 +76,34 @@ main {
     margin: 100px;
 }
 
+.project-highlight {
+    width: 400px;
+    height: 400px;
+    /* object-fit: cover; */
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    display: block;
+}
+
+.project-overlay {
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    display: none;
+}
+
+.project-highlight:hover .project-overlay {
+    display: block;
+}
+
+.project-highlight:hover .project-image {
+    display: none;
+}
+
 .contains-columns {
     display: grid;
     grid-template-columns: 48% 4% 48%;

@@ -3,7 +3,7 @@ import SkillSet from '../elements/SkillSet'
 function ProjectHighlight(props) {
     return (
         <div className="project-highlight">
-            <div className="card card-lock">
+            <div className="card card-lock project-image">
                 <img 
                     src={props.image} 
                     alt={props.name} 
@@ -11,8 +11,8 @@ function ProjectHighlight(props) {
                 />
             </div>
 
-            <div className="card card-lock overlay">
-                <div className="card-header card-title">
+            <div className="card card-lock project-overlay">
+                <div className="card-header">
                     {props.name}
                 </div>
 
@@ -47,7 +47,7 @@ function ProjectHighlight(props) {
                             {props.repositoryText}
                         </button>
                     </a>
-                    
+
                     <div 
                         className="float-right text-muted card-footer-connect"
                     >
