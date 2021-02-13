@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom'
 
-import Card from '../elements/Card'
 import projects from '../../database/projects'
 import SkillSet from '../elements/SkillSet'
 
@@ -73,23 +72,6 @@ function Project() {
                 </div>
 
             </div>
-
-            {/* <Card
-                image={projects[lowercase].image}
-                title={projects[lowercase].name}
-                subtitle={false}
-                lead={false}
-                danger={false}
-                list={false}
-                text={projects[lowercase].description}
-                source={false}
-                cloud={projects[lowercase].skills}
-                link={projects[lowercase].deployedLink}
-                button={projects[lowercase].type}
-                otherLink={projects[lowercase].repositoryLink}
-                otherButton="Code"
-                time={projects[lowercase].date}
-            /> */}
         </div>
     )
 }
