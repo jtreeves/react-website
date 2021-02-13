@@ -49,6 +49,18 @@ header li {
     padding: 10px;
 }
 
+.headline {
+    text-decoration: none;
+    color: black;
+    line-height: 100px;
+}
+
+.headline:hover {
+    text-decoration: none;
+    color: black;
+    line-height: 100px;
+}
+
 header a {
     font-style: none;
     color: black;
@@ -100,6 +112,11 @@ img.project {
 .navigation li {
     display: inline;
     padding: 10px;
+}
+
+.navigation-links:hover {
+    text-decoration: none;
+    color: black;
 }
 
 h2, h3 {

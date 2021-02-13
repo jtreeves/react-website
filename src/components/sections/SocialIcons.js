@@ -7,7 +7,7 @@ function SocialIcons() {
                     target="_blank" 
                     rel="noreferrer"
                 >
-                    <i className="fab fa-github-square fa-lg" />
+                    <i className="fab fa-github-square fa-2x" />
                 </a>
             </li>
             
@@ -17,7 +17,7 @@ function SocialIcons() {
                     target="_blank" 
                     rel="noreferrer"
                 >
-                    <i className="fab fa-linkedin fa-lg" />
+                    <i className="fab fa-linkedin fa-2x" />
                 </a>
             </li>
             
@@ -27,7 +27,7 @@ function SocialIcons() {
                     target="_blank" 
                     rel="noreferrer"
                 >
-                    <i className="fab fa-twitter-square fa-lg" />
+                    <i className="fab fa-twitter-square fa-2x" />
                 </a>
             </li>
             
@@ -37,7 +37,7 @@ function SocialIcons() {
                     target="_blank" 
                     rel="noreferrer"
                 >
-                    <i className="fab fa-tumblr-square fa-lg" />
+                    <i className="fab fa-tumblr-square fa-2x" />
                 </a>
             </li>
             
@@ -47,7 +47,7 @@ function SocialIcons() {
                     target="_blank" 
                     rel="noreferrer"
                 >
-                    <i className="fas fa-envelope-square fa-lg" />
+                    <i className="fas fa-envelope-square fa-2x" />
                 </a>
             </li>
             
@@ -57,7 +57,7 @@ function SocialIcons() {
                     target="_blank" 
                     rel="noreferrer"
                 >
-                    <i className="fas fa-external-link-square-alt fa-lg" />
+                    <i className="fas fa-external-link-square-alt fa-2x" />
                 </a>
             </li>
         </ul>

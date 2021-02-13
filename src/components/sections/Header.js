@@ -10,11 +10,7 @@ function Header() {
                 <div className="left-column">
                     <Link 
                         to="/" 
-                        style={{ 
-                            textDecoration: "none", 
-                            color: "black",
-                            lineHeight: "100px"
-                        }}
+                        className="headline"
                     >
                         <h1>Jackson Reeves</h1> 
                     </Link>

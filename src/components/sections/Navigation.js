@@ -9,10 +9,7 @@ function Navigation() {
                 <NavLink 
                     exact to="/about" 
                     onClick={scroll}
-                    style={{ 
-                        textDecoration: "none", 
-                        color: "black" 
-                    }}
+                    className="navigation-links"
                 >
                     About
                 </NavLink>
@@ -22,10 +19,7 @@ function Navigation() {
                 <NavLink 
                     exact to="/contact" 
                     onClick={scroll}
-                    style={{ 
-                        textDecoration: "none", 
-                        color: "black" 
-                    }}
+                    className="navigation-links"
                 >
                     Contact
                 </NavLink>
@@ -35,10 +29,7 @@ function Navigation() {
                 <NavLink 
                     exact to="/connect" 
                     onClick={scroll}
-                    style={{ 
-                        textDecoration: "none", 
-                        color: "black" 
-                    }}
+                    className="navigation-links"
                 >
                     Connect
                 </NavLink>
@@ -48,10 +39,7 @@ function Navigation() {
                 <NavLink 
                     exact to="/blog" 
                     onClick={scroll}
-                    style={{ 
-                        textDecoration: "none", 
-                        color: "black" 
-                    }}
+                    className="navigation-links"
                 >
                     Blog
                 </NavLink>
@@ -61,10 +49,7 @@ function Navigation() {
                 <NavLink 
                     exact to="/portfolio" 
                     onClick={scroll}
-                    style={{ 
-                        textDecoration: "none", 
-                        color: "black" 
-                    }}
+                    className="navigation-links"
                 >
                     Portfolio
                 </NavLink>
@@ -74,10 +59,7 @@ function Navigation() {
                 <NavLink 
                     exact to="/resume" 
                     onClick={scroll}
-                    style={{ 
-                        textDecoration: "none", 
-                        color: "black" 
-                    }}
+                    className="navigation-links"
                 >
                     Resume
                 </NavLink>
