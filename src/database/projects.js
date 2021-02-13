@@ -9,7 +9,7 @@ const projects = {
             'Algorithms'
         ],
         type: 'Library',
-        image: '/images/regressions.png',
+        image: '/images/projects/regressions.png',
         deployedLink: 'https://pypi.org/project/regressions/',
         repositoryLink: 'https://github.com/jtreeves/regressions_library',
         date: 'January 2021'
@@ -26,7 +26,7 @@ const projects = {
             'APIs'
         ],
         type: 'App',
-        image: '/images/tiresias.png',
+        image: '/images/projects/tiresias.png',
         deployedLink: 'https://tiresias-predictions.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/predictions-frontend',
         date: 'January 2021'
@@ -43,7 +43,7 @@ const projects = {
             'Sass'
         ],
         type: 'App',
-        image: '/images/kaleidoscope.png',
+        image: '/images/projects/kaleidoscope.png',
         deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/budget-frontend',
         date: 'December 2020'
@@ -59,7 +59,7 @@ const projects = {
             'APIs'
         ],
         type: 'App',
-        image: '/images/read-this-next.png',
+        image: '/images/projects/read-this-next.png',
         deployedLink: 'https://read-this-next.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/read-this-next',
         date: 'November 2020'
@@ -74,7 +74,7 @@ const projects = {
             'CSS'
         ],
         type: 'App',
-        image: '/images/matches-and-patches.png',
+        image: '/images/projects/matches-and-patches.png',
         deployedLink: 'https://jtreeves.github.io',
         repositoryLink: 'https://github.com/jtreeves/matches-and-patches',
         date: 'October 2020'
