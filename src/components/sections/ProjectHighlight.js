@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom'
 import scroll from '../../utilities/scroll'
 
 function ProjectHighlight(props) {
-    const projectName = props.name
-
     return (
         <Link
             to={{
                 pathname: "/project",
-                state: {projectName}
+                state: {project: props.name}
             }}
             onClick={scroll}
         >
@@ -24,7 +22,7 @@ function ProjectHighlight(props) {
                 <div className="card project-overlay">
                     <h4>{props.name}</h4>
                 </div>
-        </div>            
+            </div>            
         </Link>
     )
 }

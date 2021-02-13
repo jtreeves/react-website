@@ -5,7 +5,7 @@ import projects from '../../database/projects'
 
 function Project() {
     const location = useLocation()
-    const specificProject = location.state.projectName
+    const specificProject = location.state.project
     let lowercase = ''
     for (let project in projects) {
         if (projects[project].name === specificProject) {
