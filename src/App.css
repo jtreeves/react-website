@@ -89,6 +89,10 @@ main {
     transition: 1s ease;
 }
 
+.project-image-callout {
+    margin-top: 20px;
+}
+
 .project-overlay {
     position: absolute;
     top: 0;
