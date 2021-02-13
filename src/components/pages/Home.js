@@ -1,24 +1,21 @@
-import Portfolio from './Portfolio'
-import About from './About'
-import Resume from './Resume'
-import Blog from './Blog'
-import Connect from './Connect'
-import Contact from './Contact'
+import ProjectHighlight from '../sections/ProjectHighlight'
+
+import projects from '../../database/projects'
 
 function Home() {
     return (
         <div>
-            <Portfolio />
-            <hr />
-            <About />
-            <hr />
-            <Resume />
-            <hr />
-            <Blog />
-            <hr />
-            <Connect />
-            <hr />
-            <Contact />
+            <ProjectHighlight 
+                image={projects.regressions.image}
+                name={projects.regressions.name}
+                description={projects.regressions.description}
+                skills={projects.regressions.skills}
+                deployedLink={projects.regressions.deployedLink}
+                deployedText={projects.regressions.type}
+                repositoryLink={projects.regressions.repositoryLink}
+                repositoryText="Code"
+                date={projects.regressions.date}
+            />
         </div>
     )
 }
