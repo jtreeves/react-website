@@ -19,6 +19,8 @@ function Home() {
                         date={projects.regressions.date}
                     />
 
+                    <div className="blank-space" />
+
                     <ProjectHighlight 
                         image={projects.tiresias.image}
                         name={projects.tiresias.name}
@@ -44,6 +46,8 @@ function Home() {
                         repositoryText="Code"
                         date={projects.kaleidoscope.date}
                     />
+
+                    <div className="blank-space" />
 
                     <ProjectHighlight 
                         image={projects.readThisNext.image}

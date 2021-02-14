@@ -10,8 +10,9 @@ function ProjectHighlight(props) {
                 state: {project: props.name}
             }}
             onClick={scroll}
+            className="links"
         >
-            <div className="project-highlight card-connect">
+            <div className="project-highlight">
                 <div className="card project-image">
                     <img 
                         src={props.image} 
