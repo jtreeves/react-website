@@ -1,10 +1,10 @@
 import Twitter from '../contents/Twitter'
 import GitHub from '../contents/GitHub'
 
-function Connect() {
+function Socialize() {
     return (
         <div>
-            <h2>Connect</h2>
+            <h2>Socialize</h2>
             
             <div className="contains-columns">
                 <Twitter />
@@ -14,4 +14,4 @@ function Connect() {
     )
 }
 
-export default Connect
+export default Socialize

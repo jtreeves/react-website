@@ -10,8 +10,8 @@ function Resume() {
         <div>
             <h2>Resume</h2>
 
-            <p>
-                I am a programmer with experience in JavaScript, Python, and SQL.
+            <p className="card card-body">
+                Inquisitive full-stack developer with more than a decade of experience in education and journalism. Hoping to combine long-time loves of editing and data analysis to produce clean, performative code.
             </p>
 
             <div className="contains-columns">
@@ -159,7 +159,7 @@ function Resume() {
                     <h3>Education</h3>
                     
                     <Card 
-                        image={education.certificate.image}
+                        image={false}
                         title={education.certificate.degree}
                         subtitle={education.certificate.school}
                         lead={education.certificate.specialization}
@@ -176,7 +176,7 @@ function Resume() {
                     />
 
                     <Card 
-                        image={education.bachelor.image}
+                        image={false}
                         title={education.bachelor.degree}
                         subtitle={education.bachelor.school}
                         lead={education.bachelor.specialization}
@@ -193,7 +193,7 @@ function Resume() {
                     />
                     
                     <Card 
-                        image={education.program.image}
+                        image={false}
                         title={education.program.degree}
                         subtitle={education.program.school}
                         lead={education.program.specialization}
@@ -212,7 +212,7 @@ function Resume() {
             </div>
 
             <a 
-                href="/resume.pdf" 
+                href="/Jackson_Reeves_Resume.pdf" 
                 target="_blank" 
                 rel="noreferrer"
             >

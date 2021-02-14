@@ -4,7 +4,7 @@ import Header from './components/sections/Header'
 import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
-import Connect from './components/pages/Connect'
+import Socialize from './components/pages/Socialize'
 import Blog from './components/pages/Blog'
 import Portfolio from './components/pages/Portfolio'
 import Resume from './components/pages/Resume'
@@ -36,8 +36,8 @@ function App() {
                 />
 
                 <Route 
-                    path="/connect" 
-                    component={Connect}
+                    path="/socialize" 
+                    component={Socialize}
                 />
 
                 <Route 
