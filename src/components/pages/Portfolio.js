@@ -1,87 +1,68 @@
 import Card from '../elements/Card'
+import ProjectHighlight from '../sections/ProjectHighlight'
 
 import projects from '../../database/projects'
 
 function Portfolio() {
     return (
-        <div>
+        <div className="contains-columns">
             <h2>Portfolio</h2>
 
-            <div className="contains-columns">
+            {/* <div className="contains-columns"> */}
                 <div className="left-column">
-                    <Card
+                    <ProjectHighlight 
                         image={projects.regressions.image}
-                        title={projects.regressions.name}
-                        subtitle={false}
-                        lead={false}
-                        danger={false}
-                        list={false}
-                        text={projects.regressions.description}
-                        source={false}
-                        cloud={projects.regressions.skills}
-                        link={projects.regressions.deployedLink}
-                        button={projects.regressions.type}
-                        otherLink={projects.regressions.repositoryLink}
-                        otherButton="Code"
-                        time={projects.regressions.date}
+                        name={projects.regressions.name}
+                        description={projects.regressions.description}
+                        skills={projects.regressions.skills}
+                        deployedLink={projects.regressions.deployedLink}
+                        deployedText={projects.regressions.type}
+                        repositoryLink={projects.regressions.repositoryLink}
+                        repositoryText="Code"
+                        date={projects.regressions.date}
                     />
-                    
-                    <Card
+
+                    <ProjectHighlight 
                         image={projects.tiresias.image}
-                        title={projects.tiresias.name}
-                        subtitle={false}
-                        lead={false}
-                        danger={false}
-                        list={false}
-                        text={projects.tiresias.description}
-                        source={false}
-                        cloud={projects.tiresias.skills}
-                        link={projects.tiresias.deployedLink}
-                        button={projects.tiresias.type}
-                        otherLink={projects.tiresias.repositoryLink}
-                        otherButton="Code"
-                        time={projects.tiresias.date}
+                        name={projects.tiresias.name}
+                        description={projects.tiresias.description}
+                        skills={projects.tiresias.skills}
+                        deployedLink={projects.tiresias.deployedLink}
+                        deployedText={projects.tiresias.type}
+                        repositoryLink={projects.tiresias.repositoryLink}
+                        repositoryText="Code"
+                        date={projects.tiresias.date}
                     />
                 </div>
 
                 <div className="right-column">
-                    <Card
+                    <ProjectHighlight 
                         image={projects.kaleidoscope.image}
-                        title={projects.kaleidoscope.name}
-                        subtitle={false}
-                        lead={false}
-                        danger={false}
-                        list={false}
-                        text={projects.kaleidoscope.description}
-                        source={false}
-                        cloud={projects.kaleidoscope.skills}
-                        link={projects.kaleidoscope.deployedLink}
-                        button={projects.kaleidoscope.type}
-                        otherLink={projects.kaleidoscope.repositoryLink}
-                        otherButton="Code"
-                        time={projects.kaleidoscope.date}
+                        name={projects.kaleidoscope.name}
+                        description={projects.kaleidoscope.description}
+                        skills={projects.kaleidoscope.skills}
+                        deployedLink={projects.kaleidoscope.deployedLink}
+                        deployedText={projects.kaleidoscope.type}
+                        repositoryLink={projects.kaleidoscope.repositoryLink}
+                        repositoryText="Code"
+                        date={projects.kaleidoscope.date}
                     />
 
-                    <Card
+                    <ProjectHighlight 
                         image={projects.readThisNext.image}
-                        title={projects.readThisNext.name}
-                        subtitle={false}
-                        lead={false}
-                        danger={false}
-                        list={false}
-                        text={projects.readThisNext.description}
-                        source={false}
-                        cloud={projects.readThisNext.skills}
-                        link={projects.readThisNext.deployedLink}
-                        button={projects.readThisNext.type}
-                        otherLink={projects.readThisNext.repositoryLink}
-                        otherButton="Code"
-                        time={projects.readThisNext.date}
+                        name={projects.readThisNext.name}
+                        description={projects.readThisNext.description}
+                        skills={projects.readThisNext.skills}
+                        deployedLink={projects.readThisNext.deployedLink}
+                        deployedText={projects.readThisNext.type}
+                        repositoryLink={projects.readThisNext.repositoryLink}
+                        repositoryText="Code"
+                        date={projects.readThisNext.date}
                     />
                 </div>
-            </div>
+            {/* </div> */}
 
-            <a 
+            {/* <a 
                 href="https://github.com/jtreeves" 
                 target="_blank" 
                 rel="noreferrer"
@@ -91,7 +72,7 @@ function Portfolio() {
                 >
                     View more projects
                 </button>
-            </a>
+            </a> */}
         </div>
     )
 }

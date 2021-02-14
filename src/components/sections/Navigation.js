@@ -16,13 +16,14 @@ function Navigation() {
             </li>
 
             <li>
-                <NavLink 
+                {/* <NavLink 
                     exact to="/contact" 
                     onClick={scroll}
                     className="navigation-links"
                 >
                     Contact
-                </NavLink>
+                </NavLink> */}
+                <a href="#contact">Contact</a>
             </li>
 
             <li>

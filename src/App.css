@@ -169,11 +169,11 @@ img.project {
 }
 
 .navigation-links:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }
 
-h1, h2, h3, h4, .navigation-links {
+h1, h2, h3, .navigation-links, .project-title {
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
 }
@@ -186,6 +186,10 @@ h1 {
 h2, h3 {
     color: white;
     text-shadow: 1px 1px 1px black;
+}
+
+.project-title {
+    font-size: 50px;
 }
 
 .card-lock {
