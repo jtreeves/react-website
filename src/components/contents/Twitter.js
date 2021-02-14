@@ -55,7 +55,7 @@ function Twitter() {
     
     return (
         <div className="left-column">
-            <h3>Twitter</h3>
+            <h3>Recent Tweets</h3>
 
             {tweets}
             
@@ -65,7 +65,7 @@ function Twitter() {
                 rel="noreferrer"
             >
                 <button
-                    className="btn btn-primary center social"
+                    className="btn btn-dark center social"
                 >
                     Read more tweets
                 </button>

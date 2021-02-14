@@ -67,7 +67,7 @@ function Portfolio() {
                 rel="noreferrer"
             >
                 <button
-                    className="btn btn-primary center top-margin"
+                    className="btn btn-dark center top-margin"
                 >
                     View more projects
                 </button>

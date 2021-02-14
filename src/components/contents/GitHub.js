@@ -64,7 +64,7 @@ function GitHub() {
     
     return (
         <div className="right-column">
-            <h3>GitHub</h3>
+            <h3>Recent Commits</h3>
 
             {commits}
             
@@ -74,7 +74,7 @@ function GitHub() {
                 rel="noreferrer"
             >
                 <button
-                    className="btn btn-primary center social"
+                    className="btn btn-dark center social"
                 >
                     Read more commits
                 </button>
