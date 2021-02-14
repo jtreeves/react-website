@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom'
 
-import Card from '../elements/Card'
 import ProjectHighlight from '../sections/ProjectHighlight'
 import SkillSet from '../elements/SkillSet'
 
