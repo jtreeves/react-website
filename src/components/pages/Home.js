@@ -1,10 +1,15 @@
 import ProjectHighlight from '../sections/ProjectHighlight'
 
 import projects from '../../database/projects'
+import About from './About'
 
 function Home() {
     return (
         <div>
+            <About />
+
+            <div className="blank-space" />
+
             <div className="contains-columns">
                 <div className="left-column">
                     <ProjectHighlight 
