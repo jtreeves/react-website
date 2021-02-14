@@ -1,7 +1,8 @@
 function About() {
     return (
         <div className="contains-columns">
-            <h2>About</h2>
+            <h2>Software Engineer</h2>
+            
             <div className="left-column">
                 <div className="square">
                     <img 

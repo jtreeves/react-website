@@ -131,6 +131,10 @@ main {
     opacity: 0.5;
 }
 
+.page-container {
+    margin-bottom: 20px;
+}
+
 .contains-columns {
     display: grid;
     grid-template-columns: 48% 4% 48%;

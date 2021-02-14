@@ -1,14 +1,15 @@
-import Card from '../elements/Card'
 import ProjectHighlight from '../sections/ProjectHighlight'
 
 import projects from '../../database/projects'
 
 function Portfolio() {
     return (
-        <div className="contains-columns">
-            <h2>Portfolio</h2>
+        
 
-            {/* <div className="contains-columns"> */}
+            <div>
+                <h2>Projects</h2>
+
+                <div className="contains-columns">
                 <div className="left-column">
                     <ProjectHighlight 
                         image={projects.regressions.image}
@@ -33,7 +34,7 @@ function Portfolio() {
                         repositoryText="Code"
                         date={projects.tiresias.date}
                     />
-                    <div className="blank-space" />
+                    {/* <div className="blank-space" /> */}
                 </div>
 
                 <div className="right-column">
@@ -60,25 +61,27 @@ function Portfolio() {
                         repositoryText="Code"
                         date={projects.readThisNext.date}
                     />
-                    <div className="blank-space" />
+                    {/* <div className="blank-space" /> */}
                 </div>
-            {/* </div> */}
+                </div>
 
-            {/* <a 
-                href="https://github.com/jtreeves" 
-                target="_blank" 
-                rel="noreferrer"
-            >
-                <button
-                    className="btn btn-primary center top-margin"
+                 <a 
+                    href="https://github.com/jtreeves" 
+                    target="_blank" 
+                    rel="noreferrer"
                 >
-                    View more projects
-                </button>
-            </a> */}
-            
-            
-            <div className="blank-space" />
-        </div>
+                    <button
+                        className="btn btn-primary center top-margin"
+                    >
+                        View more projects
+                    </button>
+                </a>
+                </div>
+                
+                
+                
+        //     </div>
+        // </div>
     )
 }
 
