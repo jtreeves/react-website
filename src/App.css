@@ -186,13 +186,25 @@ h1 {
     font-size: 40px;
 }
 
+.repeating-slashes {
+    background: repeating-linear-gradient(
+        45deg,
+        gray,
+        darkgray 10px,
+        gray 10px,
+        darkgray 20px
+    );
+    height: 100px;
+    z-index: 20;
+}
+
 h2, h3 {
     color: white;
     text-shadow: 1px 1px 1px black;
 }
 
 .project-title {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .card-lock {

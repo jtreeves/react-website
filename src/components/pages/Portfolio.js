@@ -4,12 +4,10 @@ import projects from '../../database/projects'
 
 function Portfolio() {
     return (
-        
+        <div>
+            <h2>Projects</h2>
 
-            <div>
-                <h2>Projects</h2>
-
-                <div className="contains-columns">
+            <div className="contains-columns">
                 <div className="left-column">
                     <ProjectHighlight 
                         image={projects.regressions.image}
@@ -34,7 +32,6 @@ function Portfolio() {
                         repositoryText="Code"
                         date={projects.tiresias.date}
                     />
-                    {/* <div className="blank-space" /> */}
                 </div>
 
                 <div className="right-column">
@@ -61,27 +58,21 @@ function Portfolio() {
                         repositoryText="Code"
                         date={projects.readThisNext.date}
                     />
-                    {/* <div className="blank-space" /> */}
                 </div>
-                </div>
+            </div>
 
-                 <a 
-                    href="https://github.com/jtreeves" 
-                    target="_blank" 
-                    rel="noreferrer"
+                <a 
+                href="https://github.com/jtreeves" 
+                target="_blank" 
+                rel="noreferrer"
+            >
+                <button
+                    className="btn btn-primary center top-margin"
                 >
-                    <button
-                        className="btn btn-primary center top-margin"
-                    >
-                        View more projects
-                    </button>
-                </a>
-                </div>
-                
-                
-                
-        //     </div>
-        // </div>
+                    View more projects
+                </button>
+            </a>
+        </div>
     )
 }
 
