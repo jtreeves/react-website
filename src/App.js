@@ -13,6 +13,7 @@ import Project from './components/pages/Project'
 import Footer from './components/sections/Footer'
 
 import './App.css'
+import AllSkills from './components/pages/AllSkills'
 
 function App() {
     return (
@@ -48,6 +49,11 @@ function App() {
                 <Route 
                     path="/portfolio" 
                     component={Portfolio}
+                />
+                
+                <Route 
+                    path="/skills" 
+                    component={AllSkills}
                 />
 
                 <Route 

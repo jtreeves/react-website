@@ -1,12 +1,12 @@
-import About from './About'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
-import AllSkills from '../sections/AllSkills'
+import AllSkills from './AllSkills'
+import Introduction from '../sections/Introduction'
 
 function Home() {
     return (
         <div>
-            <About />
+            <Introduction />
             <hr />
             <Portfolio />
             <hr />

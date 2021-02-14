@@ -57,6 +57,16 @@ function Navigation() {
             
             <li>
                 <NavLink 
+                    exact to="/skills" 
+                    onClick={scroll}
+                    className="navigation-links"
+                >
+                    Skills
+                </NavLink>
+            </li>
+            
+            <li>
+                <NavLink 
                     exact to="/resume" 
                     onClick={scroll}
                     className="navigation-links"
