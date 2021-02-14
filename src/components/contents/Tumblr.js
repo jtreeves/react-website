@@ -20,7 +20,7 @@ function Tumblr() {
             const resultArray = result.data.posts.map((post, index) => {
                 const body = post.body
                 const date = post.date
-                const textSubstrings = extractFromPost(body, 500)
+                const textSubstrings = extractFromPost(body, 50)
                 const correctTime = convertTime(date)
                 if (index < 5) {
                     return (
@@ -63,15 +63,15 @@ function Tumblr() {
             const resultArray = result.data.posts.map((post, index) => {
                 const body = post.body
                 const date = post.date
-                const textSubstrings = extractFromPost(body, 500)
+                const textSubstrings = extractFromPost(body, 25)
                 const correctTime = convertTime(date)
-                if (index < 5) {
+                if (index < 10) {
                     return (
                         <div 
                             key={index}
                         >
                             <Card 
-                                image={textSubstrings.image}
+                                image={false}
                                 title={post.title}
                                 subtitle={false}
                                 lead={false}
