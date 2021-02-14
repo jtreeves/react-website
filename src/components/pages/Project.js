@@ -27,17 +27,24 @@ function Project() {
                                 rel="noreferrer"
                                 className="links"
                             >
-                                <div className="project-highlight">
-                                    <div className="project-image card">
+                                <div
+                                    className="project-highlight"
+                                >
+                                    <div 
+                                        className="project-image card"
+                                    >
                                         <img 
                                             src={projects[lowercase].image} 
                                             alt={projects[lowercase].name} 
-                                            className=""
                                         />
                                     </div>
 
-                                    <div className="project-overlay card">
-                                        <div className=" project-title">
+                                    <div 
+                                        className="project-overlay card"
+                                    >
+                                        <div 
+                                            className="project-title"
+                                        >
                                             View Site
                                         </div>
                                     </div>     

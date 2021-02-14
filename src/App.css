@@ -39,9 +39,9 @@ footer {
     margin-top: -100px;
 }
 
-header li:hover {
+/* header li:hover {
     font-weight: bold;
-}
+} */
 
 header ul {
     list-style: none;
@@ -64,7 +64,7 @@ header li {
 .headline:hover {
     text-decoration: none;
     color: black;
-    line-height: 100px;
+    text-shadow: 1px 1px 1px black;
 }
 
 header a {
@@ -73,6 +73,7 @@ header a {
 }
 
 header i:hover {
+    text-decoration: none;
     color: black;
     text-shadow: 1px 1px 1px black;
 }
@@ -84,22 +85,13 @@ main {
 
 .project-highlight {
     width: 100%;
-    /* height: 50%; */
     position: relative;
     background: white;
 }
 
 .project-image {
-    /* width: 100%;
-    object-fit: cover; */
     transition: 1s ease;
-    /* padding: -20px; */
-    /* margin-bottom: 20px; */
 }
-
-/* .fit-full {
-    height: 100%;
-} */
 
 .blank-space {
     height: 20px;
@@ -178,8 +170,9 @@ img.project {
 }
 
 .navigation-links:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
+    text-shadow: 1px 1px 1px black;
 }
 
 h1, h2, h3, .navigation-links, .project-title {
@@ -189,7 +182,7 @@ h1, h2, h3, .navigation-links, .project-title {
 
 h1 {
     color: black;
-    text-shadow: 1px 1px 1px white;
+    /* text-shadow: 1px 1px 1px white; */
     font-size: 40px;
 }
 
@@ -236,11 +229,6 @@ h2, h3 {
     width: 50%;
     margin: 0 25%;
 }
-
-/* .social-icon:hover {
-    fill: gray;
-    text-shadow: 4px 4px 4px white;
-} */
 
 .other-button {
     margin-left: 10px;
