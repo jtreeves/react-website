@@ -12,16 +12,19 @@ function ProjectHighlight(props) {
             onClick={scroll}
             className="links"
         >
-            <div className="project-highlight">
-                <div className="card project-image">
+            <div className="project-highlight square">
+                <div className="project-image">
                     <img 
                         src={props.image} 
                         alt={props.name} 
+                        className="square-content card"
                     />
                 </div>
 
-                <div className="card project-overlay">
-                    <h4>{props.name}</h4>
+                <div className="square-content card project-overlay">
+                    <h4>
+                        {props.name}
+                    </h4>
                 </div>
             </div>            
         </Link>

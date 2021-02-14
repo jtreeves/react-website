@@ -84,9 +84,10 @@ main {
 }
 
 .project-image {
-    /* height: 100px; */
+    /* width: 100%; */
     /* object-fit: cover; */
     transition: 1s ease;
+    /* padding: -20px; */
 }
 
 .blank-space {
