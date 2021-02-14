@@ -33,6 +33,7 @@ function Portfolio() {
                         repositoryText="Code"
                         date={projects.tiresias.date}
                     />
+                    <div className="blank-space" />
                 </div>
 
                 <div className="right-column">
@@ -59,6 +60,7 @@ function Portfolio() {
                         repositoryText="Code"
                         date={projects.readThisNext.date}
                     />
+                    <div className="blank-space" />
                 </div>
             {/* </div> */}
 
@@ -73,6 +75,9 @@ function Portfolio() {
                     View more projects
                 </button>
             </a> */}
+            
+            
+            <div className="blank-space" />
         </div>
     )
 }

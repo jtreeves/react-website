@@ -94,6 +94,7 @@ main {
     /* object-fit: cover; */
     transition: 1s ease;
     /* padding: -20px; */
+    /* margin-bottom: 20px; */
 }
 
 .blank-space {
@@ -181,6 +182,7 @@ h1, h2, h3, .navigation-links, .project-title {
 h1 {
     color: black;
     text-shadow: 1px 1px 1px white;
+    font-size: 40px;
 }
 
 h2, h3 {

@@ -50,6 +50,7 @@ function Mail() {
             onSubmit={hanldeSubmit}
             className="card card-body card-lock"
         >   
+            <p>Thanks for reaching out!</p>
             <FormItem
                 type="text"
                 label="name"

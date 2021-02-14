@@ -12,13 +12,12 @@ function Home() {
             <hr />
 
             <Portfolio />
-            <div className="blank-space" />
+            
             <hr />
-            <section id="contact">
+            
 
             <Contact />
-            </section>
-
+           
         </div>
     )
 }
