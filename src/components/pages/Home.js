@@ -8,8 +8,6 @@ function Home() {
         <div>
             <About />
 
-            <div className="blank-space" />
-
             <div className="contains-columns">
                 <div className="left-column">
                     <ProjectHighlight 
@@ -23,8 +21,6 @@ function Home() {
                         repositoryText="Code"
                         date={projects.regressions.date}
                     />
-
-                    <div className="blank-space" />
 
                     <ProjectHighlight 
                         image={projects.tiresias.image}
@@ -51,8 +47,6 @@ function Home() {
                         repositoryText="Code"
                         date={projects.kaleidoscope.date}
                     />
-
-                    <div className="blank-space" />
 
                     <ProjectHighlight 
                         image={projects.readThisNext.image}

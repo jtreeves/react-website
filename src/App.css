@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
 body {
     background: url("./painting.jpg");
     background-size: cover;
@@ -167,9 +169,16 @@ img.project {
     color: black;
 }
 
+h1, h2, h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: black;
+}
+
 h2, h3 {
-    font-family: 'Galada', cursive;
-    text-align: center;
     color: white;
 }
 
@@ -227,6 +236,7 @@ h2, h3 {
 .square {
     position: relative;
     width: 100%;
+    margin-bottom: 20px;
 }
   
 .square:after {
