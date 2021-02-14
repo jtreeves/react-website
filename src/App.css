@@ -73,8 +73,8 @@ header a {
 }
 
 header i:hover {
-    font-weight: bold;
-    color: grey;
+    color: black;
+    text-shadow: 1px 1px 1px black;
 }
 
 main {
@@ -173,17 +173,19 @@ img.project {
     color: black;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, .navigation-links {
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
 }
 
 h1 {
     color: black;
+    text-shadow: 1px 1px 1px white;
 }
 
 h2, h3 {
     color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 .card-lock {
@@ -221,9 +223,10 @@ h2, h3 {
     margin: 0 25%;
 }
 
-.social-icon:hover {
+/* .social-icon:hover {
     fill: gray;
-}
+    text-shadow: 4px 4px 4px white;
+} */
 
 .other-button {
     margin-left: 10px;

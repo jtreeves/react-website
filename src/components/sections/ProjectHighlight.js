@@ -22,9 +22,9 @@ function ProjectHighlight(props) {
                 </div>
 
                 <div className="square-content card project-overlay">
-                    <h4>
+                    <h1>
                         {props.name}
-                    </h4>
+                    </h1>
                 </div>
             </div>            
         </Link>
