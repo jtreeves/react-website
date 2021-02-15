@@ -20,37 +20,11 @@ function Project() {
             <div className="contains-columns">
                 <div className="left-column">
                     <div className="square">
-                        <div className="square-content">
-                            <a 
-                                href={projects[lowercase].deployedLink} 
-                                target="_blank" 
-                                rel="noreferrer"
-                                className="links"
-                            >
-                                <div
-                                    className="project-highlight"
-                                >
-                                    <div 
-                                        className="project-image card"
-                                    >
-                                        <img 
-                                            src={projects[lowercase].image} 
-                                            alt={projects[lowercase].name} 
-                                        />
-                                    </div>
-
-                                    <div 
-                                        className="project-overlay card"
-                                    >
-                                        <div 
-                                            className="project-title"
-                                        >
-                                            View Site
-                                        </div>
-                                    </div>     
-                                </div>
-                            </a>
-                        </div>
+                        <img 
+                            src={projects[lowercase].image} 
+                            alt={projects[lowercase].name} 
+                            className="square-content card"
+                        />    
                     </div>
                 </div>
 
