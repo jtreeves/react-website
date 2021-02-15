@@ -1,6 +1,6 @@
 function SocialIcons() {
     return (
-        <ul>
+        <ul className="social-icons">
             <li>
                 <a 
                     href="https://github.com/jtreeves" 

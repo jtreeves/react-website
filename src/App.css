@@ -39,10 +39,6 @@ footer {
     margin-top: -100px;
 }
 
-/* header li:hover {
-    font-weight: bold;
-} */
-
 header ul {
     list-style: none;
     float: right;
@@ -182,20 +178,7 @@ h1, h2, h3, .navigation-links, .project-title {
 
 h1 {
     color: black;
-    /* text-shadow: 1px 1px 1px white; */
     font-size: 40px;
-}
-
-.repeating-slashes {
-    background: repeating-linear-gradient(
-        45deg,
-        gray,
-        darkgray 10px,
-        gray 10px,
-        darkgray 20px
-    );
-    height: 100px;
-    z-index: 20;
 }
 
 h2, h3 {
@@ -271,4 +254,35 @@ h2, h3 {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+}
+
+@media screen and (max-width: 1000px) {
+    .center {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contains-columns {
+        grid-template-columns: 100%;
+    }
+
+    .left-column {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .right-column {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .navigation, .social-icons {
+        display: none;
+    }
+    
+    h1 {
+        text-align: center;
+    }
 }
