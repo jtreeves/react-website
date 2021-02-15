@@ -10,7 +10,6 @@ body {
     background: url("./painting.jpg");
     background-size: cover;
     background-attachment: fixed;
-    z-index: 0;
 }
 
 header {
@@ -23,7 +22,6 @@ header {
     background: whitesmoke;
     display: flex;
     align-items: center;
-    opacity: 90%;
     z-index: 1;
 }
 
