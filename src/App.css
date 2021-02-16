@@ -255,6 +255,21 @@ h2, h3 {
     overflow-y: scroll;
 }
 
+.about-card {
+    background: white;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 1%;
+}
+
+.about-image {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
 @media screen and (max-width: 1000px) {
     .center {
         width: 100%;
