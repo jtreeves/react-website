@@ -299,4 +299,15 @@ h2, h3 {
     h1 {
         text-align: center;
     }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        margin: 100px 10px;
+        padding: 5px;
+    }
 }
