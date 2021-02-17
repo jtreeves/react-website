@@ -314,7 +314,7 @@ h2, h3 {
 
 @media screen and (max-width: 500px) {
     body { 
-        background: #007bff;
+        height: 100%;
     }
 
     main {
