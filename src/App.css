@@ -10,6 +10,9 @@ body {
     background: url("./painting.jpg");
     background-size: cover;
     background-attachment: fixed;
+}
+
+body:before {
     top: 0; 
     left: 0; 
     width: 100%; 
