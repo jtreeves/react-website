@@ -10,6 +10,10 @@ body {
     background: url("./painting.jpg");
     background-size: cover;
     background-attachment: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
 }
 
 header {
@@ -305,7 +309,36 @@ h2, h3 {
     }
 }
 
+@media screen and (max-width: 600px) {
+    /* body:before { 
+        content: ""; 
+        background: url("./painting.jpg"); 
+        background-size: cover; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+    }  */
+
+    main {
+        margin: 100px 50px;
+        padding: 10px;
+    }
+}
+
 @media screen and (max-width: 500px) {
+    /* body:before { 
+        content: ""; 
+        background: url("./painting.jpg"); 
+        background-size: cover; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+    }  */
+
     main {
         margin: 100px 10px;
         padding: 5px;
