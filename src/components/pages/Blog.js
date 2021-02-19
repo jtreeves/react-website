@@ -1,3 +1,4 @@
+import Dev from '../contents/Dev'
 import Tumblr from '../contents/Tumblr'
 
 function Blog() {
@@ -22,6 +23,7 @@ function Blog() {
                     Read more posts
                 </button>
             </a>
+            <Dev />
         </div>
     )
 }
