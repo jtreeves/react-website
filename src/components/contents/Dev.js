@@ -56,7 +56,11 @@ function Dev() {
     
     return (
         <div>
-            {posts}
+            <div className="contains-columns">
+                <div className="left-column">
+                    {posts}
+                </div>
+            </div>
         </div>
     )
 }
