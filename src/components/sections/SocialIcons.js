@@ -53,7 +53,7 @@ function SocialIcons() {
             
             <li>
                 <a 
-                    href="/resume.pdf" 
+                    href="/Jackson_Reeves_Resume.pdf" 
                     target="_blank" 
                     rel="noreferrer"
                 >
