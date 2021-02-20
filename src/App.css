@@ -73,6 +73,25 @@ header i:hover {
     text-shadow: 1px 1px 1px black;
 }
 
+figure {
+    display: inline;
+    position: relative;
+}
+
+caption {
+    display: none;
+}
+
+figure:hover caption {
+    display: inline;
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    border: 1px solid gray;
+    color: black;
+    background: gray;
+}
+
 main {
     padding: 25px;
     margin: 100px;

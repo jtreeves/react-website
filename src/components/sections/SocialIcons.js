@@ -2,13 +2,18 @@ function SocialIcons() {
     return (
         <ul className="social-icons">
             <li>
-                <a 
-                    href="https://github.com/jtreeves" 
-                    target="_blank" 
-                    rel="noreferrer"
-                >
-                    <i className="fab fa-github-square fa-2x" />
-                </a>
+                <figure>
+                    <a 
+                        href="https://github.com/jtreeves" 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <i className="fab fa-github-square fa-2x" />
+                    </a>
+                    <caption>
+                        GitHub
+                    </caption>
+                </figure>
             </li>
             
             <li>
