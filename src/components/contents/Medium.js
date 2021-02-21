@@ -24,27 +24,30 @@ function Medium() {
             console.log(`RESULT.DATA.POSTS.ITEMS: ${result.data.posts.items}`)
             console.log(`RESULT.DATA.POSTS.ITEMS KEYS: ${Object.keys(result.data.posts.items)}`)
             const resultArray = result.data.posts.items.map((post, index) => {
-                const date = convertTime(post.published_timestamp)
+                // const date = convertTime(post.published_timestamp)
+                console.log(`POST KEYS: ${Object.keys(post)}`)
+                // const newContent = post[content:encoded]
                 if (index < 5) {
                     return (
                         <div 
                             key={index}
                         >
+                            
                             <Card 
-                                image={post.cover_image}
+                                image={false}
                                 title={post.title}
                                 subtitle={false}
                                 lead={false}
-                                danger={false}
+                                danger={true}
                                 list={false}
-                                text={post.description}
+                                text={post.content}
                                 source={false}
                                 cloud={false}
-                                link={post.url}
+                                link={post.link}
                                 button="View full post"
                                 otherLink={false}
                                 otherButton={false}
-                                time={date}
+                                time={post.isoDate}
                             />
                         </div>
                     )
