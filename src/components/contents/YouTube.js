@@ -22,8 +22,8 @@ function YouTube() {
                             key={index}
                         >
                             <iframe 
-                                width="560" 
-                                height="315" 
+                                width="100%" 
+                                height="300" 
                                 src={sourceLink}
                                 title={index}
                                 frameborder="0" 
