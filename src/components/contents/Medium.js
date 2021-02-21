@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import Card from '../elements/Card'
 
+import extractFromPost from '../../utilities/medium'
 import convertTime from '../../utilities/time'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
@@ -15,39 +16,32 @@ function Medium() {
             const result = await axios.get(
                 REACT_APP_SERVER_URL + '/medium'
             )
-            console.log(`RESULT: ${result}`)
-            console.log(`RESULT KEYS: ${Object.keys(result)}`)
-            console.log(`RESULT.DATA: ${result.data}`)
-            console.log(`RESULT.DATA KEYS: ${Object.keys(result.data)}`)
-            console.log(`RESULT.DATA.POSTS: ${result.data.posts}`)
-            console.log(`RESULT.DATA.POSTS KEYS: ${Object.keys(result.data.posts)}`)
-            console.log(`RESULT.DATA.POSTS.ITEMS: ${result.data.posts.items}`)
-            console.log(`RESULT.DATA.POSTS.ITEMS KEYS: ${Object.keys(result.data.posts.items)}`)
             const resultArray = result.data.posts.items.map((post, index) => {
-                // const date = convertTime(post.published_timestamp)
-                console.log(`POST KEYS: ${Object.keys(post)}`)
-                // const newContent = post[content:encoded]
+                console.log(`CONTENT: ${post.content}`)
+                const textSubstrings = extractFromPost(post.content, 50)
+                console.log(`IMAGE: ${textSubstrings.image}`)
+                console.log(`BODY: ${textSubstrings.body}`)
+                const date = convertTime(post.isoDate)
                 if (index < 5) {
                     return (
                         <div 
                             key={index}
                         >
-                            
                             <Card 
-                                image={false}
+                                image={textSubstrings.image}
                                 title={post.title}
                                 subtitle={false}
                                 lead={false}
                                 danger={true}
                                 list={false}
-                                text={post.content}
+                                text={textSubstrings.body}
                                 source={false}
                                 cloud={false}
                                 link={post.link}
                                 button="View full post"
                                 otherLink={false}
                                 otherButton={false}
-                                time={post.isoDate}
+                                time={date}
                             />
                         </div>
                     )
