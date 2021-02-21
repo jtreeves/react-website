@@ -7,13 +7,13 @@ import convertTime from '../../utilities/time'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
-function Medium() {
+function YouTube() {
     const [videos, setVideos] = useState([])
 
     async function getVideos() {
         try {
             const result = await axios.get(
-                REACT_APP_SERVER_URL + '/medium'
+                REACT_APP_SERVER_URL + '/youtube'
             )
             const resultArray = result.data.videos.map((video, index) => {
                 const date = convertTime(video.published_timestamp)
@@ -65,4 +65,4 @@ function Medium() {
     )
 }
 
-export default Medium
+export default YouTube

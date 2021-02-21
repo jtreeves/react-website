@@ -1,5 +1,7 @@
 import Dev from '../contents/Dev'
+import Medium from '../contents/Medium'
 import Tumblr from '../contents/Tumblr'
+import YouTube from '../contents/YouTube'
 
 function Blog() {
     return (
@@ -24,6 +26,8 @@ function Blog() {
                 </button>
             </a>
             <Dev />
+            <Medium />
+            <YouTube />
         </div>
     )
 }
