@@ -15,7 +15,15 @@ function Medium() {
             const result = await axios.get(
                 REACT_APP_SERVER_URL + '/medium'
             )
-            const resultArray = result.data.posts.map((post, index) => {
+            console.log(`RESULT: ${result}`)
+            console.log(`RESULT KEYS: ${Object.keys(result)}`)
+            console.log(`RESULT.DATA: ${result.data}`)
+            console.log(`RESULT.DATA KEYS: ${Object.keys(result.data)}`)
+            console.log(`RESULT.DATA.POSTS: ${result.data.posts}`)
+            console.log(`RESULT.DATA.POSTS KEYS: ${Object.keys(result.data.posts)}`)
+            console.log(`RESULT.DATA.POSTS.ITEMS: ${result.data.posts.items}`)
+            console.log(`RESULT.DATA.POSTS.ITEMS KEYS: ${Object.keys(result.data.posts.items)}`)
+            const resultArray = result.data.posts.items.map((post, index) => {
                 const date = convertTime(post.published_timestamp)
                 if (index < 5) {
                     return (
