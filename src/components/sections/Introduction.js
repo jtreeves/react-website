@@ -10,60 +10,62 @@ function Introduction() {
                 alt="painting" 
                 className="painting"
             />
-            <img 
-                src="/images/headshot.jpg" 
-                alt="Jackson Reeves" 
-                className="headshot"
-            />
-            <h2>Software Engineer</h2>
-            <p>
-                Inquisitive full-stack developer with more than a decade of experience in education and journalism. Hoping to combine long-time loves of editing and data analysis to produce clean, performative code.
-            </p>
-            
-            <div className="left-column">
-                <Link
-                    to="/about"
-                    onClick={scroll}
-                    className="links"
-                >
-                    <div className="project-highlight square">
-                        <div className="project-image">
-                            <img 
-                                src="/images/headshot.jpg" 
-                                alt="Jackson Reeves" 
-                                className="square-content card"
-                            />
+            <div className="three-columns">
+                <div className="first-column">
+                    <Link 
+                        to="/about"
+                        onClick={scroll}
+                    >
+                        <div className="circle-nav">
+                            About
                         </div>
-
-                        <div className="square-content card project-overlay">
-                            <div className="project-title">
-                                About Me
-                            </div>
+                    </Link>
+                    <i class="fas fa-code fa-5x" />
+                    <i class="fas fa-code-branch fa-5x" />
+                    <i class="fas fa-laptop-code fa-5x" />
+                    <i class="fas fa-file-code fa-5x" />
+                    <i class="far fa-edit fa-5x" />
+                    <i class="far fa-paper-plane fa-5x" />
+                    <i class="far fa-keyboard fa-5x" />
+                </div>
+                <div className="center-column">
+                    <img 
+                        src="/images/headshot.jpg" 
+                        alt="Jackson Reeves" 
+                        className="headshot"
+                    />
+                    <h2>Software Engineer</h2>
+                    <p>
+                        Inquisitive full-stack developer with more than a decade of experience in education and journalism. Hoping to combine long-time loves of editing and data analysis to produce clean, performative code.
+                    </p>
+                </div>
+                <div className="last-column">
+                    <Link 
+                        to="/about"
+                        onClick={scroll}
+                    >
+                        <div className="circle-nav">
+                            About
                         </div>
-                    </div>            
-                </Link>
+                    </Link>
+                    <i class="fas fa-briefcase fa-5x" />
+                    <i class="fas fa-calculator fa-5x" />
+                    <i class="fas fa-bullhorn fa-5x" />
+                    <i class="fas fa-brain fa-5x" />
+                    <i class="fas fa-chart-bar fa-5x" />
+                    <i class="far fa-comment fa-5x" />
+                    <i class="far fa-star fa-5x" />
+                    <i class="far fa-thumbs-up fa-5x" />
+                    <i class="fas fa-users fa-5x" />
+                    <i class="far fa-heart fa-5x" />                
+                    <i class="fas fa-certificate fa-5x" />
+                    <i class="fas fa-copy fa-5x" />
+                    </div>
             </div>
+            
+            
 
-            <div className="right-column">
-                <div className="square">
-                    <div className="square-content card">
-                        <div className="card-header">
-                            About Me
-                        </div>
-
-                        <div className="card-body">
                             
-
-                            <Link 
-                                to="/about"
-                                onClick={scroll}
-                            >
-                                <button 
-                                    className="btn btn-primary skill"
-                                >
-                                    Learn more
-                                </button>
-                            </Link>
 
                             <Link 
                                 to="/contact"
@@ -131,10 +133,8 @@ function Introduction() {
                                 </button>
                             </Link>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    
+    
     )
 }
 
