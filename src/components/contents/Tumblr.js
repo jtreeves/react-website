@@ -9,63 +9,17 @@ import convertTime from '../../utilities/time'
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
 function Tumblr() {
-    const [thoughts, setThoughts] = useState([])
-    const [notes, setNotes] = useState([])
+    const [posts, setPosts] = useState([])
 
-    async function getThoughts() {
+    async function getPosts() {
         try {
             const result = await axios.get(
-                REACT_APP_SERVER_URL + '/tumblr/thoughts'
+                REACT_APP_SERVER_URL + '/tumblr'
             )
             const resultArray = result.data.posts.map((post, index) => {
-                const body = post.body
                 const date = post.date
-                const textSubstrings = extractFromPost(body, 50)
                 const correctTime = convertTime(date)
                 if (index < 5) {
-                    return (
-                        <div 
-                            key={index}
-                        >
-                            <Card 
-                                image={textSubstrings.image}
-                                title={post.title}
-                                subtitle={false}
-                                lead={false}
-                                danger={true}
-                                list={false}
-                                text={textSubstrings.body}
-                                source={false}
-                                cloud={false}
-                                link={post.post_url}
-                                button="View full post"
-                                otherLink={false}
-                                otherButton={false}
-                                time={correctTime}
-                            />
-                        </div>
-                    )
-                } else {
-                    return null
-                }
-            })
-            setThoughts(resultArray)
-        } catch (error) {
-            alert(error.response.data.msg)
-        }
-    }
-    
-    async function getNotes() {
-        try {
-            const result = await axios.get(
-                REACT_APP_SERVER_URL + '/tumblr/notes'
-            )
-            const resultArray = result.data.posts.map((post, index) => {
-                const body = post.body
-                const date = post.date
-                const textSubstrings = extractFromPost(body, 25)
-                const correctTime = convertTime(date)
-                if (index < 10) {
                     return (
                         <div 
                             key={index}
@@ -77,7 +31,7 @@ function Tumblr() {
                                 lead={false}
                                 danger={true}
                                 list={false}
-                                text={textSubstrings.body}
+                                text={post.description}
                                 source={false}
                                 cloud={false}
                                 link={post.post_url}
@@ -92,30 +46,24 @@ function Tumblr() {
                     return null
                 }
             })
-            setNotes(resultArray)
+            setPosts(resultArray)
         } catch (error) {
             alert(error.response.data.msg)
         }
     }
-
-    useEffect(() => {
-        getThoughts()
-    }, [])
     
     useEffect(() => {
-        getNotes()
+        getPosts()
     }, [])
     
     return (
         <div>
             <div className="contains-columns">
                 <div className="left-column">
-                    <h3>Thoughts</h3>
-                    {thoughts}
+                    <h3>Resources</h3>
+                    {posts}
                 </div>
                 <div className="right-column">
-                    <h3>Notes</h3>
-                    {notes}
                 </div>
             </div>
         </div>
