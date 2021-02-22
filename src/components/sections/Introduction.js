@@ -14,7 +14,7 @@ function Introduction() {
             <div className="three-columns">
                 <div className="first-column">
                     <Link 
-                        to="/about"
+                        to="/skills"
                         onClick={scroll}
                         className="floater-links"
                     >
@@ -30,7 +30,7 @@ function Introduction() {
                     </Link>
 
                     <Link 
-                        to="/about"
+                        to="/resume"
                         onClick={scroll}
                         className="floater-links"
                     >
@@ -46,7 +46,7 @@ function Introduction() {
                     </Link>
 
                     <Link 
-                        to="/about"
+                        to="/portfolio"
                         onClick={scroll}
                         className="floater-links"
                     >
@@ -78,7 +78,7 @@ function Introduction() {
 
                 <div className="last-column">
                     <Link 
-                        to="/about"
+                        to="/posts"
                         onClick={scroll}
                         className="floater-links"
                     >
@@ -110,7 +110,7 @@ function Introduction() {
                     </Link>
 
                     <Link 
-                        to="/about"
+                        to="/contact"
                         onClick={scroll}
                         className="floater-links"
                     >
