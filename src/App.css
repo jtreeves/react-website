@@ -16,10 +16,12 @@ header {
     right: 0;
     width: 100%;
     height: 100px;
-    padding: 10px;
+    /* padding: 10px; */
+    /* line-height: 100px; */
     background: #000080;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 5px solid black;
     z-index: 1;
 }
@@ -30,8 +32,11 @@ footer {
     text-align: center;
     width: 100%;
     height: 100px;
-    line-height: 100px;
-    padding: 10px;
+    /* line-height: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
     color: black;
     font-style: italic;
 }
@@ -61,10 +66,15 @@ header li {
     padding: 10px;
 }
 
+header li:last-child {
+    padding-right: 20px;
+}
+
 .headline {
     text-decoration: none;
     color: white;
-    line-height: 50px;
+    line-height: 40px;
+    margin-left: 20px;
 }
 
 .headline:hover {
@@ -84,7 +94,7 @@ header i:hover {
 
 h1:hover {
     transform: scale(1.5);
-    margin-left: 100px;
+    margin-left: 75px;
 }
 
 .introduction p {
@@ -183,19 +193,36 @@ figure:hover caption {
     background: gray;
 }
 
-.social-icons {
-    line-height: 50px;
-    margin-top: 10px;
-}
+/* .social-icons {
+    color: white;
+    line-height: 40px;
+    margin-left: 20px;
+} */
 
 main {
     padding: 25px;
-    margin: 100px;
+    margin: 0 50px;
+}
+
+.overcoming-header {
+    margin-top: 115px;
 }
 
 .recent-projects {
     padding: 25px;
     margin: 0 50px;
+}
+
+.section-heading {
+    display: grid;
+    grid-template-columns: 36% 24% 36%;
+    column-gap: 2%;
+    width: 100%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 20px;
+    text-align: center;
 }
 
 .recent-projects-intro {
@@ -225,16 +252,16 @@ main {
     grid-column-end: 4;
 }
 
-.recent-projects-list {
+.projects-list {
     display: grid;
     grid-template-columns: 32% 32% 32%;
     column-gap: 2%;
     width: 100%;
 }
 
-.recent-projects-list .project-highlight {
+/* .recent-projects-list .project-highlight {
     flex-shrink: 3;
-}
+} */
 
 .project-highlight {
     width: 100%;
@@ -415,17 +442,34 @@ img.project {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-top: 95px;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    /* margin-bottom: -200px; */
 }
 
 .navigation li {
     display: inline;
-    padding: 10px;
+    /* padding: 10px; */
+}
+
+.navigation-links {
+    text-decoration: none;
+    color: white;
 }
 
 .navigation-links:hover {
     text-decoration: none;
-    color: black;
-    text-shadow: 1px 1px 1px black;
+    color: gray;
 }
 
 h1, h2, h3, .navigation-links, .project-title {

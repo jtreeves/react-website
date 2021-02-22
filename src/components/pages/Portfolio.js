@@ -1,11 +1,16 @@
 import ProjectHighlight from '../sections/ProjectHighlight'
 
 import projects from '../../database/projects'
+import Navigation from '../sections/Navigation'
+import SectionHeading from '../sections/SectionHeading'
 
 function Portfolio() {
     return (
         <div>
-            <h2>Projects</h2>
+<Navigation />
+        <div class="overcoming-header">
+        <main>
+        <SectionHeading heading="Projects" />
 
             <div className="contains-columns">
                 <div className="left-column">
@@ -72,6 +77,9 @@ function Portfolio() {
                     View more projects
                 </button>
             </a>
+        </main>
+        </div>
+        <hr />
         </div>
     )
 }

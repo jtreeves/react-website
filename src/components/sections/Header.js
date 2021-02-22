@@ -8,8 +8,8 @@ import Navigation from './Navigation'
 function Header() {
     return (
         <header>
-            <div className="contains-columns">
-                <div className="left-column">
+            {/* <div className="contains-columns">
+                <div className="left-column"> */}
                     <Link 
                         exact to="/" 
                         onClick={scroll}
@@ -17,12 +17,12 @@ function Header() {
                     >
                         <h1>Jackson Reeves</h1> 
                     </Link>
-                </div>
+                {/* </div>
 
-                <div className="right-column">
+                <div className="right-column"> */}
                     <SocialIcons />
-                </div>
-            </div>
+                {/* </div>
+            </div> */}
         </header>
     )
 }
