@@ -20,6 +20,7 @@ header {
     background: #000080;
     display: flex;
     align-items: center;
+    border-bottom: 5px solid black;
     z-index: 1;
 }
 
@@ -96,10 +97,11 @@ h1:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
+    border: 5px solid black;
     background: #000080;
     border-radius: 50%;
     text-decoration: none;
+    margin: 10px;
 }
 
 .icon-nav, .text-nav {
@@ -113,14 +115,26 @@ h1:hover {
 .text-nav {
     color: white;
     text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000;
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
     font-size: 40px;
     text-decoration: none;
+}
+
+.circle-nav:hover {
+    background: #007ba7;
+}
+
+.circle-nav:hover .icon-nav {
+    color: #000080;
+}
+
+.circle-nav:hover .text-nav {
+    font-size: 50px;
 }
 
 .three-columns {
@@ -132,17 +146,50 @@ h1:hover {
 .first-column {
     grid-column-start: 1;
     grid-column-end: 2;
+    display: grid;
+    /* align-items: start; */
+    justify-items: center;
 }
 
 .center-column {
     grid-column-start: 2;
     grid-column-end: 3;
+    display: grid;
+    /* align-items: start; */
+    justify-items: center;
 }
 
 .last-column {
     grid-column-start: 3;
     grid-column-end: 4;
+    display: grid;
+    /* align-items: start; */
+    justify-items: center;
 }
+
+/* #first-left {
+    margin-left: 50%;
+}
+
+#second-left {
+    margin-left: 10%;
+}
+
+#third-left {
+    margin-left: 50%;
+}
+
+#first-right {
+    margin-right: 50%;
+}
+
+#second-right {
+    margin-right: 10%;
+}
+
+#third-right {
+    margin-right: 50%;
+} */
 
 figure {
     display: inline;
@@ -256,7 +303,7 @@ main {
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
     font-size: 40px;
-    margin-left: 150px;
+    /* margin-top: 150px; */
     z-index: 2;
 }
 
