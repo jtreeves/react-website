@@ -4,26 +4,29 @@ import projects from '../../database/projects'
 
 function ProjectsList(props) { 
     const projectArray = []
-    if (projectArray.length < props.max) {
-        for (const project in projects) {
-            projectArray.push(project)
-        }   
-    }
-
-    const projectSet = projectArray.map((project, index) => { 
-        return (
-            <ProjectHighlight 
-                image={projects[project].image}
-                name={projects[project].name}
-                description={projects[project].description}
-                skills={projects[project].skills}
-                deployedLink={projects[project].deployedLink}
-                deployedText={projects[project].type}
-                repositoryLink={projects[project].repositoryLink}
-                repositoryText="Code"
-                date={projects[project].date}
-            />
-        )  
+    
+    for (const project in projects) {
+        projectArray.push(project)
+        console.log(`PROJECTARRAY: ${projectArray}`)
+        console.log(`PROJECTARRAY.LENGTH: ${projectArray.length}`)
+    }   
+    
+    const projectSet = projectArray.map((project, index) => {
+        if (index < props.max) {
+            return (
+                <ProjectHighlight 
+                    image={projects[project].image}
+                    name={projects[project].name}
+                    description={projects[project].description}
+                    skills={projects[project].skills}
+                    deployedLink={projects[project].deployedLink}
+                    deployedText={projects[project].type}
+                    repositoryLink={projects[project].repositoryLink}
+                    repositoryText="Code"
+                    date={projects[project].date}
+                />
+            )  
+        } 
     })
 
     return (

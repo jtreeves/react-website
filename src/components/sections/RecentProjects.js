@@ -5,7 +5,7 @@ function RecentProjects() {
     return (
         <main>
             <SectionHeading heading="Recent Projects" />
-            <ProjectsList max="4" />
+            <ProjectsList max={3} />
         </main>
     )
 }
