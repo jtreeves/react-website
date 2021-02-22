@@ -12,14 +12,37 @@ function Introduction() {
             />
             <div className="three-columns">
                 <div className="first-column">
-                    <Link 
-                        to="/about"
-                        onClick={scroll}
-                    >
-                        <div className="circle-nav">
-                            About
+                    <div className="circle-nav">
+                        <div className="icon-nav">
+                            <i class="fas fa-laptop-code fa-5x" />
                         </div>
-                    </Link>
+                        <div className="text-nav">
+                            <Link 
+                                to="/about"
+                                onClick={scroll}
+                                className="nav-links"
+                            >
+                                About
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="overlapping-images">
+                        <div className="top">
+                            <i class="fas fa-laptop-code fa-5x" />
+                        </div>
+                        <div className="bottom">
+                            <i class="fas fa-laptop-code fa-5x" />
+                        </div>
+                        <div className="link-text">
+                            <Link 
+                                to="/about"
+                                onClick={scroll}
+                                className="shift-links"
+                            >
+                                About
+                            </Link>
+                        </div>
+                    </div>
                     <i class="fas fa-code fa-5x" />
                     <i class="fas fa-code-branch fa-5x" />
                     <i class="fas fa-laptop-code fa-5x" />

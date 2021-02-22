@@ -17,7 +17,7 @@ header {
     width: 100%;
     height: 100px;
     padding: 10px;
-    background: black;
+    background: #000080;
     display: flex;
     align-items: center;
     z-index: 1;
@@ -69,8 +69,7 @@ header li {
 
 .headline:hover {
     text-decoration: none;
-    color: white;
-    text-shadow: 1px 1px 1px white;
+    color: #007ba7;
 }
 
 header a {
@@ -80,8 +79,11 @@ header a {
 
 header i:hover {
     text-decoration: none;
-    color: white;
-    text-shadow: 1px 1px 1px white;
+    color: #007ba7;
+}
+
+h1:hover {
+    color: #1E90FF;
 }
 
 .introduction p {
@@ -89,15 +91,36 @@ header i:hover {
 }
 
 .circle-nav {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 1px solid white;
-    background: blue;
-    color: white;
-    text-align: center;
+    background: #000080;
     border-radius: 50%;
+    text-decoration: none;
+}
+
+.icon-nav, .text-nav {
+    position: absolute;
+}
+
+.icon-nav {
+    color: #007ba7;
+}
+
+.text-nav {
+    color: white;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: none;
 }
 
 .three-columns {
@@ -181,9 +204,71 @@ main {
     background: none;
 }
 
+.nav-links {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+
 .links:hover {
     text-decoration: none;
     color: black;
+}
+
+.overlapping-images {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.top, .bottom, .link-text {
+    position: absolute;
+}
+
+.top {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: #000080;
+    z-index: 1;
+}
+
+.bottom {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #007ba7;
+}
+
+.link-text {
+    color: black;
+    text-shadow:
+		-1px -1px 0 white,
+		1px -1px 0 white,
+		-1px 1px 0 white,
+		1px 1px 0 white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-left: 150px;
+    z-index: 2;
+}
+
+.shift-links {
+    color: black;
+    text-decoration: none;
+}
+
+.shift-links:hover {
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
 }
 
 .project-highlight:hover .project-overlay {
