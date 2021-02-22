@@ -84,7 +84,7 @@ header i:hover {
 }
 
 h1:hover {
-    color: #1E90FF;
+    color: #007ba7;
 }
 
 .introduction p {
@@ -139,32 +139,38 @@ h1:hover {
 
 .three-columns {
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 35% 30% 35%;
     width: 100%;
 }
 
 .first-column {
     grid-column-start: 1;
     grid-column-end: 2;
-    display: grid;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 15%;
+    /* display: grid; */
     /* align-items: start; */
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 .center-column {
     grid-column-start: 2;
     grid-column-end: 3;
-    display: grid;
+    /* display: grid; */
     /* align-items: start; */
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 .last-column {
     grid-column-start: 3;
     grid-column-end: 4;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    /* display: grid; */
     /* align-items: start; */
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 /* #first-left {
@@ -249,6 +255,46 @@ main {
     justify-content: center;
     align-items: center;
     background: none;
+}
+
+.floater-icon-nav {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    /* border: 1px solid black; */
+}
+
+.floater-icon, .floater-text {
+    position: absolute;
+}
+
+.floater-icon-nav:hover .floater-icon, .floater-icon-nav:hover .floater-links, .floater-icon-nav:hover .floater-text {
+    color: #007ba7;
+}
+
+.floater-icon {
+    color: #000080;
+}
+
+.floater-text {
+    margin-top: 110px;
+    color: #000080;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.floater-links {
+    color: #000080;
+    text-decoration: none;
+}
+
+.floater-links:hover {
+    color: #000080;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -386,7 +432,6 @@ h1 {
 
 h2, h3 {
     color: black;
-    text-shadow: 1px 1px 1px black;
     text-align: center;
 }
 

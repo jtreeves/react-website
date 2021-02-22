@@ -12,7 +12,50 @@ function Introduction() {
             />
             <div className="three-columns">
                 <div className="first-column">
-                    <div className="circle-nav" id="first-left">
+                    <Link 
+                        to="/about"
+                        onClick={scroll}
+                        className="floater-links"
+                    >
+                        <div className="floater-icon-nav">
+                            <div className="floater-icon">
+                                <i class="fas fa-laptop-code fa-5x" />
+                            </div>
+                            <div className="floater-text">
+                                Skills
+                            </div>
+                        </div>
+                    </Link>
+                    <Link 
+                        to="/about"
+                        onClick={scroll}
+                        className="floater-links"
+                    >
+                        <div className="floater-icon-nav">
+                            <div className="floater-icon">
+                                <i class="fas fa-file-alt fa-5x" />
+                            </div>
+                            <div className="floater-text">
+                                Resume
+                            </div>
+                        </div>
+                    </Link>
+                    <Link 
+                        to="/about"
+                        onClick={scroll}
+                        className="floater-links"
+                    >
+                        <div className="floater-icon-nav">
+                            <div className="floater-icon">
+                                <i class="fas fa-briefcase fa-5x" />
+                            </div>
+                            <div className="floater-text">
+                                Portfolio
+                            </div>
+                        </div>
+                    </Link>
+                    
+                    {/* <div className="circle-nav" id="first-left">
                         <div className="icon-nav">
                             <i class="fas fa-laptop-code fa-5x" />
                         </div>
@@ -53,7 +96,7 @@ function Introduction() {
                                 Blog
                             </Link>
                         </div>
-                    </div>
+                    </div> */}
                     
                     {/* <i class="fas fa-code fa-5x" />
                     <i class="fas fa-code-branch fa-5x" />
@@ -73,64 +116,93 @@ function Introduction() {
                     <p>
                         Inquisitive full-stack developer with more than a decade of experience in education and journalism. Hoping to combine long-time loves of editing and data analysis to produce clean, performative code.
                     </p>
-                    <div className="circle-nav">
-                        <div className="icon-nav">
-                            <i class="fas fa-laptop-code fa-5x" />
+                    
+                </div>
+                <div className="last-column">
+                <Link 
+                        to="/about"
+                        onClick={scroll}
+                        className="floater-links"
+                    >
+                        <div className="floater-icon-nav">
+                            <div className="floater-icon">
+                                <i class="fas fa-bullhorn fa-5x" />
+                            </div>
+                            <div className="floater-text">
+                                Posts
+                            </div>
                         </div>
-                        <div className="text-nav">
+                    </Link>
+                    <Link 
+                        to="/about"
+                        onClick={scroll}
+                        className="floater-links"
+                    >
+                        <div className="floater-icon-nav">
+                            <div className="floater-icon">
+                                <i class="fas fa-comment fa-5x" />
+                            </div>
+                            <div className="floater-text">
+                                About
+                            </div>
+                        </div>
+                    </Link>
+                    <Link 
+                        to="/about"
+                        onClick={scroll}
+                        className="floater-links"
+                    >
+                        <div className="floater-icon-nav">
+                            <div className="floater-icon">
+                                <i class="fas fa-paper-plane fa-5x" />
+                            </div>
+                            <div className="floater-text">
+                                Contact
+                            </div>
+                        </div>
+                    </Link>
+                {/* <div className="floater-icon-nav">
+                        <div className="floater-icon">
+                        <i class="fas fa-bullhorn fa-5x" />
+                        </div>
+                        <div className="floater-text">
                             <Link 
                                 to="/about"
                                 onClick={scroll}
-                                className="nav-links"
+                                className="floater-links"
                             >
-                                Blog
+                                Posts
                             </Link>
                         </div>
                     </div>
-                </div>
-                <div className="last-column">
-                    <div className="circle-nav" id="first-right">
-                        <div className="icon-nav">
-                            <i class="fas fa-laptop-code fa-5x" />
+                    <div className="floater-icon-nav">
+                        <div className="floater-icon">
+                        <i class="fas fa-comment fa-5x" />
                         </div>
-                        <div className="text-nav">
+                        <div className="floater-text">
                             <Link 
                                 to="/about"
                                 onClick={scroll}
-                                className="nav-links"
+                                className="floater-links"
                             >
                                 About
                             </Link>
                         </div>
                     </div>
-                    <div className="circle-nav" id="second-right">
-                        <div className="icon-nav">
-                            <i class="fas fa-laptop-code fa-5x" />
+                    <div className="floater-icon-nav">
+                        <div className="floater-icon">
+                        <i class="fas fa-paper-plane fa-5x" />
                         </div>
-                        <div className="text-nav">
+                        <div className="floater-text">
                             <Link 
                                 to="/about"
                                 onClick={scroll}
-                                className="nav-links"
+                                className="floater-links"
                             >
                                 Contact
                             </Link>
                         </div>
-                    </div>
-                    <div className="circle-nav" id="third-right">
-                        <div className="icon-nav">
-                            <i class="fas fa-laptop-code fa-5x" />
-                        </div>
-                        <div className="text-nav">
-                            <Link 
-                                to="/about"
-                                onClick={scroll}
-                                className="nav-links"
-                            >
-                                Blog
-                            </Link>
-                        </div>
-                    </div>
+                    </div> */}
                     
                     {/* <i class="fas fa-briefcase fa-5x" />
                     <i class="fas fa-calculator fa-5x" />
