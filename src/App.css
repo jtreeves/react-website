@@ -84,7 +84,8 @@ header i:hover {
 }
 
 h1:hover {
-    color: #007ba7;
+    transform: scale(1.5);
+    margin-left: 100px;
 }
 
 .introduction p {
@@ -229,12 +230,12 @@ main {
 .recent-projects {
     padding: 25px;
     margin: 0 50px;
-    /* background: whitesmoke; */
 }
 
 .recent-projects-intro {
     display: grid;
-    grid-template-columns: 30% 5% 30% 5% 30%;
+    grid-template-columns: 36% 24% 36%;
+    column-gap: 2%;
     width: 100%;
 }
 
@@ -244,13 +245,18 @@ main {
 }
 
 .recent-projects-intro-center {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 20px;
+    text-align: center;
 }
 
 .recent-projects-intro-right {
-    grid-column-start: 5;
-    grid-column-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 .recent-projects-list {

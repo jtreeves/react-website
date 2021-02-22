@@ -11,7 +11,7 @@ function RecentProjects() {
                 </div>
 
                 <div className="recent-projects-intro-center">
-                    <h2>Recent Projects</h2>
+                    Recent Projects
                 </div>
 
                 <div className="recent-projects-intro-right">
