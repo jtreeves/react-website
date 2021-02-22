@@ -4,8 +4,21 @@ import scroll from '../../utilities/scroll'
 
 function Introduction() {
     return (
-        <div className="contains-columns">
+        <div className="introduction">
+            <img 
+                src="/images/painting.jpg" 
+                alt="painting" 
+                className="painting"
+            />
+            <img 
+                src="/images/headshot.jpg" 
+                alt="Jackson Reeves" 
+                className="headshot"
+            />
             <h2>Software Engineer</h2>
+            <p>
+                Inquisitive full-stack developer with more than a decade of experience in education and journalism. Hoping to combine long-time loves of editing and data analysis to produce clean, performative code.
+            </p>
             
             <div className="left-column">
                 <Link
@@ -39,9 +52,7 @@ function Introduction() {
                         </div>
 
                         <div className="card-body">
-                            <p>
-                                Inquisitive full-stack developer with more than a decade of experience in education and journalism. Hoping to combine long-time loves of editing and data analysis to produce clean, performative code.
-                            </p>
+                            
 
                             <Link 
                                 to="/about"

@@ -21,7 +21,6 @@ function Header() {
 
                 <div className="right-column">
                     <SocialIcons />
-                    <Navigation />
                 </div>
             </div>
         </header>

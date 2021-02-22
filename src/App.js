@@ -20,7 +20,7 @@ function App() {
         <>
             <Header />
 
-            <main>
+            
                 <Route 
                     exact path="/" 
                     component={Home}
@@ -70,7 +70,7 @@ function App() {
                     path="/project" 
                     component={Project}
                 />
-            </main>
+            
             
             <Footer />
         </>
