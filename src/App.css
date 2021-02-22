@@ -32,9 +32,9 @@ footer {
     height: 100px;
     line-height: 100px;
     padding: 10px;
-    color: white;
+    color: black;
     font-style: italic;
-    margin-top: -100px;
+    /* margin-top: 100px; */
 }
 
 .painting {
@@ -224,6 +224,44 @@ figure:hover caption {
 main {
     padding: 25px;
     margin: 100px;
+}
+
+.recent-projects {
+    padding: 25px;
+    margin: 0 50px;
+    /* background: whitesmoke; */
+}
+
+.recent-projects-intro {
+    display: grid;
+    grid-template-columns: 30% 5% 30% 5% 30%;
+    width: 100%;
+}
+
+.recent-projects-intro-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.recent-projects-intro-center {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.recent-projects-intro-right {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.recent-projects-list {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+    width: 100%;
+}
+
+.recent-projects-list .project-highlight {
+    flex-shrink: 3;
 }
 
 .project-highlight {

@@ -8,7 +8,9 @@ function Home() {
     return (
         <div>
             <Introduction />
-            {/* <RecentProjects /> */}
+            <hr />
+            <RecentProjects />
+            <hr />
         </div>
     )
 }
