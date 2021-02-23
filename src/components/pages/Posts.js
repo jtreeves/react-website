@@ -20,25 +20,17 @@ function Posts() {
                         I run a blog on all things related to software engineering called Programming 10101. To read it in its entirety, head on over Tumblr or click the above link. Here are some previews of posts from my two main channels: Thoughts (usually longer, deeper, more thoughtful pieces) and Notes (usually shorter pieces that highlight how to do one thing or another).
                     </p>
 
-                    <div className="uneven-columns">
-                        <div>
+                    
                         <Medium />
                     <Dev />
-                        </div>
                         
-                        <div>
-                        <Tumblr />
-                        
-                    
-                    
-                        </div>
-                    </div>
 
                     
                     
                     
                     
                 </main>
+                <Tumblr />
                 <GitHub />
                 <Twitter />
                 <YouTube />

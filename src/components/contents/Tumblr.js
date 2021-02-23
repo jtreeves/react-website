@@ -6,6 +6,9 @@ import Card from '../elements/Card'
 import extractFromPost from '../../utilities/post'
 import convertTime from '../../utilities/time'
 
+import Square from '../elements/Square'
+import SectionHeading from '../sections/SectionHeading'
+
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
 function Tumblr() {
@@ -19,12 +22,12 @@ function Tumblr() {
             const resultArray = result.data.posts.map((post, index) => {
                 const date = post.date
                 const correctTime = convertTime(date)
-                if (index < 5) {
+                if (index < 3) {
                     return (
                         <div 
                             key={index}
                         >
-                            <Card 
+                            {/* <Card 
                                 image={false}
                                 title={post.title}
                                 subtitle={false}
@@ -39,6 +42,12 @@ function Tumblr() {
                                 otherLink={false}
                                 otherButton={false}
                                 time={correctTime}
+                            /> */}
+
+                            <Square 
+                                main={post.title}
+                                link={post.post_url}
+                                overlay="View Post"
                             />
                         </div>
                     )
@@ -57,9 +66,13 @@ function Tumblr() {
     }, [])
     
     return (
-        <div>
-            {posts}
-        </div>
+        <main>
+            <SectionHeading heading="Recent Resources" />
+            
+            <div className="projects-list">
+                {posts}
+            </div>
+        </main>
     )
 }
 
