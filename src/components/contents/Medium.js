@@ -27,30 +27,30 @@ function Medium() {
                             className="blog-card"
                         >
                             <div className="blog-card-side">
-                            <a 
-            href={post.link} 
-            target="_blank" 
-            rel="noreferrer"
-        >
-                                <img 
-                                    src={textSubstrings.image}
-                                    alt={post.title}
-                                    className="blog-card-img"
-                                />
+                                <a 
+                                    href={post.link} 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                >
+                                    <img 
+                                        src={textSubstrings.image}
+                                        alt={post.title}
+                                        className="blog-card-img"
+                                    />
                                 </a>
                             </div>
 
                             <div className="blog-card-main">
                                 <div className="blog-card-body">
                                     <h4>
-                                    <a 
-            href={post.link} 
-            target="_blank" 
-            rel="noreferrer"
-        >
-                                        {post.title}
+                                        <a 
+                                            href={post.link} 
+                                            target="_blank" 
+                                            rel="noreferrer"
+                                        >
+                                            {post.title}
                                         </a>
-                                        </h4>
+                                    </h4>
 
                                     <div 
                                         dangerouslySetInnerHTML={{
@@ -60,7 +60,9 @@ function Medium() {
                                 </div>
 
                                 <div className="blog-card-footer">
-                                    <div className="blog-card-button">
+                                    <div 
+                                        className="blog-card-button"
+                                    >
                                         <Button 
                                             link={post.link}
                                             text="Read more"
@@ -71,11 +73,11 @@ function Medium() {
                                         className="blog-card-date"
                                     >
                                         <a 
-            href={post.link} 
-            target="_blank" 
-            rel="noreferrer"
-        >
-                                        {date}
+                                            href={post.link} 
+                                            target="_blank" 
+                                            rel="noreferrer"
+                                        >
+                                            {date}
                                         </a>
                                     </div>
                                 </div>
