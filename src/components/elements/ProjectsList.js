@@ -7,8 +7,6 @@ function ProjectsList(props) {
     
     for (const project in projects) {
         projectArray.push(project)
-        console.log(`PROJECTARRAY: ${projectArray}`)
-        console.log(`PROJECTARRAY.LENGTH: ${projectArray.length}`)
     }   
     
     const projectSet = projectArray.map((project, index) => {

@@ -21,6 +21,7 @@ const projects = {
         description: 'An API to provide access to a Python library for generating regression models',
         skills: [
             'Python', 
+            'Flask',
             'PyPi',
             'API'
         ],

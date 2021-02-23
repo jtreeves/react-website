@@ -2,6 +2,8 @@ import { useLocation } from 'react-router-dom'
 
 import ProjectHighlight from '../sections/ProjectHighlight'
 import SkillSet from '../elements/SkillSet'
+import Navigation from '../sections/Navigation'
+import SectionHeading from '../sections/SectionHeading'
 
 import skills from '../../database/skills'
 import projects from '../../database/projects'
@@ -31,18 +33,20 @@ function Skill() {
 
     return (
         <div>
-            <h2>{specificSkill}</h2>
+            <Navigation />
+            
+            <div class="overcoming-header">
+                <main>
+                    <SectionHeading heading={specificSkill} />
+        
+                    <p>
+                        Check out these projects I built using {specificSkill}.
+                    </p>
 
-            <p>
-                Check out these projects I built using {specificSkill}.
-            </p>
+                    <div className="projects-list">
+                        {projectList}
+                    </div>
 
-            <div className="contains-columns">
-                <div className="left-column top-margin">
-                    {projectList}
-                </div>
-
-                <div className="right-column">
                     <div className="card card-connect card-lock">
                         <strong className="card-header">
                             All My Skills
@@ -53,20 +57,22 @@ function Skill() {
                             />
                         </div>
                     </div>
-                </div>
+                    
+                    <a 
+                        href="https://github.com/jtreeves" 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <button
+                            className="btn btn-primary center top-margin"
+                        >
+                            View more projects
+                        </button>
+                    </a>
+                </main>
             </div>
 
-            <a 
-                href="https://github.com/jtreeves" 
-                target="_blank" 
-                rel="noreferrer"
-            >
-                <button
-                    className="btn btn-primary center top-margin"
-                >
-                    View more projects
-                </button>
-            </a>
+            <hr />
         </div>
     )
 }

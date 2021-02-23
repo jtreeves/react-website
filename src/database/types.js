@@ -11,6 +11,7 @@ const types = {
         'Node', 
         'React', 
         'Express',
+        'Flask',
         'Mocha',
         'Sass'
     ],

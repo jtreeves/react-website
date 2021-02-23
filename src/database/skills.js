@@ -9,6 +9,7 @@ const skills = {
     
     'APIs': [
         'tiresias',
+        'regressionz',
         'readThisNext'
     ],
     
@@ -32,16 +33,17 @@ const skills = {
     ],
 
     'Command Line': [
-        'regressions', 
         'tiresias', 
+        'regressionz',
+        'regressions', 
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'
     ],
     
     'Computer Science': [
-        'regressions', 
-        'tiresias'
+        'tiresias',
+        'regressions'
     ],
 
     'CRUD Pattern': [
@@ -69,6 +71,10 @@ const skills = {
         'tiresias', 
         'kaleidoscope', 
         'readThisNext'
+    ],
+
+    'Flask': [
+        'regressionz'
     ],
 
     'Functional Programming': [
@@ -157,7 +163,6 @@ const skills = {
     ],
 
     'Object-Oriented Programming': [
-        'regressions', 
         'tiresias', 
         'kaleidoscope', 
         'readThisNext',
@@ -169,10 +174,12 @@ const skills = {
     ],
 
     'Python': [
+        'regressionz',
         'regressions'
     ],
 
     'PyPi': [
+        'regressionz',
         'regressions'
     ],
 
@@ -207,30 +214,30 @@ const skills = {
     ],
 
     'User Experience Design': [
-        'regressions', 
         'tiresias', 
+        'regressions', 
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'
     ],
     
     'Version Control': [
-        'regressions', 
         'tiresias', 
+        'regressions', 
         'kaleidoscope'
     ],
     
     'Visual Studio Code': [
-        'regressions', 
         'tiresias', 
+        'regressions', 
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'
     ],
 
     'Wireframing': [
-        'regressions', 
         'tiresias', 
+        'regressions', 
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'
