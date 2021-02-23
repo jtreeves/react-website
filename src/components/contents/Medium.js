@@ -23,23 +23,47 @@ function Medium() {
                     return (
                         <div 
                             key={index}
+                            className="blog-card"
                         >
-                            <Card 
-                                image={textSubstrings.image}
-                                title={post.title}
-                                subtitle={false}
-                                lead={false}
-                                danger={true}
-                                list={false}
-                                text={textSubstrings.body}
-                                source={false}
-                                cloud={false}
-                                link={post.link}
-                                button="View full post"
-                                otherLink={false}
-                                otherButton={false}
-                                time={date}
-                            />
+                            <div className="blog-card-side">
+                                <img 
+                                    src={textSubstrings.image}
+                                    alt={post.title}
+                                    className="blog-card-img"
+                                />
+                            </div>
+
+                            <div className="blog-card-main">
+                                <div className="blog-card-body">
+                                    <h4>{post.title}</h4>
+
+                                    <div 
+                                        dangerouslySetInnerHTML={{
+                                            __html: textSubstrings.body
+                                        }} 
+                                    />
+                                </div>
+
+                                <div className="blog-card-footer">
+                                    <a 
+                                        href={post.link} 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                    >
+                                        <button 
+                                            className="blog-card-button"
+                                        >
+                                            Read more
+                                        </button>
+                                    </a>
+
+                                    <div 
+                                        className="blog-card-date"
+                                    >
+                                        {date}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     )
                 } else {
