@@ -22,77 +22,7 @@ function Resume() {
                     </p>
 
                     <div className="uneven-columns">
-                        <div className="thin-column">
-                            <h3>Skills</h3>
-
-                            <div className="card card-connect card-lock">
-                                <strong className="card-header">
-                                    Languages
-                                </strong>
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.languages}
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="card card-connect card-lock">
-                                <strong className="card-header">
-                                    Frameworks
-                                </strong>
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.frameworks}
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="card card-connect card-lock">
-                                <strong className="card-header">
-                                    Libraries
-                                </strong>
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.libraries}
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="card card-connect card-lock">
-                                <strong className="card-header">
-                                    Databases
-                                </strong>
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.databases}
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="card card-connect card-lock">
-                                <strong className="card-header">
-                                    Tools
-                                </strong>
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.tools}
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="card card-connect card-lock">
-                                <strong className="card-header">
-                                    Methodologies
-                                </strong>
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.methodologies}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="thick-column">
+                    <div>
                             <h3>Education</h3>
                     
                             <Card 
@@ -216,7 +146,78 @@ function Resume() {
                                 time={experience.magazineEditor.date}
                             />
                         </div>
-                    </div>
+                    
+                        <div>
+                            <h3>Skills</h3>
+
+                            <div className="card card-connect card-lock">
+                                <strong className="card-header">
+                                    Languages
+                                </strong>
+                                <div className="card-body">
+                                    <SkillSet
+                                        skills={types.languages}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="card card-connect card-lock">
+                                <strong className="card-header">
+                                    Frameworks
+                                </strong>
+                                <div className="card-body">
+                                    <SkillSet
+                                        skills={types.frameworks}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="card card-connect card-lock">
+                                <strong className="card-header">
+                                    Libraries
+                                </strong>
+                                <div className="card-body">
+                                    <SkillSet
+                                        skills={types.libraries}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="card card-connect card-lock">
+                                <strong className="card-header">
+                                    Databases
+                                </strong>
+                                <div className="card-body">
+                                    <SkillSet
+                                        skills={types.databases}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="card card-connect card-lock">
+                                <strong className="card-header">
+                                    Tools
+                                </strong>
+                                <div className="card-body">
+                                    <SkillSet
+                                        skills={types.tools}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="card card-connect card-lock">
+                                <strong className="card-header">
+                                    Methodologies
+                                </strong>
+                                <div className="card-body">
+                                    <SkillSet
+                                        skills={types.methodologies}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        </div> 
                 
                     <a 
                         href="/Jackson_Reeves_Resume.pdf" 
@@ -231,7 +232,7 @@ function Resume() {
                     </a>
                 </main>
             </div>
-            
+
             <hr />
         </div>
     )

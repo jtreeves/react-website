@@ -20,6 +20,7 @@ function Twitter() {
                 const date = tweet.created_at
                 const correctTime = convertTime(date)
                 const fullLink = link + tweet.id
+                if (index < 5) {
                 return (
                     <div 
                         key={index}
@@ -42,6 +43,7 @@ function Twitter() {
                         />
                     </div>
                 )
+                }
             })
             setTweets(resultArray)
         } catch (error) {

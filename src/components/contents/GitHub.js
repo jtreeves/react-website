@@ -22,7 +22,7 @@ function GitHub() {
                     const correctTime = convertTime(date)
                     const message = commit.payload.commits[0].message
                     const source = commit.repo.name
-                    if (index < 15) {
+                    if (index < 5) {
                         return (
                             <div 
                                 key={index}
