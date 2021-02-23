@@ -17,11 +17,11 @@ function ProjectHighlight(props) {
                     <img 
                         src={props.image} 
                         alt={props.name} 
-                        className="square-content card"
+                        className="square-content"
                     />
                 </div>
 
-                <div className="square-content card project-overlay">
+                <div className="square-content project-overlay">
                     <div className="project-title">
                         {props.name}
                     </div>

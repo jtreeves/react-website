@@ -7,6 +7,46 @@ function Navigation() {
         <ul className="navigation">
             <li>
                 <NavLink 
+                    exact to="/portfolio" 
+                    onClick={scroll}
+                    className="navigation-links"
+                >
+                    Portfolio
+                </NavLink>
+            </li>
+            
+            <li>
+                <NavLink 
+                    exact to="/resume" 
+                    onClick={scroll}
+                    className="navigation-links"
+                >
+                    Resume
+                </NavLink>
+            </li>
+
+            <li>
+                <NavLink 
+                    exact to="/skills" 
+                    onClick={scroll}
+                    className="navigation-links"
+                >
+                    Skills
+                </NavLink>
+            </li>
+
+            <li>
+                <NavLink 
+                    exact to="/posts" 
+                    onClick={scroll}
+                    className="navigation-links"
+                >
+                    Posts
+                </NavLink>
+            </li>
+
+            <li>
+                <NavLink 
                     exact to="/about" 
                     onClick={scroll}
                     className="navigation-links"
@@ -22,56 +62,6 @@ function Navigation() {
                     className="navigation-links"
                 >
                     Contact
-                </NavLink>
-            </li>
-
-            <li>
-                <NavLink 
-                    exact to="/socialize" 
-                    onClick={scroll}
-                    className="navigation-links"
-                >
-                    Socialize
-                </NavLink>
-            </li>
-
-            <li>
-                <NavLink 
-                    exact to="/blog" 
-                    onClick={scroll}
-                    className="navigation-links"
-                >
-                    Blog
-                </NavLink>
-            </li>
-
-            <li>
-                <NavLink 
-                    exact to="/portfolio" 
-                    onClick={scroll}
-                    className="navigation-links"
-                >
-                    Portfolio
-                </NavLink>
-            </li>
-            
-            <li>
-                <NavLink 
-                    exact to="/skills" 
-                    onClick={scroll}
-                    className="navigation-links"
-                >
-                    Skills
-                </NavLink>
-            </li>
-            
-            <li>
-                <NavLink 
-                    exact to="/resume" 
-                    onClick={scroll}
-                    className="navigation-links"
-                >
-                    Resume
                 </NavLink>
             </li>
         </ul>
