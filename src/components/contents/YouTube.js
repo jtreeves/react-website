@@ -1,9 +1,14 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+import Square from '../elements/Square'
+import SectionHeading from '../sections/SectionHeading'
+
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
-const youtubeUrl = 'https://www.youtube.com/embed/'
+const youtubeVideoUrl = 'https://www.youtube.com/watch?v='
+
+const youtubeImageUrl = 'https://img.youtube.com/vi/'
 
 function YouTube() {
     const [videos, setVideos] = useState([])
@@ -15,13 +20,15 @@ function YouTube() {
             )
             const resultArray = result.data.videos.items.map((video, index) => {
                 const youtubeId = video.id.videoId
-                const sourceLink = youtubeUrl + youtubeId
+                const sourceLink = youtubeVideoUrl + youtubeId
+                const youtubeImage = youtubeImageUrl + youtubeId + '/hqdefault.jpg'
+                const image = <img src={youtubeImage} alt="video" className="square-image" />
                 if (index < 5) {
                     return (
                         <div 
                             key={index}
                         >
-                            <iframe 
+                            {/* <iframe 
                                 width="100%" 
                                 height="300" 
                                 src={sourceLink}
@@ -29,6 +36,12 @@ function YouTube() {
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen 
+                            /> */}
+
+                            <Square 
+                                main={image}
+                                link={sourceLink}
+                                overlay="Watch Video"
                             />
                         </div>
                     )
@@ -47,9 +60,13 @@ function YouTube() {
     }, [])
     
     return (
-        <div>
-            {videos}
-        </div>
+        <main>
+            <SectionHeading heading="Recent Videos" />
+            
+            <div className="projects-list">
+                {videos}
+            </div>
+        </main>
     )
 }
 

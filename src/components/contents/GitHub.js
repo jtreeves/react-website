@@ -3,6 +3,8 @@ import axios from 'axios'
 
 import Card from '../elements/Card'
 import convertTime from '../../utilities/time'
+import Square from '../elements/Square'
+import SectionHeading from '../sections/SectionHeading'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 const link = 'https://github.com/'
@@ -21,13 +23,14 @@ function GitHub() {
                     const date = commit.created_at
                     const correctTime = convertTime(date)
                     const message = commit.payload.commits[0].message
+                    const body = <div className="square-padding">{message}</div>
                     const source = commit.repo.name
-                    if (index < 5) {
+                    if (index < 3) {
                         return (
                             <div 
                                 key={index}
                             >
-                                <Card 
+                                {/* <Card 
                                     image={false}
                                     title={false}
                                     subtitle={false}
@@ -42,6 +45,12 @@ function GitHub() {
                                     otherLink={false}
                                     otherButton={false}
                                     time={correctTime}
+                                /> */}
+
+                                <Square 
+                                    main={body}
+                                    link={fullLink}
+                                    overlay="View Repo"
                                 />
                             </div>
                         )
@@ -63,9 +72,13 @@ function GitHub() {
     }, [])
     
     return (
-        <div>
-            {commits}
-        </div>
+        <main>
+            <SectionHeading heading="Recent Commits" />
+            
+            <div className="projects-list">
+                {commits}
+            </div>
+        </main>
     )
 }
 
