@@ -28,7 +28,7 @@ function Posts() {
                         
                         <div>
                         <Tumblr />
-                        <Twitter />
+                        
                     <GitHub />
                     <YouTube />
                         </div>
@@ -39,6 +39,7 @@ function Posts() {
                     
                     
                 </main>
+                <Twitter />
             </div>
 
             <hr />

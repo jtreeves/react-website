@@ -3,6 +3,8 @@ import axios from 'axios'
 
 import convertTime from '../../utilities/time'
 import Card from '../elements/Card'
+import SectionHeading from '../sections/SectionHeading'
+import Square from '../elements/Square'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 const link = 'https://twitter.com/JTReeves/status/'
@@ -20,12 +22,13 @@ function Twitter() {
                 const date = tweet.created_at
                 const correctTime = convertTime(date)
                 const fullLink = link + tweet.id
-                if (index < 5) {
+                const body = <div className="square-padding">{text}</div>
+                if (index < 3) {
                 return (
                     <div 
                         key={index}
                     >
-                        <Card 
+                        {/* <Card 
                             image={false}
                             title={false}
                             subtitle={false}
@@ -40,6 +43,12 @@ function Twitter() {
                             otherLink={false}
                             otherButton={false}
                             time={correctTime}
+                        /> */}
+
+                        <Square 
+                            main={body}
+                            link={fullLink}
+                            overlay="View Tweet"
                         />
                     </div>
                 )
@@ -56,9 +65,13 @@ function Twitter() {
     }, [])
     
     return (
-        <div>
+        <main>
+            <SectionHeading heading="Recent Tweets" />
+            <div className="projects-list">
+
             {tweets}
-        </div>
+            </div>
+        </main>
     )
 }
 
