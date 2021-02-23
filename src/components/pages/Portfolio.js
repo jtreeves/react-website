@@ -1,6 +1,7 @@
 import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
 import ProjectsList from '../elements/ProjectsList'
+import Button from '../elements/Button'
 
 function Portfolio() {
     return (
@@ -17,17 +18,12 @@ function Portfolio() {
 
                     <ProjectsList max={6} />
                     
-                    <a 
-                        href="https://github.com/jtreeves" 
-                        target="_blank" 
-                        rel="noreferrer"
-                    >
-                        <button
-                            className="btn btn-dark center top-margin"
-                        >
-                            View more projects
-                        </button>
-                    </a>
+                    <div className="center">
+                        <Button 
+                            link="https://github.com/jtreeves"
+                            text="View more projects"
+                        />
+                    </div>
                 </main>
             </div>
 

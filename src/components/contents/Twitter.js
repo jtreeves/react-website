@@ -50,6 +50,11 @@ function Twitter() {
                             link={fullLink}
                             overlay="View Tweet"
                         />
+
+{/* <blockquote class="twitter-tweet"><p lang="en" dir="ltr">{text}</p>&mdash; Jackson Reeves (@JTReeves) <a href={fullLink}>{correctTime}</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">DEV&#39;s platform is awesome because it was actually designed to handle code snippets, so I want to use it for all my blogging needs. However, transferring all my old posts manually is a headache. Plus, they don&#39;t allow backdating! IT&#39;S THEIR ONE FLAW.</p>&mdash; Jackson Reeves (@JTReeves) <a href="https://twitter.com/JTReeves/status/1363195447234465792?ref_src=twsrc%5Etfw">February 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> */}
                     </div>
                 )
                 }
@@ -67,7 +72,7 @@ function Twitter() {
     return (
         <main>
             <SectionHeading heading="Recent Tweets" />
-            
+
             <div className="projects-list">
                 {tweets}
             </div>
