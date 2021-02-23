@@ -54,22 +54,8 @@ function Twitter() {
     }, [])
     
     return (
-        <div className="left-column">
-            <h3>Recent Tweets</h3>
-
+        <div>
             {tweets}
-            
-            <a 
-                href="https://twitter.com/JTReeves" 
-                target="_blank" 
-                rel="noreferrer"
-            >
-                <button
-                    className="btn btn-dark center social"
-                >
-                    Read more tweets
-                </button>
-            </a>
         </div>
     )
 }

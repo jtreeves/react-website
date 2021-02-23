@@ -48,11 +48,7 @@ function YouTube() {
     
     return (
         <div>
-            <div className="contains-columns">
-                <div className="left-column">
-                    {videos}
-                </div>
-            </div>
+            {videos}
         </div>
     )
 }

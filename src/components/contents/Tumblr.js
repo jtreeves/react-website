@@ -58,14 +58,7 @@ function Tumblr() {
     
     return (
         <div>
-            <div className="contains-columns">
-                <div className="left-column">
-                    <h3>Resources</h3>
-                    {posts}
-                </div>
-                <div className="right-column">
-                </div>
-            </div>
+            {posts}
         </div>
     )
 }

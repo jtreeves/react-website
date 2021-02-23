@@ -58,11 +58,7 @@ function Medium() {
     
     return (
         <div>
-            <div className="contains-columns">
-                <div className="left-column">
-                    {posts}
-                </div>
-            </div>
+            {posts}
         </div>
     )
 }

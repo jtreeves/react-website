@@ -4,7 +4,7 @@ import Header from './components/sections/Header'
 import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
-import Socialize from './components/pages/Socialize'
+import Posts from './components/pages/Posts'
 import Blog from './components/pages/Blog'
 import Portfolio from './components/pages/Portfolio'
 import Resume from './components/pages/Resume'
@@ -19,58 +19,51 @@ function App() {
     return (
         <>
             <Header />
-
             
-                <Route 
-                    exact path="/" 
-                    component={Home}
-                />
+            <Route 
+                exact path="/" 
+                component={Home}
+            />
 
-                <Route 
-                    path="/about" 
-                    component={About}
-                />
+            <Route 
+                path="/about" 
+                component={About}
+            />
 
-                <Route 
-                    path="/contact" 
-                    component={Contact}
-                />
+            <Route 
+                path="/contact" 
+                component={Contact}
+            />
 
-                <Route 
-                    path="/socialize" 
-                    component={Socialize}
-                />
+            <Route 
+                path="/posts" 
+                component={Posts}
+            />
 
-                <Route 
-                    path="/blog" 
-                    component={Blog}
-                />
-
-                <Route 
-                    path="/portfolio" 
-                    component={Portfolio}
-                />
-                
-                <Route 
-                    path="/skills" 
-                    component={AllSkills}
-                />
-
-                <Route 
-                    path="/resume" 
-                    component={Resume}
-                />
-                
-                <Route 
-                    path="/skill" 
-                    component={Skill}
-                />
-                
-                <Route 
-                    path="/project" 
-                    component={Project}
-                />
+            <Route 
+                path="/portfolio" 
+                component={Portfolio}
+            />
             
+            <Route 
+                path="/skills" 
+                component={AllSkills}
+            />
+
+            <Route 
+                path="/resume" 
+                component={Resume}
+            />
+            
+            <Route 
+                path="/skill" 
+                component={Skill}
+            />
+            
+            <Route 
+                path="/project" 
+                component={Project}
+            />
             
             <Footer />
         </>

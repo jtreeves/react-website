@@ -63,22 +63,8 @@ function GitHub() {
     }, [])
     
     return (
-        <div className="right-column">
-            <h3>Recent Commits</h3>
-
+        <div>
             {commits}
-            
-            <a 
-                href="https://github.com/jtreeves" 
-                target="_blank" 
-                rel="noreferrer"
-            >
-                <button
-                    className="btn btn-dark center social"
-                >
-                    Read more commits
-                </button>
-            </a>
         </div>
     )
 }
