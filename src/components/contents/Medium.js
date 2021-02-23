@@ -17,7 +17,7 @@ function Medium() {
                 REACT_APP_SERVER_URL + '/medium'
             )
             const resultArray = result.data.posts.items.map((post, index) => {
-                const textSubstrings = extractFromPost(post.content, 50)
+                const textSubstrings = extractFromPost(post.content, 15)
                 const date = convertTime(post.isoDate)
                 if (index < 5) {
                     return (
