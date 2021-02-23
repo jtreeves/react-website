@@ -1,20 +1,4 @@
 const projects = {
-    regressions: {
-        name: 'Regressions',
-        description: 'A Python library of algorithms to calculate regression models',
-        skills: [
-            'Python', 
-            'PyPi',
-            'NumPy',
-            'Algorithms'
-        ],
-        type: 'Library',
-        image: '/images/projects/regressions.png',
-        deployedLink: 'https://pypi.org/project/regressions/',
-        repositoryLink: 'https://github.com/jtreeves/regressions_library',
-        date: 'January 2021'
-    },
-
     tiresias: {
         name: 'Tiresias',
         description: 'An app for generating regressions models',
@@ -29,6 +13,37 @@ const projects = {
         image: '/images/projects/tiresias.png',
         deployedLink: 'https://tiresias-predictions.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/predictions-frontend',
+        date: 'January 2021'
+    },
+
+    regressionz: {
+        name: 'RΣGRΣSSIONZ',
+        description: 'An API to provide access to a Python library for generating regression models',
+        skills: [
+            'Python', 
+            'PyPi',
+            'API'
+        ],
+        type: 'App',
+        image: '/images/projects/regressionz.png',
+        deployedLink: 'https://regressionz.herokuapp.com/',
+        repositoryLink: 'https://github.com/jtreeves/regressions_api',
+        date: 'January 2021'
+    },
+    
+    regressions: {
+        name: 'Regressions',
+        description: 'A Python library of algorithms to calculate regression models',
+        skills: [
+            'Python', 
+            'PyPi',
+            'NumPy',
+            'Algorithms'
+        ],
+        type: 'Library',
+        image: '/images/projects/regressions.png',
+        deployedLink: 'https://pypi.org/project/regressions/',
+        repositoryLink: 'https://github.com/jtreeves/regressions_library',
         date: 'January 2021'
     },
 
