@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import Card from '../elements/Card'
+import Button from '../elements/Button'
 
 import convertTime from '../../utilities/time'
 
@@ -21,8 +22,15 @@ function Dev() {
                     return (
                         <div 
                             key={index}
+                            className="code-blog-card"
                         >
-                            <Card 
+                        {/* <div 
+                            key={index}
+                            className="code-blog-card"
+                        ><div  */}
+                        {/* //     key={index}
+                        // > */}
+                            {/* <Card 
                                 image={post.cover_image}
                                 title={post.title}
                                 subtitle={false}
@@ -37,8 +45,66 @@ function Dev() {
                                 otherLink={false}
                                 otherButton={false}
                                 time={date}
-                            />
-                        </div>
+                            /> */}
+                        
+                            <div className="code-blog-card-top">
+                                <a 
+                                    href={post.url} 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                >
+                                    <img 
+                                        src={post.cover_image}
+                                        alt={post.title}
+                                        className="code-blog-card-img"
+                                    />
+                                </a>
+                            </div>
+
+                            <div className="code-blog-card-main">
+                                <div    
+                                    className="code-blog-card-body"
+                                >
+                                    <h4>
+                                        <a 
+                                            href={post.url} 
+                                            target="_blank" 
+                                            rel="noreferrer"
+                                        >
+                                            {post.title}
+                                        </a>
+                                    </h4>
+
+                                    <p>{post.description}</p>
+                                </div>
+
+                                <div 
+                                    className="code-blog-card-footer"
+                                >
+                                    <div 
+                                        className="code-blog-card-button"
+                                    >
+                                        <Button 
+                                            link={post.url}
+                                            text="Read more"
+                                        />
+                                    </div>
+
+                                    <div 
+                                        className="code-blog-card-date"
+                                    >
+                                        <a 
+                                            href={post.url} 
+                                            target="_blank" 
+                                            rel="noreferrer"
+                                        >
+                                            {date}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        // </div>
                     )
                 } else {
                     return null
