@@ -27,16 +27,30 @@ function Medium() {
                             className="blog-card"
                         >
                             <div className="blog-card-side">
+                            <a 
+            href={post.link} 
+            target="_blank" 
+            rel="noreferrer"
+        >
                                 <img 
                                     src={textSubstrings.image}
                                     alt={post.title}
                                     className="blog-card-img"
                                 />
+                                </a>
                             </div>
 
                             <div className="blog-card-main">
                                 <div className="blog-card-body">
-                                    <h4>{post.title}</h4>
+                                    <h4>
+                                    <a 
+            href={post.link} 
+            target="_blank" 
+            rel="noreferrer"
+        >
+                                        {post.title}
+                                        </a>
+                                        </h4>
 
                                     <div 
                                         dangerouslySetInnerHTML={{
@@ -56,7 +70,13 @@ function Medium() {
                                     <div 
                                         className="blog-card-date"
                                     >
+                                        <a 
+            href={post.link} 
+            target="_blank" 
+            rel="noreferrer"
+        >
                                         {date}
+                                        </a>
                                     </div>
                                 </div>
                             </div>
