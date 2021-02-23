@@ -1,4 +1,5 @@
 import Card from '../elements/Card'
+import Button from '../elements/Button'
 import SkillSet from '../elements/SkillSet'
 
 import Navigation from '../sections/Navigation'
@@ -219,17 +220,12 @@ function Resume() {
 
                         </div> 
                 
-                    <a 
-                        href="/Jackson_Reeves_Resume.pdf" 
-                        target="_blank" 
-                        rel="noreferrer"
-                    >
-                        <button
-                            className="btn btn-dark center top-margin"
-                        >
-                            View as PDF
-                        </button>
-                    </a>
+                    <div className="center">
+                        <Button 
+                            link="/Jackson_Reeves_Resume.pdf"
+                            text="View as PDF"
+                        />
+                    </div>
                 </main>
             </div>
 

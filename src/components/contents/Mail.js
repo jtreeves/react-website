@@ -2,6 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 
 import FormItem from '../elements/FormItem'
+import Button from '../elements/Button'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
@@ -106,7 +107,7 @@ function Mail() {
 
             <button 
                 type="submit"
-                className="btn btn-primary center"
+                className="blue-button center"
             >
                 Send
             </button>
