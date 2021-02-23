@@ -249,6 +249,13 @@ main {
     width: 100%;
 }
 
+.three-even-columns {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+    width: 100%;
+}
+
 .project-highlight {
     width: 100%;
     position: relative;

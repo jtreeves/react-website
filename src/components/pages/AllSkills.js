@@ -1,24 +1,51 @@
 import SkillSet from '../elements/SkillSet'
-
+import Navigation from '../sections/Navigation'
+import SectionHeading from '../sections/SectionHeading'
 import types from '../../database/types'
 
 function AllSkills() {
     return (
-        <div className="contains-columns">
-            <h2>Skills</h2>
-            <div className="left-column">
-                <div className="card card-connect card-lock">
+        <div>
+            <Navigation />
+            
+            <div class="overcoming-header">
+                <main>
+                    <SectionHeading heading="Skills" />
+                    <div className="three-even-columns">
+                        <div>
+                            <div className="card card-connect card-lock">
+                                <strong className="card-header">
+                                    Languages
+                                </strong>
+                                <div className="card-body">
+                                    <SkillSet
+                                        skills={types.languages}
+                                    />
+                                </div>
+                            </div>
+                            <div className="card card-connect card-lock">
                     <strong className="card-header">
-                        Languages
+                        Libraries
                     </strong>
                     <div className="card-body">
                         <SkillSet
-                            skills={types.languages}
+                            skills={types.libraries}
                         />
                     </div>
                 </div>
-
-                <div className="card card-connect card-lock">
+                        </div>
+                        <div>
+                        <div className="card card-connect card-lock">
+                    <strong className="card-header">
+                        Tools
+                    </strong>
+                    <div className="card-body">
+                        <SkillSet
+                            skills={types.tools}
+                        />
+                    </div>
+                </div>
+                        <div className="card card-connect card-lock">
                     <strong className="card-header">
                         Frameworks
                     </strong>
@@ -29,18 +56,10 @@ function AllSkills() {
                     </div>
                 </div>
 
-                <div className="card card-connect card-lock">
-                    <strong className="card-header">
-                        Libraries
-                    </strong>
-                    <div className="card-body">
-                        <SkillSet
-                            skills={types.libraries}
-                        />
-                    </div>
-                </div>
-
-                <div className="card card-connect card-lock">
+                
+                        </div>
+                        <div>
+                        <div className="card card-connect card-lock">
                     <strong className="card-header">
                         Databases
                     </strong>
@@ -50,9 +69,7 @@ function AllSkills() {
                         />
                     </div>
                 </div>
-            </div>
-
-            <div className="right-column">
+            
                 <div className="card card-connect card-lock">
                     <strong className="card-header">
                         Methodologies
@@ -64,17 +81,19 @@ function AllSkills() {
                     </div>
                 </div>
 
-                <div className="card card-connect card-lock">
-                    <strong className="card-header">
-                        Tools
-                    </strong>
-                    <div className="card-body">
-                        <SkillSet
-                            skills={types.tools}
-                        />
+                
+                        </div>
+
                     </div>
-                </div>
+
+        
+                
+
+                </main>
+
+                
             </div>
+            <hr />
         </div>
     )
 }

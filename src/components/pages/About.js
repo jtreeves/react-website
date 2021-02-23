@@ -1,7 +1,14 @@
+import Navigation from '../sections/Navigation'
+import SectionHeading from '../sections/SectionHeading'
+
 function About() {
     return (
         <div>
-            <h2>About</h2>
+            <Navigation />
+            
+            <div class="overcoming-header">
+                <main>
+                    <SectionHeading heading="About" />
 
             <div className="about-card">
                 <img 
@@ -22,6 +29,9 @@ function About() {
                     Prior to joining Atlanta, Reeves plugged away at various local and national newspapers and magazines and received a degree in media studies with minors in English and philosophy from Vassar College. The Sandy Springs native returned to his hometown in 2009 to escape the hassles of poststructuralist theory, immerse himself in Southern hospitality, and binge on pork belly. In his spare time, he enjoys reading the literature of Bret Easton Ellis and Anne Rivers Siddons, listening to Soundgarden and Sneaker Pimps, and watching anything written by Tina Fey. That, or getting outside and playing with his dog, Tucker. And he likes the Internet. A lot. If interested in reaching Reeves for freelance work, feel free to send him an email. His areas of expertise include education, social media, copyediting, and data analysis.
                 </p>
             </div>
+            </main>
+        </div>
+        <hr />
         </div>
     )
 }
