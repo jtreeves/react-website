@@ -5,6 +5,7 @@ import Card from '../elements/Card'
 
 import extractFromPost from '../../utilities/medium'
 import convertTime from '../../utilities/time'
+import Button from '../elements/Button'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
@@ -17,7 +18,7 @@ function Medium() {
                 REACT_APP_SERVER_URL + '/medium'
             )
             const resultArray = result.data.posts.items.map((post, index) => {
-                const textSubstrings = extractFromPost(post.content, 15)
+                const textSubstrings = extractFromPost(post.content, 50)
                 const date = convertTime(post.isoDate)
                 if (index < 5) {
                     return (
@@ -45,17 +46,12 @@ function Medium() {
                                 </div>
 
                                 <div className="blog-card-footer">
-                                    <a 
-                                        href={post.link} 
-                                        target="_blank" 
-                                        rel="noreferrer"
-                                    >
-                                        <button 
-                                            className="blog-card-button"
-                                        >
-                                            Read more
-                                        </button>
-                                    </a>
+                                    <div className="blog-card-button">
+                                        <Button 
+                                            link={post.link}
+                                            text="Read more"
+                                        />
+                                    </div>
 
                                     <div 
                                         className="blog-card-date"

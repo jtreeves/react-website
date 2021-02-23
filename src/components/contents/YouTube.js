@@ -10,6 +10,8 @@ const youtubeVideoUrl = 'https://www.youtube.com/watch?v='
 
 const youtubeImageUrl = 'https://img.youtube.com/vi/'
 
+const youtubeEmbedUrl = 'https://www.youtube.com/embed/'
+
 function YouTube() {
     const [videos, setVideos] = useState([])
 
@@ -22,27 +24,28 @@ function YouTube() {
                 const youtubeId = video.id.videoId
                 const sourceLink = youtubeVideoUrl + youtubeId
                 const youtubeImage = youtubeImageUrl + youtubeId + '/hqdefault.jpg'
+                const embedLink = youtubeEmbedUrl + youtubeId
                 const image = <img src={youtubeImage} alt="video" className="square-image" />
                 if (index < 5) {
                     return (
                         <div 
                             key={index}
                         >
-                            {/* <iframe 
+                            <iframe 
                                 width="100%" 
-                                height="300" 
-                                src={sourceLink}
+                                height="500px" 
+                                src={embedLink}
                                 title={index}
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen 
-                            /> */}
+                            />
 
-                            <Square 
+                            {/* <Square 
                                 main={image}
                                 link={sourceLink}
                                 overlay="Watch Video"
-                            />
+                            /> */}
                         </div>
                     )
                 } else {
@@ -61,11 +64,11 @@ function YouTube() {
     
     return (
         <main>
-            <SectionHeading heading="Recent Videos" />
+            <SectionHeading heading="Latest Video" />
             
-            <div className="projects-list">
+            {/* <div className="projects-list"> */}
                 {videos}
-            </div>
+            {/* </div> */}
         </main>
     )
 }
