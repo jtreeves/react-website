@@ -11,10 +11,11 @@ function SkillSet(props) {
                     state: {skill}
                 }}
                 onClick={scroll}
+                className="links"
             >
                 <button 
                     key={index}
-                    className="btn btn-light skill"
+                    className="skill-button"
                 >
                     {skill}
                 </button>
@@ -23,7 +24,7 @@ function SkillSet(props) {
     })
 
     return (
-        <div>
+        <div className="skill-set">
             {skillSet}
         </div>
     )
