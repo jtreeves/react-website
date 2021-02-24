@@ -5,6 +5,7 @@ import Card from '../elements/Card'
 import convertTime from '../../utilities/time'
 import Square from '../elements/Square'
 import SectionHeading from '../sections/SectionHeading'
+import Button from '../elements/Button'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 const link = 'https://github.com/'
@@ -28,31 +29,67 @@ function GitHub() {
                     if (index < 3) {
                         return (
                             <div 
-                                key={index}
-                            >
-                                {/* <Card 
-                                    image={false}
-                                    title={false}
-                                    subtitle={false}
-                                    lead={false}
-                                    danger={false}
-                                    list={false}
-                                    text={message}
-                                    source={source}
-                                    cloud={false}
-                                    link={fullLink}
-                                    button="View repo"
-                                    otherLink={false}
-                                    otherButton={false}
-                                    time={correctTime}
-                                /> */}
+                            key={index}
+                            className="git-card"
+                        >
+                            <div className="git-card-body">
+                                
+                                    
+                                    <p>{message}<br />
+                                    <em>— {source}</em></p>
+                                </div>
 
-                                <Square 
-                                    main={body}
-                                    link={fullLink}
-                                    overlay="View Repo"
-                                />
+                                <div 
+                                    className="git-card-footer"
+                                >
+                                    <div 
+                                        className="git-card-button"
+                                    >
+                                        <Button 
+                                            link={fullLink}
+                                            text="View repo"
+                                        />
+                                    </div>
+
+                                    <div 
+                                        className="git-card-date"
+                                    >
+                                        <a 
+                                            href={fullLink} 
+                                            target="_blank" 
+                                            rel="noreferrer"
+                                        >
+                                            {correctTime}
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+                            // <div 
+                            //     key={index}
+                            // >
+                            //     {/* <Card 
+                            //         image={false}
+                            //         title={false}
+                            //         subtitle={false}
+                            //         lead={false}
+                            //         danger={false}
+                            //         list={false}
+                            //         text={message}
+                            //         source={source}
+                            //         cloud={false}
+                            //         link={fullLink}
+                            //         button="View repo"
+                            //         otherLink={false}
+                            //         otherButton={false}
+                            //         time={correctTime}
+                            //     /> */}
+
+                            //     <Square 
+                            //         main={body}
+                            //         link={fullLink}
+                            //         overlay="View Repo"
+                            //     />
+                            // </div>
                         )
                     } else {
                         return null
@@ -77,6 +114,15 @@ function GitHub() {
             
             <div className="projects-list">
                 {commits}
+            </div>
+
+            <div className="blank-space" />
+
+            <div className="center">
+                <Button 
+                    link="https://github.com/jtreeves"
+                    text="Read more commits"
+                />
             </div>
         </main>
     )

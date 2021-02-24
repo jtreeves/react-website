@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import Card from '../elements/Card'
 import Button from '../elements/Button'
+import SectionHeading from '../sections/SectionHeading'
 
 import convertTime from '../../utilities/time'
 
@@ -18,35 +19,12 @@ function Dev() {
             )
             const resultArray = result.data.posts.map((post, index) => {
                 const date = convertTime(post.published_timestamp)
-                if (index < 5) {
+                if (index < 3) {
                     return (
                         <div 
                             key={index}
                             className="code-blog-card"
                         >
-                        {/* <div 
-                            key={index}
-                            className="code-blog-card"
-                        ><div  */}
-                        {/* //     key={index}
-                        // > */}
-                            {/* <Card 
-                                image={post.cover_image}
-                                title={post.title}
-                                subtitle={false}
-                                lead={false}
-                                danger={false}
-                                list={false}
-                                text={post.description}
-                                source={false}
-                                cloud={false}
-                                link={post.url}
-                                button="View full post"
-                                otherLink={false}
-                                otherButton={false}
-                                time={date}
-                            /> */}
-                        
                             <div className="code-blog-card-top">
                                 <a 
                                     href={post.url} 
@@ -104,7 +82,6 @@ function Dev() {
                                 </div>
                             </div>
                         </div>    
-                        // </div>
                     )
                 } else {
                     return null
@@ -121,9 +98,22 @@ function Dev() {
     }, [])
     
     return (
-        <div>
-            {posts}
-        </div>
+        <main>
+            <SectionHeading heading="Recent Codings" />
+
+            <div className="projects-list">
+                {posts}
+            </div>
+
+            <div className="blank-space" />
+
+            <div className="center">
+                <Button 
+                    link="https://dev.to/jtreeves"
+                    text="Read more posts"
+                />
+            </div>
+        </main>
     )
 }
 

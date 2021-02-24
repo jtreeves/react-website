@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import Card from '../elements/Card'
+import SectionHeading from '../sections/SectionHeading'
 
 import extractFromPost from '../../utilities/medium'
 import convertTime from '../../utilities/time'
@@ -18,9 +19,9 @@ function Medium() {
                 REACT_APP_SERVER_URL + '/medium'
             )
             const resultArray = result.data.posts.items.map((post, index) => {
-                const textSubstrings = extractFromPost(post.content, 50)
+                const textSubstrings = extractFromPost(post.content, 40)
                 const date = convertTime(post.isoDate)
-                if (index < 5) {
+                if (index < 3) {
                     return (
                         <div 
                             key={index}
@@ -99,9 +100,22 @@ function Medium() {
     }, [])
     
     return (
-        <div>
-            {posts}
-        </div>
+        <main>
+            <SectionHeading heading="Recent Musings" />
+
+            <div className="rows">
+                {posts}
+            </div>
+
+            <div className="blank-space" />
+
+            <div className="center">
+                <Button 
+                    link="https://jtreeves.medium.com/"
+                    text="Read more posts"
+                />
+            </div>
+        </main>
     )
 }
 

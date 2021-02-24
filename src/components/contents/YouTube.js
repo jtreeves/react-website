@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import Square from '../elements/Square'
 import SectionHeading from '../sections/SectionHeading'
+import Button from '../elements/Button'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
@@ -26,20 +27,22 @@ function YouTube() {
                 const youtubeImage = youtubeImageUrl + youtubeId + '/hqdefault.jpg'
                 const embedLink = youtubeEmbedUrl + youtubeId
                 const image = <img src={youtubeImage} alt="video" className="square-image" />
-                if (index < 5) {
+                if (index < 2) {
                     return (
                         <div 
                             key={index}
                         >
                             <iframe 
                                 width="100%" 
-                                height="500px" 
+                                height="100%" 
                                 src={embedLink}
                                 title={index}
                                 frameborder="0" 
+                                className="card-with-border"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen 
                             />
+                            
 
                             {/* <Square 
                                 main={image}
@@ -64,11 +67,21 @@ function YouTube() {
     
     return (
         <main>
-            <SectionHeading heading="Latest Video" />
+            <SectionHeading heading="Recent Videos" />
             
-            {/* <div className="projects-list"> */}
+            <div className="two-columns">
                 {videos}
-            {/* </div> */}
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1DvTQvgrv30" frameborder="0" className="card-with-border" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div className="blank-space" />
+
+            <div className="center">
+                <Button 
+                    link="https://www.youtube.com/c/jacksonreeves/"
+                    text="Watch more videos"
+                />
+            </div>
         </main>
     )
 }

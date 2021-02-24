@@ -13,18 +13,9 @@ function Posts() {
             <Navigation />
             
             <div class="overcoming-header">
-                <main>
-                    <SectionHeading heading="Posts" />
-                    
-                        <Medium />
-                    <Dev />
-                        
-
-                    
-                    
-                    
-                    
-                </main>
+                
+                <Medium />
+                <Dev />
                 <Tumblr />
                 <GitHub />
                 <Twitter />

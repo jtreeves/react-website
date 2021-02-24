@@ -8,6 +8,7 @@ import convertTime from '../../utilities/time'
 
 import Square from '../elements/Square'
 import SectionHeading from '../sections/SectionHeading'
+import Button from '../elements/Button'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
@@ -26,8 +27,57 @@ function Tumblr() {
                     return (
                         <div 
                             key={index}
+                            className="resource-blog-card"
                         >
-                            {/* <Card 
+                            
+
+                            
+                                <div className="resource-blog-card-body">
+                                    <h4>
+                                        <a 
+                                            href={post.post_url} 
+                                            target="_blank" 
+                                            rel="noreferrer"
+                                        >
+                                            {post.title}
+                                        </a>
+                                    </h4>
+
+                                    <div 
+                                        dangerouslySetInnerHTML={{
+                                            __html: post.description
+                                        }} 
+                                    />
+                                </div>
+
+                                <div className="resource-blog-card-footer">
+                                    <div 
+                                        className="resource-blog-card-button"
+                                    >
+                                        <Button 
+                                            link={post.post_url}
+                                            text="Read more"
+                                        />
+                                    </div>
+
+                                    <div 
+                                        className="resource-blog-card-date"
+                                    >
+                                        <a 
+                                            href={post.post_url} 
+                                            target="_blank" 
+                                            rel="noreferrer"
+                                        >
+                                            {correctTime}
+                                        </a>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        // <div 
+                        //     key={index}
+                        // >
+                            /* <Card 
                                 image={false}
                                 title={post.title}
                                 subtitle={false}
@@ -42,14 +92,14 @@ function Tumblr() {
                                 otherLink={false}
                                 otherButton={false}
                                 time={correctTime}
-                            /> */}
+                            /> */
 
-                            <Square 
+                            /* <Square 
                                 main={post.title}
                                 link={post.post_url}
                                 overlay="View Post"
-                            />
-                        </div>
+                            /> */
+                        /* </div> */
                     )
                 } else {
                     return null
@@ -71,6 +121,15 @@ function Tumblr() {
             
             <div className="projects-list">
                 {posts}
+            </div>
+
+            <div className="blank-space" />
+
+            <div className="center">
+                <Button 
+                    link="https://jacksonreeves.tumblr.com/"
+                    text="Read more posts"
+                />
             </div>
         </main>
     )
