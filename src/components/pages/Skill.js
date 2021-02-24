@@ -4,7 +4,6 @@ import ProjectHighlight from '../sections/ProjectHighlight'
 import SkillSet from '../elements/SkillSet'
 import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
-
 import skills from '../../database/skills'
 import projects from '../../database/projects'
 
@@ -51,6 +50,7 @@ function Skill() {
                         <strong className="card-header">
                             All My Skills
                         </strong>
+                        
                         <div className="card-body">
                             <SkillSet
                                 skills={skillsArray}

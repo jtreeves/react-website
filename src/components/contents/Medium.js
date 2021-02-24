@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import Card from '../elements/Card'
 import SectionHeading from '../sections/SectionHeading'
-
 import extractFromPost from '../../utilities/medium'
 import convertTime from '../../utilities/time'
 import Button from '../elements/Button'

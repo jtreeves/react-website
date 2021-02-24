@@ -1,10 +1,8 @@
 import Card from '../elements/Card'
 import Button from '../elements/Button'
 import SkillSet from '../elements/SkillSet'
-
 import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
-
 import experience from '../../database/experience'
 import education from '../../database/education'
 import types from '../../database/types'
@@ -23,7 +21,7 @@ function Resume() {
                     </p>
 
                     <div className="uneven-columns">
-                    <div>
+                        <div>
                             <h3>Education</h3>
                     
                             <Card 
@@ -151,10 +149,13 @@ function Resume() {
                         <div>
                             <h3>Skills</h3>
 
-                            <div className="card card-connect card-lock">
+                            <div 
+                                className="card card-connect card-lock"
+                            >
                                 <strong className="card-header">
                                     Languages
                                 </strong>
+
                                 <div className="card-body">
                                     <SkillSet
                                         skills={types.languages}
@@ -162,10 +163,13 @@ function Resume() {
                                 </div>
                             </div>
 
-                            <div className="card card-connect card-lock">
+                            <div 
+                                className="card card-connect card-lock"
+                            >
                                 <strong className="card-header">
                                     Frameworks
                                 </strong>
+
                                 <div className="card-body">
                                     <SkillSet
                                         skills={types.frameworks}
@@ -173,10 +177,13 @@ function Resume() {
                                 </div>
                             </div>
 
-                            <div className="card card-connect card-lock">
+                            <div 
+                                className="card card-connect card-lock"
+                            >
                                 <strong className="card-header">
                                     Libraries
                                 </strong>
+
                                 <div className="card-body">
                                     <SkillSet
                                         skills={types.libraries}
@@ -184,10 +191,13 @@ function Resume() {
                                 </div>
                             </div>
 
-                            <div className="card card-connect card-lock">
+                            <div 
+                                className="card card-connect card-lock"
+                            >
                                 <strong className="card-header">
                                     Databases
                                 </strong>
+
                                 <div className="card-body">
                                     <SkillSet
                                         skills={types.databases}
@@ -195,10 +205,13 @@ function Resume() {
                                 </div>
                             </div>
 
-                            <div className="card card-connect card-lock">
+                            <div 
+                                className="card card-connect card-lock"
+                            >
                                 <strong className="card-header">
                                     Tools
                                 </strong>
+
                                 <div className="card-body">
                                     <SkillSet
                                         skills={types.tools}
@@ -206,10 +219,13 @@ function Resume() {
                                 </div>
                             </div>
 
-                            <div className="card card-connect card-lock">
+                            <div 
+                                className="card card-connect card-lock"
+                            >
                                 <strong className="card-header">
                                     Methodologies
                                 </strong>
+
                                 <div className="card-body">
                                     <SkillSet
                                         skills={types.methodologies}
@@ -217,8 +233,7 @@ function Resume() {
                                 </div>
                             </div>
                         </div>
-
-                        </div> 
+                    </div> 
                 
                     <div className="center">
                         <Button 

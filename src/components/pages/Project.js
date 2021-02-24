@@ -31,7 +31,9 @@ function Project() {
                                 rel="noreferrer"
                                 className="links"
                             >
-                                <div className="project-highlight square">
+                                <div 
+                                    className="project-highlight square"
+                                >
                                     <div className="project-image">
                                         <img 
                                             src={projects[lowercase].image} 
@@ -40,8 +42,12 @@ function Project() {
                                         />
                                     </div>
 
-                                    <div className="square-content card project-overlay">
-                                        <div className="project-title">
+                                    <div 
+                                        className="square-content card project-overlay"
+                                    >
+                                        <div 
+                                            className="project-title"
+                                        >
                                             View Site
                                         </div>
                                     </div>
@@ -51,7 +57,9 @@ function Project() {
 
                         <div className="right-column">
                             <div className="square">
-                                <div className="square-content card">
+                                <div 
+                                    className="square-content card"
+                                >
                                     <div className="card-header">
                                         <h4>
                                             About This Project
@@ -60,6 +68,7 @@ function Project() {
 
                                     <div className="card-body">
                                         {projects[lowercase].description}
+                                        
                                         <SkillSet 
                                             skills={projects[lowercase].skills}
                                         />

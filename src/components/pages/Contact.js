@@ -1,6 +1,7 @@
 import Mail from '../contents/Mail'
 import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
+
 function Contact() {
     return (
         <div>
@@ -9,9 +10,10 @@ function Contact() {
             <div class="overcoming-header">
                 <main>
                     <SectionHeading heading="About" />   
-            <Mail />
-            </main>
+                    <Mail />
+                </main>
             </div>
+            
             <hr />
         </div>
     )

@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import Card from '../elements/Card'
 import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
-
 import convertTime from '../../utilities/time'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL

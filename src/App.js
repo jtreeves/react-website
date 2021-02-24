@@ -5,15 +5,14 @@ import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
 import Posts from './components/pages/Posts'
-import Blog from './components/pages/Blog'
 import Portfolio from './components/pages/Portfolio'
 import Resume from './components/pages/Resume'
 import Skill from './components/pages/Skill'
 import Project from './components/pages/Project'
 import Footer from './components/sections/Footer'
+import AllSkills from './components/pages/AllSkills'
 
 import './App.css'
-import AllSkills from './components/pages/AllSkills'
 
 function App() {
     return (

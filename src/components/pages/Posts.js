@@ -5,7 +5,6 @@ import YouTube from '../contents/YouTube'
 import Twitter from '../contents/Twitter'
 import GitHub from '../contents/GitHub'
 import Navigation from '../sections/Navigation'
-import SectionHeading from '../sections/SectionHeading'
 
 function Posts() {
     return (
@@ -13,7 +12,6 @@ function Posts() {
             <Navigation />
             
             <div class="overcoming-header">
-                
                 <Medium />
                 <Dev />
                 <Tumblr />

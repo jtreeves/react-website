@@ -1,12 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import Card from '../elements/Card'
-
-import extractFromPost from '../../utilities/post'
 import convertTime from '../../utilities/time'
-
-import Square from '../elements/Square'
 import SectionHeading from '../sections/SectionHeading'
 import Button from '../elements/Button'
 
@@ -29,77 +24,51 @@ function Tumblr() {
                             key={index}
                             className="resource-blog-card"
                         >
-                            
+                            <div 
+                                className="resource-blog-card-body"
+                            >
+                                <h4>
+                                    <a 
+                                        href={post.post_url} 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                    >
+                                        {post.title}
+                                    </a>
+                                </h4>
 
-                            
-                                <div className="resource-blog-card-body">
-                                    <h4>
-                                        <a 
-                                            href={post.post_url} 
-                                            target="_blank" 
-                                            rel="noreferrer"
-                                        >
-                                            {post.title}
-                                        </a>
-                                    </h4>
+                                <div 
+                                    dangerouslySetInnerHTML={{
+                                        __html: post.description
+                                    }} 
+                                />
+                            </div>
 
-                                    <div 
-                                        dangerouslySetInnerHTML={{
-                                            __html: post.description
-                                        }} 
+                            <div 
+                                className="resource-blog-card-footer"
+                            >
+                                <div 
+                                    className="resource-blog-card-button"
+                                >
+                                    <Button 
+                                        link={post.post_url}
+                                        text="Read more"
                                     />
                                 </div>
 
-                                <div className="resource-blog-card-footer">
-                                    <div 
-                                        className="resource-blog-card-button"
+                                <div 
+                                    className="resource-blog-card-date"
+                                >
+                                    <a 
+                                        href={post.post_url} 
+                                        target="_blank" 
+                                        rel="noreferrer"
                                     >
-                                        <Button 
-                                            link={post.post_url}
-                                            text="Read more"
-                                        />
-                                    </div>
-
-                                    <div 
-                                        className="resource-blog-card-date"
-                                    >
-                                        <a 
-                                            href={post.post_url} 
-                                            target="_blank" 
-                                            rel="noreferrer"
-                                        >
-                                            {correctTime}
-                                        </a>
-                                    </div>
+                                        {correctTime}
+                                    </a>
                                 </div>
-                            
+                            </div>
                         </div>
-                        // <div 
-                        //     key={index}
-                        // >
-                            /* <Card 
-                                image={false}
-                                title={post.title}
-                                subtitle={false}
-                                lead={false}
-                                danger={true}
-                                list={false}
-                                text={post.description}
-                                source={false}
-                                cloud={false}
-                                link={post.post_url}
-                                button="View full post"
-                                otherLink={false}
-                                otherButton={false}
-                                time={correctTime}
-                            /> */
-
-                            /* <Square 
-                                main={post.title}
-                                link={post.post_url}
-                                overlay="View Post"
-                            /> */
-                        /* </div> */
                     )
                 } else {
                     return null
