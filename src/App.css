@@ -909,8 +909,12 @@ h2, h3 {
     background: white;
     padding: 20px;
     width: 100%;
-    border: 1px solid lightgray;
+    border: 2.5px solid #000080;
     border-radius: 5px;
+}
+
+.mail-card:hover {
+    border: 2.5px solid #007ba7;
 }
 
 .mail-input-sections {
@@ -955,8 +959,12 @@ h2, h3 {
     background: white;
     padding: 20px;
     width: 100%;
-    border: 1px solid lightgray;
+    border: 2.5px solid #000080;
     border-radius: 5px;
+}
+
+.about-card:hover {
+    border: 2.5px solid #007ba7;
 }
 
 .about-image {
