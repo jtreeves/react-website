@@ -23,63 +23,62 @@ function GitHub() {
                     const correctTime = convertTime(date)
                     const message = commit.payload.commits[0].message
                     const source = commit.repo.name
-                    if (index < 3) {
-                        return (
-                            <div 
-                                key={index}
-                                className="git-card"
-                            >
-                                <div className="git-card-body">
-                                    <p>
-                                        {message}<br />
+                    return (
+                        <div 
+                            key={index}
+                            className="git-card"
+                        >
+                            <div className="git-card-body">
+                                <p>
+                                    {message}<br />
 
-                                        <a 
-                                            href={fullLink} 
-                                            target="_blank" 
-                                            rel="noreferrer"
-                                        >
-                                            <em>
-                                                — {source}
-                                            </em>
-                                        </a>
-                                    </p>
+                                    <a 
+                                        href={fullLink} 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                    >
+                                        <em>
+                                            — {source}
+                                        </em>
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div 
+                                className="git-card-footer"
+                            >
+                                <div 
+                                    className="git-card-button"
+                                >
+                                    <Button 
+                                        link={fullLink}
+                                        target="_blank"
+                                        text="View repo"
+                                    />
                                 </div>
 
                                 <div 
-                                    className="git-card-footer"
+                                    className="git-card-date"
                                 >
-                                    <div 
-                                        className="git-card-button"
+                                    <a 
+                                        href={fullLink} 
+                                        target="_blank" 
+                                        rel="noreferrer"
                                     >
-                                        <Button 
-                                            link={fullLink}
-                                            target="_blank"
-                                            text="View repo"
-                                        />
-                                    </div>
-
-                                    <div 
-                                        className="git-card-date"
-                                    >
-                                        <a 
-                                            href={fullLink} 
-                                            target="_blank" 
-                                            rel="noreferrer"
-                                        >
-                                            {correctTime}
-                                        </a>
-                                    </div>
+                                        {correctTime}
+                                    </a>
                                 </div>
                             </div>
-                        )
-                    } else {
-                        return null
-                    }
+                        </div>
+                    )
                 } else {
                     return null
                 }
             })
-            setCommits(resultArray)
+            const filteredArray = resultArray.filter(
+                element => element != null
+            )
+            setCommits(filteredArray)
         } catch (error) {
             alert(error.response.data.msg)
         }
@@ -94,7 +93,7 @@ function GitHub() {
             <SectionHeading heading="Recent Commits" />
             
             <div className="projects-list">
-                {commits}
+                {commits.slice(0, 3)}
             </div>
 
             <div className="blank-space" />

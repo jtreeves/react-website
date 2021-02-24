@@ -213,8 +213,8 @@ main {
 
 .section-heading {
     display: grid;
-    grid-template-columns: 36% 24% 36%;
-    column-gap: 2%;
+    grid-template-columns: 2fr 1fr 2fr;
+    column-gap: 10px;
     width: 100%;
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
@@ -290,13 +290,13 @@ main {
     width: 100%;
     position: relative;
     background: white;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
     transition: 1s ease;
 }
 
 .project-highlight:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .project-image {
@@ -916,11 +916,12 @@ main {
 
 .contains-columns {
     display: grid;
-    grid-template-columns: 48% 4% 48%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
     width: 100%;
 }
 
-.left-column {
+/* .left-column {
     grid-column-start: 1;
     grid-column-end: 2;
 }
@@ -928,7 +929,7 @@ main {
 .right-column {
     grid-column-start: 3;
     grid-column-end: 4;
-}
+} */
 
 .project {
     width: 100%;

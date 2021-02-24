@@ -5,6 +5,7 @@ import SkillSet from '../elements/SkillSet'
 import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
 import RecentProjects from '../sections/RecentProjects'
+import SkillCard from '../elements/SkillCard'
 
 function Project() {
     const location = useLocation()
@@ -23,9 +24,15 @@ function Project() {
             <div class="overcoming-header">
                 <main>
                     <SectionHeading heading={specificProject} />
+
+                    <div className="about-card">
+                        Here's everything about {specificProject}. Click on the image to view a live version of the site. Scroll down to learn more about how I built this project, including what skills I used.
+                    </div>
+
+                    <div className="blank-space" />
         
                     <div className="contains-columns">
-                        <div className="left-column">
+                        <div>
                             <a 
                                 href={projects[lowercase].deployedLink} 
                                 target="_blank" 
@@ -56,7 +63,12 @@ function Project() {
                             </a>
                         </div>
 
-                        <div className="right-column">
+                        <div className="one-column-of-three">
+                            <SkillCard 
+                                description="Skills Used"
+                                category={projects[lowercase].skills}
+                            />
+
                             <div className="square">
                                 <div 
                                     className="square-content card"
