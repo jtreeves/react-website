@@ -9,11 +9,11 @@ function Contact() {
             
             <div class="overcoming-header">
                 <main>
-                    <SectionHeading heading="About" />   
+                    <SectionHeading heading="Contact" />   
                     <Mail />
                 </main>
             </div>
-            
+
             <hr />
         </div>
     )

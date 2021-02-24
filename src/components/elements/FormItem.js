@@ -1,23 +1,23 @@
 function FormItem(props) {
     return (
-        <div className="form-group row card-lock">
+        <div className="mail-section">
             <label 
                 htmlFor={props.label}
-                className="col-sm-2 col-form-label card-lock"
+                className="mail-label"
             >
                 <strong>
                     {props.display}
                 </strong>
             </label>
 
-            <div className="col-sm-10 card-lock">
+            <div className="mail-input">
                 <input
                     type={props.type}
                     name={props.label}
                     value={props.value}
                     placeholder={props.placeholder}
                     onChange={props.onChange}
-                    className="form-control card-lock"
+                    className="mail-input-inner"
                 />
             </div>
         </div>

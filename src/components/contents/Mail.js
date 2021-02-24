@@ -48,12 +48,15 @@ function Mail() {
     return (
         <form 
             onSubmit={hanldeSubmit}
-            className="card card-body card-lock"
+            className="mail-card"
         >   
             <p>
                 Thanks for visiting my site! If you'd like to work together or just want to drop me a line, feel free to use the below form.
             </p>
 
+            <div className="mail-input-sections">
+
+            
             <FormItem
                 type="text"
                 label="name"
@@ -81,17 +84,17 @@ function Mail() {
                 onChange={handleSubject}
             />
             
-            <div className="form-group row card-lock">
+            <div className="mail-section">
                 <label 
                     htmlFor="message"
-                    className="col-sm-2 col-form-label card-lock"
+                    className="mail-label"
                 >
                     <strong>
                         Message
                     </strong>
                 </label>
 
-                <div className="col-sm-10 card-lock">
+                <div className="mail-input">
                     <textarea
                         name="message" 
                         cols="30" 
@@ -99,10 +102,13 @@ function Mail() {
                         value={message}
                         placeholder="Your general message can be as long as you would like."
                         onChange={handleMessage}
-                        className="form-control card-lock"
+                        className="mail-input-inner"
                     />
                 </div>
             </div>
+
+            </div>
+            <div className="blank-space" />
 
             <button 
                 type="submit"

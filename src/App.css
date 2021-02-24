@@ -905,19 +905,65 @@ h2, h3 {
     overflow-y: scroll;
 }
 
+.mail-card {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.mail-input-sections {
+    display: grid;
+    /* flex-direction: column; */
+    width: 100%;
+    /* grid-template-rows: 1fr 1fr 1fr 2fr; */
+    row-gap: 10px;
+    /* justify-content: space-between; */
+}
+
+.mail-section {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.mail-label {
+    padding-top: 5px;
+}
+
+.mail-input {
+    width: 80%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.mail-input-inner {
+    width: 100%;
+    border: none;
+    margin-left: 5px;
+}
+
+.mail-input-inner:focus {
+    outline: none;
+}
+
 .about-card {
     background: white;
-    width: 100%;
     padding: 20px;
-    border: 1px solid gray;
-    border-radius: 1%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
 }
 
 .about-image {
     float: left;
     width: 50%;
     padding-right: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1000px) {
