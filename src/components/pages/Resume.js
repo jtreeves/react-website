@@ -1,11 +1,12 @@
 import Card from '../elements/Card'
 import Button from '../elements/Button'
-import SkillSet from '../elements/SkillSet'
 import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
 import experience from '../../database/experience'
 import education from '../../database/education'
 import types from '../../database/types'
+import SkillCard from '../elements/SkillCard'
+import SchoolCard from '../elements/SchoolCard'
 
 function Resume() {
     return (
@@ -16,221 +17,154 @@ function Resume() {
                 <main>
                     <SectionHeading heading="Resume" />
 
-                    <p className="card card-body">
+                    <div className="about-card">
                         Inquisitive full-stack developer with more than a decade of experience in education and journalism. Hoping to combine long-time loves of editing and data analysis to produce clean, performative code.
-                    </p>
+                    </div>
+
+                    <div className="blank-space" />
 
                     <div className="uneven-columns">
                         <div>
-                            <h3>Education</h3>
-                    
-                            <Card 
-                                image={false}
-                                title={education.certificate.degree}
-                                subtitle={education.certificate.school}
-                                lead={education.certificate.specialization}
-                                danger={false}
-                                list={true}
-                                text={education.certificate.courses}
-                                source={false}
-                                cloud={false}
-                                link={education.certificate.link}
-                                button="School"
-                                otherLink={false}
-                                otherButton={false}
-                                time={education.certificate.date}
-                            />
+                            <SectionHeading heading="Skills" />
 
-                            <Card 
-                                image={false}
-                                title={education.bachelor.degree}
-                                subtitle={education.bachelor.school}
-                                lead={education.bachelor.specialization}
-                                danger={false}
-                                list={true}
-                                text={education.bachelor.courses}
-                                source={false}
-                                cloud={false}
-                                link={education.bachelor.link}
-                                button="School"
-                                otherLink={false}
-                                otherButton={false}
-                                time={education.bachelor.date}
-                            />
-                            
-                            <Card 
-                                image={false}
-                                title={education.program.degree}
-                                subtitle={education.program.school}
-                                lead={education.program.specialization}
-                                danger={false}
-                                list={true}
-                                text={education.program.courses}
-                                source={false}
-                                cloud={false}
-                                link={education.program.link}
-                                button="School"
-                                otherLink={false}
-                                otherButton={false}
-                                time={education.program.date}
-                            />
+                            <div className="one-column-of-three">
 
-                            <h3>Experience</h3>
-        
-                            <Card 
-                                image={false}
-                                title={experience.hyperionDirector.position}
-                                subtitle={experience.hyperionDirector.company}
-                                lead={false}
-                                danger={false}
-                                list={true}
-                                text={experience.hyperionDirector.items}
-                                source={false}
-                                cloud={false}
-                                link={experience.hyperionDirector.link}
-                                button="Company"
-                                otherLink={false}
-                                otherButton={false}
-                                time={experience.hyperionDirector.date}
-                            />
-                            
-                            <Card 
-                                image={false}
-                                title={experience.tutorSenior.position}
-                                subtitle={experience.tutorSenior.company}
-                                lead={false}
-                                danger={false}
-                                list={true}
-                                text={experience.tutorSenior.items}
-                                source={false}
-                                cloud={false}
-                                link={experience.tutorSenior.link}
-                                button="Company"
-                                otherLink={false}
-                                otherButton={false}
-                                time={experience.tutorSenior.date}
-                            />
-                            
-                            <Card 
-                                image={false}
-                                title={experience.magazineDigital.position}
-                                subtitle={experience.magazineDigital.company}
-                                lead={false}
-                                danger={false}
-                                list={true}
-                                text={experience.magazineDigital.items}
-                                source={false}
-                                cloud={false}
-                                link={experience.magazineDigital.link}
-                                button="Company"
-                                otherLink={false}
-                                otherButton={false}
-                                time={experience.magazineDigital.date}
-                            />
-                            
-                            <Card 
-                                image={false}
-                                title={experience.magazineEditor.position}
-                                subtitle={experience.magazineEditor.company}
-                                lead={false}
-                                danger={false}
-                                list={true}
-                                text={experience.magazineEditor.items}
-                                source={false}
-                                cloud={false}
-                                link={experience.magazineEditor.link}
-                                button="Company"
-                                otherLink={false}
-                                otherButton={false}
-                                time={experience.magazineEditor.date}
-                            />
+                                <SkillCard 
+                                    description="Languages"
+                                    category={types.languages}
+                                />
+                                
+                                <SkillCard 
+                                    description="Frameworks"
+                                    category={types.frameworks}
+                                />
+                                
+                                <SkillCard 
+                                    description="Libraries"
+                                    category={types.libraries}
+                                />
+                                
+                                <SkillCard 
+                                    description="Databases"
+                                    category={types.databases}
+                                />
+                                
+                                <SkillCard 
+                                    description="Tools"
+                                    category={types.tools}
+                                />
+                                
+                                <SkillCard 
+                                    description="Methodologies"
+                                    category={types.methodologies}
+                                />
+                            </div>
                         </div>
-                    
+
                         <div>
-                            <h3>Skills</h3>
+                            <SectionHeading heading="Education" />
 
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Languages
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.languages}
-                                    />
-                                </div>
+                            <div className="one-column-of-three">
+                                <SchoolCard 
+                                    school={education.certificate.school}
+                                    degree={education.certificate.degree}
+                                    specialization={education.certificate.specialization}
+                                    elements={education.certificate.courses}
+                                    date={education.certificate.date}
+                                    link={education.certificate.link}
+                                />
+                                
+                                <SchoolCard 
+                                    school={education.bachelor.school}
+                                    degree={education.bachelor.degree}
+                                    specialization={education.bachelor.specialization}
+                                    elements={education.bachelor.courses}
+                                    date={education.bachelor.date}
+                                    link={education.bachelor.link}
+                                />
+                                
+                                <SchoolCard 
+                                    school={education.program.school}
+                                    degree={education.program.degree}
+                                    specialization={education.program.specialization}
+                                    elements={education.program.courses}
+                                    date={education.program.date}
+                                    link={education.program.link}
+                                />
                             </div>
 
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Frameworks
-                                </strong>
+                            <div className="blank-space" />
 
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.frameworks}
-                                    />
-                                </div>
-                            </div>
+                            <SectionHeading heading="Experience" />
 
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Libraries
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.libraries}
-                                    />
-                                </div>
-                            </div>
-
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Databases
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.databases}
-                                    />
-                                </div>
-                            </div>
-
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Tools
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.tools}
-                                    />
-                                </div>
-                            </div>
-
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Methodologies
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.methodologies}
-                                    />
-                                </div>
+                            <div className="one-column-of-three">
+                                <Card 
+                                    image={false}
+                                    title={experience.hyperionDirector.position}
+                                    subtitle={experience.hyperionDirector.company}
+                                    lead={false}
+                                    danger={false}
+                                    list={true}
+                                    text={experience.hyperionDirector.items}
+                                    source={false}
+                                    cloud={false}
+                                    link={experience.hyperionDirector.link}
+                                    button="Company"
+                                    otherLink={false}
+                                    otherButton={false}
+                                    time={experience.hyperionDirector.date}
+                                />
+                                
+                                <Card 
+                                    image={false}
+                                    title={experience.tutorSenior.position}
+                                    subtitle={experience.tutorSenior.company}
+                                    lead={false}
+                                    danger={false}
+                                    list={true}
+                                    text={experience.tutorSenior.items}
+                                    source={false}
+                                    cloud={false}
+                                    link={experience.tutorSenior.link}
+                                    button="Company"
+                                    otherLink={false}
+                                    otherButton={false}
+                                    time={experience.tutorSenior.date}
+                                />
+                                
+                                <Card 
+                                    image={false}
+                                    title={experience.magazineDigital.position}
+                                    subtitle={experience.magazineDigital.company}
+                                    lead={false}
+                                    danger={false}
+                                    list={true}
+                                    text={experience.magazineDigital.items}
+                                    source={false}
+                                    cloud={false}
+                                    link={experience.magazineDigital.link}
+                                    button="Company"
+                                    otherLink={false}
+                                    otherButton={false}
+                                    time={experience.magazineDigital.date}
+                                />
+                                
+                                <Card 
+                                    image={false}
+                                    title={experience.magazineEditor.position}
+                                    subtitle={experience.magazineEditor.company}
+                                    lead={false}
+                                    danger={false}
+                                    list={true}
+                                    text={experience.magazineEditor.items}
+                                    source={false}
+                                    cloud={false}
+                                    link={experience.magazineEditor.link}
+                                    button="Company"
+                                    otherLink={false}
+                                    otherButton={false}
+                                    time={experience.magazineEditor.date}
+                                />
                             </div>
                         </div>
                     </div> 

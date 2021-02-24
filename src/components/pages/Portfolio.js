@@ -12,9 +12,11 @@ function Portfolio() {
                 <main>
                     <SectionHeading heading="Projects" />
 
-                    <p>
+                    <div className="about-card">
                         Checkout some of my major projects. Click on the images to learn more about each project. To view even more of my projects, visit my GitHub account.
-                    </p>
+                    </div>
+
+                    <div className="blank-space" />
 
                     <ProjectsList max={6} />
                     
