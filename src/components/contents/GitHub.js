@@ -36,7 +36,13 @@ function GitHub() {
                                 
                                     
                                     <p>{message}<br />
-                                    <em>— {source}</em></p>
+                                    <a 
+                                            href={fullLink} 
+                                            target="_blank" 
+                                            rel="noreferrer"
+                                        >
+                                    <em>— {source}</em></a>
+                                    </p>
                                 </div>
 
                                 <div 
