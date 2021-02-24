@@ -53,6 +53,7 @@ function GitHub() {
                                     >
                                         <Button 
                                             link={fullLink}
+                                            target="_blank"
                                             text="View repo"
                                         />
                                     </div>
@@ -101,6 +102,7 @@ function GitHub() {
             <div className="center">
                 <Button 
                     link="https://github.com/jtreeves"
+                    target="_blank"
                     text="Read more commits"
                 />
             </div>

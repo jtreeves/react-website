@@ -27,6 +27,7 @@ function SchoolCard(props) {
                     <div className="school-card-button">
                         <Button 
                             link={props.link}
+                            target="_blank"
                             text="School"
                         />
                     </div>

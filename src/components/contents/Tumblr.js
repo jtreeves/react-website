@@ -52,6 +52,7 @@ function Tumblr() {
                                 >
                                     <Button 
                                         link={post.post_url}
+                                        target="_blank"
                                         text="Read more"
                                     />
                                 </div>
@@ -97,6 +98,7 @@ function Tumblr() {
             <div className="center">
                 <Button 
                     link="https://jacksonreeves.tumblr.com/"
+                    target="_blank"
                     text="Read more posts"
                 />
             </div>

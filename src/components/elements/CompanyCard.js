@@ -23,6 +23,7 @@ function CompanyCard(props) {
                     <div className="company-card-button">
                         <Button 
                             link={props.link}
+                            target="_blank"
                             text="Company"
                         />
                     </div>

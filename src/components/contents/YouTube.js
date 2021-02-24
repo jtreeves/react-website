@@ -63,6 +63,7 @@ function YouTube() {
             <div className="center">
                 <Button 
                     link="https://www.youtube.com/c/jacksonreeves/"
+                    target="_blank"
                     text="Watch more videos"
                 />
             </div>

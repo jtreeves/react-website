@@ -39,6 +39,7 @@ function Twitter() {
                                 >
                                     <Button 
                                         link={fullLink}
+                                        target="_blank"
                                         text="View tweet"
                                     />
                                 </div>
@@ -84,6 +85,7 @@ function Twitter() {
             <div className="center">
                 <Button 
                     link="https://twitter.com/JTReeves"
+                    target="_blank"
                     text="View more tweets"
                 />
             </div>

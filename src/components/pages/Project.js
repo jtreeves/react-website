@@ -4,6 +4,7 @@ import projects from '../../database/projects'
 import SkillSet from '../elements/SkillSet'
 import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
+import RecentProjects from '../sections/RecentProjects'
 
 function Project() {
     const location = useLocation()
@@ -38,12 +39,12 @@ function Project() {
                                         <img 
                                             src={projects[lowercase].image} 
                                             alt={projects[lowercase].name} 
-                                            className="square-content card"
+                                            className="square-content"
                                         />
                                     </div>
 
                                     <div 
-                                        className="square-content card project-overlay"
+                                        className="square-content project-overlay"
                                     >
                                         <div 
                                             className="project-title"
@@ -68,7 +69,7 @@ function Project() {
 
                                     <div className="card-body">
                                         {projects[lowercase].description}
-                                        
+
                                         <SkillSet 
                                             skills={projects[lowercase].skills}
                                         />
@@ -111,6 +112,8 @@ function Project() {
                     </div>
                 </main>
             </div>
+
+            <RecentProjects />
 
             <hr />
         </div>

@@ -64,6 +64,7 @@ function Medium() {
                                     >
                                         <Button 
                                             link={post.link}
+                                            target="_blank"
                                             text="Read more"
                                         />
                                     </div>
@@ -110,6 +111,7 @@ function Medium() {
             <div className="center">
                 <Button 
                     link="https://jtreeves.medium.com/"
+                    target="_blank"
                     text="Read more posts"
                 />
             </div>

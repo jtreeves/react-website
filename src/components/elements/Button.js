@@ -2,7 +2,7 @@ function Button(props) {
     return (
         <a 
             href={props.link} 
-            target="_blank" 
+            target={props.target}
             rel="noreferrer"
             className="blue-button"
         >

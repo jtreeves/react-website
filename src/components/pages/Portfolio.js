@@ -25,7 +25,8 @@ function Portfolio() {
                     <div className="center">
                         <Button 
                             link="https://github.com/jtreeves"
-                            text="View more projects"
+                            target="_blank"
+                            text="View all projects"
                         />
                     </div>
                 </main>

@@ -138,6 +138,7 @@ function Resume() {
                     <div className="center">
                         <Button 
                             link="/Jackson_Reeves_Resume.pdf"
+                            target="_blank"
                             text="View as PDF"
                         />
                     </div>

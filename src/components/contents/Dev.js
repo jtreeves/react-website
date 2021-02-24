@@ -62,6 +62,7 @@ function Dev() {
                                     >
                                         <Button 
                                             link={post.url}
+                                            target="_blank"
                                             text="Read more"
                                         />
                                     </div>
@@ -108,6 +109,7 @@ function Dev() {
             <div className="center">
                 <Button 
                     link="https://dev.to/jtreeves"
+                    target="_blank"
                     text="Read more posts"
                 />
             </div>
