@@ -78,7 +78,8 @@ function GitHub() {
             const filteredArray = resultArray.filter(
                 element => element != null
             )
-            setCommits(filteredArray)
+            const finalArray = filteredArray.slice(0, 3)
+            setCommits(finalArray)
         } catch (error) {
             alert(error.response.data.msg)
         }
@@ -93,7 +94,7 @@ function GitHub() {
             <SectionHeading heading="Recent Commits" />
             
             <div className="projects-list">
-                {commits.slice(0, 3)}
+                {commits}
             </div>
 
             <div className="blank-space" />

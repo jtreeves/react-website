@@ -21,48 +21,45 @@ function Twitter() {
                 const date = tweet.created_at
                 const correctTime = convertTime(date)
                 const fullLink = link + tweet.id
-                if (index < 3) {
-                    return (
+                return (
+                    <div 
+                        key={index}
+                        className="tweet-card"
+                    >
+                        <div className="tweet-card-body">
+                            <p>{text}</p>
+                        </div>
+
                         <div 
-                            key={index}
-                            className="tweet-card"
+                            className="tweet-card-footer"
                         >
-                            <div className="tweet-card-body">
-                                <p>{text}</p>
+                            <div 
+                                className="tweet-card-button"
+                            >
+                                <Button 
+                                    link={fullLink}
+                                    target="_blank"
+                                    text="View tweet"
+                                />
                             </div>
 
                             <div 
-                                className="tweet-card-footer"
+                                className="tweet-card-date"
                             >
-                                <div 
-                                    className="tweet-card-button"
+                                <a 
+                                    href={fullLink} 
+                                    target="_blank" 
+                                    rel="noreferrer"
                                 >
-                                    <Button 
-                                        link={fullLink}
-                                        target="_blank"
-                                        text="View tweet"
-                                    />
-                                </div>
-
-                                <div 
-                                    className="tweet-card-date"
-                                >
-                                    <a 
-                                        href={fullLink} 
-                                        target="_blank" 
-                                        rel="noreferrer"
-                                    >
-                                        {correctTime}
-                                    </a>
-                                </div>
+                                    {correctTime}
+                                </a>
                             </div>
                         </div>
-                    )
-                } else {
-                    return null
-                }
+                    </div>
+                )
             })
-            setTweets(resultArray)
+            const finalArray = resultArray.slice(0, 3)
+            setTweets(finalArray)
         } catch (error) {
             alert(error.response.data.msg)
         }

@@ -19,76 +19,73 @@ function Medium() {
             const resultArray = result.data.posts.items.map((post, index) => {
                 const textSubstrings = extractFromPost(post.content, 40)
                 const date = convertTime(post.isoDate)
-                if (index < 3) {
-                    return (
-                        <div 
-                            key={index}
-                            className="blog-card"
-                        >
-                            <div className="blog-card-side">
-                                <a 
-                                    href={post.link} 
-                                    target="_blank" 
-                                    rel="noreferrer"
-                                >
-                                    <img 
-                                        src={textSubstrings.image}
-                                        alt={post.title}
-                                        className="blog-card-img"
-                                    />
-                                </a>
+                return (
+                    <div 
+                        key={index}
+                        className="blog-card"
+                    >
+                        <div className="blog-card-side">
+                            <a 
+                                href={post.link} 
+                                target="_blank" 
+                                rel="noreferrer"
+                            >
+                                <img 
+                                    src={textSubstrings.image}
+                                    alt={post.title}
+                                    className="blog-card-img"
+                                />
+                            </a>
+                        </div>
+
+                        <div className="blog-card-main">
+                            <div className="blog-card-body">
+                                <h4>
+                                    <a 
+                                        href={post.link} 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                    >
+                                        {post.title}
+                                    </a>
+                                </h4>
+
+                                <div 
+                                    dangerouslySetInnerHTML={{
+                                        __html: textSubstrings.body
+                                    }} 
+                                />
                             </div>
 
-                            <div className="blog-card-main">
-                                <div className="blog-card-body">
-                                    <h4>
-                                        <a 
-                                            href={post.link} 
-                                            target="_blank" 
-                                            rel="noreferrer"
-                                        >
-                                            {post.title}
-                                        </a>
-                                    </h4>
-
-                                    <div 
-                                        dangerouslySetInnerHTML={{
-                                            __html: textSubstrings.body
-                                        }} 
+                            <div className="blog-card-footer">
+                                <div 
+                                    className="blog-card-button"
+                                >
+                                    <Button 
+                                        link={post.link}
+                                        target="_blank"
+                                        text="Read more"
                                     />
                                 </div>
 
-                                <div className="blog-card-footer">
-                                    <div 
-                                        className="blog-card-button"
+                                <div 
+                                    className="blog-card-date"
+                                >
+                                    <a 
+                                        href={post.link} 
+                                        target="_blank" 
+                                        rel="noreferrer"
                                     >
-                                        <Button 
-                                            link={post.link}
-                                            target="_blank"
-                                            text="Read more"
-                                        />
-                                    </div>
-
-                                    <div 
-                                        className="blog-card-date"
-                                    >
-                                        <a 
-                                            href={post.link} 
-                                            target="_blank" 
-                                            rel="noreferrer"
-                                        >
-                                            {date}
-                                        </a>
-                                    </div>
+                                        {date}
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    )
-                } else {
-                    return null
-                }
+                    </div>
+                )
             })
-            setPosts(resultArray)
+            const finalArray = resultArray.slice(0, 3)
+            setPosts(finalArray)
         } catch (error) {
             alert(error.response.data.msg)
         }

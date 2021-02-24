@@ -17,76 +17,73 @@ function Dev() {
             )
             const resultArray = result.data.posts.map((post, index) => {
                 const date = convertTime(post.published_timestamp)
-                if (index < 3) {
-                    return (
-                        <div 
-                            key={index}
-                            className="code-blog-card"
-                        >
-                            <div className="code-blog-card-top">
-                                <a 
-                                    href={post.url} 
-                                    target="_blank" 
-                                    rel="noreferrer"
-                                >
-                                    <img 
-                                        src={post.cover_image}
-                                        alt={post.title}
-                                        className="code-blog-card-img"
-                                    />
-                                </a>
+                return (
+                    <div 
+                        key={index}
+                        className="code-blog-card"
+                    >
+                        <div className="code-blog-card-top">
+                            <a 
+                                href={post.url} 
+                                target="_blank" 
+                                rel="noreferrer"
+                            >
+                                <img 
+                                    src={post.cover_image}
+                                    alt={post.title}
+                                    className="code-blog-card-img"
+                                />
+                            </a>
+                        </div>
+
+                        <div className="code-blog-card-main">
+                            <div    
+                                className="code-blog-card-body"
+                            >
+                                <h4>
+                                    <a 
+                                        href={post.url} 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                    >
+                                        {post.title}
+                                    </a>
+                                </h4>
+
+                                <p>{post.description}</p>
                             </div>
 
-                            <div className="code-blog-card-main">
-                                <div    
-                                    className="code-blog-card-body"
+                            <div 
+                                className="code-blog-card-footer"
+                            >
+                                <div 
+                                    className="code-blog-card-button"
                                 >
-                                    <h4>
-                                        <a 
-                                            href={post.url} 
-                                            target="_blank" 
-                                            rel="noreferrer"
-                                        >
-                                            {post.title}
-                                        </a>
-                                    </h4>
-
-                                    <p>{post.description}</p>
+                                    <Button 
+                                        link={post.url}
+                                        target="_blank"
+                                        text="Read more"
+                                    />
                                 </div>
 
                                 <div 
-                                    className="code-blog-card-footer"
+                                    className="code-blog-card-date"
                                 >
-                                    <div 
-                                        className="code-blog-card-button"
+                                    <a 
+                                        href={post.url} 
+                                        target="_blank" 
+                                        rel="noreferrer"
                                     >
-                                        <Button 
-                                            link={post.url}
-                                            target="_blank"
-                                            text="Read more"
-                                        />
-                                    </div>
-
-                                    <div 
-                                        className="code-blog-card-date"
-                                    >
-                                        <a 
-                                            href={post.url} 
-                                            target="_blank" 
-                                            rel="noreferrer"
-                                        >
-                                            {date}
-                                        </a>
-                                    </div>
+                                        {date}
+                                    </a>
                                 </div>
                             </div>
-                        </div>    
-                    )
-                } else {
-                    return null
-                }
+                        </div>
+                    </div>    
+                )
             })
-            setPosts(resultArray)
+            const finalArray = resultArray.slice(0, 3)
+            setPosts(finalArray)
         } catch (error) {
             alert(error.response.data.msg)
         }

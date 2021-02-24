@@ -18,64 +18,61 @@ function Tumblr() {
             const resultArray = result.data.posts.map((post, index) => {
                 const date = post.date
                 const correctTime = convertTime(date)
-                if (index < 3) {
-                    return (
+                return (
+                    <div 
+                        key={index}
+                        className="resource-blog-card"
+                    >
                         <div 
-                            key={index}
-                            className="resource-blog-card"
+                            className="resource-blog-card-body"
+                        >
+                            <h4>
+                                <a 
+                                    href={post.post_url} 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                >
+                                    {post.title}
+                                </a>
+                            </h4>
+
+                            <div 
+                                dangerouslySetInnerHTML={{
+                                    __html: post.description
+                                }} 
+                            />
+                        </div>
+
+                        <div 
+                            className="resource-blog-card-footer"
                         >
                             <div 
-                                className="resource-blog-card-body"
+                                className="resource-blog-card-button"
                             >
-                                <h4>
-                                    <a 
-                                        href={post.post_url} 
-                                        target="_blank" 
-                                        rel="noreferrer"
-                                    >
-                                        {post.title}
-                                    </a>
-                                </h4>
-
-                                <div 
-                                    dangerouslySetInnerHTML={{
-                                        __html: post.description
-                                    }} 
+                                <Button 
+                                    link={post.post_url}
+                                    target="_blank"
+                                    text="Read more"
                                 />
                             </div>
 
                             <div 
-                                className="resource-blog-card-footer"
+                                className="resource-blog-card-date"
                             >
-                                <div 
-                                    className="resource-blog-card-button"
+                                <a 
+                                    href={post.post_url} 
+                                    target="_blank" 
+                                    rel="noreferrer"
                                 >
-                                    <Button 
-                                        link={post.post_url}
-                                        target="_blank"
-                                        text="Read more"
-                                    />
-                                </div>
-
-                                <div 
-                                    className="resource-blog-card-date"
-                                >
-                                    <a 
-                                        href={post.post_url} 
-                                        target="_blank" 
-                                        rel="noreferrer"
-                                    >
-                                        {correctTime}
-                                    </a>
-                                </div>
+                                    {correctTime}
+                                </a>
                             </div>
                         </div>
-                    )
-                } else {
-                    return null
-                }
+                    </div>
+                )
             })
-            setPosts(resultArray)
+            const finalArray = resultArray.slice(0, 3)
+            setPosts(finalArray)
         } catch (error) {
             alert(error.response.data.msg)
         }

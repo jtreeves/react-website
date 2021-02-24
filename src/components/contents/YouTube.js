@@ -19,28 +19,25 @@ function YouTube() {
             const resultArray = result.data.videos.items.map((video, index) => {
                 const youtubeId = video.id.videoId
                 const embedLink = youtubeEmbedUrl + youtubeId
-                if (index < 2) {
-                    return (
-                        <div 
-                            key={index}
-                        >
-                            <iframe 
-                                width="100%" 
-                                height="100%" 
-                                src={embedLink}
-                                title={index}
-                                frameborder="0" 
-                                className="card-with-border"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen 
-                            />
-                        </div>
-                    )
-                } else {
-                    return null
-                }
+                return (
+                    <div 
+                        key={index}
+                    >
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src={embedLink}
+                            title={index}
+                            frameborder="0" 
+                            className="card-with-border"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen 
+                        />
+                    </div>
+                )
             })
-            setVideos(resultArray)
+            const finalArray = resultArray.slice(0, 2)
+            setVideos(finalArray)
         } catch (error) {
             alert(error.response.data.msg)
         }
