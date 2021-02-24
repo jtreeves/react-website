@@ -425,12 +425,12 @@ main {
     display: flex;
     flex-direction: column;
     background: white;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
 }
 
 .school-card:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .school-card-header {
@@ -442,7 +442,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -2.5px;
+    /* margin: -2.5px; */
 }
 
 .school-card:hover .school-card-header {
@@ -482,12 +482,12 @@ main {
     display: flex;
     flex-direction: column;
     background: white;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
 }
 
 .company-card:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .company-card-header {
@@ -499,7 +499,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -2.5px;
+    /* margin: -2.5px; */
 }
 
 .company-card:hover .company-card-header {
@@ -534,12 +534,12 @@ main {
     display: flex;
     flex-direction: column;
     background: white;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
 }
 
 .skill-card:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .skill-card-header {
@@ -551,7 +551,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -2.5px;
+    /* margin: -2.5px; */
 }
 
 .skill-card:hover .skill-card-header {
@@ -568,16 +568,16 @@ main {
     display: grid;
     background: white;
     grid-template-columns: 25% 75%;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
 }
 
 .blog-card:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .blog-card-side {
-    border-right: 2.5px solid #000080;
+    border-right: 3px solid #000080;
 }
 
 .blog-card-side img {
@@ -587,7 +587,7 @@ main {
 }
 
 .blog-card:hover .blog-card-side {
-    border-right: 2.5px solid #007ba7;
+    border-right: 3px solid #007ba7;
 }
 
 .blog-card-body a, .blog-card-body a:hover {
@@ -628,12 +628,12 @@ main {
 .card-with-border {
     width: 100%;
     height: 250px;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
 }
 
 .card-with-border:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .resource-blog-card {
@@ -643,13 +643,13 @@ main {
     flex-direction: column;
     justify-content: space-between;
     background: white;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
     padding: 20px;
 }
 
 .resource-blog-card:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .resource-blog-card-body a, .resource-blog-card-body a:hover {
@@ -685,16 +685,16 @@ main {
     display: flex;
     flex-direction: column;
     background: white;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
 }
 
 .code-blog-card:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .code-blog-card-top {
-    border-bottom: 2.5px solid #000080;
+    border-bottom: 3px solid #000080;
 }
 
 .code-blog-card-top img {
@@ -704,7 +704,7 @@ main {
 }
 
 .code-blog-card:hover .code-blog-card-top {
-    border-bottom: 2.5px solid #007ba7;
+    border-bottom: 3px solid #007ba7;
 }
 
 .code-blog-card-body a, .code-blog-card-body a:hover {
@@ -749,13 +749,13 @@ main {
     flex-direction: column;
     justify-content: space-between;
     background: white;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
     padding: 20px;
 }
 
 .tweet-card:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .tweet-card-body a, .tweet-card-body a:hover {
@@ -792,13 +792,13 @@ main {
     flex-direction: column;
     justify-content: space-between;
     background: white;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
     padding: 20px;
 }
 
 .git-card:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .git-card-body a, .git-card-body a:hover {
@@ -1126,12 +1126,12 @@ h2, h3 {
     background: white;
     padding: 20px;
     width: 100%;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
 }
 
 .mail-card:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .mail-input-sections {
@@ -1173,12 +1173,12 @@ h2, h3 {
     background: white;
     padding: 20px;
     width: 100%;
-    border: 2.5px solid #000080;
-    border-radius: 5px;
+    border: 3px solid #000080;
+    border-radius: 3px;
 }
 
 .about-card:hover {
-    border: 2.5px solid #007ba7;
+    border: 3px solid #007ba7;
 }
 
 .about-image {
