@@ -24,6 +24,8 @@ function ProjectsList(props) {
                     date={projects[project].date}
                 />
             )  
+        } else {
+            return null
         } 
     })
 

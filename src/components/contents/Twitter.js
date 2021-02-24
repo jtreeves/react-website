@@ -57,6 +57,8 @@ function Twitter() {
                             </div>
                         </div>
                     )
+                } else {
+                    return null
                 }
             })
             setTweets(resultArray)
