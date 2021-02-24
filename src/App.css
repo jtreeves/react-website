@@ -284,13 +284,13 @@ main {
     width: 100%;
     position: relative;
     background: white;
-    border: 5px solid #000080;
+    border: 2.5px solid #000080;
     border-radius: 5px;
     transition: 1s ease;
 }
 
 .project-highlight:hover {
-    border: 5px solid #007ba7;
+    border: 2.5px solid #007ba7;
 }
 
 .project-image {
@@ -867,13 +867,12 @@ h2, h3 {
     background: #007ba7;
     color: whitesmoke;
     text-decoration: none;
-    /* border: 0 solid transparent; */
     border: 1px solid #007ba7;
 }
 
-/* .blue-button:active {
-    background: #000080;
-} */
+.blue-button:focus {
+    outline: none;
+}
 
 .card-lock {
     position: static;
@@ -951,11 +950,8 @@ h2, h3 {
 
 .mail-input-sections {
     display: grid;
-    /* flex-direction: column; */
     width: 100%;
-    /* grid-template-rows: 1fr 1fr 1fr 2fr; */
     row-gap: 10px;
-    /* justify-content: space-between; */
 }
 
 .mail-section {
