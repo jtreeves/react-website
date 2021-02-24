@@ -16,12 +16,6 @@ function ProjectsList(props) {
                     image={projects[project].image}
                     name={projects[project].name}
                     description={projects[project].description}
-                    skills={projects[project].skills}
-                    deployedLink={projects[project].deployedLink}
-                    deployedText={projects[project].type}
-                    repositoryLink={projects[project].repositoryLink}
-                    repositoryText="Code"
-                    date={projects[project].date}
                 />
             )  
         } else {

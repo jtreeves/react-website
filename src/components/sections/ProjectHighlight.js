@@ -25,6 +25,16 @@ function ProjectHighlight(props) {
                     <div className="project-title">
                         {props.name}
                     </div>
+
+                    <div className="projects-list">
+                        <div />
+                        <div className="hr-heavy" />
+                        <div />
+                    </div>
+
+                    <div className="project-description">
+                        {props.description}
+                    </div>
                 </div>
             </div>            
         </Link>

@@ -292,15 +292,21 @@ main {
     background: white;
     border: 3px solid #000080;
     border-radius: 3px;
-    transition: 1s ease;
+    /* transition: 1s ease; */
 }
 
 .project-highlight:hover {
     border: 3px solid #007ba7;
 }
 
-.project-image {
+/* .project-image {
     transition: 1s ease;
+} */
+
+.hr-heavy {
+    padding: 1.5px;
+    background: black;
+    margin-bottom: 10px;
 }
 
 .square-highlight {
@@ -309,7 +315,7 @@ main {
     background: white;
     border: 10px solid #000080;
     border-radius: 5px;
-    transition: 1s ease;
+    /* transition: 1s ease; */
 }
 
 .square-highlight a, .square-highlight:hover {
@@ -329,9 +335,9 @@ main {
     opacity: 1;
 }
 
-.square-main {
+/* .square-main {
     transition: 1s ease;
-}
+} */
 
 .square-overlay {
     position: absolute;
@@ -339,7 +345,7 @@ main {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: 1s ease;
+    /* transition: 1s ease; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,9 +379,11 @@ main {
     top: 0;
     height: 100%;
     width: 100%;
+    padding: 10px;
     opacity: 0;
-    transition: 1s ease;
+    /* transition: 1s ease; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: none;
@@ -994,6 +1002,12 @@ h2, h3 {
 .project-title {
     font-size: 40px;
     text-align: center;
+}
+
+.project-description {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .skill-button {
