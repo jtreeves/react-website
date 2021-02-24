@@ -76,7 +76,7 @@ header li:last-child {
 
 .headline {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
     line-height: 40px;
     margin-left: 20px;
 }
@@ -88,18 +88,17 @@ header li:last-child {
 
 header a {
     font-style: none;
-    color: whitesmoke;
+    color: white;
 }
 
 header i:hover {
     text-decoration: none;
     transform: scale(1.1);
-    color: whitesmoke;
+    color: white;
 }
 
 h1:hover {
     transform: scale(1.1);
-    /* margin-left: 75px; */
 }
 
 .introduction p {
@@ -258,6 +257,12 @@ main {
     width: 100%;
 }
 
+.one-column-of-three {
+    display: grid;
+    row-gap: 20px;
+    align-content: start;
+}
+
 .rows {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -413,6 +418,42 @@ main {
 .floater-links:hover {
     color: #000080;
     text-decoration: none;
+}
+
+.skill-card {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    background: white;
+    /* grid-template-columns: 25% 75%; */
+    border: 2.5px solid #000080;
+    border-radius: 5px;
+    /* margin-top: 2.5px; */
+}
+
+.skill-card:hover {
+    border: 2.5px solid #007ba7;
+}
+
+.skill-card-header {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    background: #000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2.5px;
+}
+
+.skill-card:hover .skill-card-header {
+    background: #007ba7;
+}
+
+.skill-card-body {
+    padding: 20px;
 }
 
 .blog-card {

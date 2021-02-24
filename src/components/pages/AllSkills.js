@@ -1,7 +1,7 @@
-import SkillSet from '../elements/SkillSet'
 import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
 import types from '../../database/types'
+import SkillCard from '../elements/SkillCard'
 
 function AllSkills() {
     return (
@@ -12,100 +12,46 @@ function AllSkills() {
                 <main>
                     <SectionHeading heading="Skills" />
 
-                    <div className="three-even-columns">
-                        <div>
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Languages
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.languages}
-                                    />
-                                </div>
-                            </div>
-
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Libraries
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.libraries}
-                                    />
-                                </div>
-                            </div>
+                    <div className="projects-list">
+                        <div className="one-column-of-three">
+                            <SkillCard 
+                                description="Languages"
+                                category={types.languages}
+                            />
+                            
+                            <SkillCard 
+                                description="Libraries"
+                                category={types.libraries}
+                            />
                         </div>
 
-                        <div>
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Tools
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.tools}
-                                    />
-                                </div>
-                            </div>
-                        
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Frameworks
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.frameworks}
-                                    />
-                                </div>
-                            </div>
+                        <div className="one-column-of-three">
+                            <SkillCard 
+                                description="Methodologies"
+                                category={types.methodologies}
+                            />
                         </div>
 
-                        <div>
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Databases
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.databases}
-                                    />
-                                </div>
-                            </div>
-            
-                            <div 
-                                className="card card-connect card-lock"
-                            >
-                                <strong className="card-header">
-                                    Methodologies
-                                </strong>
-
-                                <div className="card-body">
-                                    <SkillSet
-                                        skills={types.methodologies}
-                                    />
-                                </div>
-                            </div>
+                        <div className="one-column-of-three">
+                            <SkillCard 
+                                description="Frameworks"
+                                category={types.frameworks}
+                            />
+                            
+                            <SkillCard 
+                                description="Databases"
+                                category={types.databases}
+                            />
+                            
+                            <SkillCard 
+                                description="Tools"
+                                category={types.tools}
+                            />
                         </div>
                     </div>
                 </main>
             </div>
-            
+
             <hr />
         </div>
     )
