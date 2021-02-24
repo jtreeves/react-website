@@ -254,6 +254,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
+    row-gap: 20px;
     width: 100%;
 }
 
@@ -300,7 +301,6 @@ main {
 
 .project-image {
     transition: 1s ease;
-    /* object-fit: cover; */
 }
 
 .square-highlight {
@@ -1105,7 +1105,7 @@ h2, h3 {
 .square {
     position: relative;
     width: 100%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
   
 .square:after {

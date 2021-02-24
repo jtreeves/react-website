@@ -19,6 +19,8 @@ function Portfolio() {
                     <div className="blank-space" />
 
                     <ProjectsList max={6} />
+
+                    <div className="blank-space" />
                     
                     <div className="center">
                         <Button 
