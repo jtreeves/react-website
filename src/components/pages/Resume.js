@@ -1,4 +1,3 @@
-import Card from '../elements/Card'
 import Button from '../elements/Button'
 import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
@@ -7,6 +6,7 @@ import education from '../../database/education'
 import types from '../../database/types'
 import SkillCard from '../elements/SkillCard'
 import SchoolCard from '../elements/SchoolCard'
+import CompanyCard from '../elements/CompanyCard'
 
 function Resume() {
     return (
@@ -98,76 +98,42 @@ function Resume() {
                             <SectionHeading heading="Experience" />
 
                             <div className="one-column-of-three">
-                                <Card 
-                                    image={false}
-                                    title={experience.hyperionDirector.position}
-                                    subtitle={experience.hyperionDirector.company}
-                                    lead={false}
-                                    danger={false}
-                                    list={true}
-                                    text={experience.hyperionDirector.items}
-                                    source={false}
-                                    cloud={false}
+                                <CompanyCard 
+                                    company={experience.hyperionDirector.company}
+                                    position={experience.hyperionDirector.position}
+                                    responsibilities={experience.hyperionDirector.items}
+                                    date={experience.hyperionDirector.date}
                                     link={experience.hyperionDirector.link}
-                                    button="Company"
-                                    otherLink={false}
-                                    otherButton={false}
-                                    time={experience.hyperionDirector.date}
                                 />
                                 
-                                <Card 
-                                    image={false}
-                                    title={experience.tutorSenior.position}
-                                    subtitle={experience.tutorSenior.company}
-                                    lead={false}
-                                    danger={false}
-                                    list={true}
-                                    text={experience.tutorSenior.items}
-                                    source={false}
-                                    cloud={false}
+                                <CompanyCard 
+                                    company={experience.tutorSenior.company}
+                                    position={experience.tutorSenior.position}
+                                    responsibilities={experience.tutorSenior.items}
+                                    date={experience.tutorSenior.date}
                                     link={experience.tutorSenior.link}
-                                    button="Company"
-                                    otherLink={false}
-                                    otherButton={false}
-                                    time={experience.tutorSenior.date}
                                 />
                                 
-                                <Card 
-                                    image={false}
-                                    title={experience.magazineDigital.position}
-                                    subtitle={experience.magazineDigital.company}
-                                    lead={false}
-                                    danger={false}
-                                    list={true}
-                                    text={experience.magazineDigital.items}
-                                    source={false}
-                                    cloud={false}
+                                <CompanyCard 
+                                    company={experience.magazineDigital.company}
+                                    position={experience.magazineDigital.position}
+                                    responsibilities={experience.magazineDigital.items}
+                                    date={experience.magazineDigital.date}
                                     link={experience.magazineDigital.link}
-                                    button="Company"
-                                    otherLink={false}
-                                    otherButton={false}
-                                    time={experience.magazineDigital.date}
                                 />
                                 
-                                <Card 
-                                    image={false}
-                                    title={experience.magazineEditor.position}
-                                    subtitle={experience.magazineEditor.company}
-                                    lead={false}
-                                    danger={false}
-                                    list={true}
-                                    text={experience.magazineEditor.items}
-                                    source={false}
-                                    cloud={false}
+                                <CompanyCard 
+                                    company={experience.magazineEditor.company}
+                                    position={experience.magazineEditor.position}
+                                    responsibilities={experience.magazineEditor.items}
+                                    date={experience.magazineEditor.date}
                                     link={experience.magazineEditor.link}
-                                    button="Company"
-                                    otherLink={false}
-                                    otherButton={false}
-                                    time={experience.magazineEditor.date}
                                 />
                             </div>
                         </div>
                     </div> 
+
+                    <div className="blank-space" />
                 
                     <div className="center">
                         <Button 

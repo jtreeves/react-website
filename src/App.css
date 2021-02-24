@@ -477,6 +477,58 @@ main {
     font-size: 15px;
 }
 
+.company-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 2.5px solid #000080;
+    border-radius: 5px;
+}
+
+.company-card:hover {
+    border: 2.5px solid #007ba7;
+}
+
+.company-card-header {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    background: #000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2.5px;
+}
+
+.company-card:hover .company-card-header {
+    background: #007ba7;
+}
+
+.company-card-main {
+    padding: 20px;
+}
+
+.company-card-position {
+    font-size: 20px;
+}
+
+.company-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-card-button {
+    width: 25%;
+}
+
+.company-card-date {
+    color: gray;
+    font-size: 15px;
+}
+
 .skill-card {
     width: 100%;
     display: flex;
