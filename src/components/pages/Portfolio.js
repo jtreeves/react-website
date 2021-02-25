@@ -15,6 +15,8 @@ function Portfolio() {
             
             <div class="overcoming-header">
                 <main>
+                    <SectionHeading heading="Projects" />
+                    
                     <ProjectsList max={6} />
 
                     <div className="blank-space" />

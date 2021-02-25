@@ -32,6 +32,8 @@ function Project() {
             
             <div class="overcoming-header">
                 <main>
+                    <SectionHeading heading="Key Points" />
+
                     <div className="projects-list">
                         <div className="one-column-of-three">
                             <ImageCard 
