@@ -8,12 +8,13 @@ import Button from '../elements/Button'
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
 function Tumblr() {
-    const [posts, setPosts] = useState([])
+    const [resources, setResources] = useState([])
+    const [photos, setPhotos] = useState([])
 
-    async function getPosts() {
+    async function getResources() {
         try {
             const result = await axios.get(
-                REACT_APP_SERVER_URL + '/tumblr'
+                REACT_APP_SERVER_URL + '/tumblr/link/resources'
             )
             const resultArray = result.data.posts.map((post, index) => {
                 const date = post.date
@@ -21,10 +22,10 @@ function Tumblr() {
                 return (
                     <div 
                         key={index}
-                        className="resource-blog-card"
+                        className="meme-card"
                     >
                         <div 
-                            className="resource-blog-card-body"
+                            className="meme-card-body"
                         >
                             <h4>
                                 <a 
@@ -44,10 +45,10 @@ function Tumblr() {
                         </div>
 
                         <div 
-                            className="resource-blog-card-footer"
+                            className="meme-card-footer"
                         >
                             <div 
-                                className="resource-blog-card-button"
+                                className="meme-card-button"
                             >
                                 <Button 
                                     link={post.post_url}
@@ -57,7 +58,7 @@ function Tumblr() {
                             </div>
 
                             <div 
-                                className="resource-blog-card-date"
+                                className="meme-card-date"
                             >
                                 <a 
                                     href={post.post_url} 
@@ -72,14 +73,49 @@ function Tumblr() {
                 )
             })
             const finalArray = resultArray.slice(0, 3)
-            setPosts(finalArray)
+            setResources(finalArray)
+        } catch (error) {
+            alert(error.response.data.msg)
+        }
+    }
+    
+    async function getPhotos() {
+        try {
+            const result = await axios.get(
+                REACT_APP_SERVER_URL + '/tumblr/photo/fun'
+            )
+            const resultArray = result.data.posts.map((post, index) => {
+                return (
+                    <div 
+                        key={index}
+                        className="meme-card"
+                    >
+                        <a 
+                            href={post.post_url} 
+                            target="_blank" 
+                            rel="noreferrer"
+                        >
+                            <img 
+                                src={post.photos[0].original_size.url}
+                                alt="meme"
+                            />
+                        </a>
+                    </div>
+                )
+            })
+            const finalArray = resultArray.slice(0, 3)
+            setPhotos(finalArray)
         } catch (error) {
             alert(error.response.data.msg)
         }
     }
     
     useEffect(() => {
-        getPosts()
+        getResources()
+    }, [])
+    
+    useEffect(() => {
+        getPhotos()
     }, [])
     
     return (
@@ -87,7 +123,7 @@ function Tumblr() {
             <SectionHeading heading="Recent Resources" />
             
             <div className="projects-list">
-                {posts}
+                {resources}
             </div>
 
             <div className="blank-space" />
@@ -96,7 +132,23 @@ function Tumblr() {
                 <Button 
                     link="https://jacksonreeves.tumblr.com/"
                     target="_blank"
-                    text="Read more posts"
+                    text="Find more resources"
+                />
+            </div>
+            
+            <SectionHeading heading="Recent Memes" />
+            
+            <div className="projects-list">
+                {photos}
+            </div>
+
+            <div className="blank-space" />
+
+            <div className="center">
+                <Button 
+                    link="https://jacksonreeves.tumblr.com/"
+                    target="_blank"
+                    text="See more memes"
                 />
             </div>
         </main>
