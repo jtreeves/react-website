@@ -1,15 +1,18 @@
 import Navigation from '../sections/Navigation'
+import PageOpener from '../sections/PageOpener'
 import SectionHeading from '../sections/SectionHeading'
 
 function About() {
     return (
         <div>
-            <Navigation />
+            {/* <Navigation /> */}
+            <PageOpener 
+                title="About"
+                description="Thanks for visiting my site! Here's a little bit more info about me."
+            />
             
             <div class="overcoming-header">
                 <main>
-                    <SectionHeading heading="About" />
-
                     <div className="about-card">
                         <img 
                             src="/images/headshot.jpg" 

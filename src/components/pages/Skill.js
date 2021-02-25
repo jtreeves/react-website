@@ -7,11 +7,13 @@ import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
 import skills from '../../database/skills'
 import projects from '../../database/projects'
+import PageOpener from '../sections/PageOpener'
 
 function Skill() {
     const location = useLocation()
     const specificSkill = location.state.skill
     const skillsArray = Object.keys(skills)
+    const description = `Check out these projects I built using ${specificSkill}. Click on the images to learn more about each project. Click on any of the below skills to see projects I've built with those skills.`
 
     const projectList = skills[specificSkill].map((project, index) => {
         return (
@@ -33,17 +35,14 @@ function Skill() {
 
     return (
         <div>
-            <Navigation />
+            
+            <PageOpener 
+                title={specificSkill}
+                description={description}
+            />
             
             <div class="overcoming-header">
                 <main>
-                    <SectionHeading heading={specificSkill} />
-        
-                    <div className="about-card">
-                        Check out these projects I built using {specificSkill}. Click on the images to learn more about each project. Click on any of the below skills to see projects I've built with those skills.
-                    </div>
-
-                    <div className="blank-space" />
 
                     <div className="projects-list">
                         {projectList}

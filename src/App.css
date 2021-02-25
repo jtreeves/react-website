@@ -151,31 +151,71 @@ h1:hover {
     font-size: 50px;
 }
 
+.opener-container {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* column-gap: 10px; */
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-bottom: -25px; */
+    /* padding: 10px; */
+    position: fixed;
+    background: whitesmoke;
+    z-index: 1;
+    border-bottom: 5px solid black;
+    height: 150px;
+    margin-top: 100px;
+    /* margin-bottom: 250px; */
+}
+
+.opener-first {
+    display: flex;
+    /* height: 150px; */
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.opener-center {
+    text-align: center;
+}
+
+.opener-last {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.opener-container .floater-text {
+    font-size: 15px;
+}
+
 .three-columns {
     display: grid;
-    grid-template-columns: 35% 30% 35%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
     width: 100%;
 }
 
 .first-column {
-    grid-column-start: 1;
-    grid-column-end: 2;
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 15%;
+    justify-content: space-around;
+    margin-top: 25%;
 }
 
 .center-column {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    text-align: center;
 }
 
 .last-column {
-    grid-column-start: 3;
-    grid-column-end: 4;
     display: flex;
     flex-direction: row;
-    margin-top: 15%;
+    justify-content: space-around;
+    margin-top: 25%;
 }
 
 figure {
@@ -203,7 +243,7 @@ main {
 }
 
 .overcoming-header {
-    margin-top: 115px;
+    padding-top: 250px;
 }
 
 .recent-projects {
@@ -392,15 +432,16 @@ main {
 .floater-icon-nav {
     width: 100px;
     height: 100px;
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 10px;
+    justify-content: space-between; */
+    /* margin: 10px; */
 }
 
-.floater-icon {
+/* .floater-icon {
     position: absolute;
-}
+} */
 
 .floater-icon-nav:hover .floater-icon, .floater-icon-nav:hover .floater-links, .floater-icon-nav:hover .floater-text {
     color: #007ba7;
@@ -411,7 +452,7 @@ main {
 }
 
 .floater-text {
-    margin-top: 110px;
+    /* margin-top: 110px; */
     color: #000080;
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
@@ -421,6 +462,10 @@ main {
 .floater-links {
     color: #000080;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .floater-links:hover {

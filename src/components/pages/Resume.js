@@ -7,22 +7,18 @@ import types from '../../database/types'
 import SkillCard from '../elements/SkillCard'
 import SchoolCard from '../elements/SchoolCard'
 import CompanyCard from '../elements/CompanyCard'
+import PageOpener from '../sections/PageOpener'
 
 function Resume() {
     return (
         <div>
-            <Navigation />
+            <PageOpener 
+                title="Resume"
+                description="Inquisitive full-stack developer with more than a decade of experience in education and journalism. Hoping to combine long-time loves of editing and data analysis to produce clean, performative code."
+            />
             
             <div class="overcoming-header">
                 <main>
-                    <SectionHeading heading="Resume" />
-
-                    <div className="about-card">
-                        Inquisitive full-stack developer with more than a decade of experience in education and journalism. Hoping to combine long-time loves of editing and data analysis to produce clean, performative code.
-                    </div>
-
-                    <div className="blank-space" />
-
                     <div className="uneven-columns">
                         <div>
                             <SectionHeading heading="Skills" />

@@ -2,16 +2,18 @@ import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
 import types from '../../database/types'
 import SkillCard from '../elements/SkillCard'
+import PageOpener from '../sections/PageOpener'
 
 function AllSkills() {
     return (
         <div>
-            <Navigation />
+            <PageOpener 
+                title="Skills"
+                description="Click on my skills to find out which projects I've used them with."
+            />
             
             <div class="overcoming-header">
                 <main>
-                    <SectionHeading heading="Skills" />
-
                     <div className="projects-list">
                         <div className="one-column-of-three">
                             <SkillCard 

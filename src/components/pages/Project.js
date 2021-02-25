@@ -6,6 +6,7 @@ import Navigation from '../sections/Navigation'
 import SectionHeading from '../sections/SectionHeading'
 import RecentProjects from '../sections/RecentProjects'
 import SkillCard from '../elements/SkillCard'
+import PageOpener from '../sections/PageOpener'
 
 function Project() {
     const location = useLocation()
@@ -19,17 +20,13 @@ function Project() {
 
     return (
         <div>
-            <Navigation />
+            <PageOpener 
+                title={specificProject}
+                description="Here's everything about this project. Click on the image to view a live version of the site. Scroll down to learn more about how I built this project, including what skills I used."
+            />
             
             <div class="overcoming-header">
                 <main>
-                    <SectionHeading heading={specificProject} />
-
-                    <div className="about-card">
-                        Here's everything about {specificProject}. Click on the image to view a live version of the site. Scroll down to learn more about how I built this project, including what skills I used.
-                    </div>
-
-                    <div className="blank-space" />
         
                     <div className="contains-columns">
                         <div>

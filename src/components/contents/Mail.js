@@ -49,10 +49,7 @@ function Mail() {
         <form 
             onSubmit={hanldeSubmit}
             className="mail-card"
-        >   
-            <p>
-                Thanks for visiting my site! If you'd like to work together or just want to drop me a line, feel free to use the below form.
-            </p>
+        >
 
             <div className="mail-input-sections">
 
