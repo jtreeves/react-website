@@ -7,10 +7,10 @@ import Button from '../elements/Button'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
-function Tumblr() {
+function Tumblr(props) {
     const [resources, setResources] = useState([])
     const [photos, setPhotos] = useState([])
-
+        
     async function getResources() {
         try {
             const result = await axios.get(
@@ -22,10 +22,10 @@ function Tumblr() {
                 return (
                     <div 
                         key={index}
-                        className="meme-card"
+                        className="resource-blog-card"
                     >
                         <div 
-                            className="meme-card-body"
+                            className="resource-blog-card-body"
                         >
                             <h4>
                                 <a 
@@ -45,10 +45,10 @@ function Tumblr() {
                         </div>
 
                         <div 
-                            className="meme-card-footer"
+                            className="resource-blog-card-footer"
                         >
                             <div 
-                                className="meme-card-button"
+                                className="resource-blog-card-button"
                             >
                                 <Button 
                                     link={post.post_url}
@@ -58,7 +58,7 @@ function Tumblr() {
                             </div>
 
                             <div 
-                                className="meme-card-date"
+                                className="resource-blog-card-date"
                             >
                                 <a 
                                     href={post.post_url} 
@@ -78,7 +78,7 @@ function Tumblr() {
             alert(error.response.data.msg)
         }
     }
-    
+
     async function getPhotos() {
         try {
             const result = await axios.get(
@@ -109,50 +109,58 @@ function Tumblr() {
             alert(error.response.data.msg)
         }
     }
-    
+
     useEffect(() => {
         getResources()
     }, [])
-    
+
     useEffect(() => {
         getPhotos()
     }, [])
+
+    if (props.category === 'resources') {
+        return (
+            <main>
+                <SectionHeading heading="Recent Resources" />
+                
+                <div className="projects-list">
+                    {resources}
+                </div>
     
-    return (
-        <main>
-            <SectionHeading heading="Recent Resources" />
-            
-            <div className="projects-list">
-                {resources}
-            </div>
+                <div className="blank-space" />
+    
+                <div className="center">
+                    <Button 
+                        link="https://jacksonreeves.tumblr.com/"
+                        target="_blank"
+                        text="Find more resources"
+                    />
+                </div>
+            </main>
+        )
+    }
 
-            <div className="blank-space" />
-
-            <div className="center">
-                <Button 
-                    link="https://jacksonreeves.tumblr.com/"
-                    target="_blank"
-                    text="Find more resources"
-                />
-            </div>
-            
-            <SectionHeading heading="Recent Memes" />
-            
-            <div className="projects-list">
-                {photos}
-            </div>
-
-            <div className="blank-space" />
-
-            <div className="center">
-                <Button 
-                    link="https://jacksonreeves.tumblr.com/"
-                    target="_blank"
-                    text="See more memes"
-                />
-            </div>
-        </main>
-    )
+    if (props.category === 'photos') {
+        return (
+            <main>
+                <SectionHeading heading="Recent Memes" />
+                
+                <div className="projects-list">
+                    {photos}
+                </div>
+    
+                <div className="blank-space" />
+    
+                <div className="center">
+                    <Button 
+                        link="https://jacksonreeves.tumblr.com/"
+                        target="_blank"
+                        text="See more memes"
+                    />
+                </div>
+            </main>
+        )
+    }
 }
 
 export default Tumblr

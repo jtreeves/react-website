@@ -19,7 +19,8 @@ function Posts() {
             <div class="overcoming-header">
                 <Medium />
                 <Dev />
-                <Tumblr />
+                <Tumblr category="resources" />
+                <Tumblr category="photos" />
                 <GitHub />
                 <Twitter />
                 <YouTube />
