@@ -206,6 +206,7 @@ const skills = {
     ],
 
     'SQL': [
+        'regressionz',
         'readThisNext'
     ],
     
