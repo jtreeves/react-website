@@ -16,7 +16,7 @@ function Contact() {
                     <Mail />
                 </main>
             </div>
-
+            
             <hr />
         </div>
     )
