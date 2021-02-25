@@ -36,7 +36,7 @@ function YouTube() {
                     </div>
                 )
             })
-            const finalArray = resultArray.slice(0, 2)
+            const finalArray = resultArray.slice(0, 1)
             setVideos(finalArray)
         } catch (error) {
             alert(error.response.data.msg)

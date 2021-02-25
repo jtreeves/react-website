@@ -22,7 +22,7 @@ function Posts() {
                 <Tumblr />
                 <GitHub />
                 <Twitter />
-                {/* <YouTube /> */}
+                <YouTube />
             </div>
 
             <hr />
