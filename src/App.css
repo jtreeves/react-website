@@ -981,7 +981,8 @@ img.project {
 
 .navigation-links:hover {
     text-decoration: none;
-    color: gray;
+    color: white;
+    font-style: italic;
 }
 
 h1, h2, h3, .project-title {
