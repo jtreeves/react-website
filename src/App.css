@@ -617,6 +617,39 @@ main {
     object-fit: cover;
 }
 
+.favorites-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 3px solid #000080;
+    border-radius: 3px;
+}
+
+.favorites-card:hover {
+    border: 3px solid #007ba7;
+}
+
+.favorites-card-header {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    background: #000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorites-card:hover .favorites-card-header {
+    background: #007ba7;
+}
+
+.favorites-card-list {
+    padding: 20px;
+}
+
 .text-card {
     width: 100%;
     height: 100%;
