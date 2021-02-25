@@ -103,7 +103,7 @@ function GitHub() {
                 <Button 
                     link="https://github.com/jtreeves"
                     target="_blank"
-                    text="Read more commits"
+                    text="View more commits"
                 />
             </div>
         </main>

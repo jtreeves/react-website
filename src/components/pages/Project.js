@@ -7,6 +7,11 @@ import SectionHeading from '../sections/SectionHeading'
 import RecentProjects from '../sections/RecentProjects'
 import SkillCard from '../elements/SkillCard'
 import PageOpener from '../sections/PageOpener'
+import FavoritesCard from '../elements/FavoritesCard'
+import ImageCard from '../elements/ImageCard'
+import QuoteCard from '../elements/QuoteCard'
+import TextCard from '../elements/TextCard'
+import LinksCard from '../elements/LinksCard'
 
 function Project() {
     const location = useLocation()
@@ -22,42 +27,32 @@ function Project() {
         <div>
             <PageOpener 
                 title={specificProject}
-                description="Here's everything about this project. Click on the image to view a live version of the site. Scroll down to learn more about how I built this project, including what skills I used."
+                description="Here's everything about this project. Scroll down to learn more about how I built this project, including what skills I used."
             />
             
             <div class="overcoming-header">
                 <main>
-        
-                    <div className="contains-columns">
-                        <div>
-                            <a 
-                                href={projects[lowercase].deployedLink} 
-                                target="_blank" 
-                                rel="noreferrer"
-                                className="links"
-                            >
-                                <div 
-                                    className="project-highlight square"
-                                >
-                                    <div className="project-image">
-                                        <img 
-                                            src={projects[lowercase].image} 
-                                            alt={projects[lowercase].name} 
-                                            className="square-content"
-                                        />
-                                    </div>
+                    <div className="projects-list">
+                        <div className="one-column-of-three">
+                            <ImageCard 
+                                title="Image"
+                                image={projects[lowercase].image}
+                            />
+                            
+                            <LinksCard 
+                                header="Links"
+                                type={projects[lowercase].type}
+                                host={projects[lowercase].host}
+                                deployedLink={projects[lowercase].deployedLink} 
+                                repositoryLink={projects[lowercase].repositoryLink}
+                            />
+                        </div>
 
-                                    <div 
-                                        className="square-content project-overlay"
-                                    >
-                                        <div 
-                                            className="project-title"
-                                        >
-                                            View Site
-                                        </div>
-                                    </div>
-                                </div>            
-                            </a>
+                        <div className="one-column-of-three">
+                            <TextCard 
+                                header="About Project"
+                                body={projects[lowercase].description}
+                            />
                         </div>
 
                         <div className="one-column-of-three">
@@ -66,57 +61,10 @@ function Project() {
                                 category={projects[lowercase].skills}
                             />
 
-                            <div className="square">
-                                <div 
-                                    className="square-content card"
-                                >
-                                    <div className="card-header">
-                                        <h4>
-                                            About This Project
-                                        </h4>
-                                    </div>
-
-                                    <div className="card-body">
-                                        {projects[lowercase].description}
-
-                                        <SkillSet 
-                                            skills={projects[lowercase].skills}
-                                        />
-                                    </div>
-
-                                    <div className="card-footer">
-                                        <a 
-                                            href={projects[lowercase].deployedLink} 
-                                            target="_blank" 
-                                            rel="noreferrer"
-                                        >
-                                            <button 
-                                                className="btn btn-primary float-left"
-                                            >
-                                                {projects[lowercase].type}
-                                            </button>
-                                        </a>
-                            
-                                        <a 
-                                            href={projects[lowercase].repositoryLink} 
-                                            target="_blank" 
-                                            rel="noreferrer"
-                                        >
-                                            <button 
-                                                className="btn btn-primary float-left other-button"
-                                            >
-                                                Code
-                                            </button>
-                                        </a>
-                            
-                                        <div 
-                                            className="float-right text-muted card-footer-connect"
-                                        >
-                                            {projects[lowercase].date}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <TextCard 
+                                header="Created"
+                                body={projects[lowercase].date}
+                            />
                         </div>
                     </div>
                 </main>

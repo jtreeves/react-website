@@ -31,7 +31,8 @@ const projects = {
             'Visual Studio Code',
             'Wireframing'
         ],
-        type: 'App',
+        type: 'app',
+        host: 'Heroku',
         image: '/images/projects/tiresias.png',
         deployedLink: 'https://tiresias-predictions.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/predictions-frontend',
@@ -54,7 +55,8 @@ const projects = {
             'Visual Studio Code',
             'Wireframing'
         ],
-        type: 'App',
+        type: 'app',
+        host: 'Heroku',
         image: '/images/projects/regressionz.png',
         deployedLink: 'https://regressionz.herokuapp.com/',
         repositoryLink: 'https://github.com/jtreeves/regressions_api',
@@ -77,7 +79,8 @@ const projects = {
             'Version Control',
             'Visual Studio Code'
         ],
-        type: 'Library',
+        type: 'library',
+        host: 'PyPi',
         image: '/images/projects/regressions.png',
         deployedLink: 'https://pypi.org/project/regressions/',
         repositoryLink: 'https://github.com/jtreeves/regressions_library',
@@ -120,7 +123,8 @@ const projects = {
             'Visual Studio Code',
             'Wireframing'
         ],
-        type: 'App',
+        type: 'app',
+        host: 'Heroku',
         image: '/images/projects/kaleidoscope.png',
         deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/budget-frontend',
@@ -155,7 +159,8 @@ const projects = {
             'Visual Studio Code',
             'Wireframing'
         ],
-        type: 'App',
+        type: 'app',
+        host: 'Heroku',
         image: '/images/projects/read-this-next.png',
         deployedLink: 'https://read-this-next.herokuapp.com',
         repositoryLink: 'https://github.com/jtreeves/read-this-next',
@@ -178,7 +183,8 @@ const projects = {
             'Visual Studio Code',
             'Wireframing'
         ],
-        type: 'App',
+        type: 'app',
+        host: 'Heroku',
         image: '/images/projects/matches-and-patches.png',
         deployedLink: 'https://jtreeves.github.io',
         repositoryLink: 'https://github.com/jtreeves/matches-and-patches',
