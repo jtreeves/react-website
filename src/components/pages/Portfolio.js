@@ -3,6 +3,7 @@ import SectionHeading from '../sections/SectionHeading'
 import ProjectsList from '../elements/ProjectsList'
 import Button from '../elements/Button'
 import PageOpener from '../sections/PageOpener'
+import CurrentProject from '../sections/CurrentProject'
 
 function Portfolio() {
     return (
@@ -25,6 +26,10 @@ function Portfolio() {
                             text="View all projects"
                         />
                     </div>
+
+                    <div className="blank-space" />
+
+                    <CurrentProject />
                 </main>
             </div>
 

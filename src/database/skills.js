@@ -24,6 +24,7 @@ const skills = {
     ],
 
     'Bootstrap': [
+        'tiresias',
         'readThisNext'
     ],
     
@@ -82,16 +83,18 @@ const skills = {
     ],
 
     'Git': [
-        'regressions', 
         'tiresias', 
+        'regressionz',
+        'regressions', 
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'
     ],
 
     'GitHub': [
-        'regressions', 
         'tiresias', 
+        'regressionz',
+        'regressions', 
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'
@@ -170,6 +173,7 @@ const skills = {
     ],
 
     'Postgres': [
+        'regressionz',
         'readThisNext'
     ],
 
@@ -216,7 +220,6 @@ const skills = {
 
     'User Experience Design': [
         'tiresias', 
-        'regressions', 
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'
@@ -230,6 +233,7 @@ const skills = {
     
     'Visual Studio Code': [
         'tiresias', 
+        'regressionz',
         'regressions', 
         'kaleidoscope', 
         'readThisNext',
@@ -238,7 +242,7 @@ const skills = {
 
     'Wireframing': [
         'tiresias', 
-        'regressions', 
+        'regressionz', 
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'

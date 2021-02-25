@@ -151,29 +151,69 @@ h1:hover {
     font-size: 50px;
 }
 
+.list-full {
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-item-specific {
+    list-style: inside;
+}
+
+.current-project {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current-project-image {
+    width: 50%;
+}
+
+.current-project-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #000080;
+    border-radius: 3px;
+
+}
+    
+.current-project-image img:hover {
+    border: 3px solid #007ba7;
+}
+
+.current-project-text {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.current-project-text ul {
+    padding-left: 0;
+}
+
+.current-project-text li {
+    list-style: inside;
+    font-style: italic;
+}
+
 .opener-container {
     display: flex;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* column-gap: 10px; */
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    /* margin-bottom: -25px; */
-    /* padding: 10px; */
     position: fixed;
     background: whitesmoke;
     z-index: 1;
     border-bottom: 5px solid black;
     height: 150px;
     margin-top: 100px;
-    /* margin-bottom: 250px; */
 }
 
 .opener-first {
     display: flex;
-    /* height: 150px; */
     flex-direction: row-reverse;
-    /* align-items: center; */
     justify-content: space-around;
     margin: 0 10px;
 }
@@ -338,10 +378,6 @@ main {
 .project-highlight:hover {
     border: 3px solid #007ba7;
 }
-
-/* .project-image {
-    transition: 1s ease;
-} */
 
 .hr-heavy {
     padding: 1.5px;
@@ -584,7 +620,6 @@ main {
 
 .image-card {
     width: 100%;
-    /* height: 346px; */
     height: 100%;
     display: flex;
     flex-direction: column;
