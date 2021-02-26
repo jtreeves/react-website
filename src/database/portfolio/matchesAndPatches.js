@@ -1,19 +1,19 @@
 const matchesAndPatches = {
     name: 'Matches and Patches',
     description: 'A game involving elements of Dominoes and Uno',
-    skills: [
-        'Command Line',
-        'CSS',
-        'Error Handling',
-        'Git',
-        'GitHub',
-        'HTML', 
-        'JavaScript',
-        'Object-Oriented Programming',
-        'User Experience Design',
-        'Visual Studio Code',
-        'Wireframing'
-    ],
+    skills: {
+        'Command Line': 'used',
+        'CSS': 'used',
+        'Error Handling': 'used',
+        'Git': 'used',
+        'GitHub': 'used',
+        'HTML': 'used', 
+        'JavaScript': 'used',
+        'Object-Oriented Programming': 'used',
+        'User Experience Design': 'used',
+        'Visual Studio Code': 'used',
+        'Wireframing': 'used'
+    },
     type: 'app',
     host: 'GitHub',
     image: '/images/projects/matchesAndPatches/main.png',

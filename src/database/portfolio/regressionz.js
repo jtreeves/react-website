@@ -1,19 +1,19 @@
 const regressionz = {
     name: 'RΣGRΣSSIONZ',
     description: 'An API to provide access to a Python library for generating regression models',
-    skills: [
-        'APIs',
-        'Command Line',
-        'Flask',
-        'Git',
-        'GitHub',
-        'PyPi',
-        'Python',
-        'Postgres',
-        'SQL',
-        'Visual Studio Code',
-        'Wireframing'
-    ],
+    skills: {
+        'APIs': 'Used APIs',
+        'Command Line': 'Used command line',
+        'Flask': 'Used Flask',
+        'Git': 'Used Git',
+        'GitHub': 'Used GitHub',
+        'PyPi': 'Used PyPi',
+        'Python': 'Used Python',
+        'Postgres': 'Used Postgres',
+        'SQL': 'Used SQL',
+        'Visual Studio Code': 'Used VSC',
+        'Wireframing': 'Used wireframing'
+    },
     type: 'app',
     host: 'Heroku',
     image: '/images/projects/regressionz/main.png',
