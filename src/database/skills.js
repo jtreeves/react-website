@@ -10,6 +10,7 @@ const skills = {
     'APIs': [
         'tiresias',
         'regressionz',
+        'kaleidoscope',
         'readThisNext'
     ],
     

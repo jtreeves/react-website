@@ -190,6 +190,20 @@ h1:hover {
     font-style: italic;
 }
 
+.adjusting-display-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+}
+
+.adjusting-contained {
+    flex-basis: 40%;
+    margin: 10px;
+}
+
 .opener-container {
     display: flex;
     width: 100%;

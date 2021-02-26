@@ -15,7 +15,10 @@ function Skill() {
 
     const projectList = skills[specificSkill].map((project, index) => {
         return (
-            <div key={index}>
+            <div 
+                key={index}
+                className="adjusting-contained"
+            >
                 <ProjectHighlight 
                     image={projects[project].image}
                     name={projects[project].name}
@@ -40,7 +43,7 @@ function Skill() {
             
             <div class="overcoming-header">
                 <main>
-                    <div className="projects-list">
+                    <div className="adjusting-display-area">
                         {projectList}
                     </div>
 
