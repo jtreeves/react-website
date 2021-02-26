@@ -58,8 +58,8 @@ function Skill() {
                     
                     <div className="center">
                         <Button 
-                            link="https://github.com/jtreeves"
-                            target="_blank"
+                            link="/portfolio"
+                            target="_self"
                             text="View more projects"
                         />
                     </div>
