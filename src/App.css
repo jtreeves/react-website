@@ -52,6 +52,7 @@ footer {
     border: solid 5px #000080;
     border-radius: 50%;
     margin-top: -50%;
+    margin-bottom: 10px;
 }
 
 .headshot:hover {
@@ -67,88 +68,11 @@ header ul {
 
 header li {
     display: inline;
-    /* padding: 10px; */
+    padding: 10px;
 }
-
-/* header li:last-child {
-    padding-right: 20px;
-} */
 
 .social-icons {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    justify-items: center;
-    /* justify-content: end; */
-    /* top: 50px; */
-    /* grid-column: 2 / 3; */
-    grid-row: 2 / 3;
-}
-
-.tooltips {
-    /* z-index: 2; */
-    /* position: fixed; */
-    /* padding-top: 35px; */
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    justify-items: center;
-    /* justify-content: end; */
-    /* bottom: 50px */
-    /* grid-column: 1 / 2; */
-    grid-row: 3 / 4;
-    /* opacity: 0; */
-}
-
-.tooltips li {
-    background: gray;
-    color: white;
-    font-size: 15px;
-    line-height: 15px;
-    height: 25px;
-    /* width: 100%; */
-    padding: 5px;
-    border: 1px solid gray;
-    border-radius: 2px;
-}
-
-/* .tooltips-inner {
-    margin-top: 50px;
-} */
-
-/* .tooltips li {
-    width: 10px;
-    padding: 0;
-} */
-
-/* #github-tooltip {
-    margin-top: 40px;
-} */
-
-li.github-tooltip {
-    /* color: red; */
-    opacity: 0;
-}
-
-li.github-tooltip:hover {
-    opacity: 1;
-}
-
-.social-icons.fa-github-square:hover li.github-tooltip {
-    opacity: 1;
-    /* color: black; */
-    /* opacity: 1; */
-    /* font-size: 50px; */
-}
-
-.nav-icons {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* row-gap: 25px; */
-    grid-template-rows: repeat(3, 1fr);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    /* align-items: center; */
+    margin-right: 10px;
 }
 
 .headline {
@@ -173,12 +97,6 @@ header i:hover {
     transform: scale(1.1);
     color: white;
 }
-
-/* .github-icon:hover {
-    text-decoration: none;
-    transform: scale(1.1);
-    color: white;
-} */
 
 h1:hover {
     transform: scale(1.1);
@@ -895,7 +813,7 @@ main {
 }
 
 .svg-container svg {
-    margin-bottom: -12px;
+    margin-bottom: -2px;
 }
 
 .svg-container:hover svg {
