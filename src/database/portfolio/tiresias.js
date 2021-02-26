@@ -1,0 +1,41 @@
+const tiresias = {
+    name: 'Tiresias',
+    description: 'An app for generating regressions models',
+    skills: [
+        'APIs',
+        'Authentication',
+        'Bootstrap',
+        'Chai',
+        'Command Line',
+        'Computer Science',
+        'Design Patterns',
+        'Error Handling',
+        'Express', 
+        'Git',
+        'GitHub',
+        'Heroku',
+        'Information Architecture',
+        'JavaScript', 
+        'Mocha',
+        'Mongo Atlas',
+        'MongoDB',
+        'Mongoose',
+        'MVC Pattern',
+        'Node',
+        'NPM',
+        'Object-Oriented Programming',
+        'React',
+        'User Experience Design',
+        'Version Control',
+        'Visual Studio Code',
+        'Wireframing'
+    ],
+    type: 'app',
+    host: 'Heroku',
+    image: '/images/projects/tiresias.png',
+    deployedLink: 'https://tiresias-predictions.herokuapp.com',
+    repositoryLink: 'https://github.com/jtreeves/predictions-frontend',
+    date: 'January 2021'
+}
+
+export default tiresias
