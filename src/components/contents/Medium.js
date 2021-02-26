@@ -97,7 +97,7 @@ function Medium() {
     
     return (
         <main>
-            <SectionHeading heading="Recent Musings" />
+            <SectionHeading heading="Recent Musings from Medium" />
 
             <div className="rows">
                 {posts}

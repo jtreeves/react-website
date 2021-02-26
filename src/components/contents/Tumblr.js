@@ -121,7 +121,7 @@ function Tumblr(props) {
     if (props.category === 'resources') {
         return (
             <main>
-                <SectionHeading heading="Recent Resources" />
+                <SectionHeading heading="Recent Resources from Tumblr" />
                 
                 <div className="projects-list">
                     {resources}
@@ -143,7 +143,7 @@ function Tumblr(props) {
     if (props.category === 'photos') {
         return (
             <main>
-                <SectionHeading heading="Recent Memes" />
+                <SectionHeading heading="Recent Memes from Tumblr" />
                 
                 <div className="projects-list">
                     {photos}

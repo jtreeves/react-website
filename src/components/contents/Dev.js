@@ -95,7 +95,7 @@ function Dev() {
     
     return (
         <main>
-            <SectionHeading heading="Recent Codings" />
+            <SectionHeading heading="Recent Codings from DEV" />
 
             <div className="projects-list">
                 {posts}

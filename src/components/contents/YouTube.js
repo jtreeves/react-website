@@ -49,7 +49,7 @@ function YouTube() {
     
     return (
         <main>
-            <SectionHeading heading="Recent Videos" />
+            <SectionHeading heading="Recent Videos from YouTube" />
             
             <div className="two-columns">
                 {videos}

@@ -299,8 +299,8 @@ main {
 
 .section-heading {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    column-gap: 10px;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 20px;
     width: 100%;
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;

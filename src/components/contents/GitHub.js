@@ -91,7 +91,7 @@ function GitHub() {
     
     return (
         <main>
-            <SectionHeading heading="Recent Commits" />
+            <SectionHeading heading="Recent Commits from GitHub" />
             
             <div className="projects-list">
                 {commits}

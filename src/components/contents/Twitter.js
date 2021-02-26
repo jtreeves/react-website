@@ -71,7 +71,7 @@ function Twitter() {
     
     return (
         <main>
-            <SectionHeading heading="Recent Tweets" />
+            <SectionHeading heading="Recent Tweets from Twitter" />
 
             <div className="projects-list">
                 {tweets}
