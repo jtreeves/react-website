@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import SectionHeading from '../sections/SectionHeading'
-import extractFromPost from '../../utilities/medium'
+import extractFromPost from '../../utilities/post'
 import convertTime from '../../utilities/time'
 import Button from '../elements/Button'
 
