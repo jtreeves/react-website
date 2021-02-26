@@ -1,10 +1,8 @@
-import FavoritesCard from '../elements/FavoritesCard'
-import ImageCard from '../elements/ImageCard'
-import QuoteCard from '../elements/QuoteCard'
-import TextCard from '../elements/TextCard'
-import Navigation from '../sections/Navigation'
 import PageOpener from '../sections/PageOpener'
-import SectionHeading from '../sections/SectionHeading'
+import TextCard from '../elements/TextCard'
+import ImageCard from '../elements/ImageCard'
+import FavoritesCard from '../elements/FavoritesCard'
+import QuoteCard from '../elements/QuoteCard'
 
 function About() {
     return (

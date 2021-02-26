@@ -1,8 +1,6 @@
-import Navigation from '../sections/Navigation'
-import SectionHeading from '../sections/SectionHeading'
-import types from '../../database/types'
-import SkillCard from '../elements/SkillCard'
 import PageOpener from '../sections/PageOpener'
+import SkillCard from '../elements/SkillCard'
+import types from '../../database/types'
 
 function AllSkills() {
     return (

@@ -1,9 +1,8 @@
-import Navigation from '../sections/Navigation'
+import PageOpener from '../sections/PageOpener'
 import SectionHeading from '../sections/SectionHeading'
 import ProjectsList from '../elements/ProjectsList'
-import Button from '../elements/Button'
-import PageOpener from '../sections/PageOpener'
 import CurrentProject from '../sections/CurrentProject'
+import Button from '../elements/Button'
 
 function Portfolio() {
     return (
@@ -16,7 +15,7 @@ function Portfolio() {
             <div class="overcoming-header">
                 <main>
                     <SectionHeading heading="Projects" />
-                    
+
                     <ProjectsList max={6} />
 
                     <div className="blank-space" />

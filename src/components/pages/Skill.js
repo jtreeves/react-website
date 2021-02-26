@@ -1,13 +1,11 @@
 import { useLocation } from 'react-router-dom'
 
+import PageOpener from '../sections/PageOpener'
 import ProjectHighlight from '../sections/ProjectHighlight'
 import SkillCard from '../elements/SkillCard'
-import Navigation from '../sections/Navigation'
 import Button from '../elements/Button'
-import SectionHeading from '../sections/SectionHeading'
 import skills from '../../database/skills'
 import projects from '../../database/projects'
-import PageOpener from '../sections/PageOpener'
 
 function Skill() {
     const location = useLocation()
@@ -35,7 +33,6 @@ function Skill() {
 
     return (
         <div>
-            
             <PageOpener 
                 title={specificSkill}
                 description={description}
@@ -43,7 +40,6 @@ function Skill() {
             
             <div class="overcoming-header">
                 <main>
-
                     <div className="projects-list">
                         {projectList}
                     </div>

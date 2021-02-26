@@ -1,17 +1,13 @@
 import { useLocation } from 'react-router-dom'
 
-import projects from '../../database/projects'
-import SkillSet from '../elements/SkillSet'
-import Navigation from '../sections/Navigation'
+import PageOpener from '../sections/PageOpener'
 import SectionHeading from '../sections/SectionHeading'
 import RecentProjects from '../sections/RecentProjects'
 import SkillCard from '../elements/SkillCard'
-import PageOpener from '../sections/PageOpener'
-import FavoritesCard from '../elements/FavoritesCard'
-import ImageCard from '../elements/ImageCard'
-import QuoteCard from '../elements/QuoteCard'
 import TextCard from '../elements/TextCard'
+import ImageCard from '../elements/ImageCard'
 import LinksCard from '../elements/LinksCard'
+import projects from '../../database/projects'
 
 function Project() {
     const location = useLocation()

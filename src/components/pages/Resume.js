@@ -1,13 +1,12 @@
-import Button from '../elements/Button'
-import Navigation from '../sections/Navigation'
+import PageOpener from '../sections/PageOpener'
 import SectionHeading from '../sections/SectionHeading'
-import experience from '../../database/experience'
-import education from '../../database/education'
-import types from '../../database/types'
 import SkillCard from '../elements/SkillCard'
 import SchoolCard from '../elements/SchoolCard'
 import CompanyCard from '../elements/CompanyCard'
-import PageOpener from '../sections/PageOpener'
+import Button from '../elements/Button'
+import types from '../../database/types'
+import education from '../../database/education'
+import experience from '../../database/experience'
 
 function Resume() {
     return (

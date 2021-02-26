@@ -1,7 +1,5 @@
-import Mail from '../contents/Mail'
-import Navigation from '../sections/Navigation'
 import PageOpener from '../sections/PageOpener'
-import SectionHeading from '../sections/SectionHeading'
+import Mail from '../contents/Mail'
 
 function Contact() {
     return (
@@ -16,7 +14,7 @@ function Contact() {
                     <Mail />
                 </main>
             </div>
-            
+
             <hr />
         </div>
     )

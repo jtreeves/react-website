@@ -127,31 +127,6 @@ h1:hover {
     color: #007ba7;
 }
 
-.text-nav {
-    color: white;
-    text-shadow:
-		-2px -2px 0 #000,
-		2px -2px 0 #000,
-		-2px 2px 0 #000,
-		2px 2px 0 #000;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    text-transform: uppercase;
-    font-size: 40px;
-    text-decoration: none;
-}
-
-.circle-nav:hover {
-    background: #007ba7;
-}
-
-.circle-nav:hover .icon-nav {
-    color: #000080;
-}
-
-.circle-nav:hover .text-nav {
-    font-size: 50px;
-}
-
 .list-full {
     padding-left: 0;
     margin: 0;
@@ -389,7 +364,6 @@ main {
     background: white;
     border: 3px solid #000080;
     border-radius: 3px;
-    /* transition: 1s ease; */
 }
 
 .project-highlight:hover {
@@ -408,7 +382,6 @@ main {
     background: white;
     border: 10px solid #000080;
     border-radius: 5px;
-    /* transition: 1s ease; */
 }
 
 .square-highlight a, .square-highlight:hover {
@@ -428,17 +401,12 @@ main {
     opacity: 1;
 }
 
-/* .square-main {
-    transition: 1s ease;
-} */
-
 .square-overlay {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     opacity: 0;
-    /* transition: 1s ease; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,7 +442,6 @@ main {
     width: 100%;
     padding: 10px;
     opacity: 0;
-    /* transition: 1s ease; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -485,16 +452,7 @@ main {
 .floater-icon-nav {
     width: 100px;
     height: 100px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; */
-    /* margin: 10px; */
 }
-
-/* .floater-icon {
-    position: absolute;
-} */
 
 .floater-icon-nav:hover .floater-icon, .floater-icon-nav:hover .floater-links, .floater-icon-nav:hover .floater-text {
     color: #007ba7;
@@ -505,7 +463,6 @@ main {
 }
 
 .floater-text {
-    /* margin-top: 110px; */
     color: #000080;
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
@@ -548,7 +505,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: -2.5px; */
 }
 
 .school-card:hover .school-card-header {
@@ -605,7 +561,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: -2.5px; */
 }
 
 .company-card:hover .company-card-header {
@@ -668,13 +623,6 @@ main {
     width: 100%;
     object-fit: cover;
 }
-
-/* .image-card-body img {
-    position: absolute;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-} */
 
 .favorites-card {
     width: 100%;
@@ -867,7 +815,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* overflow-y: scroll; */
 }
 
 .blog-card-footer {
@@ -1188,16 +1135,6 @@ main {
     width: 100%;
 }
 
-/* .left-column {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.right-column {
-    grid-column-start: 3;
-    grid-column-end: 4;
-} */
-
 .project {
     width: 100%;
     text-align: center;
@@ -1380,7 +1317,6 @@ h2, h3 {
 .square {
     position: relative;
     width: 100%;
-    /* margin-bottom: 20px; */
 }
   
 .square:after {
@@ -1393,7 +1329,6 @@ h2, h3 {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* overflow-y: scroll; */
 }
 
 .mail-card {
@@ -1417,7 +1352,6 @@ h2, h3 {
 .mail-section {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .mail-label {

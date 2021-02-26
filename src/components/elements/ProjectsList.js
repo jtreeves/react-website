@@ -1,5 +1,4 @@
 import ProjectHighlight from '../sections/ProjectHighlight'
-
 import projects from '../../database/projects'
 
 function ProjectsList(props) { 

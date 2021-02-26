@@ -14,11 +14,11 @@ function Introduction() {
             <div className="three-columns">
                 <div className="first-column">
                     <div className="floater-icon-nav">
-                    <Link 
-                        to="/skills"
-                        onClick={scroll}
-                        className="floater-links"
-                    >
+                        <Link 
+                            to="/skills"
+                            onClick={scroll}
+                            className="floater-links"
+                        >
                             <div className="floater-icon">
                                 <i class="fas fa-laptop-code fa-5x" />
                             </div>
@@ -26,15 +26,15 @@ function Introduction() {
                             <div className="floater-text">
                                 Skills
                             </div>
-                    </Link>
-                        </div>
+                        </Link>
+                    </div>
 
-                        <div className="floater-icon-nav">
-                    <Link 
-                        to="/resume"
-                        onClick={scroll}
-                        className="floater-links"
-                    >
+                    <div className="floater-icon-nav">
+                        <Link 
+                            to="/resume"
+                            onClick={scroll}
+                            className="floater-links"
+                        >
                             <div className="floater-icon">
                                 <i class="fas fa-file-alt fa-5x" />
                             </div>
@@ -42,15 +42,15 @@ function Introduction() {
                             <div className="floater-text">
                                 Resume
                             </div>
-                    </Link>
-                        </div>
+                        </Link>
+                    </div>
 
-                        <div className="floater-icon-nav">
-                    <Link 
-                        to="/portfolio"
-                        onClick={scroll}
-                        className="floater-links"
-                    >
+                    <div className="floater-icon-nav">
+                        <Link 
+                            to="/portfolio"
+                            onClick={scroll}
+                            className="floater-links"
+                        >
                             <div className="floater-icon">
                                 <i class="fas fa-briefcase fa-5x" />
                             </div>
@@ -58,8 +58,8 @@ function Introduction() {
                             <div className="floater-text">
                                 Portfolio
                             </div>
-                    </Link>
-                        </div>
+                        </Link>
+                    </div>
                 </div>
 
                 <div className="center-column">
@@ -78,11 +78,11 @@ function Introduction() {
 
                 <div className="last-column">
                     <div className="floater-icon-nav">
-                    <Link 
-                        to="/posts"
-                        onClick={scroll}
-                        className="floater-links"
-                    >
+                        <Link 
+                            to="/posts"
+                            onClick={scroll}
+                            className="floater-links"
+                        >
                             <div className="floater-icon">
                                 <i class="fas fa-bullhorn fa-5x" />
                             </div>
@@ -90,15 +90,15 @@ function Introduction() {
                             <div className="floater-text">
                                 Posts
                             </div>
-                    </Link>
-                        </div>
+                        </Link>
+                    </div>
 
-                        <div className="floater-icon-nav">
-                    <Link 
-                        to="/about"
-                        onClick={scroll}
-                        className="floater-links"
-                    >
+                    <div className="floater-icon-nav">
+                        <Link 
+                            to="/about"
+                            onClick={scroll}
+                            className="floater-links"
+                        >
                             <div className="floater-icon">
                                 <i class="fas fa-comment fa-5x" />
                             </div>
@@ -106,15 +106,15 @@ function Introduction() {
                             <div className="floater-text">
                                 About
                             </div>
-                    </Link>
-                        </div>
+                        </Link>
+                    </div>
 
-                        <div className="floater-icon-nav">
-                    <Link 
-                        to="/contact"
-                        onClick={scroll}
-                        className="floater-links"
-                    >
+                    <div className="floater-icon-nav">
+                        <Link 
+                            to="/contact"
+                            onClick={scroll}
+                            className="floater-links"
+                        >
                             <div className="floater-icon">
                                 <i class="fas fa-paper-plane fa-5x" />
                             </div>
@@ -122,8 +122,8 @@ function Introduction() {
                             <div className="floater-text">
                                 Contact
                             </div>
-                    </Link>
-                        </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
