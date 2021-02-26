@@ -32,7 +32,7 @@ const tiresias = {
     ],
     type: 'app',
     host: 'Heroku',
-    image: '/images/projects/tiresias.png',
+    image: '/images/projects/tiresias/main.png',
     deployedLink: 'https://tiresias-predictions.herokuapp.com',
     repositoryLink: 'https://github.com/jtreeves/predictions-frontend',
     date: 'January 2021'

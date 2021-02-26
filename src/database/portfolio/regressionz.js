@@ -16,7 +16,7 @@ const regressionz = {
     ],
     type: 'app',
     host: 'Heroku',
-    image: '/images/projects/regressionz.png',
+    image: '/images/projects/regressionz/main.png',
     deployedLink: 'https://regressionz.herokuapp.com/',
     repositoryLink: 'https://github.com/jtreeves/regressions_api',
     date: 'January 2021'

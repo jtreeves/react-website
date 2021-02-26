@@ -28,7 +28,7 @@ const readThisNext = {
     ],
     type: 'app',
     host: 'Heroku',
-    image: '/images/projects/read-this-next.png',
+    image: '/images/projects/readThisNext/main.png',
     deployedLink: 'https://read-this-next.herokuapp.com',
     repositoryLink: 'https://github.com/jtreeves/read-this-next',
     date: 'November 2020'

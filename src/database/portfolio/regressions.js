@@ -16,7 +16,7 @@ const regressions = {
     ],
     type: 'library',
     host: 'PyPi',
-    image: '/images/projects/regressions.png',
+    image: '/images/projects/regressions/main.png',
     deployedLink: 'https://pypi.org/project/regressions/',
     repositoryLink: 'https://github.com/jtreeves/regressions_library',
     date: 'January 2021'

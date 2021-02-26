@@ -36,7 +36,7 @@ const kaleidoscope = {
     ],
     type: 'app',
     host: 'Heroku',
-    image: '/images/projects/kaleidoscope.png',
+    image: '/images/projects/kaleidoscope/main.png',
     deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
     repositoryLink: 'https://github.com/jtreeves/budget-frontend',
     date: 'December 2020'

@@ -16,7 +16,7 @@ const matchesAndPatches = {
     ],
     type: 'app',
     host: 'GitHub',
-    image: '/images/projects/matches-and-patches.png',
+    image: '/images/projects/matchesAndPatches/main.png',
     deployedLink: 'https://jtreeves.github.io',
     repositoryLink: 'https://github.com/jtreeves/matches-and-patches',
     date: 'October 2020'
