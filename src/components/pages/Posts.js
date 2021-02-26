@@ -1,10 +1,11 @@
 import PageOpener from '../sections/PageOpener'
 import Medium from '../contents/Medium'
 import Dev from '../contents/Dev'
-import Tumblr from '../contents/Tumblr'
 import GitHub from '../contents/GitHub'
 import Twitter from '../contents/Twitter'
 import YouTube from '../contents/YouTube'
+import TumblrResources from '../contents/TumblrResource'
+import TumblrMemes from '../contents/TumblrMeme'
 
 function Posts() {
     return (
@@ -17,8 +18,8 @@ function Posts() {
             <div class="overcoming-header">
                 <Medium />
                 <Dev />
-                <Tumblr category="resources" />
-                <Tumblr category="photos" />
+                <TumblrResources />
+                <TumblrMemes />
                 <GitHub />
                 <Twitter />
                 <YouTube />
