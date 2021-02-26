@@ -56,7 +56,7 @@ function Project() {
                         <div className="one-column-of-three">
                             <SkillCard 
                                 description="Skills Used"
-                                category={projects[lowercase].skills}
+                                category={Object.keys(projects[lowercase].skills)}
                             />
 
                             <TextCard 

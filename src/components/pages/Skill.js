@@ -1,11 +1,11 @@
 import { useLocation } from 'react-router-dom'
 
 import PageOpener from '../sections/PageOpener'
-import ProjectHighlight from '../sections/ProjectHighlight'
 import SkillCard from '../elements/SkillCard'
 import Button from '../elements/Button'
 import skills from '../../database/skills'
 import projects from '../../database/projects'
+import DescriptionLinkCard from '../elements/DescriptionLinkCard'
 
 function Skill() {
     const location = useLocation()
@@ -19,10 +19,9 @@ function Skill() {
                 key={index}
                 className="adjusting-contained"
             >
-                <ProjectHighlight 
-                    image={projects[project].image}
+                <DescriptionLinkCard 
                     name={projects[project].name}
-                    description={projects[project].description}
+                    description={projects[project].skills[specificSkill]}
                 />
             </div>
         )
