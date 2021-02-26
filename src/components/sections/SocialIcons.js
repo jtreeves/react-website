@@ -1,7 +1,7 @@
 function SocialIcons() {
     return (
         <ul className="social-icons">
-            <li>
+            <li className="github-icon">
                 <a 
                     href="https://github.com/jtreeves" 
                     target="_blank" 
@@ -11,7 +11,7 @@ function SocialIcons() {
                 </a>
             </li>
             
-            <li>
+            <li id="linkedin-icon">
                 <a 
                     href="https://www.linkedin.com/in/jacksonreeves/" 
                     target="_blank" 
@@ -21,7 +21,7 @@ function SocialIcons() {
                 </a>
             </li>
             
-            <li>
+            <li id="twitter-icon">
                 <a 
                     href="https://twitter.com/JTReeves" 
                     target="_blank" 
@@ -31,7 +31,7 @@ function SocialIcons() {
                 </a>
             </li>
             
-            <li>
+            <li id="dev-icon">
                 <a 
                     href="https://dev.to/jtreeves" 
                     target="_blank" 
@@ -41,7 +41,7 @@ function SocialIcons() {
                 </a>
             </li>
             
-            <li>
+            <li id="medium-icon">
                 <a 
                     href="https://jtreeves.medium.com" 
                     target="_blank" 
@@ -60,7 +60,7 @@ function SocialIcons() {
                 </a>
             </li>
             
-            <li>
+            <li id="tumblr-icon">
                 <a 
                     href="https://jacksonreeves.tumblr.com" 
                     target="_blank" 
@@ -70,7 +70,7 @@ function SocialIcons() {
                 </a>
             </li>
             
-            <li>
+            <li id="youtube-icon">
                 <a 
                     href="https://www.youtube.com/c/jacksonreeves" 
                     target="_blank" 
@@ -80,7 +80,7 @@ function SocialIcons() {
                 </a>
             </li>
             
-            <li>
+            <li id="mail-icon">
                 <a 
                     href="mailto:jr@jacksonreeves.com" 
                     target="_blank" 
@@ -90,7 +90,7 @@ function SocialIcons() {
                 </a>
             </li>
             
-            <li>
+            <li id="resume-icon">
                 <a 
                     href="/Jackson_Reeves_Resume.pdf" 
                     target="_blank" 
