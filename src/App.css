@@ -100,7 +100,7 @@ header li {
 
 .tooltips li {
     background: gray;
-    /* color: white; */
+    color: white;
     font-size: 15px;
     line-height: 15px;
     height: 25px;
@@ -123,13 +123,20 @@ header li {
     margin-top: 40px;
 } */
 
-.github-tooltip {
-    color: red;
+li.github-tooltip {
+    /* color: red; */
+    opacity: 0;
 }
 
-header i.fa-github-square:hover .github-tooltip {
+li.github-tooltip:hover {
+    opacity: 1;
+}
+
+.social-icons.fa-github-square:hover li.github-tooltip {
+    opacity: 1;
+    /* color: black; */
     /* opacity: 1; */
-    color: black;
+    /* font-size: 50px; */
 }
 
 .nav-icons {
