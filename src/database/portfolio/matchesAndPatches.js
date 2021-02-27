@@ -5,7 +5,7 @@ const matchesAndPatches = {
         'Command Line': 'used',
         'CSS': 'used',
         'Error Handling': 'used',
-        'Git': 'used',
+        'Git': 'Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et',
         'GitHub': 'used',
         'HTML': 'used', 
         'JavaScript': 'used',

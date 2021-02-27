@@ -3,6 +3,7 @@ const kaleidoscope = {
     description: 'A budget app',
     skills: {
         'Agile Development': 'used',
+        'APIs': 'used',
         'Authentication': 'used',
         'Behavior-Driven Development': 'Used',
         'Chai': 'used',
@@ -11,7 +12,7 @@ const kaleidoscope = {
         'Design Patterns': 'used',
         'Error Handling': 'used',
         'Express': 'used', 
-        'Git': 'used',
+        'Git': 'Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud',
         'GitHub': 'used',
         'Heroku': 'used',
         'Information Architecture': 'used',

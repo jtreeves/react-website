@@ -11,7 +11,7 @@ const tiresias = {
         'Design Patterns': 'used',
         'Error Handling': 'used',
         'Express': 'used', 
-        'Git': 'Used',
+        'Git': 'Lorem Ipsum dolor sit amet',
         'GitHub': 'used',
         'Heroku': 'used',
         'Information Architecture': 'used',

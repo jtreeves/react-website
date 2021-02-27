@@ -9,7 +9,7 @@ function DescriptionLinkCard(props) {
                 {props.name}
             </div>
 
-            <div className="text-card-body">
+            <div className="description-link-card-spacing">
                 {props.description}
 
                 <div className="blank-space" />

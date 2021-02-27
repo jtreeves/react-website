@@ -9,7 +9,7 @@ const readThisNext = {
         'CRUD Pattern': 'used',
         'Error Handling': 'used',
         'Express': 'used', 
-        'Git': 'used',
+        'Git': 'Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
         'GitHub': 'used',
         'Heroku': 'Used',
         'Information Architecture': 'used',

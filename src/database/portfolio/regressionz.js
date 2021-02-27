@@ -5,7 +5,7 @@ const regressionz = {
         'APIs': 'Used APIs',
         'Command Line': 'Used command line',
         'Flask': 'Used Flask',
-        'Git': 'Used Git',
+        'Git': 'Lorem Ipsum dolor sit amet, consectetur',
         'GitHub': 'Used GitHub',
         'PyPi': 'Used PyPi',
         'Python': 'Used Python',

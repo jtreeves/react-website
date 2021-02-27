@@ -190,18 +190,27 @@ h1:hover {
     font-style: italic;
 }
 
+.adjusting-display-area > * {
+    margin: 20px 0 0 20px;
+}
+
 .adjusting-display-area {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    width: 100%;
+    margin: -20px 0 0 -20px;
+    width: calc(100% + 20px);
 }
 
 .adjusting-contained {
-    flex-basis: 30%;
-    margin: 10px;
+    flex: 1 0 40%;
+}
+
+.description-link-card-spacing {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .opener-container {

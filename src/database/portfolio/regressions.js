@@ -6,7 +6,7 @@ const regressions = {
         'Command Line': 'Used command line',
         'Computer Science': 'Used computer science',
         'Functional Programming': 'Used functional programming',
-        'Git': 'Used Git',
+        'Git': 'Lorem Ipsum dolor sit amet, consectetur adipiscing elit',
         'GitHub': 'Used GitHub',
         'NumPy': 'Used NumPy',
         'PyPi': 'Used PyPi',
