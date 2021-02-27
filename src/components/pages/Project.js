@@ -59,10 +59,15 @@ function Project() {
                                 header="About Project"
                                 body={projects[lowercase].summary}
                             />
+                            
+                            <TextCard 
+                                header="Inspiration"
+                                body={projects[lowercase].inspiration}
+                            />
 
                             <FavoritesCard 
-                                header="Initial Goals"
-                                elements={projects[lowercase].goals}
+                                header="Features"
+                                elements={projects[lowercase].features}
                             />
                             
                             <FavoritesCard 
