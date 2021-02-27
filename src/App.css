@@ -367,6 +367,7 @@ main {
     display: grid;
     row-gap: 20px;
     align-content: start;
+    /* width: 100%; */
 }
 
 .rows {

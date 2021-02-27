@@ -74,31 +74,31 @@ const kaleidoscope = {
     host: 'Heroku',
     image: '/images/projects/kaleidoscope/main.png',
     bigImage: {
-        url: '/images/projects/kaleidoscope/main.png', 
-        header: 'Header', 
-        description: 'Description'
+        url: '/images/projects/kaleidoscope/image1.png', 
+        header: 'ERD', 
+        description: 'We planned for our database to involve different schemas for each budget category that would all feed into a larger collection for each individual budget, which would in turn feed into the user collection'
     },
     secondBigImage: {
-        url: '', 
-        header: '', 
-        description: ''
+        url: '/images/projects/kaleidoscope/image2.png', 
+        header: 'Wireframe', 
+        description: 'We designed our initial mock-ups for the site using Adobe XD'
     },
     thirdBigImage: {
-        url: '', 
-        header: '', 
-        description: ''
+        url: '/images/projects/kaleidoscope/image3.png', 
+        header: 'Visual Inspiration', 
+        description: 'We drew inspiration for our graphs and other visuals from various outlets online'
     },
     code: {
         snippet: kaleidoscopeFirstSnippet, 
         language: 'javascript',
-        header: 'Header', 
-        description: 'Description'
+        header: 'Flexible Schemas', 
+        description: 'Users can input fields with whatever names they choose thanks to flexible schemas'
     },
     secondCode: {
         snippet: kaleidoscopeSecondSnippet, 
         language: 'javascript',
-        header: 'Header', 
-        description: 'Description'
+        header: 'Tests for New Users', 
+        description: 'Tests using Mocha and Chai confirm that new users get stored in the database, receive hashed passwords before being stored, and obtain a new date field upon being added to the database'
     },
     deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
     repositoryLink: 'https://github.com/jtreeves/budget-frontend',
