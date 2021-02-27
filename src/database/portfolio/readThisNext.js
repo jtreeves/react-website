@@ -1,6 +1,11 @@
 const readThisNext = {
     name: 'Read This Next',
     description: 'A reading app',
+    summary: '',
+    initiation: '',
+    lessons: '',
+    stretches: [''],
+    userStories: [''],
     skills: {
         'APIs': 'Used',
         'Authentication': 'used',
@@ -29,6 +34,26 @@ const readThisNext = {
     type: 'app',
     host: 'Heroku',
     image: '/images/projects/readThisNext/main.png',
+    bigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
+    secondBigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
+    code: {
+        snippet: '', 
+        header: '', 
+        description: ''
+    },
+    secondCode: {
+        snippet: '', 
+        header: '', 
+        description: ''
+    },
     deployedLink: 'https://read-this-next.herokuapp.com',
     repositoryLink: 'https://github.com/jtreeves/read-this-next',
     date: 'November 2020'

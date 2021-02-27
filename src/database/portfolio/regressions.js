@@ -1,6 +1,11 @@
 const regressions = {
     name: 'Regressions',
     description: 'A Python library of algorithms to calculate regression models',
+    summary: '',
+    initiation: '',
+    lessons: '',
+    stretches: [''],
+    userStories: [''],
     skills: {
         'Algorithms': 'Used algorithms',
         'Command Line': 'Used command line',
@@ -17,6 +22,26 @@ const regressions = {
     type: 'library',
     host: 'PyPi',
     image: '/images/projects/regressions/main.png',
+    bigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
+    secondBigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
+    code: {
+        snippet: '', 
+        header: '', 
+        description: ''
+    },
+    secondCode: {
+        snippet: '', 
+        header: '', 
+        description: ''
+    },
     deployedLink: 'https://pypi.org/project/regressions/',
     repositoryLink: 'https://github.com/jtreeves/regressions_library',
     date: 'January 2021'

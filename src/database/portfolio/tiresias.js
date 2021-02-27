@@ -1,6 +1,11 @@
 const tiresias = {
     name: 'Tiresias',
     description: 'An app for generating regressions models',
+    summary: '',
+    initiation: '',
+    lessons: '',
+    stretches: [''],
+    userStories: [''],
     skills: {
         'APIs': 'used',
         'Authentication': 'Used',
@@ -33,6 +38,26 @@ const tiresias = {
     type: 'app',
     host: 'Heroku',
     image: '/images/projects/tiresias/main.png',
+    bigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
+    secondBigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
+    code: {
+        snippet: '', 
+        header: '', 
+        description: ''
+    },
+    secondCode: {
+        snippet: '', 
+        header: '', 
+        description: ''
+    },
     deployedLink: 'https://tiresias-predictions.herokuapp.com',
     repositoryLink: 'https://github.com/jtreeves/predictions-frontend',
     date: 'January 2021'

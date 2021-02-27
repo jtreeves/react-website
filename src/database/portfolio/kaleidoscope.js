@@ -1,6 +1,11 @@
 const kaleidoscope = {
     name: 'Kaleidoscope',
     description: 'A budget app',
+    summary: '',
+    initiation: '',
+    lessons: '',
+    stretches: [''],
+    userStories: [''],
     skills: {
         'Agile Development': 'used',
         'APIs': 'used',
@@ -38,6 +43,26 @@ const kaleidoscope = {
     type: 'app',
     host: 'Heroku',
     image: '/images/projects/kaleidoscope/main.png',
+    bigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
+    secondBigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
+    code: {
+        snippet: '', 
+        header: '', 
+        description: ''
+    },
+    secondCode: {
+        snippet: '', 
+        header: '', 
+        description: ''
+    },
     deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
     repositoryLink: 'https://github.com/jtreeves/budget-frontend',
     date: 'December 2020'
