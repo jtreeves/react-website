@@ -1,9 +1,11 @@
+import { readThisNextFirstSnippet, readThisNextSecondSnippet } from '../snippets'
+
 const readThisNext = {
     name: 'Read This Next',
     description: 'A reading app',
     summary: '',
-    initiation: '',
-    lessons: '',
+    goals: [''],
+    lessons: [''],
     stretches: [''],
     userStories: [''],
     skills: {
@@ -45,12 +47,12 @@ const readThisNext = {
         description: ''
     },
     code: {
-        snippet: '', 
+        snippet: readThisNextFirstSnippet, 
         header: '', 
         description: ''
     },
     secondCode: {
-        snippet: '', 
+        snippet: readThisNextSecondSnippet, 
         header: '', 
         description: ''
     },

@@ -1,9 +1,11 @@
+import { regressionsFirstSnippet, regressionsSecondSnippet } from '../snippets'
+
 const regressions = {
     name: 'Regressions',
     description: 'A Python library of algorithms to calculate regression models',
     summary: '',
-    initiation: '',
-    lessons: '',
+    goals: [''],
+    lessons: [''],
     stretches: [''],
     userStories: [''],
     skills: {
@@ -33,12 +35,12 @@ const regressions = {
         description: ''
     },
     code: {
-        snippet: '', 
+        snippet: regressionsFirstSnippet, 
         header: '', 
         description: ''
     },
     secondCode: {
-        snippet: '', 
+        snippet: regressionsSecondSnippet, 
         header: '', 
         description: ''
     },

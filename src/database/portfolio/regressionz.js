@@ -1,9 +1,11 @@
+import { regressionzFirstSnippet, regressionzSecondSnippet } from '../snippets'
+
 const regressionz = {
     name: 'RΣGRΣSSIONZ',
     description: 'An API to provide access to a Python library for generating regression models',
     summary: '',
-    initiation: '',
-    lessons: '',
+    goals: [''],
+    lessons: [''],
     stretches: [''],
     userStories: [''],
     skills: {
@@ -33,12 +35,12 @@ const regressionz = {
         description: ''
     },
     code: {
-        snippet: '', 
+        snippet: regressionzFirstSnippet, 
         header: '', 
         description: ''
     },
     secondCode: {
-        snippet: '', 
+        snippet: regressionzSecondSnippet, 
         header: '', 
         description: ''
     },

@@ -1,9 +1,11 @@
+import { matchesAndPatchesFirstSnippet, matchesAndPatchesSecondSnippet } from '../snippets'
+
 const matchesAndPatches = {
     name: 'Matches and Patches',
     description: 'A game involving elements of Dominoes and Uno',
     summary: '',
-    initiation: '',
-    lessons: '',
+    goals: [''],
+    lessons: [''],
     stretches: [''],
     userStories: [''],
     skills: {
@@ -33,12 +35,12 @@ const matchesAndPatches = {
         description: ''
     },
     code: {
-        snippet: '', 
+        snippet: matchesAndPatchesFirstSnippet, 
         header: '', 
         description: ''
     },
     secondCode: {
-        snippet: '', 
+        snippet: matchesAndPatchesSecondSnippet, 
         header: '', 
         description: ''
     },

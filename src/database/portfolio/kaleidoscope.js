@@ -1,9 +1,11 @@
+import { kaleidoscopeFirstSnippet, kaleidoscopeSecondSnippet } from '../snippets'
+
 const kaleidoscope = {
     name: 'Kaleidoscope',
     description: 'A budget app',
     summary: '',
-    initiation: '',
-    lessons: '',
+    goals: [''],
+    lessons: [''],
     stretches: [''],
     userStories: [''],
     skills: {
@@ -44,9 +46,9 @@ const kaleidoscope = {
     host: 'Heroku',
     image: '/images/projects/kaleidoscope/main.png',
     bigImage: {
-        url: '', 
-        header: '', 
-        description: ''
+        url: '/images/projects/kaleidoscope/main.png', 
+        header: 'Header', 
+        description: 'Description'
     },
     secondBigImage: {
         url: '', 
@@ -54,14 +56,16 @@ const kaleidoscope = {
         description: ''
     },
     code: {
-        snippet: '', 
-        header: '', 
-        description: ''
+        snippet: kaleidoscopeFirstSnippet, 
+        language: 'javascript',
+        header: 'Header', 
+        description: 'Description'
     },
     secondCode: {
-        snippet: '', 
-        header: '', 
-        description: ''
+        snippet: kaleidoscopeSecondSnippet, 
+        language: 'javascript',
+        header: 'Header', 
+        description: 'Description'
     },
     deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
     repositoryLink: 'https://github.com/jtreeves/budget-frontend',

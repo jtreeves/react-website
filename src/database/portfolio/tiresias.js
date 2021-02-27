@@ -1,9 +1,11 @@
+import { tiresiasFirstSnippet, tiresiasSecondSnippet } from '../snippets'
+
 const tiresias = {
     name: 'Tiresias',
     description: 'An app for generating regressions models',
     summary: '',
-    initiation: '',
-    lessons: '',
+    goals: [''],
+    lessons: [''],
     stretches: [''],
     userStories: [''],
     skills: {
@@ -49,12 +51,12 @@ const tiresias = {
         description: ''
     },
     code: {
-        snippet: '', 
+        snippet: tiresiasFirstSnippet, 
         header: '', 
         description: ''
     },
     secondCode: {
-        snippet: '', 
+        snippet: tiresiasSecondSnippet, 
         header: '', 
         description: ''
     },
