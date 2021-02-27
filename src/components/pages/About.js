@@ -3,6 +3,8 @@ import TextCard from '../elements/TextCard'
 import ImageCard from '../elements/ImageCard'
 import FavoritesCard from '../elements/FavoritesCard'
 import QuoteCard from '../elements/QuoteCard'
+import testimonials from '../../database/testimonials'
+import TestimonialsTeaser from '../elements/TestimonialsTeaser'
 
 function About() {
     return (
@@ -42,6 +44,13 @@ function About() {
                                         creator: "Howard Hawks"
                                     }
                                 ]}
+                            />
+
+                            <TestimonialsTeaser 
+                                header={testimonials.nicole.callout}
+                                text={testimonials.nicole.quote}
+                                source={testimonials.nicole.name}
+                                company={testimonials.nicole.company}
                             />
                         </div>
 

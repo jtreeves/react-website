@@ -11,6 +11,7 @@ import Posts from './components/pages/Posts'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
 import Footer from './components/sections/Footer'
+import Testimonials from './components/pages/Testimonials'
 
 import './App.css'
 
@@ -37,6 +38,11 @@ function App() {
             <Route 
                 path="/resume" 
                 component={Resume}
+            />
+            
+            <Route 
+                path="/testimonials" 
+                component={Testimonials}
             />
 
             <Route 

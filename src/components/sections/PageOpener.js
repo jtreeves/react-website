@@ -57,7 +57,7 @@ function PageOpener(props) {
 
             <div className="opener-center">
                 <h2>{props.title}</h2>
-                <p>{props.description}</p>
+                <div>{props.description}</div>
             </div>
 
             <div className="opener-last">

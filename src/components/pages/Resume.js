@@ -7,6 +7,8 @@ import Button from '../elements/Button'
 import types from '../../database/types'
 import education from '../../database/education'
 import experience from '../../database/experience'
+import testimonials from '../../database/testimonials'
+import TestimonialsTeaser from '../elements/TestimonialsTeaser'
 
 function Resume() {
     return (
@@ -52,6 +54,13 @@ function Resume() {
                                 <SkillCard 
                                     description="Methodologies"
                                     category={types.methodologies}
+                                />
+
+                                <TestimonialsTeaser 
+                                    header={testimonials.nicole.callout}
+                                    text={testimonials.nicole.quote}
+                                    source={testimonials.nicole.name}
+                                    company={testimonials.nicole.company}
                                 />
                             </div>
                         </div>

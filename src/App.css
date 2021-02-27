@@ -196,13 +196,16 @@ h1:hover {
 
 .adjusting-display-area {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
     margin: -20px 0 0 -20px;
     width: calc(100% + 20px);
 }
 
 .adjusting-contained {
-    flex: 1 0 40%;
+    flex: 0.5 0 30%;
 }
 
 .description-link-card-spacing {
@@ -217,12 +220,13 @@ h1:hover {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     background: whitesmoke;
     z-index: 1;
     border-bottom: 5px solid black;
     height: 150px;
+    padding: 5px;
     margin-top: 100px;
 }
 
@@ -230,22 +234,28 @@ h1:hover {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    margin: 0 10px;
+    margin: 25px 10px 0 10px;
 }
 
 .opener-center {
     text-align: center;
+    margin-top: -10px;
 }
 
 .opener-last {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 10px;
+    margin: 25px 10px 0 10px;
 }
 
 .opener-container .floater-text {
     font-size: 15px;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
 }
 
 .three-columns {
@@ -761,8 +771,12 @@ main {
 
 .quote-card-source {
     font-style: italic;
-    color: slategray;
     margin-top: 5px;
+    float: right;
+}
+
+.quote-card-company {
+    color: gray;
     float: right;
 }
 
