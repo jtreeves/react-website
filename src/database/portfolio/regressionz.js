@@ -6,7 +6,6 @@ const regressionz = {
     summary: '',
     inspiration: '',
     features: [''],
-    lessons: [''],
     stretches: [''],
     userStories: [''],
     skills: {

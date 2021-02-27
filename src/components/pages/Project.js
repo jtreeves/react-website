@@ -69,11 +69,6 @@ function Project() {
                                 header="Features"
                                 elements={projects[lowercase].features}
                             />
-                            
-                            <FavoritesCard 
-                                header="Lessons Learned"
-                                elements={projects[lowercase].lessons}
-                            />
                         </div>
 
                         <div className="one-column-of-three">

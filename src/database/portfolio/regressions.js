@@ -6,7 +6,6 @@ const regressions = {
     summary: '',
     inspiration: '',
     features: [''],
-    lessons: [''],
     stretches: [''],
     userStories: [''],
     skills: {

@@ -6,7 +6,6 @@ const readThisNext = {
     summary: '',
     inspiration: '',
     features: [''],
-    lessons: [''],
     stretches: [''],
     userStories: [''],
     skills: {
