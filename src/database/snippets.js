@@ -96,21 +96,84 @@ const matchesAndPatchesSecondSnippet = `function randomTile() {
   return opponentTile
 }`
 
-const readThisNextFirstSnippet = `const foodSchema = new Schema({
-  inputs: { type: Schema.Types.Mixed, default: {} },
-  date: {
-    type: Date,
-    default: Date.now()
-  },
-}, { minimize: false })`
+const readThisNextFirstSnippet = `router.get('/suggestion', isLoggedIn, (req, res) => {
+  const user = res.locals.currentUser
+  db.rating
+    .findAll({
+      where: {
+        userId: user.id,
+        value: 5
+      }
+    })
+    .then(responses => {
+      const randomStarredId = randomElement(responses).bookId
+      axios
+        .get(url + '&ids=' + randomStarredId)
+        .then(output => {
+          const starredBook = output.data.results[0]
+          const starredSubjects = starredBook.subjects
+          const randomStarredSubject = randomElement(starredSubjects).split(' ')[0]
+          axios
+            .get(url + '&topic=' + randomStarredSubject)
+            .then(elements => {
+              const ids = []
+              const materials = elements.data.results
+              for (let i = 0; i < materials.length; i++) {
+                ids[i] = materials[i].id
+              }
+              finalSelection()
+              function finalSelection() {
+                const randomId = randomElement(ids)
+                const randomBook = materials[materials.findIndex(object => object.id === randomId)]
+                db.pass
+                  .findAndCountAll({
+                    where: {
+                      userId: user.id,
+                      bookId: randomId
+                    }
+                  })
+                  .then(check => {
+                    if (check.count === 0) {
+                      if (excludeDuplicates(starredBook.title, randomBook.title)) {
+                        axios
+                          .get(url + '&ids=' + randomId)
+                          .then(product => {
+                            res.render('books/suggestion', {
+                              book: product.data.results[0],
+                              currentUser:user
+                            })
+                          })
+                          .catch(() => res.status(400).render('404'))
+                      } else {
+                        finalSelection()
+                      }
+                    } else {
+                      finalSelection()
+                    }
+                  })
+                  .catch(() => res.status(400).render('404'))
+              }
+            })
+            .catch(() => res.status(400).render('404'))
+        })
+        .catch(() => res.status(400).render('404'))
+    })
+      .catch(() => res.status(400).render('404'))
+})`
 
-const readThisNextSecondSnippet = `const foodSchema = new Schema({
-  inputs: { type: Schema.Types.Mixed, default: {} },
-  date: {
-    type: Date,
-    default: Date.now()
-  },
-}, { minimize: false })`
+const readThisNextSecondSnippet = `function excludeDuplicates(mainTitle, testTitle) {
+  const mainStripped = mainTitle.replace(/[^a-zA-Z0-9 ]/g, '')
+  const testStripped = testTitle.replace(/[^a-zA-Z0-9 ]/g, '')
+  const mainArray = mainStripped.split(' ')
+  let mainShort = ''
+  if (mainArray.length >= 3) {
+    const mainSliced = mainArray.slice(0, 3)
+    mainShort = mainSliced.join(' ')
+  } else {
+    mainShort = mainStripped
+  }
+  return !testStripped.includes(mainShort)
+}`
 
 const regressionsFirstSnippet = `const foodSchema = new Schema({
   inputs: { type: Schema.Types.Mixed, default: {} },
