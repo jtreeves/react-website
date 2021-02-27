@@ -205,7 +205,7 @@ h1:hover {
 }
 
 .adjusting-contained {
-    flex: 0.5 0 30%;
+    flex: 0.5 0.25 30%;
 }
 
 .description-link-card-spacing {
