@@ -97,6 +97,12 @@ function Project() {
                                 language={projects[lowercase].code.language}
                                 description={projects[lowercase].code.description}
                             />
+
+                            <DescriptionImageCard 
+                                header={projects[lowercase].thirdBigImage.header}
+                                url={projects[lowercase].thirdBigImage.url}
+                                description={projects[lowercase].thirdBigImage.description}
+                            />
                             
                             <FavoritesCard 
                                 header="Future Goals"
@@ -121,6 +127,11 @@ function Project() {
                                 snippet={projects[lowercase].secondCode.snippet}
                                 language={projects[lowercase].secondCode.language}
                                 description={projects[lowercase].secondCode.description}
+                            />
+
+                            <FavoritesCard 
+                                header="Applications of Skills"
+                                elements={Object.values(projects[lowercase].skills)}
                             />
                         </div>
                     </div>
