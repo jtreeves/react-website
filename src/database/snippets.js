@@ -207,20 +207,55 @@ const regressionzSecondSnippet = `const foodSchema = new Schema({
   },
 }, { minimize: false })`
 
-const tiresiasFirstSnippet = `const foodSchema = new Schema({
-  inputs: { type: Schema.Types.Mixed, default: {} },
-  date: {
-    type: Date,
-    default: Date.now()
-  },
-}, { minimize: false })`
+const tiresiasFirstSnippet = `router.post('/:id', passport.authenticate('jwt', {session: false}), async (req, res) => {
+  const { favorite, note } = req.body.sections
+  try {
+    const newPrediction = await db.Prediction.create({
+      user: req.params.id,
+      source: req.body.source,
+      sections: {
+        favorite: {graph: favorite.graph},
+        note: {comments: note.comments}
+      }
+    })
+    res.status(200).json({prediction: newPrediction})
+  } catch(error) {
+    res.status(400).json({msg: error})
+  }
+})`
 
-const tiresiasSecondSnippet = `const foodSchema = new Schema({
-  inputs: { type: Schema.Types.Mixed, default: {} },
-  date: {
-    type: Date,
-    default: Date.now()
-  },
-}, { minimize: false })`
+const tiresiasSecondSnippet = `if (!clicked) {
+  return (
+    <New
+      handleSubmit={handleSubmit}
+      title={title}
+      handleTitle={handleTitle}
+      independent={independent}
+      handleIndependent={handleIndependent}
+      dependent={dependent}
+      handleDependent={handleDependent}
+      dataSet={dataSet}
+      handleDataSet={handleDataSet}
+    />
+  )
+} else {
+  return (
+    <Results
+      linears={linears}
+      linearError={linearError}
+      quadratics={quadratics}
+      quadraticError={quadraticError}
+      cubics={cubics}
+      cubicError={cubicError}
+      hyperbolics={hyperbolics}
+      hyperbolicError={hyperbolicError}
+      exponentials={exponentials}
+      exponentialError={exponentialError}
+      logarithmics={logarithmics}
+      logarithmicError={logarithmicError}
+      bestFit={bestFit}
+    />
+  )
+}`
 
 export { kaleidoscopeFirstSnippet, kaleidoscopeSecondSnippet, matchesAndPatchesFirstSnippet, matchesAndPatchesSecondSnippet, readThisNextFirstSnippet, readThisNextSecondSnippet, regressionsFirstSnippet, regressionsSecondSnippet, regressionzFirstSnippet, regressionzSecondSnippet, tiresiasFirstSnippet, tiresiasSecondSnippet }
