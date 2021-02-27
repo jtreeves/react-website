@@ -50,6 +50,11 @@ const tiresias = {
         header: '', 
         description: ''
     },
+    thirdBigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
     code: {
         snippet: tiresiasFirstSnippet, 
         header: '', 

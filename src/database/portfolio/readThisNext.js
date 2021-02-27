@@ -46,6 +46,11 @@ const readThisNext = {
         header: '', 
         description: ''
     },
+    thirdBigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
     code: {
         snippet: readThisNextFirstSnippet, 
         header: '', 

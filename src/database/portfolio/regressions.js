@@ -34,6 +34,11 @@ const regressions = {
         header: '', 
         description: ''
     },
+    thirdBigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
     code: {
         snippet: regressionsFirstSnippet, 
         header: '', 

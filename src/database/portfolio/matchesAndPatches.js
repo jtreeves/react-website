@@ -34,6 +34,11 @@ const matchesAndPatches = {
         header: '', 
         description: ''
     },
+    thirdBigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
     code: {
         snippet: matchesAndPatchesFirstSnippet, 
         header: '', 

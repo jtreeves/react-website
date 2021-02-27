@@ -55,6 +55,11 @@ const kaleidoscope = {
         header: '', 
         description: ''
     },
+    thirdBigImage: {
+        url: '', 
+        header: '', 
+        description: ''
+    },
     code: {
         snippet: kaleidoscopeFirstSnippet, 
         language: 'javascript',
