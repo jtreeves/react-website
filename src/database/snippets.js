@@ -175,21 +175,48 @@ const readThisNextSecondSnippet = `function excludeDuplicates(mainTitle, testTit
   return !testStripped.includes(mainShort)
 }`
 
-const regressionsFirstSnippet = `const foodSchema = new Schema({
-  inputs: { type: Schema.Types.Mixed, default: {} },
-  date: {
-    type: Date,
-    default: Date.now()
-  },
-}, { minimize: false })`
+const regressionsFirstSnippet = `def exponential(data):
+  independent_matrix = []
+  dependent_matrix = []
+  for i in range(len(data)):
+    independent_matrix.append([data[i][0], 1])
+    dependent_matrix.append([log(data[i][1])])
+  transposition = transpose(independent_matrix)
+  product = multiplication(transposition, independent_matrix)
+  product_matrix = matrix(product, dtype='float')
+  inversion = inv(product_matrix)
+  inversion_list = matrix.tolist(inversion)
+  second_product = multiplication(inversion_list, transposition)
+  solution = multiplication(second_product, dependent_matrix)
+  constants = [
+    [exp(solution[1][0])],
+    [exp(solution[0][0])]
+  ]
+  equation = lambda x: constants[0][0]*constants[1][0]**x
+  inaccuracy = error(data, equation)
+  result = {
+    'constants': constants,
+    'error': inaccuracy
+  }
+  return result`
 
-const regressionsSecondSnippet = `const foodSchema = new Schema({
-  inputs: { type: Schema.Types.Mixed, default: {} },
-  date: {
-    type: Date,
-    default: Date.now()
-  },
-}, { minimize: false })`
+const regressionsSecondSnippet = `def determinant(matrix, result = 0):
+  if len(matrix) == 1:
+    result += matrix[0][0]
+    return result
+  else:
+    alternating = []
+    minors = []
+    leads = matrix[0]
+    for i in range(len(leads)):
+      minors.append(diminished(matrix, 0, i))
+      if i % 2 == 0:
+        alternating.append(leads[i])
+      else:
+        alternating.append(-1 * leads[i])
+    for j in range(len(alternating)):
+      result += alternating[j] * determinant(minors[j])
+  return result`
 
 const regressionzFirstSnippet = `const foodSchema = new Schema({
   inputs: { type: Schema.Types.Mixed, default: {} },
