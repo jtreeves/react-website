@@ -218,21 +218,69 @@ const regressionsSecondSnippet = `def determinant(matrix, result = 0):
       result += alternating[j] * determinant(minors[j])
   return result`
 
-const regressionzFirstSnippet = `const foodSchema = new Schema({
-  inputs: { type: Schema.Types.Mixed, default: {} },
-  date: {
-    type: Date,
-    default: Date.now()
-  },
-}, { minimize: false })`
+const regressionzFirstSnippet = `def regression_access():
+  if request.method == 'POST':
+    user_id = current_user()['id']
+    source = request.args.get('source')
+    title = request.json.get('title')
+    independent = request.json.get('independent')
+    dependent = request.json.get('dependent')
+    data_set = request.json.get('data_set')
+    results = run_all(data_set)
+    linear_coefficients = results['options']['linear']['constants']
+    linear_error = results['options']['linear']['error']
+    quadratic_coefficients = results['options']['quadratic']['constants']
+    quadratic_error = results['options']['quadratic']['error']
+    cubic_coefficients = results['options']['cubic']['constants']
+    cubic_error = results['options']['cubic']['error']
+    hyperbolic_coefficients = results['options']['hyperbolic']['constants']
+    hyperbolic_error = results['options']['hyperbolic']['error']
+    exponential_coefficients = results['options']['exponential']['constants']
+    exponential_error = results['options']['exponential']['error']
+    logarithmic_coefficients = results['options']['logarithmic']['constants']
+    logarithmic_error = results['options']['logarithmic']['error']
+    best_fit = results['optimal']['function']
+    new_regression = Regression(
+      user_id = user_id,
+      source = source,
+      title = title,
+      independent = independent,
+      dependent = dependent,
+      data_set = data_set,
+      linear_coefficients = linear_coefficients,
+      linear_error = linear_error,
+      quadratic_coefficients = quadratic_coefficients,
+      quadratic_error = quadratic_error,
+      cubic_coefficients = cubic_coefficients,
+      cubic_error = cubic_error,
+      hyperbolic_coefficients = hyperbolic_coefficients,
+      hyperbolic_error = hyperbolic_error,
+      exponential_coefficients = exponential_coefficients,
+      exponential_error = exponential_error,
+      logarithmic_coefficients = logarithmic_coefficients,
+      logarithmic_error = logarithmic_error,
+      best_fit = best_fit,
+      date = datetime.now()
+    )
+    db.session.add(new_regression)
+    db.session.commit()
+    return 'Regression models created and added to table'
+  if request.method == 'GET':
+    return current_regression()`
 
-const regressionzSecondSnippet = `const foodSchema = new Schema({
-  inputs: { type: Schema.Types.Mixed, default: {} },
-  date: {
-    type: Date,
-    default: Date.now()
-  },
-}, { minimize: false })`
+const regressionzSecondSnippet = `def require_apikey(view_function):
+  @wraps(view_function)
+  def decorated_function(*args, **kwargs):
+    sent_key = request.args.get('key')
+    if sent_key is not None:
+      found_key = searching(sent_key)
+      if found_key:
+        return view_function(*args, **kwargs)
+      else:
+        abort(401)
+    else:
+      abort(401)
+  return decorated_function`
 
 const tiresiasFirstSnippet = `router.post('/:id', passport.authenticate('jwt', {session: false}), async (req, res) => {
   const { favorite, note } = req.body.sections
