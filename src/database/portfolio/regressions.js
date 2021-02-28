@@ -22,17 +22,17 @@ const regressions = {
         'As a user, I want to be able to generate multiple regression models at once, so I can simplify the amount of code that I need to write myself'
     ],
     skills: {
-        'Algorithms': 'Used algorithms',
-        'Command Line': 'Used command line',
-        'Computer Science': 'Used computer science',
-        'Functional Programming': 'Used functional programming',
-        'Git': 'Lorem Ipsum dolor sit amet, consectetur adipiscing elit',
-        'GitHub': 'Used GitHub',
-        'NumPy': 'Used NumPy',
-        'PyPi': 'Used PyPi',
-        'Python': 'Used Python',
-        'Version Control': 'Used version control',
-        'Visual Studio Code': 'Used VS Code'
+        'Algorithms': 'Wrote separate algorithms for each type of regression model',
+        'Command Line': 'Uploaded library to PyPi via the command line',
+        'Computer Science': 'Relied on fundamental skills from computer science to build library',
+        'Functional Programming': 'Used functions as the primary data type in all files, and returned functions as certain results',
+        'Git': 'Used Git to store code base of library on GitHub',
+        'GitHub': 'Stored code for library on GitHub',
+        'NumPy': 'Used NumPy to avoid defining more mathematical functions than necessary and occasionally as an alternative to personally-built, time-inefficient versions',
+        'PyPi': 'Made library available for public use by uploading it to PyPi',
+        'Python': `Relied on Python's strength when it comes to math and statistics to build algorithms designed for that particular academic field`,
+        'Version Control': 'Managed release versions of the library',
+        'Visual Studio Code': 'Used Visual Studio Code to write the library'
     },
     type: 'library',
     host: 'PyPi',
