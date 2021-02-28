@@ -30,12 +30,12 @@ const tiresias = {
         'As a user, I want to know that no one else can access my data, so I know it is secure'
     ],
     skills: {
-        'APIs': 'used',
-        'Authentication': 'Used',
-        'Bootstrap': 'used',
-        'Chai': 'used',
-        'Command Line': 'used',
-        'Computer Science': 'used',
+        'APIs': 'Used the RΣGRΣSSIONZ API to access the regressions library written in Python for this JavaScript-written app',
+        'Authentication': 'Used Passport to authenticate users',
+        'Bootstrap': 'Used basic Bootstrap to ensure an MVP design',
+        'Chai': `Created tests using Chai's robust library`,
+        'Command Line': 'Interacted with local and remote files',
+        'Computer Science': 'Relied on separation of concerns to demarcate what features of ',
         'Design Patterns': 'used',
         'Error Handling': 'used',
         'Express': 'used', 
