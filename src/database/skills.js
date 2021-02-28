@@ -44,7 +44,6 @@ const skills = {
     ],
     
     'Computer Science': [
-        'tiresias',
         'regressions'
     ],
 
