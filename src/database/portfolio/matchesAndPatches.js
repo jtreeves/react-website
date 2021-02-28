@@ -22,17 +22,17 @@ const matchesAndPatches = {
         'As a user, I want to receive feedback from the game about my current status, so I can keep track of my progress in the game'
     ],
     skills: {
-        'Command Line': 'used',
-        'CSS': 'used',
-        'Error Handling': 'used',
-        'Git': 'Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et',
-        'GitHub': 'used',
-        'HTML': 'used', 
-        'JavaScript': 'used',
-        'Object-Oriented Programming': 'used',
-        'User Experience Design': 'used',
-        'Visual Studio Code': 'used',
-        'Wireframing': 'used'
+        'Command Line': 'Used command line to interact with local and remote files',
+        'CSS': 'Designed game board by using multiple CSS files to help separate concerns',
+        'Error Handling': 'Used console logs to track issues when they arose',
+        'Git': 'Used Git to send code to GitHub',
+        'GitHub': `Used GitHub to both store the game's source code and deploy it publicly`,
+        'HTML': 'Restricted HTML to only one file', 
+        'JavaScript': 'Used classes to create individual playing tiles for the board',
+        'Object-Oriented Programming': 'Used class inheritance to create different types of tiles from one parent class',
+        'User Experience Design': 'Included a console of sorts for the user to receive feedback on their game play in real-time',
+        'Visual Studio Code': 'Wrote using the Visual Studio Code IDE',
+        'Wireframing': 'Designed pieces, board, and site layout before even beginning coding'
     },
     type: 'app',
     host: 'GitHub',
