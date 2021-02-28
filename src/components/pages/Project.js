@@ -26,7 +26,7 @@ function Project() {
         <div>
             <PageOpener 
                 title={specificProject}
-                description="Here's everything about this project. Scroll down to learn more about how I built this project, including what skills I used."
+                description="Find out how I created this project, including my inspiration, the skills I used, and sample code snippets"
             />
             
             <div class="overcoming-header">

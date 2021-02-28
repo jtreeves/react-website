@@ -12,7 +12,7 @@ function Posts() {
         <div>
             <PageOpener 
                 title="Posts"
-                description="I'm active on various social platforms. Here are some of my latest posts."
+                description="Enjoy this collection of my recent posts from different platforms, including Medium, Twitter, and GitHub"
             />
             
             <div class="overcoming-header">

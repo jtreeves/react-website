@@ -15,7 +15,7 @@ function Resume() {
         <div>
             <PageOpener 
                 title="Resume"
-                description="Inquisitive full-stack developer with more than a decade of experience in education and journalism. Hoping to combine long-time loves of editing and data analysis to produce clean, performative code."
+                description="Inquisitive full-stack developer with more than a decade of experience in education and journalism"
             />
             
             <div class="overcoming-header">

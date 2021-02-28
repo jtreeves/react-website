@@ -11,7 +11,7 @@ function About() {
         <div>
             <PageOpener 
                 title="About"
-                description="Thanks for visiting my site! Here's a little bit more info about me."
+                description="Learn more about me, including my background, my passions, and my favorite books"
             />
             
             <div class="overcoming-header">

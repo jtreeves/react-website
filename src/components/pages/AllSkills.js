@@ -7,7 +7,7 @@ function AllSkills() {
         <div>
             <PageOpener 
                 title="Skills"
-                description="Click on my skills to find out which projects I've used them with."
+                description="Check out these lists of my skills, and click on any skill to find out how I employed them in different projects"
             />
             
             <div class="overcoming-header">

@@ -9,7 +9,7 @@ function Portfolio() {
         <div>
             <PageOpener 
                 title="Portfolio"
-                description="Checkout some of my major projects. Click on the images to learn more about each project. To view even more of my projects, visit my GitHub account."
+                description="Peruse a list of my projects, and click on their images to learn more about each one"
             />
             
             <div class="overcoming-header">

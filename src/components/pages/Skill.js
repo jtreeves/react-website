@@ -11,7 +11,6 @@ function Skill() {
     const location = useLocation()
     const specificSkill = location.state.skill
     const skillsArray = Object.keys(skills)
-    const description = `Check out these projects I built using ${specificSkill}. Click on the images to learn more about each project. Click on any of the below skills to see projects I've built with those skills.`
 
     const projectList = skills[specificSkill].map((project, index) => {
         return (
@@ -31,7 +30,7 @@ function Skill() {
         <div>
             <PageOpener 
                 title={specificSkill}
-                description={description}
+                description="Discover how I implemented this skill in different ways on various projects"
             />
             
             <div class="overcoming-header">

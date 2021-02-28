@@ -7,19 +7,21 @@ function Testimonials() {
         <div>
             <PageOpener 
                 title="Testimonials"
-                description="Hear what others have to say on my behalf."
+                description="Hear what others have to say about working with me and what I can bring to your team"
             />
             
             <div class="overcoming-header">
                 <main>
+                    <Testimonial 
+                        header={testimonials.nicole.callout}
+                        text={testimonials.nicole.quote}
+                        source={testimonials.nicole.name}
+                        company={testimonials.nicole.company}
+                    />
+
                     <div className="projects-list">
                         <div className="one-column-of-three">
-                            <Testimonial 
-                                header={testimonials.nicole.callout}
-                                text={testimonials.nicole.quote}
-                                source={testimonials.nicole.name}
-                                company={testimonials.nicole.company}
-                            />
+                            
                         </div>
 
                         <div className="one-column-of-three">
