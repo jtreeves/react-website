@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom'
 
 import PageOpener from '../sections/PageOpener'
 import SectionHeading from '../sections/SectionHeading'
-import RecentProjects from '../sections/RecentProjects'
+import FavoriteProjects from '../sections/FavoriteProjects'
 import SkillCard from '../elements/SkillCard'
 import TextCard from '../elements/TextCard'
 import ImageCard from '../elements/ImageCard'
@@ -138,7 +138,7 @@ function Project() {
                 </main>
             </div>
 
-            <RecentProjects />
+            <FavoriteProjects />
 
             <hr />
         </div>

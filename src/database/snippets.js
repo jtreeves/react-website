@@ -1,12 +1,4 @@
-const kaleidoscopeFirstSnippet = `const foodSchema = new Schema({
-  inputs: { type: Schema.Types.Mixed, default: {} },
-  date: {
-    type: Date,
-    default: Date.now()
-  },
-}, { minimize: false })`
-
-const kaleidoscopeSecondSnippet = `describe('USERS: POST route for /signup', () => {
+const kaleidoscopeFirstSnippet = `describe('USERS: POST route for /signup', () => {
   it('creates a new user and saves it to the database with a hashed password and a date field', async () => {
     const newUser = await request(app)
       .post('/users/signup')
@@ -25,6 +17,14 @@ const kaleidoscopeSecondSnippet = `describe('USERS: POST route for /signup', () 
     expect(foundUser).to.have.property('date')
   })
 })`
+
+const kaleidoscopeSecondSnippet = `const foodSchema = new Schema({
+    inputs: { type: Schema.Types.Mixed, default: {} },
+    date: {
+      type: Date,
+      default: Date.now()
+    },
+  }, { minimize: false })`
 
 const matchesAndPatchesFirstSnippet = `function checkUserPairs() { 
   let userRow = userPatch.row
