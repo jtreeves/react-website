@@ -1,12 +1,12 @@
 import Introduction from '../sections/Introduction'
-import RecentProjects from '../sections/RecentProjects'
+import FavoriteProjects from '../sections/FavoriteProjects'
 
 function Home() {
     return (
         <div>
             <Introduction />
             <hr />
-            <RecentProjects />
+            <FavoriteProjects />
             <hr />
         </div>
     )

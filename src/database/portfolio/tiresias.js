@@ -2,7 +2,7 @@ import { tiresiasFirstSnippet, tiresiasSecondSnippet } from '../snippets'
 
 const tiresias = {
     name: 'Tiresias',
-    description: 'An app for generating regressions models',
+    description: 'A statistics app',
     summary: 'This app allows users to upload data sets, and then get different regression models that fit those data. It currently provides the following models: linear, quadratic, cubic, hyperbolic, exponential, and logarithmic.',
     inspiration: 'I wanted to create a way for users to see multiple regression models at once. While other sites provide users with a way to view an individual regression model at a time (e.g., a linear model), I wanted this site to provide multiple models at once.',
     features: [

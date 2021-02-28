@@ -2,7 +2,7 @@ import { matchesAndPatchesFirstSnippet, matchesAndPatchesSecondSnippet } from '.
 
 const matchesAndPatches = {
     name: 'Matches and Patches',
-    description: 'A game involving elements of Dominoes and Uno',
+    description: 'A board game',
     summary: `The goal is to 'match' your tiles with existing tiles already on the board, and thus capture different 'patches' (aka, cells) on the board. In essence, it's Uno crossed with Dominoes, but played on a Checkers board.`,
     inspiration: 'I wanted to create my own game from scratch involving features of other games that I loved. I drew inspiration from Dominoes, Uno, Checkers, Chess, and Go.',
     features: [

@@ -2,7 +2,7 @@ import { regressionsFirstSnippet, regressionsSecondSnippet } from '../snippets'
 
 const regressions = {
     name: 'Regressions',
-    description: 'A Python library of algorithms to calculate regression models',
+    description: 'An algorithm library',
     summary: `A collection of Python algorithms for fitting data to different functional models by using matrices. This library is publically available via PyPi's database of libraries. It contains all the code for determining regression equations, as well as the code for evaluating said regressions and presenting their results in a raw format.`,
     inspiration: 'I wanted a single library that people could download to calculate a variety of regression models. When I researched it, I could not find one that contained all the models that I wanted, especially sinusoidal and logistic models.',
     features: [

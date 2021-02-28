@@ -14,7 +14,7 @@ function Portfolio() {
             
             <div class="overcoming-header">
                 <main>
-                    <SectionHeading heading="Past Projects" />
+                    <SectionHeading heading="Recent Projects" />
 
                     <ProjectsList max={6} />
 

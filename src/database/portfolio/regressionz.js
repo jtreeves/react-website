@@ -2,7 +2,7 @@ import { regressionzFirstSnippet, regressionzSecondSnippet } from '../snippets'
 
 const regressionz = {
     name: 'RΣGRΣSSIONZ',
-    description: 'An API to provide access to a Python library for generating regression models',
+    description: 'An intermediary API',
     summary: 'This simple API allows non-Python coders to use a Python library of regression models. It serves as a pared-down yet user-friendly intermediary.',
     inspiration: 'I had a Python library of regression models and a JavaScript app for displaying data models, and I needed a way to link the two together.',
     features: [
