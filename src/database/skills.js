@@ -102,7 +102,8 @@ const skills = {
     ],
 
     'Heroku': [
-        'tiresias', 
+        'tiresias',
+        'regressionz', 
         'kaleidoscope', 
         'readThisNext'
     ],
