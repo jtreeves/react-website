@@ -1222,14 +1222,72 @@ h2, h3 {
     outline: none;
 }
 
+@media screen and (max-width: 1100px) {
+    h2 {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .center {
         width: 100%;
         margin: 0;
     }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .floater-icon i {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .floater-icon i {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .floater-icon i {
+        transform: scale(0.7);
+    }
 }
 
 @media screen and (max-width: 800px) {
+    .floater-icon i {
+        transform: scale(0.6);
+    }
+
+    .floater-icon-nav {
+        width: 50px;
+        height: 50px;
+    }
+
+    .opener-container {
+        padding: 0;
+    }
+
+    .opener-first, .opener-last {
+        margin: 25px -20px 0 -20px;
+        width: 25%;
+    }
+
+    .opener-center {
+        width: 50%;
+    }
+
+    .opener-first {
+        justify-content: flex-start;
+    }
+
+    .opener-last {
+        justify-content: flex-end;
+    }
+
     .contains-columns {
         grid-template-columns: 100%;
     }
