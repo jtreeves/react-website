@@ -2,19 +2,25 @@ import { tiresiasFirstSnippet, tiresiasSecondSnippet } from '../snippets'
 
 const tiresias = {
     name: 'Tiresias',
+
     description: 'A statistics app',
+
     summary: 'This app allows users to upload data sets, and then get different regression models that fit those data. It currently provides the following models: linear, quadratic, cubic, hyperbolic, exponential, and logarithmic.',
+
     inspiration: 'I wanted to create a way for users to see multiple regression models at once. While other sites provide users with a way to view an individual regression model at a time (e.g., a linear model), I wanted this site to provide multiple models at once.',
+
     features: [
         'Protected routes',
         'Form for submitting a data set',
         'Display window for viewing results'
     ],
+
     stretches: [
         'Use an API to render results in a graphical format',
         'Allow users to save results',
         'Allow users to upload information in a CSV file format'
     ],
+
     userStories: [
         'As a potential user, I want to know about its appeal, so I have a reason to sign up',
         'As a potential user, I want to see specific examples of how it can be used by customers, so I know how I can implement it',
@@ -29,6 +35,7 @@ const tiresias = {
         'As a user, I want to be able to add notes to my models and view them at a future date, so I can use the site to keep track of my thoughts on my initial data and the analysis produced by the site',
         'As a user, I want to know that no one else can access my data, so I know it is secure'
     ],
+
     skills: {
         'APIs': 'Used the RΣGRΣSSIONZ API to access the regressions library written in Python for this JavaScript-written app',
         'Authentication': 'Used Passport to authenticate users',
@@ -57,38 +64,49 @@ const tiresias = {
         'Visual Studio Code': 'Used Visual Studio Code as an IDE',
         'Wireframing': 'Designed project beforehand using wireframes'
     },
+
     type: 'app',
+
     host: 'Heroku',
+
     image: '/images/projects/tiresias/main.png',
+
     bigImage: {
         url: '/images/projects/tiresias/image1.png', 
         header: 'Display Results', 
         description: 'Wireframe of how final results could appear to the user'
     },
+
     secondBigImage: {
         url: '/images/projects/tiresias/image2.png', 
         header: 'ERD', 
         description: 'Diagram of the database structure for the app'
     },
+
     thirdBigImage: {
         url: '/images/projects/tiresias/image3.png', 
         header: 'Add Data Set', 
         description: 'Wireframe of how the user could upload data for analysis'
     },
+
     code: {
         snippet: tiresiasFirstSnippet, 
         language: 'javascript',
         header: 'Post Route', 
         description: 'Store a new data set of regression models in the database'
     },
+
     secondCode: {
         snippet: tiresiasSecondSnippet, 
         language: 'javascript',
         header: 'Add New Data Set', 
         description: 'Before clicking the submit button, see a list of input options; after clicking the submit button, see a list of results'
     },
+
     deployedLink: 'https://tiresias-predictions.herokuapp.com',
+
     repositoryLink: 'https://github.com/jtreeves/predictions-frontend',
+    
     date: 'January 2021'
 }
 

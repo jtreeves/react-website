@@ -2,9 +2,13 @@ import { kaleidoscopeFirstSnippet, kaleidoscopeSecondSnippet } from '../snippets
 
 const kaleidoscope = {
     name: 'Kaleidoscope',
+
     description: 'A budget app',
+
     summary: 'Kaleidoscope is an app for seeing how simple life changes can result in dramatic budget opportunities. It was made through the collaborative efforts of Alan Avery, Jackson Reeves, Jeremy Uriz, and Thomas Gilbert.',
+
     inspiration: 'We knew that we wanted to produce a budgeting app, but we were initially unsure of how to differentiate it from other apps in the market. We decided to focus on the big picture. Unlike other apps, which emphasize your day-to-day budget concerns, our app emphasizes how basic changes to your budget plan can result in dramatic changes overall. Instead of having the user only build one budget that they update regularly, we gave the user the option to build out multiple budgets and compare them. We also included the ability to compare your budget to different locations. Some places are more expensive to live than others, as noted by their different price indexes. We wanted to allow the user to specifically see how those price differences would affect their budget. For example, your expenses would go up if you moved from Atlanta to Los Angeles, and our app allows you to see just by how much. In order to provide the user with that functionality, we implemented the Numbeo API.',
+
     features: [
         'Forms for signing up and logging in users',
         'Forms for creating budgets and adding elements to budgets',
@@ -12,6 +16,7 @@ const kaleidoscope = {
         'Views for overview pages for separate budgets and category pages for separate sections within a specific budget',
         'Views for comparing all budgets and comparing how one budget would be affected if the user moved to a different location'
     ],
+
     stretches: [
         'Add more explanatory information to the Compare Locations pages to clarify to the user just what this information means for them and their budgetary concerns',
         'Deploy an alternate version of the app that does not use the Numbeo API',
@@ -22,6 +27,7 @@ const kaleidoscope = {
         'Include more tests and a seeder file for development purposes',
         'Create a separate organization page on GitHub to host the repositories, instead of having them hosted by a specific team member'
     ],
+
     userStories: [
         'As a potential user, I want to sign up for Kaleidoscope, so I can use the service',
         'As a user, I want the ability to log in, so I can securely access my data',
@@ -36,6 +42,7 @@ const kaleidoscope = {
         'As a user, I want to see the difference between my income and expenses, so I can either do nothing or make adjustments based on data',
         'As a user, I want to see how my budget compares to my goal, so I can see where I stand financially in relation to my goal'
     ],
+
     skills: {
         'Agile Development': 'Adapted new features and abandoned old ones to meet evolving demands and produce the best product for the user',
         'APIs': 'Provided a graphical summary to help users compare their budgets across different locations by using the Numbeo API',
@@ -70,38 +77,49 @@ const kaleidoscope = {
         'Visual Studio Code': 'Gained shortcuts for writing code by using Emmet extensions',
         'Wireframing': 'Designed app before building it by using Adobe XD'
     },
+
     type: 'app',
+
     host: 'Heroku',
+
     image: '/images/projects/kaleidoscope/main.png',
+
     bigImage: {
         url: '/images/projects/kaleidoscope/image1.png', 
         header: 'ERD', 
         description: 'We planned for our database to involve different schemas for each budget category that would all feed into a larger collection for each individual budget, which would in turn feed into the user collection'
     },
+
     secondBigImage: {
         url: '/images/projects/kaleidoscope/image2.png', 
         header: 'Wireframe', 
         description: 'We designed our initial mock-ups for the site using Adobe XD'
     },
+
     thirdBigImage: {
         url: '/images/projects/kaleidoscope/image3.png', 
         header: 'Visual Inspiration', 
         description: 'We drew inspiration for our graphs and other visuals from various outlets online'
     },
+
     code: {
         snippet: kaleidoscopeFirstSnippet, 
         language: 'javascript',
         header: 'Tests for New Users', 
         description: 'Tests using Mocha and Chai confirm that new users get stored in the database, receive hashed passwords before being stored, and obtain a new date field upon being added to the database'
     },
+
     secondCode: {
         snippet: kaleidoscopeSecondSnippet, 
         language: 'javascript',
         header: 'Flexible Schemas', 
         description: 'Users can input fields with whatever names they choose thanks to flexible schemas'
     },
+
     deployedLink: 'https://kaleidoscope-budget.herokuapp.com',
+
     repositoryLink: 'https://github.com/jtreeves/budget-frontend',
+    
     date: 'December 2020'
 }
 

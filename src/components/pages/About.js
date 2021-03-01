@@ -1,10 +1,11 @@
 import PageOpener from '../sections/PageOpener'
 import TextCard from '../elements/TextCard'
 import ImageCard from '../elements/ImageCard'
-import FavoritesCard from '../elements/FavoritesCard'
+import ListCard from '../elements/ListCard'
 import QuoteCard from '../elements/QuoteCard'
 import testimonials from '../../database/testimonials'
 import TestimonialsTeaser from '../elements/TestimonialsTeaser'
+import { textCards, listCards, quoteCards, imageCards } from '../../database/about'
 
 function About() {
     return (
@@ -19,31 +20,31 @@ function About() {
                     <div className="projects-list">
                         <div className="one-column-of-three">
                             <ImageCard 
-                                title="Working"
-                                image="/images/headshot.jpg"
+                                title={imageCards.working.title}
+                                image={imageCards.working.image}
                             />
 
                             <TextCard 
-                                header="Background"
-                                body="In college, I was a humanities major, and that taught me how to think and how to express myself coherently. As a journalist, I learned how to deliver on deadline and internalize specific style guidelines. As a marketer, I learned how to track website traffic and how to customize specific content for different platforms and clientele. As a tutor, I learned how to guide others and got experience with challenges that arise in one-on-one situations in which one party knows drastically more than the other. Additionally, I think I can explain anything to a ten-year-old, which I think means that I should be able to explain anything that I understand to anyone. Now, I hope to parlay all of those skills to become a programmer."
+                                header={textCards.background.header}
+                                body={textCards.background.body}
                             />
 
                             <QuoteCard 
-                                header="Movie Quote"
-                                text="The time to make up your mind about people... is never."
-                                source="The Philadelphia Story"
+                                header={quoteCards.movie.header}
+                                text={quoteCards.movie.text}
+                                source={quoteCards.movie.source}
                             />
                         </div>
 
                         <div className="one-column-of-three">
                             <TextCard 
-                                header="Recent"
-                                body="After completing an intensive, four-month program in software engineering from General Assembly, I'm excited to branch out into a new career in web development and programming. I hope to use the skills I've honed from working in math and editing to produce clean, performative code."
+                                header={textCards.recent.header}
+                                body={textCards.recent.body}
                             />
 
                             <ImageCard 
-                                title="Reading List"
-                                image="/images/about/books.jpg"
+                                title={imageCards.books.title}
+                                image={imageCards.books.image}
                             />
 
                             <TestimonialsTeaser 
@@ -53,58 +54,32 @@ function About() {
                                 company={testimonials.nicole.company}
                             />
                             
-                            <FavoritesCard 
-                                header="Favorite Books"
-                                elements={[
-                                    {
-                                        title: "A Visit from the Goon Squad",
-                                        creator: "Jennifer Egan"
-                                    }, 
-                                    {
-                                        title: "A Wild Sheep Chase", 
-                                        creator: "Haruki Murakami"
-                                    }, 
-                                    {
-                                        title: "Endless Night", 
-                                        creator: "Agatha Christie"
-                                    }
-                                ]}
+                            <ListCard 
+                                header={listCards.books.header}
+                                elements={listCards.books.elements}
                             />
                         </div>
 
                         <div className="one-column-of-three">
                             <QuoteCard 
-                                header="Programming Quote"
-                                text="The cheapest, fastest, and most reliable components of a computer system are those that aren't there."
-                                source="Gordon Bell"
+                                header={quoteCards.programming.header}
+                                text={quoteCards.programming.text}
+                                source={quoteCards.programming.source}
                             />
 
                             <TextCard 
-                                header="Passions"
-                                body="In my spare time, I like to solve calculus problems from one of the many math workbooks I keep in case of emergencies. Emergencies like not having enough practice sets to do. Ever since I was a young child, I have been trying to find the perfect outlet for my analytical orientation. In the past, that has included using a spreadsheet to organize my library chronologically. Now, it includes playing with SQL and building algorithms."
+                                header={textCards.passions.header}
+                                body={textCards.passions.body}
                             />
 
-                            <FavoritesCard 
-                                header="Favorite Movies"
-                                elements={[
-                                    {
-                                        title: "The Social Network",
-                                        creator: "David Fincher"
-                                    }, 
-                                    {
-                                        title: "O Brother, Where Art Thou?", 
-                                        creator: "Joel and Ethan Coen"
-                                    }, 
-                                    {
-                                        title: "Indiana Jones and the Raiders of the Lost Ark", 
-                                        creator: "Steven Spielberg"
-                                    }
-                                ]}
+                            <ListCard 
+                                header={listCards.movies.header}
+                                elements={listCards.movies.elements}
                             />
 
                             <ImageCard 
-                                title="Hiking"
-                                image="/images/about/hike.jpg"
+                                title={imageCards.hiking.title}
+                                image={imageCards.hiking.image}
                             />
                         </div>
                     </div>

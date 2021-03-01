@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom'
 
 import PageOpener from '../sections/PageOpener'
 import SkillCard from '../elements/SkillCard'
-import Button from '../elements/Button'
+import ProjectsButton from '../elements/ProjectsButton'
 import skills from '../../database/skills'
 import projects from '../../database/projects'
 import DescriptionLinkCard from '../elements/DescriptionLinkCard'
@@ -48,13 +48,7 @@ function Skill() {
 
                     <div className="blank-space" />
                     
-                    <div className="center">
-                        <Button 
-                            link="/portfolio"
-                            target="_self"
-                            text="View more projects"
-                        />
-                    </div>
+                    <ProjectsButton />
                 </main>
             </div>
 

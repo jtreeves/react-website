@@ -1,6 +1,6 @@
 import List from "./List";
 
-function FavoritesCard(props) {    
+function ListCard(props) {    
     return (
         <div className="favorites-card">
             <div className="favorites-card-header">
@@ -16,4 +16,4 @@ function FavoritesCard(props) {
     )
 }
 
-export default FavoritesCard
+export default ListCard

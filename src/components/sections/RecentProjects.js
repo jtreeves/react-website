@@ -1,6 +1,6 @@
 import SectionHeading from './SectionHeading'
 import ProjectsList from '../elements/ProjectsList'
-import Button from '../elements/Button'
+import ProjectsButton from '../elements/ProjectsButton'
 
 function RecentProjects() {
     return (
@@ -11,13 +11,7 @@ function RecentProjects() {
             
             <div className="blank-space" />
             
-            <div className="center">
-                <Button 
-                    link="/portfolio"
-                    target="_self"
-                    text="View more projects"
-                />
-            </div>
+            <ProjectsButton />
         </main>
     )
 }

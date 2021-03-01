@@ -1,6 +1,6 @@
 import SectionHeading from './SectionHeading'
-import ProjectHighlight from './ProjectHighlight'
-import Button from '../elements/Button'
+import ProjectHighlight from '../elements/ProjectHighlight'
+import ProjectsButton from '../elements/ProjectsButton'
 import projects from '../../database/projects'
 
 function FavoriteProjects() {
@@ -30,13 +30,7 @@ function FavoriteProjects() {
             
             <div className="blank-space" />
             
-            <div className="center">
-                <Button 
-                    link="/portfolio"
-                    target="_self"
-                    text="View more projects"
-                />
-            </div>
+            <ProjectsButton />
         </main>
     )
 }

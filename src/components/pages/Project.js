@@ -8,7 +8,7 @@ import TextCard from '../elements/TextCard'
 import ImageCard from '../elements/ImageCard'
 import LinksCard from '../elements/LinksCard'
 import projects from '../../database/projects'
-import FavoritesCard from '../elements/FavoritesCard'
+import ListCard from '../elements/ListCard'
 import DescriptionImageCard from '../elements/DescriptionImageCard'
 import CodeCard from '../elements/CodeCard'
 
@@ -65,7 +65,7 @@ function Project() {
                                 body={projects[lowercase].inspiration}
                             />
 
-                            <FavoritesCard 
+                            <ListCard 
                                 header="Features"
                                 elements={projects[lowercase].features}
                             />
@@ -104,14 +104,14 @@ function Project() {
                                 description={projects[lowercase].thirdBigImage.description}
                             />
                             
-                            <FavoritesCard 
+                            <ListCard 
                                 header="Future Goals"
                                 elements={projects[lowercase].stretches}
                             />
                         </div>
 
                         <div className="one-column-of-three">
-                            <FavoritesCard 
+                            <ListCard 
                                 header="User Stories"
                                 elements={projects[lowercase].userStories}
                             />
@@ -129,7 +129,7 @@ function Project() {
                                 description={projects[lowercase].secondCode.description}
                             />
 
-                            <FavoritesCard 
+                            <ListCard 
                                 header="Applications of Skills"
                                 elements={Object.values(projects[lowercase].skills)}
                             />

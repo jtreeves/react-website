@@ -1,4 +1,4 @@
-import ProjectHighlight from '../sections/ProjectHighlight'
+import ProjectHighlight from './ProjectHighlight'
 import projects from '../../database/projects'
 
 function ProjectsList(props) { 

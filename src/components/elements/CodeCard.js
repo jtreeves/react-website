@@ -12,7 +12,6 @@ function CodeCard(props) {
                 <SyntaxHighlighter
                     language={props.language}
                     style={atelierCaveLight}
-                    // wrapLines={true}
                     wrapLongLines={true}
                 >
                     {props.snippet}
