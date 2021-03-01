@@ -48,10 +48,10 @@ function About() {
                             />
 
                             <TestimonialsTeaser 
-                                header={testimonials.nicole.callout}
-                                text={testimonials.nicole.quote}
-                                source={testimonials.nicole.name}
-                                company={testimonials.nicole.company}
+                                header={testimonials.simone.callout}
+                                text={testimonials.simone.quote}
+                                source={testimonials.simone.name}
+                                company={testimonials.simone.company}
                             />
                             
                             <ListCard 

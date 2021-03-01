@@ -12,20 +12,23 @@ function Testimonials() {
             
             <div class="overcoming-header">
                 <main>
-                    <Testimonial 
-                        header={testimonials.nicole.callout}
-                        text={testimonials.nicole.quote}
-                        source={testimonials.nicole.name}
-                        company={testimonials.nicole.company}
-                    />
-
-                    <div className="three-columns">
+                    <div className="two-columns">
                         <div className="single-column">
-
+                            <Testimonial 
+                                header={testimonials.nicole.callout}
+                                text={testimonials.nicole.quote}
+                                source={testimonials.nicole.name}
+                                company={testimonials.nicole.company}
+                            />
                         </div>
 
                         <div className="single-column">
-                            
+                            <Testimonial 
+                                header={testimonials.simone.callout}
+                                text={testimonials.simone.quote}
+                                source={testimonials.simone.name}
+                                company={testimonials.simone.company}
+                            />
                         </div>
 
                         <div className="single-column">
