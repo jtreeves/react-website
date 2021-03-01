@@ -43,7 +43,7 @@ function About() {
 
                             <ImageCard 
                                 title="Reading List"
-                                image="/images/books.jpg"
+                                image="/images/about/books.jpg"
                             />
 
                             <TestimonialsTeaser 
@@ -104,7 +104,7 @@ function About() {
 
                             <ImageCard 
                                 title="Hiking"
-                                image="/images/hike.jpg"
+                                image="/images/about/hike.jpg"
                             />
                         </div>
                     </div>
