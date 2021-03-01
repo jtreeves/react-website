@@ -17,8 +17,8 @@ function About() {
             
             <div class="overcoming-header">
                 <main>
-                    <div className="projects-list">
-                        <div className="one-column-of-three">
+                    <div className="three-columns">
+                        <div className="single-column">
                             <ImageCard 
                                 title={imageCards.working.title}
                                 image={imageCards.working.image}
@@ -36,7 +36,7 @@ function About() {
                             />
                         </div>
 
-                        <div className="one-column-of-three">
+                        <div className="single-column">
                             <TextCard 
                                 header={textCards.recent.header}
                                 body={textCards.recent.body}
@@ -60,7 +60,7 @@ function About() {
                             />
                         </div>
 
-                        <div className="one-column-of-three">
+                        <div className="single-column">
                             <QuoteCard 
                                 header={quoteCards.programming.header}
                                 text={quoteCards.programming.text}

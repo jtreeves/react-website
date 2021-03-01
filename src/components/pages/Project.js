@@ -33,8 +33,8 @@ function Project() {
                 <main>
                     <SectionHeading heading="Key Points" />
 
-                    <div className="projects-list">
-                        <div className="one-column-of-three">
+                    <div className="three-columns">
+                        <div className="single-column">
                             <ImageCard 
                                 title="Image"
                                 image={projects[lowercase].image}
@@ -54,7 +54,7 @@ function Project() {
                             />
                         </div>
 
-                        <div className="one-column-of-three">
+                        <div className="single-column">
                             <TextCard 
                                 header="About Project"
                                 body={projects[lowercase].summary}
@@ -71,7 +71,7 @@ function Project() {
                             />
                         </div>
 
-                        <div className="one-column-of-three">
+                        <div className="single-column">
                             <SkillCard 
                                 description="Skills Used"
                                 category={Object.keys(projects[lowercase].skills)}
@@ -84,7 +84,7 @@ function Project() {
                     <SectionHeading heading="Further Information" />
 
                     <div className="two-columns">
-                        <div className="one-column-of-three">
+                        <div className="single-column">
                             <DescriptionImageCard 
                                 header={projects[lowercase].bigImage.header}
                                 url={projects[lowercase].bigImage.url}
@@ -110,7 +110,7 @@ function Project() {
                             />
                         </div>
 
-                        <div className="one-column-of-three">
+                        <div className="single-column">
                             <ListCard 
                                 header="User Stories"
                                 elements={projects[lowercase].userStories}

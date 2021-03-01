@@ -24,8 +24,7 @@ function Resume() {
                         <div>
                             <SectionHeading heading="Skills" />
 
-                            <div className="one-column-of-three">
-
+                            <div className="single-column">
                                 <SkillCard 
                                     description="Languages"
                                     category={types.languages}
@@ -55,7 +54,13 @@ function Resume() {
                                     description="Methodologies"
                                     category={types.methodologies}
                                 />
+                            </div>
 
+                            <div className="blank-space" />
+
+                            <SectionHeading heading="Testimonial" />
+
+                            <div className="single-column">
                                 <TestimonialsTeaser 
                                     header={testimonials.nicole.callout}
                                     text={testimonials.nicole.quote}
@@ -68,7 +73,7 @@ function Resume() {
                         <div>
                             <SectionHeading heading="Education" />
 
-                            <div className="one-column-of-three">
+                            <div className="single-column">
                                 <SchoolCard 
                                     school={education.certificate.school}
                                     degree={education.certificate.degree}
@@ -101,7 +106,7 @@ function Resume() {
 
                             <SectionHeading heading="Experience" />
 
-                            <div className="one-column-of-three">
+                            <div className="single-column">
                                 <CompanyCard 
                                     company={experience.hyperionDirector.company}
                                     position={experience.hyperionDirector.position}

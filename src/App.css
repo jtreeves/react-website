@@ -100,27 +100,6 @@ h1:hover {
     text-align: center;
 }
 
-.circle-nav {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid black;
-    background: #000080;
-    border-radius: 50%;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.icon-nav, .text-nav {
-    position: absolute;
-}
-
-.icon-nav {
-    color: #007ba7;
-}
-
 .list-full {
     padding-left: 0;
     margin: 0;
@@ -252,48 +231,29 @@ h2 {
     margin: 0;
 }
 
-.three-columns {
+.introduction-columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
     width: 100%;
 }
 
-.first-column {
+.introduction-columns-first {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     margin-top: 25%;
 }
 
-.center-column {
+.introduction-columns-center {
     text-align: center;
 }
 
-.last-column {
+.introduction-columns-last {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 25%;
-}
-
-figure {
-    display: inline;
-    position: relative;
-}
-
-caption {
-    display: none;
-}
-
-figure:hover caption {
-    display: inline;
-    position: absolute;
-    left: -10px;
-    bottom: 10px;
-    border: 1px solid gray;
-    color: black;
-    background: gray;
 }
 
 main {
@@ -303,11 +263,6 @@ main {
 
 .overcoming-header {
     padding-top: 200px;
-}
-
-.recent-projects {
-    padding: 25px;
-    margin: 0 50px;
 }
 
 .section-heading {
@@ -322,34 +277,7 @@ main {
     text-align: center;
 }
 
-.recent-projects-intro {
-    display: grid;
-    grid-template-columns: 36% 24% 36%;
-    column-gap: 2%;
-    width: 100%;
-}
-
-.recent-projects-intro-left {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.recent-projects-intro-center {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    text-transform: uppercase;
-    color: gray;
-    font-size: 20px;
-    text-align: center;
-}
-
-.recent-projects-intro-right {
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-
-.projects-list {
+.three-columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
@@ -357,11 +285,10 @@ main {
     width: 100%;
 }
 
-.one-column-of-three {
+.single-column {
     display: grid;
     row-gap: 20px;
     align-content: start;
-    /* width: 100%; */
 }
 
 .rows {
@@ -376,13 +303,6 @@ main {
     grid-template-columns: 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
-    width: 100%;
-}
-
-.three-even-columns {
-    display: grid;
-    grid-template-columns: 32% 32% 32%;
-    column-gap: 2%;
     width: 100%;
 }
 
@@ -404,63 +324,8 @@ main {
     margin-bottom: 10px;
 }
 
-.square-highlight {
-    width: 100%;
-    position: relative;
-    background: white;
-    border: 10px solid #000080;
-    border-radius: 5px;
-}
-
-.square-highlight a, .square-highlight:hover {
-    color: black;
-    text-decoration: none;
-}
-
-.square-highlight:hover {
-    border: 10px solid #007ba7;
-}
-
-.square-highlight:hover .square-main {
-    opacity: 0.5;
-}
-
-.square-highlight:hover .square-overlay {
-    opacity: 1;
-}
-
-.square-overlay {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    text-transform: uppercase;
-    font-size: 40px;
-}
-
-.square-padding {
-    padding: 10px;
-}
-
-.square-image {
-    transform: scale(1.3);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .blank-space {
     height: 20px;
-}
-
-.project-image-callout {
-    margin-top: 20px;
 }
 
 .project-overlay {
@@ -660,7 +525,7 @@ main {
     object-fit: cover;
 }
 
-.favorites-card {
+.list-card {
     width: 100%;
     height: 100%;
     display: flex;
@@ -670,11 +535,11 @@ main {
     border-radius: 3px;
 }
 
-.favorites-card:hover {
+.list-card:hover {
     border: 3px solid #007ba7;
 }
 
-.favorites-card-header {
+.list-card-header {
     font-weight: bold;
     font-size: 20px;
     padding: 5px;
@@ -685,11 +550,11 @@ main {
     justify-content: center;
 }
 
-.favorites-card:hover .favorites-card-header {
+.list-card:hover .list-card-header {
     background: #007ba7;
 }
 
-.favorites-card-list {
+.list-card-elements {
     padding: 20px;
 }
 
@@ -1174,70 +1039,9 @@ main {
     text-decoration: none;
 }
 
-.nav-links {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-links:hover {
-    color: white;
-    text-decoration: none;
-    font-size: 50px;
-}
-
 .links:hover {
     text-decoration: none;
     color: black;
-}
-
-.overlapping-images {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-}
-
-.top, .bottom, .link-text {
-    position: absolute;
-}
-
-.top {
-    margin-bottom: 10px;
-    margin-right: 10px;
-    color: #000080;
-    z-index: 1;
-}
-
-.bottom {
-    margin-top: 10px;
-    margin-left: 10px;
-    color: #007ba7;
-}
-
-.link-text {
-    color: black;
-    text-shadow:
-		-1px -1px 0 white,
-		1px -1px 0 white,
-		-1px 1px 0 white,
-		1px 1px 0 white;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    text-transform: uppercase;
-    font-size: 40px;
-    z-index: 2;
-}
-
-.shift-links {
-    color: black;
-    text-decoration: none;
-}
-
-.shift-links:hover {
-    color: black;
-    text-decoration: none;
-    font-size: 50px;
 }
 
 .project-highlight:hover .project-overlay {
@@ -1258,59 +1062,6 @@ main {
     grid-template-columns: 2fr 3fr;
     column-gap: 20px;
     width: 100%;
-}
-
-.contains-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    width: 100%;
-}
-
-.project {
-    width: 100%;
-    text-align: center;
-}
-
-img.project {
-    width:  600px;
-    height: 400px;
-    object-fit: cover;
-}
-
-.navigation {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 95px;
-    width: 100%;
-    height: 25px;
-    line-height: 25px;
-    display: flex;
-    justify-content: space-around;
-    background: black;
-    color: white;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.navigation li {
-    display: inline;
-}
-
-.navigation-links {
-    text-decoration: none;
-    color: white;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    text-transform: lowercase;
-}
-
-.navigation-links:hover {
-    text-decoration: none;
-    color: white;
-    font-style: italic;
 }
 
 h1, h2, h3, .project-title {
@@ -1403,47 +1154,9 @@ h2, h3 {
     outline: none;
 }
 
-.card-lock {
-    position: static;
-}
-
-.skill {
-    margin: 10px 10px 0 0;
-}
-
-.card-connect:first-child {
-    margin-bottom: 20px;
-}
-
-.card-connect:last-child {
-    margin-top: 20px;
-}
-
-.card-connect:not(:first-child,:last-child) {
-    margin: 20px 0;
-}
-
-.card-footer-connect {
-    font-size: 14px;
-    margin: 8px 0;
-}
-
 .center {
     width: 25%;
     margin: 0 37.5%;
-}
-
-.social {
-    width: 50%;
-    margin: 0 25%;
-}
-
-.other-button {
-    margin-left: 10px;
-}
-
-.top-margin {
-    margin-top: 20px;
 }
 
 .square {
@@ -1507,25 +1220,6 @@ h2, h3 {
 
 .mail-input-inner:focus {
     outline: none;
-}
-
-.about-card {
-    background: white;
-    padding: 20px;
-    width: 100%;
-    border: 3px solid #000080;
-    border-radius: 3px;
-}
-
-.about-card:hover {
-    border: 3px solid #007ba7;
-}
-
-.about-image {
-    float: left;
-    width: 50%;
-    padding-right: 20px;
-    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1000px) {

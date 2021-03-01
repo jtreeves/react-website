@@ -48,7 +48,7 @@ function TumblrMemes() {
         <main>
             <SectionHeading heading="Recent Memes from Tumblr" />
             
-            <div className="projects-list">
+            <div className="three-columns">
                 {photos}
             </div>
 

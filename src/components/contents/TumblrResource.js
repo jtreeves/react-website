@@ -86,7 +86,7 @@ function TumblrResources() {
         <main>
             <SectionHeading heading="Recent Resources from Tumblr" />
             
-            <div className="projects-list">
+            <div className="three-columns">
                 {resources}
             </div>
 

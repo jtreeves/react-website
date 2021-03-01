@@ -12,8 +12,8 @@ function AllSkills() {
             
             <div class="overcoming-header">
                 <main>
-                    <div className="projects-list">
-                        <div className="one-column-of-three">
+                    <div className="three-columns">
+                        <div className="single-column">
                             <SkillCard 
                                 description="Languages"
                                 category={types.languages}
@@ -25,14 +25,14 @@ function AllSkills() {
                             />
                         </div>
 
-                        <div className="one-column-of-three">
+                        <div className="single-column">
                             <SkillCard 
                                 description="Methodologies"
                                 category={types.methodologies}
                             />
                         </div>
 
-                        <div className="one-column-of-three">
+                        <div className="single-column">
                             <SkillCard 
                                 description="Frameworks"
                                 category={types.frameworks}

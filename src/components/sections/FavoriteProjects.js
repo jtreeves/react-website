@@ -8,7 +8,7 @@ function FavoriteProjects() {
         <main>
             <SectionHeading heading="Favorite Projects" />
 
-            <div className="projects-list">
+            <div className="three-columns">
                 <ProjectHighlight 
                     image={projects.kaleidoscope.image}
                     name={projects.kaleidoscope.name}

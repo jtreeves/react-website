@@ -97,7 +97,7 @@ function Dev() {
         <main>
             <SectionHeading heading="Recent Codings from DEV" />
 
-            <div className="projects-list">
+            <div className="three-columns">
                 {posts}
             </div>
 

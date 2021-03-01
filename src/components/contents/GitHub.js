@@ -93,7 +93,7 @@ function GitHub() {
         <main>
             <SectionHeading heading="Recent Commits from GitHub" />
             
-            <div className="projects-list">
+            <div className="three-columns">
                 {commits}
             </div>
 

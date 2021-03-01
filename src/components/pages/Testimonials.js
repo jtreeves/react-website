@@ -19,19 +19,18 @@ function Testimonials() {
                         company={testimonials.nicole.company}
                     />
 
-                    <div className="projects-list">
-                        <div className="one-column-of-three">
+                    <div className="three-columns">
+                        <div className="single-column">
+
+                        </div>
+
+                        <div className="single-column">
                             
                         </div>
 
-                        <div className="one-column-of-three">
+                        <div className="single-column">
                             
                         </div>
-
-                        <div className="one-column-of-three">
-                            
-                        </div>
-                        
                     </div>
                 </main>
             </div>

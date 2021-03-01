@@ -2,12 +2,12 @@ import List from "./List";
 
 function ListCard(props) {    
     return (
-        <div className="favorites-card">
-            <div className="favorites-card-header">
+        <div className="list-card">
+            <div className="list-card-header">
                 {props.header}
             </div>
 
-            <div className="favorites-card-list">
+            <div className="list-card-elements">
                 <List 
                     items={props.elements}
                 />

@@ -11,8 +11,8 @@ function Introduction() {
                 className="painting"
             />
 
-            <div className="three-columns">
-                <div className="first-column">
+            <div className="introduction-columns">
+                <div className="introduction-columns-first">
                     <div className="floater-icon-nav">
                         <Link 
                             to="/skills"
@@ -62,7 +62,7 @@ function Introduction() {
                     </div>
                 </div>
 
-                <div className="center-column">
+                <div className="introduction-columns-center">
                     <img 
                         src="/images/headshot.jpg" 
                         alt="Jackson Reeves" 
@@ -76,7 +76,7 @@ function Introduction() {
                     </p>
                 </div>
 
-                <div className="last-column">
+                <div className="introduction-columns-last">
                     <div className="floater-icon-nav">
                         <Link 
                             to="/posts"
