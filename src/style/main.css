@@ -370,12 +370,6 @@ h3 {
     }
 }
 
-/* @media screen and (max-width: 750px) {
-    .three-columns, .two-columns {
-        grid-template-columns: 100%;
-    }
-} */
-
 @media screen and (max-width: 600px) {
     main {
         margin: 0 25px;

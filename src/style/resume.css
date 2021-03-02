@@ -119,3 +119,51 @@
     column-gap: 20px;
     width: 100%;
 }
+
+#resume-limited, #resume-single {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    #resume-limited {
+        display: grid;
+    }
+
+    #resume-full {
+        display: none;
+    }
+
+    .company-card-footer {
+        flex-direction: column;
+    }
+
+    .company-card-button {
+        width: 100%;
+    }
+
+    .company-card-date {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #resume-single {
+        display: grid;
+    }
+
+    #resume-limited {
+        display: none;
+    }
+
+    .company-card-footer {
+        flex-direction: row;
+    }
+
+    .company-card-button {
+        width: 25%;
+    }
+
+    .company-card-date {
+        margin-top: 0;
+    }
+}
