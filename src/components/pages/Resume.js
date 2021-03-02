@@ -10,6 +10,9 @@ import experience from '../../database/experience'
 import testimonials from '../../database/testimonials'
 import TestimonialsTeaser from '../elements/TestimonialsTeaser'
 
+import '../../style/skills.css'
+import '../../style/resume.css'
+
 function Resume() {
     return (
         <div>

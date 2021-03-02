@@ -1,0 +1,45 @@
+.mail-card {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    border: 3px solid #000080;
+    border-radius: 3px;
+}
+
+.mail-card:hover {
+    border: 3px solid #007ba7;
+}
+
+.mail-input-sections {
+    display: grid;
+    width: 100%;
+    row-gap: 10px;
+}
+
+.mail-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail-label {
+    padding-top: 5px;
+}
+
+.mail-input {
+    width: 80%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.mail-input-inner {
+    width: 100%;
+    border: none;
+    margin-left: 5px;
+}
+
+.mail-input-inner:focus {
+    outline: none;
+}

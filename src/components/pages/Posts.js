@@ -7,6 +7,8 @@ import YouTube from '../contents/YouTube'
 import TumblrResources from '../contents/TumblrResource'
 import TumblrMemes from '../contents/TumblrMeme'
 
+import '../../style/posts.css'
+
 function Posts() {
     return (
         <div>

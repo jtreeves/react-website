@@ -2,6 +2,8 @@ import PageOpener from '../sections/PageOpener'
 import SkillCard from '../elements/SkillCard'
 import types from '../../database/types'
 
+import '../../style/skills.css'
+
 function AllSkills() {
     return (
         <div>

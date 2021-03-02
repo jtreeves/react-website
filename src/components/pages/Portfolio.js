@@ -4,6 +4,8 @@ import ProjectsList from '../elements/ProjectsList'
 import CurrentProject from '../sections/CurrentProject'
 import Button from '../elements/Button'
 
+import '../../style/projects.css'
+
 function Portfolio() {
     return (
         <div>

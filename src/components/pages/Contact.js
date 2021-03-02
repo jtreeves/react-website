@@ -1,6 +1,8 @@
 import PageOpener from '../sections/PageOpener'
 import Mail from '../contents/Mail'
 
+import '../../style/contact.css'
+
 function Contact() {
     return (
         <div>

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import scroll from '../../utilities/scroll'
 import SocialIcons from './SocialIcons'
 
+import '../../style/header.css'
+
 function Header() {
     return (
         <header>

@@ -3,6 +3,8 @@ import ProjectHighlight from '../elements/ProjectHighlight'
 import ProjectsButton from '../elements/ProjectsButton'
 import projects from '../../database/projects'
 
+import '../../style/projects.css'
+
 function FavoriteProjects() {
     return (
         <main>

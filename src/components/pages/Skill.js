@@ -7,6 +7,8 @@ import skills from '../../database/skills'
 import projects from '../../database/projects'
 import DescriptionLinkCard from '../elements/DescriptionLinkCard'
 
+import '../../style/skills.css'
+
 function Skill() {
     const location = useLocation()
     const specificSkill = location.state.skill

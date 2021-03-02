@@ -12,6 +12,8 @@ import ListCard from '../elements/ListCard'
 import DescriptionImageCard from '../elements/DescriptionImageCard'
 import CodeCard from '../elements/CodeCard'
 
+import '../../style/projects.css'
+
 function Project() {
     const location = useLocation()
     const specificProject = location.state.project

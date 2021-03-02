@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 
 import scroll from '../../utilities/scroll'
 
+import '../../style/introduction.css'
+
 function Introduction() {
     return (
         <div className="introduction">

@@ -13,7 +13,7 @@ import Contact from './components/pages/Contact'
 import Footer from './components/sections/Footer'
 import Testimonials from './components/pages/Testimonials'
 
-import './App.css'
+import './style/main.css'
 
 function App() {
     return (

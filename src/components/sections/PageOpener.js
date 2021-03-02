@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 
 import scroll from '../../utilities/scroll'
 
+import '../../style/navigation.css'
+
 function PageOpener(props) {
     return (
         <div className="opener-container">

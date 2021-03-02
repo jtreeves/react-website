@@ -1,0 +1,121 @@
+.school-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 3px solid #000080;
+    border-radius: 3px;
+}
+
+.school-card:hover {
+    border: 3px solid #007ba7;
+}
+
+.school-card-header {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    background: #000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.school-card:hover .school-card-header {
+    background: #007ba7;
+}
+
+.school-card-main {
+    padding: 20px;
+}
+
+.school-card-degree {
+    font-size: 20px;
+}
+
+.school-card-specialization {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.school-card-body {
+    padding-bottom: 20px;
+}
+
+.school-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.school-card-button {
+    width: 25%;
+}
+
+.school-card-date {
+    color: gray;
+    font-size: 15px;
+}
+
+.company-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 3px solid #000080;
+    border-radius: 3px;
+}
+
+.company-card:hover {
+    border: 3px solid #007ba7;
+}
+
+.company-card-header {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    background: #000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-card:hover .company-card-header {
+    background: #007ba7;
+}
+
+.company-card-main {
+    padding: 20px;
+}
+
+.company-card-position {
+    font-size: 20px;
+}
+
+.company-card-body {
+    padding-bottom: 20px;
+}
+
+.company-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-card-button {
+    width: 25%;
+}
+
+.company-card-date {
+    color: gray;
+    font-size: 15px;
+}
+
+.uneven-columns {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 20px;
+    width: 100%;
+}
