@@ -135,6 +135,12 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+@media screen and (max-width: 900px) {
+    .project-title {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .projects-list {
         grid-template-columns: 1fr 1fr;
@@ -144,5 +150,9 @@
 @media screen and (max-width: 600px) {
     .projects-list {
         grid-template-columns: 1fr;
+    }
+
+    .project-title {
+        font-size: 50px;
     }
 }
