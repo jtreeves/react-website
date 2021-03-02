@@ -76,10 +76,11 @@ h1 {
 
 @media screen and (max-width: 750px) {
     .social-icons {
-        display: none;
+        transform: scale(0.75);
     }
     
     header {
+        flex-direction: column;
         justify-content: center;
     }
 }
