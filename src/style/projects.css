@@ -197,4 +197,9 @@
     #project-two {
         display: none;
     }
+
+    #portfolio-promotion {
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
 }

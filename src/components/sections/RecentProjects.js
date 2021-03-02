@@ -7,7 +7,10 @@ function RecentProjects() {
         <main>
             <SectionHeading heading="Recent Projects" />
 
-            <ProjectsList max={3} />
+            <ProjectsList 
+                max={3} 
+                id="portfolio-promotion"
+            />
             
             <div className="blank-space" />
             
