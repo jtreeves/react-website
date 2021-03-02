@@ -135,15 +135,33 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .project-title {
         font-size: 30px;
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
     .projects-list {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .project-title {
+        font-size: 40px;
+    }
+
+    .current-project-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .project-title {
+        font-size: 30px;
+    }
+
+    .current-project-image {
+        display: none;
     }
 }
 
@@ -154,5 +172,29 @@
 
     .project-title {
         font-size: 50px;
+    }
+}
+
+#project-two, #project-one, #project-more-one {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #project-two, #project-more-one {
+        display: grid;
+    }
+
+    #project-three, #project-more-two {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #project-one {
+        display: grid;
+    }
+
+    #project-two {
+        display: none;
     }
 }

@@ -17,12 +17,98 @@ import '../../style/projects.css'
 function Project() {
     const location = useLocation()
     const specificProject = location.state.project
+
     let lowercase = ''
     for (let project in projects) {
         if (projects[project].name === specificProject) {
             lowercase = project
         }
     }
+    
+    const imageCard = <ImageCard 
+        title="Image"
+        image={projects[lowercase].image}
+    />
+
+    const aboutCard = <TextCard 
+        header="About Project"
+        body={projects[lowercase].summary}
+    />
+
+    const inspirationCard = <TextCard 
+        header="Inspiration"
+        body={projects[lowercase].inspiration}
+    />
+
+    const featuresCard = <ListCard 
+        header="Features"
+        elements={projects[lowercase].features}
+    />
+
+    const skillsCard = <SkillCard 
+        description="Skills Used"
+        category={Object.keys(projects[lowercase].skills)}
+    />
+
+    const skillsApplicationsCard = <ListCard 
+        header="Applications of Skills"
+        elements={Object.values(projects[lowercase].skills)}
+    />
+    
+    const linksCard = <LinksCard 
+        header="Links"
+        type={projects[lowercase].type}
+        host={projects[lowercase].host}
+        deployedLink={projects[lowercase].deployedLink} 
+        repositoryLink={projects[lowercase].repositoryLink}
+    />
+
+    const createdCard = <TextCard 
+        header="Created"
+        body={projects[lowercase].date}
+    />
+
+    const userStoriesCard = <ListCard 
+        header="User Stories"
+        elements={projects[lowercase].userStories}
+    />
+
+    const firstImageCard = <DescriptionImageCard 
+        header={projects[lowercase].bigImage.header}
+        url={projects[lowercase].bigImage.url}
+        description={projects[lowercase].bigImage.description}
+    />
+
+    const secondImageCard = <DescriptionImageCard 
+        header={projects[lowercase].secondBigImage.header}
+        url={projects[lowercase].secondBigImage.url}
+        description={projects[lowercase].secondBigImage.description}
+    />
+
+    const thirdImageCard = <DescriptionImageCard 
+        header={projects[lowercase].thirdBigImage.header}
+        url={projects[lowercase].thirdBigImage.url}
+        description={projects[lowercase].thirdBigImage.description}
+    />
+
+    const firstCodeCard = <CodeCard 
+        header={projects[lowercase].code.header}
+        snippet={projects[lowercase].code.snippet}
+        language={projects[lowercase].code.language}
+        description={projects[lowercase].code.description}
+    />
+
+    const secondCodeCard = <CodeCard 
+        header={projects[lowercase].secondCode.header}
+        snippet={projects[lowercase].secondCode.snippet}
+        language={projects[lowercase].secondCode.language}
+        description={projects[lowercase].secondCode.description}
+    />
+
+    const futureCard = <ListCard 
+        header="Future Goals"
+        elements={projects[lowercase].stretches}
+    />
 
     return (
         <div>
@@ -33,109 +119,99 @@ function Project() {
             
             <div class="overcoming-header">
                 <main>
-                    <SectionHeading heading="Key Points" />
+                    <SectionHeading 
+                        heading="Key Points" 
+                    />
 
-                    <div className="three-columns">
+                    <div 
+                        className="three-columns" 
+                        id="project-three"
+                    >
                         <div className="single-column">
-                            <ImageCard 
-                                title="Image"
-                                image={projects[lowercase].image}
-                            />
-                            
-                            <LinksCard 
-                                header="Links"
-                                type={projects[lowercase].type}
-                                host={projects[lowercase].host}
-                                deployedLink={projects[lowercase].deployedLink} 
-                                repositoryLink={projects[lowercase].repositoryLink}
-                            />
-
-                            <TextCard 
-                                header="Created"
-                                body={projects[lowercase].date}
-                            />
+                            {imageCard}
+                            {linksCard}
+                            {createdCard} 
                         </div>
 
                         <div className="single-column">
-                            <TextCard 
-                                header="About Project"
-                                body={projects[lowercase].summary}
-                            />
-                            
-                            <TextCard 
-                                header="Inspiration"
-                                body={projects[lowercase].inspiration}
-                            />
-
-                            <ListCard 
-                                header="Features"
-                                elements={projects[lowercase].features}
-                            />
+                            {aboutCard}
+                            {inspirationCard}
+                            {featuresCard}
                         </div>
 
                         <div className="single-column">
-                            <SkillCard 
-                                description="Skills Used"
-                                category={Object.keys(projects[lowercase].skills)}
-                            />
+                            {skillsCard}
                         </div>
+                    </div>
+                    
+                    <div 
+                        className="two-columns" 
+                        id="project-two"
+                    >
+                        <div className="single-column">
+                            {imageCard}
+                            {linksCard}
+                            {inspirationCard}
+                            {featuresCard}
+                            {createdCard} 
+                        </div>
+
+                        <div className="single-column">
+                            {aboutCard}
+                            {skillsCard}
+                        </div>
+                    </div>
+                    
+                    <div 
+                        className="single-column" 
+                        id="project-one"
+                    >
+                        {aboutCard}
+                        {imageCard}
+                        {linksCard}
+                        {inspirationCard}
+                        {skillsCard}
+                        {featuresCard}
+                        {createdCard} 
                     </div>
                 </main>
 
                 <main>
-                    <SectionHeading heading="Further Information" />
+                    <SectionHeading 
+                        heading="Further Information" 
+                    />
 
-                    <div className="two-columns">
+                    <div 
+                        className="two-columns"
+                        id="project-more-two"
+                    >
                         <div className="single-column">
-                            <DescriptionImageCard 
-                                header={projects[lowercase].bigImage.header}
-                                url={projects[lowercase].bigImage.url}
-                                description={projects[lowercase].bigImage.description}
-                            />
-
-                            <CodeCard 
-                                header={projects[lowercase].code.header}
-                                snippet={projects[lowercase].code.snippet}
-                                language={projects[lowercase].code.language}
-                                description={projects[lowercase].code.description}
-                            />
-
-                            <DescriptionImageCard 
-                                header={projects[lowercase].thirdBigImage.header}
-                                url={projects[lowercase].thirdBigImage.url}
-                                description={projects[lowercase].thirdBigImage.description}
-                            />
-                            
-                            <ListCard 
-                                header="Future Goals"
-                                elements={projects[lowercase].stretches}
-                            />
+                            {firstImageCard}
+                            {firstCodeCard}
+                            {thirdImageCard}
+                            {futureCard}
                         </div>
 
                         <div className="single-column">
-                            <ListCard 
-                                header="User Stories"
-                                elements={projects[lowercase].userStories}
-                            />
-
-                            <DescriptionImageCard 
-                                header={projects[lowercase].secondBigImage.header}
-                                url={projects[lowercase].secondBigImage.url}
-                                description={projects[lowercase].secondBigImage.description}
-                            />
-
-                            <CodeCard 
-                                header={projects[lowercase].secondCode.header}
-                                snippet={projects[lowercase].secondCode.snippet}
-                                language={projects[lowercase].secondCode.language}
-                                description={projects[lowercase].secondCode.description}
-                            />
-
-                            <ListCard 
-                                header="Applications of Skills"
-                                elements={Object.values(projects[lowercase].skills)}
-                            />
+                            {userStoriesCard}
+                            {secondImageCard}
+                            {secondCodeCard}
+                            {skillsApplicationsCard}
                         </div>
+                    </div>
+                    
+                    <div 
+                        className="single-column"
+                        id="project-more-one"
+                    >
+                        {userStoriesCard}
+                        {firstImageCard}
+                        {firstCodeCard}
+                        {secondImageCard}
+                        {secondCodeCard}
+                        {futureCard}
+                        {thirdImageCard}
+                        {skillsApplicationsCard}
                     </div>
                 </main>
             </div>
