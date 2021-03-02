@@ -1,4 +1,11 @@
 const testimonials = {
+    jeremy: {
+        name: "Jeremy Uriz",
+        company: "General Assembly",
+        callout: "Synthesizes Answers",
+        quote: "Jackson asks questions. Just as important, he synthesizes answers quickly to compound his knowledge. These skills are crucial for a software engineer. Jackson and I were half of the “Kaleidoscope” team, a MERN app created during our time together in General Assembly’s Software Engineering Immersion course. Jackson was the Git master, built out the backend API and database, and created test cases to ensure the integrity of the application. The quality of the Kaleidoscope app is a testament to the work Jackson produces."
+    },
+    
     nicole: {
         name: "Nicole Hamilton",
         company: "General Assembly",
