@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import YouTubeCard from '../elements/YouTubeCard'
+import YouTubeCard from '../cards/YouTubeCard'
 import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
 

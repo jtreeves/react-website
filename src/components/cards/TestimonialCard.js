@@ -1,4 +1,4 @@
-function Testimonial(props) {    
+function TestimonialCard(props) {    
     return (
         <div className="quote-card">
             <div className="quote-card-header">
@@ -22,4 +22,4 @@ function Testimonial(props) {
     )
 }
 
-export default Testimonial
+export default TestimonialCard

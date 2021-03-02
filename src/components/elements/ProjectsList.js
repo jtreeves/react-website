@@ -1,4 +1,4 @@
-import ProjectHighlight from './ProjectHighlight'
+import ProjectHighlightCard from '../cards/ProjectHighlightCard'
 import projects from '../../database/projects'
 
 function ProjectsList(props) { 
@@ -11,7 +11,7 @@ function ProjectsList(props) {
     const projectSet = projectArray.map((project, index) => {
         if (index < props.max) {
             return (
-                <ProjectHighlight 
+                <ProjectHighlightCard 
                     image={projects[project].image}
                     name={projects[project].name}
                     description={projects[project].description}

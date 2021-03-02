@@ -1,5 +1,5 @@
 import PageOpener from '../sections/PageOpener'
-import SkillCard from '../elements/SkillCard'
+import SkillCard from '../cards/SkillCard'
 import types from '../../database/types'
 
 import '../../style/skills.css'

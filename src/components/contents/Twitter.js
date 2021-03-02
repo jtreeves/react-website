@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import TwitterCard from '../elements/TwitterCard'
+import TwitterCard from '../cards/TwitterCard'
 import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
 import convertTime from '../../utilities/time'

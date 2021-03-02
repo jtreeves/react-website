@@ -1,5 +1,5 @@
 import SectionHeading from './SectionHeading'
-import ProjectHighlight from '../elements/ProjectHighlight'
+import ProjectHighlightCard from '../cards/ProjectHighlightCard'
 import ProjectsButton from '../elements/ProjectsButton'
 import projects from '../../database/projects'
 
@@ -14,19 +14,19 @@ function FavoriteProjects() {
                 className="three-columns"
                 id="portfolio-promotion"
             >
-                <ProjectHighlight 
+                <ProjectHighlightCard 
                     image={projects.kaleidoscope.image}
                     name={projects.kaleidoscope.name}
                     description={projects.kaleidoscope.description}
                 />
 
-                <ProjectHighlight 
+                <ProjectHighlightCard 
                     image={projects.regressions.image}
                     name={projects.regressions.name}
                     description={projects.regressions.description}
                 />
 
-                <ProjectHighlight 
+                <ProjectHighlightCard 
                     image={projects.readThisNext.image}
                     name={projects.readThisNext.name}
                     description={projects.readThisNext.description}

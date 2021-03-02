@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import DevCard from '../elements/DevCard'
+import DevCard from '../cards/DevCard'
 import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
 import convertTime from '../../utilities/time'

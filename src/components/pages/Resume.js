@@ -1,14 +1,14 @@
 import PageOpener from '../sections/PageOpener'
 import SectionHeading from '../sections/SectionHeading'
-import SkillCard from '../elements/SkillCard'
-import SchoolCard from '../elements/SchoolCard'
-import CompanyCard from '../elements/CompanyCard'
+import SkillCard from '../cards/SkillCard'
+import SchoolCard from '../cards/SchoolCard'
+import CompanyCard from '../cards/CompanyCard'
 import Button from '../elements/Button'
 import types from '../../database/types'
 import education from '../../database/education'
 import experience from '../../database/experience'
 import testimonials from '../../database/testimonials'
-import TestimonialsTeaser from '../elements/TestimonialsTeaser'
+import TestimonialsTeaserCard from '../cards/TestimonialsTeaserCard'
 
 import '../../style/skills.css'
 import '../../style/resume.css'
@@ -119,7 +119,7 @@ function Resume() {
         link={experience.magazineEditor.link}
     />
 
-    const testimonial = <TestimonialsTeaser 
+    const testimonial = <TestimonialsTeaserCard 
         header={testimonials.nicole.callout}
         text={testimonials.nicole.quote}
         source={testimonials.nicole.name}

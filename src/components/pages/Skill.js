@@ -1,11 +1,11 @@
 import { useLocation } from 'react-router-dom'
 
 import PageOpener from '../sections/PageOpener'
-import SkillCard from '../elements/SkillCard'
+import SkillCard from '../cards/SkillCard'
 import ProjectsButton from '../elements/ProjectsButton'
 import skills from '../../database/skills'
 import projects from '../../database/projects'
-import DescriptionLinkCard from '../elements/DescriptionLinkCard'
+import DescriptionLinkCard from '../cards/DescriptionLinkCard'
 
 import '../../style/skills.css'
 

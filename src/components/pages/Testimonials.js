@@ -1,5 +1,5 @@
 import PageOpener from '../sections/PageOpener'
-import Testimonial from '../elements/Testimonial'
+import TestimonialCard from '../cards/TestimonialCard'
 import testimonials from '../../database/testimonials'
 
 function Testimonials() {
@@ -14,7 +14,7 @@ function Testimonials() {
                 <main>
                     <div className="three-columns">
                         <div className="single-column">
-                            <Testimonial 
+                            <TestimonialCard 
                                 header={testimonials.nicole.callout}
                                 text={testimonials.nicole.quote}
                                 source={testimonials.nicole.name}
@@ -23,7 +23,7 @@ function Testimonials() {
                         </div>
 
                         <div className="single-column">
-                            <Testimonial 
+                            <TestimonialCard 
                                 header={testimonials.jeremy.callout}
                                 text={testimonials.jeremy.quote}
                                 source={testimonials.jeremy.name}
@@ -32,7 +32,7 @@ function Testimonials() {
                         </div>
                         
                         <div className="single-column">
-                            <Testimonial 
+                            <TestimonialCard 
                                 header={testimonials.simone.callout}
                                 text={testimonials.simone.quote}
                                 source={testimonials.simone.name}

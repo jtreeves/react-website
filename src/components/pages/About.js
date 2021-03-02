@@ -1,10 +1,10 @@
 import PageOpener from '../sections/PageOpener'
-import TextCard from '../elements/TextCard'
-import ImageCard from '../elements/ImageCard'
-import ListCard from '../elements/ListCard'
-import QuoteCard from '../elements/QuoteCard'
+import TextCard from '../cards/TextCard'
+import ImageCard from '../cards/ImageCard'
+import ListCard from '../cards/ListCard'
+import QuoteCard from '../cards/QuoteCard'
 import testimonials from '../../database/testimonials'
-import TestimonialsTeaser from '../elements/TestimonialsTeaser'
+import TestimonialsTeaserCard from '../cards/TestimonialsTeaserCard'
 import { textCards, listCards, quoteCards, imageCards } from '../../database/about'
 
 import '../../style/about.css'
@@ -41,7 +41,7 @@ function About() {
         body={textCards.passions.body}
     />
 
-    const simoneTestimonial = <TestimonialsTeaser 
+    const simoneTestimonial = <TestimonialsTeaserCard 
         header={testimonials.simone.callout}
         text={testimonials.simone.quote}
         source={testimonials.simone.name}

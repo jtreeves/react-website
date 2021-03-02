@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import TumblrMemeCard from '../elements/TumblrMemeCard'
+import TumblrMemeCard from '../cards/TumblrMemeCard'
 import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
 

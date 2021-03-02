@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 import scroll from '../../utilities/scroll'
 
-function ProjectHighlight(props) {
+function ProjectHighlightCard(props) {
     return (
         <Link
             to={{
@@ -37,4 +37,4 @@ function ProjectHighlight(props) {
     )
 }
 
-export default ProjectHighlight
+export default ProjectHighlightCard

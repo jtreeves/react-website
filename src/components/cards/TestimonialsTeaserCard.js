@@ -1,6 +1,6 @@
 import Button from './Button'
 
-function TestimonialsTeaser(props) {    
+function TestimonialsTeaserCard(props) {    
     return (
         <div className="quote-card">
             <div className="quote-card-header">
@@ -32,4 +32,4 @@ function TestimonialsTeaser(props) {
     )
 }
 
-export default TestimonialsTeaser
+export default TestimonialsTeaserCard

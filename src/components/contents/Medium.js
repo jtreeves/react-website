@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import MediumCard from '../elements/MediumCard'
+import MediumCard from '../cards/MediumCard'
 import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
 import extractFromPost from '../../utilities/post'

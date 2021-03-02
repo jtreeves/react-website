@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import GitHubCard from '../elements/GitHubCard'
+import GitHubCard from '../cards/GitHubCard'
 import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
 import convertTime from '../../utilities/time'
