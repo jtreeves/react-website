@@ -3,7 +3,14 @@ const testimonials = {
         name: "Jeremy Uriz",
         company: "General Assembly",
         callout: "Synthesizes Answers",
-        quote: "Jackson asks questions. Just as important, he synthesizes answers quickly to compound his knowledge. These skills are crucial for a software engineer. Jackson and I were half of the “Kaleidoscope” team, a MERN app created during our time together in General Assembly’s Software Engineering Immersion course. Jackson was the Git master, built out the backend API and database, and created test cases to ensure the integrity of the application. The quality of the Kaleidoscope app is a testament to the work Jackson produces."
+        quote: `Jackson asks questions. Just as important, he synthesizes answers quickly to compound his knowledge. These skills are crucial for a software engineer. Jackson and I were half of the “Kaleidoscope” team, a MERN app created during our time together in General Assembly’s Software Engineering Immersion course. Jackson was the Git master, built out the backend API and database, and created test cases to ensure the integrity of the application. The quality of the Kaleidoscope app is a testament to the work Jackson produces.`
+    },
+    
+    thomas: {
+        name: "Thomas Gilbert",
+        company: "General Assembly",
+        callout: "Natural Thoroughness",
+        quote: `While I believe everyone on our team provided unique value in creating our full-stack application "Kaleidoscope," Jackson's role as git-master and backend-engineer was definitely the reason our project did not fly off the rails. With Jackson, there is a natural thoroughness to his work process that I have seldom seen before, and as a result, he certainly provided the scaffolding that enabled us to get this project finished. From documentation and task delegation, to database modeling and code testing, Jackson did everything with a "measure twice, cut once" approach. As a result, his code was always DRY and easy to understand. It's working with people like Jackson that make group projects a breeze, and I could only hope that I get to work with more people like him moving forward.`
     },
     
     nicole: {
