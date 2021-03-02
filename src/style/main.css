@@ -36,9 +36,15 @@ main {
 
 .three-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    row-gap: 20px;
+    width: 100%;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
     width: 100%;
 }
 
@@ -50,17 +56,39 @@ main {
 
 .rows {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     row-gap: 20px;
     width: 100%;
 }
 
-.two-columns {
+.adjusting-display-area > * {
+    margin: 20px 0 0 20px;
+}
+
+.adjusting-display-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: -20px 0 0 -20px;
+    width: calc(100% + 20px);
+}
+
+.adjusting-contained {
+    flex: 0.5 0.25 30%;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.dense-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    width: 100%;
+    row-gap: 20px;
+    grid-auto-flow: row dense;
 }
 
 .blank-space {
@@ -342,11 +370,11 @@ h3 {
     }
 }
 
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
     .three-columns, .two-columns {
         grid-template-columns: 100%;
     }
-}
+} */
 
 @media screen and (max-width: 600px) {
     main {

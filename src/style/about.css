@@ -1,0 +1,23 @@
+#about-two, #about-one {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #about-two {
+        display: grid;
+    }
+
+    #about-three {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #about-one {
+        display: grid;
+    }
+
+    #about-two {
+        display: none;
+    }
+}
