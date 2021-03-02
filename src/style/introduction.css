@@ -45,20 +45,20 @@
     margin-top: 25%;
 }
 
-.floater-icon-nav {
+.floater-icon-nav-intro {
     width: 100px;
     height: 100px;
 }
 
-.floater-icon-nav:hover .floater-icon, .floater-icon-nav:hover .floater-links, .floater-icon-nav:hover .floater-text {
+.floater-icon-nav-intro:hover .floater-icon, .floater-icon-nav-intro:hover .floater-links, .floater-icon-nav-intro:hover .floater-text-intro {
     color: #007ba7;
 }
 
-.floater-icon {
+.floater-icon-intro {
     color: #000080;
 }
 
-.floater-text {
+.floater-text-intro {
     color: #000080;
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
