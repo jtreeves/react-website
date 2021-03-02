@@ -1,5 +1,5 @@
-import List from './List'
-import Button from './Button'
+import List from '../elements/List'
+import Button from '../elements/Button'
 
 function SchoolCard(props) {    
     return (
