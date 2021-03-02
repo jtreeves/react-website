@@ -75,12 +75,17 @@ h1 {
 }
 
 @media screen and (max-width: 750px) {
-    .social-icons {
-        transform: scale(0.75);
-    }
-    
     header {
         flex-direction: column;
         justify-content: center;
+    }
+    
+    .headline {
+        margin: 0;
+    }
+    
+    .social-icons {
+        transform: scale(0.75);
+        margin: 0;
     }
 }
