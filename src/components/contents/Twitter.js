@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import convertTime from '../../utilities/time'
-import SectionHeading from '../sections/SectionHeading'
+import TwitterCard from '../elements/TwitterCard'
 import Button from '../elements/Button'
+import SectionHeading from '../sections/SectionHeading'
+import convertTime from '../../utilities/time'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 const link = 'https://twitter.com/JTReeves/status/'
@@ -24,37 +25,12 @@ function Twitter() {
                 return (
                     <div 
                         key={index}
-                        className="tweet-card"
                     >
-                        <div className="tweet-card-body">
-                            <p>{text}</p>
-                        </div>
-
-                        <div 
-                            className="tweet-card-footer"
-                        >
-                            <div 
-                                className="tweet-card-button"
-                            >
-                                <Button 
-                                    link={fullLink}
-                                    target="_blank"
-                                    text="View tweet"
-                                />
-                            </div>
-
-                            <div 
-                                className="tweet-card-date"
-                            >
-                                <a 
-                                    href={fullLink} 
-                                    target="_blank" 
-                                    rel="noreferrer"
-                                >
-                                    {correctTime}
-                                </a>
-                            </div>
-                        </div>
+                        <TwitterCard 
+                            text={text}
+                            time={correctTime}
+                            link={fullLink}
+                        />
                     </div>
                 )
             })

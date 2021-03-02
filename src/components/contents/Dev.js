@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+import DevCard from '../elements/DevCard'
 import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
 import convertTime from '../../utilities/time'
@@ -20,66 +21,15 @@ function Dev() {
                 return (
                     <div 
                         key={index}
-                        className="code-blog-card"
                     >
-                        <div className="code-blog-card-top">
-                            <a 
-                                href={post.url} 
-                                target="_blank" 
-                                rel="noreferrer"
-                            >
-                                <img 
-                                    src={post.cover_image}
-                                    alt={post.title}
-                                    className="code-blog-card-img"
-                                />
-                            </a>
-                        </div>
-
-                        <div className="code-blog-card-main">
-                            <div    
-                                className="code-blog-card-body"
-                            >
-                                <h4>
-                                    <a 
-                                        href={post.url} 
-                                        target="_blank" 
-                                        rel="noreferrer"
-                                    >
-                                        {post.title}
-                                    </a>
-                                </h4>
-
-                                <p>{post.description}</p>
-                            </div>
-
-                            <div 
-                                className="code-blog-card-footer"
-                            >
-                                <div 
-                                    className="code-blog-card-button"
-                                >
-                                    <Button 
-                                        link={post.url}
-                                        target="_blank"
-                                        text="Read more"
-                                    />
-                                </div>
-
-                                <div 
-                                    className="code-blog-card-date"
-                                >
-                                    <a 
-                                        href={post.url} 
-                                        target="_blank" 
-                                        rel="noreferrer"
-                                    >
-                                        {date}
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
+                        <DevCard 
+                            title={post.title}
+                            image={post.cover_image}
+                            description={post.description}
+                            url={post.url}
+                            date={date}
+                        />
+                    </div>
                 )
             })
             const finalArray = resultArray.slice(0, 3)

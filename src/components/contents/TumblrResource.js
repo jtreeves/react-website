@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import convertTime from '../../utilities/time'
-import SectionHeading from '../sections/SectionHeading'
+import TumblrResourceCard from '../elements/TumblrResourceCard'
 import Button from '../elements/Button'
+import SectionHeading from '../sections/SectionHeading'
+import convertTime from '../../utilities/time'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
@@ -21,53 +22,13 @@ function TumblrResources() {
                 return (
                     <div 
                         key={index}
-                        className="resource-blog-card"
                     >
-                        <div 
-                            className="resource-blog-card-body"
-                        >
-                            <h4>
-                                <a 
-                                    href={post.post_url} 
-                                    target="_blank" 
-                                    rel="noreferrer"
-                                >
-                                    {post.title}
-                                </a>
-                            </h4>
-
-                            <div 
-                                dangerouslySetInnerHTML={{
-                                    __html: post.description
-                                }} 
-                            />
-                        </div>
-
-                        <div 
-                            className="resource-blog-card-footer"
-                        >
-                            <div 
-                                className="resource-blog-card-button"
-                            >
-                                <Button 
-                                    link={post.post_url}
-                                    target="_blank"
-                                    text="Read more"
-                                />
-                            </div>
-
-                            <div 
-                                className="resource-blog-card-date"
-                            >
-                                <a 
-                                    href={post.post_url} 
-                                    target="_blank" 
-                                    rel="noreferrer"
-                                >
-                                    {correctTime}
-                                </a>
-                            </div>
-                        </div>
+                        <TumblrResourceCard 
+                            title={post.title}
+                            description={post.description}
+                            time={correctTime}
+                            link={post.post_url}
+                        />
                     </div>
                 )
             })

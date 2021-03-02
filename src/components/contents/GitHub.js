@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import convertTime from '../../utilities/time'
-import SectionHeading from '../sections/SectionHeading'
+import GitHubCard from '../elements/GitHubCard'
 import Button from '../elements/Button'
+import SectionHeading from '../sections/SectionHeading'
+import convertTime from '../../utilities/time'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 const link = 'https://github.com/'
@@ -26,49 +27,13 @@ function GitHub() {
                     return (
                         <div 
                             key={index}
-                            className="git-card"
                         >
-                            <div className="git-card-body">
-                                <p>
-                                    {message}<br />
-
-                                    <a 
-                                        href={fullLink} 
-                                        target="_blank" 
-                                        rel="noreferrer"
-                                    >
-                                        <em>
-                                            — {source}
-                                        </em>
-                                    </a>
-                                </p>
-                            </div>
-
-                            <div 
-                                className="git-card-footer"
-                            >
-                                <div 
-                                    className="git-card-button"
-                                >
-                                    <Button 
-                                        link={fullLink}
-                                        target="_blank"
-                                        text="View repo"
-                                    />
-                                </div>
-
-                                <div 
-                                    className="git-card-date"
-                                >
-                                    <a 
-                                        href={fullLink} 
-                                        target="_blank" 
-                                        rel="noreferrer"
-                                    >
-                                        {correctTime}
-                                    </a>
-                                </div>
-                            </div>
+                            <GitHubCard 
+                                message={message}
+                                source={source}
+                                time={correctTime}
+                                link={fullLink}
+                            />
                         </div>
                     )
                 } else {

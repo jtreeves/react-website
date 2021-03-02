@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import SectionHeading from '../sections/SectionHeading'
+import TumblrMemeCard from '../elements/TumblrMemeCard'
 import Button from '../elements/Button'
+import SectionHeading from '../sections/SectionHeading'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
@@ -18,18 +19,11 @@ function TumblrMemes() {
                 return (
                     <div 
                         key={index}
-                        className="meme-card"
                     >
-                        <a 
-                            href={post.post_url} 
-                            target="_blank" 
-                            rel="noreferrer"
-                        >
-                            <img 
-                                src={post.photos[0].original_size.url}
-                                alt="meme"
-                            />
-                        </a>
+                        <TumblrMemeCard 
+                            image={post.photos[0].original_size.url}
+                            link={post.post_url}
+                        />
                     </div>
                 )
             })

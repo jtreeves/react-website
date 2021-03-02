@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import SectionHeading from '../sections/SectionHeading'
+import YouTubeCard from '../elements/YouTubeCard'
 import Button from '../elements/Button'
+import SectionHeading from '../sections/SectionHeading'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
@@ -23,15 +24,9 @@ function YouTube() {
                     <div 
                         key={index}
                     >
-                        <iframe 
-                            width="100%" 
-                            height="100%" 
-                            src={embedLink}
-                            title={index}
-                            frameborder="0" 
-                            className="card-with-border"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen 
+                        <YouTubeCard 
+                            source={embedLink}
+                            index={index}
                         />
                     </div>
                 )

@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+import MediumCard from '../elements/MediumCard'
+import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
 import extractFromPost from '../../utilities/post'
 import convertTime from '../../utilities/time'
-import Button from '../elements/Button'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
@@ -22,65 +23,14 @@ function Medium() {
                 return (
                     <div 
                         key={index}
-                        className="blog-card"
                     >
-                        <div className="blog-card-side">
-                            <a 
-                                href={post.link} 
-                                target="_blank" 
-                                rel="noreferrer"
-                            >
-                                <img 
-                                    src={textSubstrings.image}
-                                    alt={post.title}
-                                    className="blog-card-img"
-                                />
-                            </a>
-                        </div>
-
-                        <div className="blog-card-main">
-                            <div className="blog-card-body">
-                                <h4>
-                                    <a 
-                                        href={post.link} 
-                                        target="_blank" 
-                                        rel="noreferrer"
-                                    >
-                                        {post.title}
-                                    </a>
-                                </h4>
-
-                                <div 
-                                    dangerouslySetInnerHTML={{
-                                        __html: textSubstrings.body
-                                    }} 
-                                />
-                            </div>
-
-                            <div className="blog-card-footer">
-                                <div 
-                                    className="blog-card-button"
-                                >
-                                    <Button 
-                                        link={post.link}
-                                        target="_blank"
-                                        text="Read more"
-                                    />
-                                </div>
-
-                                <div 
-                                    className="blog-card-date"
-                                >
-                                    <a 
-                                        href={post.link} 
-                                        target="_blank" 
-                                        rel="noreferrer"
-                                    >
-                                        {date}
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <MediumCard 
+                            title={post.title}
+                            image={textSubstrings.image}
+                            body={textSubstrings.body}
+                            link={post.link}
+                            date={date}
+                        />
                     </div>
                 )
             })
