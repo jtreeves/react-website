@@ -50,7 +50,7 @@
     height: 100px;
 }
 
-.floater-icon-nav-intro:hover .floater-icon, .floater-icon-nav-intro:hover .floater-links, .floater-icon-nav-intro:hover .floater-text-intro {
+.floater-icon-nav-intro:hover .floater-icon-intro, .floater-icon-nav-intro:hover .floater-links, .floater-icon-nav-intro:hover .floater-text-intro {
     color: #007ba7;
 }
 
@@ -77,4 +77,22 @@
 .floater-links:hover {
     color: #000080;
     text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .introduction-columns {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .introduction-columns-first {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .introduction-columns-last {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
 }
