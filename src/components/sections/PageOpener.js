@@ -138,25 +138,16 @@ function PageOpener(props) {
                 id="navigation-partial"
             >
                 <div className="opener-top">
-                    <div className="opener-first">
-                        {skills}
-                        {resume}
-                        {portfolio}
-                    </div>
-
-                    <div className="opener-center">
-                        {title}
-                    </div>
-
-                    <div className="opener-last">
-                        {posts}
-                        {about}
-                        {contact}
-                    </div>
+                    {portfolio}
+                    {resume}
+                    {skills}
+                    {posts}
+                    {about}
+                    {contact}
                 </div>
 
                 <div className="opener-bottom">
-                    {description}
+                    {title}
                 </div>
             </div>
         </div>
