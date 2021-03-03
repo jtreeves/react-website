@@ -17,7 +17,7 @@
 
 .blog-card {
     width: 100%;
-    height: 250px;
+    height: 100%;
     display: grid;
     background: white;
     grid-template-columns: 25% 75%;
@@ -53,6 +53,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: scroll;
 }
 
 .blog-card-footer {
@@ -64,17 +65,13 @@
 .blog-card-button {
     width: 25%;
     float: left;
+    padding-right: 10px;
 }
 
 .blog-card-date {
     float: right;
     color: gray;
     font-size: 15px;
-}
-
-.blog-card-date a, .blog-card-date a:hover {
-    color: gray;
-    text-decoration: none;
 }
 
 .card-with-border {
@@ -124,11 +121,6 @@
     color: gray;
     font-size: 15px;
     margin-top: 10px;
-}
-
-.resource-blog-card-date a, .resource-blog-card-date a:hover {
-    color: gray;
-    text-decoration: none;
 }
 
 .code-blog-card {
@@ -189,11 +181,6 @@
     margin-top: 10px;
 }
 
-.code-blog-card-date a, .code-blog-card-date a:hover {
-    color: gray;
-    text-decoration: none;
-}
-
 .tweet-card {
     width: 100%;
     height: 100%;
@@ -230,11 +217,6 @@
     color: gray;
     font-size: 15px;
     margin-top: 10px;
-}
-
-.tweet-card-date a, .tweet-card-date a:hover {
-    color: gray;
-    text-decoration: none;
 }
 
 .git-card {
@@ -275,7 +257,40 @@
     margin-top: 10px;
 }
 
-.git-card-date a, .git-card-date a:hover {
-    color: gray;
-    text-decoration: none;
+@media screen and (max-width: 1000px) {
+    .blog-card {
+        grid-template-columns: 30% 70%;
+    }
+
+    .blog-card-button {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .blog-card-body p {
+        display: none;
+    }
+
+    .blog-card-date {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .blog-card-button {
+        width: 100%;
+    }
+
+    .blog-card-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blog-card {
+        grid-template-columns: 50% 50%;
+    }
 }
