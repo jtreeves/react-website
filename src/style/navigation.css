@@ -108,8 +108,7 @@
     }
 
     .opener-text {
-        font-size: 12px;
-        line-height: 12px;
+        margin-top: 2px;
     }
 }
 
@@ -117,6 +116,10 @@
     .opener-center h2 {
         font-size: 18px;
         line-height: 18px;
+    }
+
+    .opener-text {
+        margin-top: 0;
     }
 }
 
