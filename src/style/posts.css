@@ -272,6 +272,20 @@
         grid-template-columns: 100%;
         row-gap: 20px;
     }
+
+    .tweet-card-footer {
+        flex-direction: row;
+    }
+    
+    .tweet-card-button {
+        width: 40%;
+        float: left;
+        padding-right: 10px;
+    }
+    
+    .tweet-card-date {
+        float: right;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -299,12 +313,54 @@
         grid-template-columns: 100%;
         row-gap: 20px;
     }
+
+    .resource-blog-card-footer {
+        flex-direction: row;
+    }
+    
+    .resource-blog-card-button {
+        width: 40%;
+        float: left;
+        padding-right: 10px;
+    }
+    
+    .resource-blog-card-date {
+        float: right;
+    }
 }
 
 @media screen and (max-width: 700px) {
     #dev-cards, #tumblr-meme-cards, #youtube-cards, #github-cards {
         grid-template-columns: 100%;
         row-gap: 20px;
+    }
+
+    .git-card-footer {
+        flex-direction: row;
+    }
+    
+    .git-card-button {
+        width: 40%;
+        float: left;
+        padding-right: 10px;
+    }
+    
+    .git-card-date {
+        float: right;
+    }
+
+    .code-blog-card-footer {
+        flex-direction: row;
+    }
+    
+    .code-blog-card-button {
+        width: 40%;
+        float: left;
+        padding-right: 10px;
+    }
+    
+    .code-blog-card-date {
+        float: right;
     }
 }
 
