@@ -43,3 +43,15 @@
 .mail-input-inner:focus {
     outline: none;
 }
+
+@media screen and (max-width: 450px) {
+    .mail-input {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .mail-input {
+        width: 60%;
+    }
+}
