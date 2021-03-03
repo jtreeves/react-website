@@ -116,9 +116,9 @@ function PageOpener(props) {
                 id="navigation-full"
             >
                 <div className="opener-first">
-                    {skills}
-                    {resume}
                     {portfolio}
+                    {resume}
+                    {skills}
                 </div>
 
                 <div className="opener-center">
