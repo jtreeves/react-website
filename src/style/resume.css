@@ -167,3 +167,21 @@
         margin-top: 0;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .company-card-date, .school-card-date {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .company-card-button, .school-card-button {
+        width: 100%;
+    }
+
+    .company-card-footer, .school-card-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
