@@ -28,6 +28,14 @@
 
 .opener-center h2 {
     margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.opener-text {
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 5px;
 }
 
 .floater-icon-nav {
@@ -70,7 +78,8 @@
 
 @media screen and (max-width: 1000px) {
     .opener-center h2 {
-        font-size: 30px;
+        font-size: 25px;
+        line-height: 25px;
     }
 
     .opener-container {
@@ -83,7 +92,7 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .opener-container {
         padding: 0 5px;
         column-gap: 5px;
@@ -92,27 +101,22 @@
     .opener-first, .opener-last {
         column-gap: 5px;
     }
-}
 
-@media screen and (max-width: 800px) {
-    .opener-center h2 {
-        font-size: 25px;
-    }
-
-    .opener-text {
-        font-size: 15px;
-        line-height: 15px;
-    }
-}
-
-@media screen and (max-width: 700px) {
     .opener-center h2 {
         font-size: 20px;
+        line-height: 20px;
     }
 
     .opener-text {
         font-size: 12px;
         line-height: 12px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .opener-center h2 {
+        font-size: 18px;
+        line-height: 18px;
     }
 }
 
