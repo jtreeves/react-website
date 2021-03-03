@@ -58,7 +58,10 @@ function GitHub() {
         <main>
             <SectionHeading heading="Recent Commits from GitHub" />
             
-            <div className="three-columns">
+            <div 
+                className="three-columns"
+                id="github-cards"
+            >
                 {commits}
             </div>
 

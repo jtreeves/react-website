@@ -46,7 +46,10 @@ function YouTube() {
         <main>
             <SectionHeading heading="Recent Videos from YouTube" />
             
-            <div className="two-columns">
+            <div 
+                className="two-columns"
+                id="youtube-cards"
+            >
                 {videos}
             </div>
 

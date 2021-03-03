@@ -1,0 +1,23 @@
+#testimonials-two, #testimonials-one {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #testimonials-two {
+        display: grid;
+    }
+
+    #testimonials-three {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #testimonials-one {
+        display: grid;
+    }
+
+    #testimonials-two {
+        display: none;
+    }
+}

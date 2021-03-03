@@ -267,6 +267,13 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    #tweet-cards {
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .blog-card-body p {
         display: none;
@@ -287,12 +294,16 @@
         flex-direction: column;
         justify-content: space-between;
     }
+
+    #tumblr-resource-cards, #tweet-cards {
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
 }
 
 @media screen and (max-width: 700px) {
-    #dev-cards {
+    #dev-cards, #tumblr-meme-cards, #youtube-cards, #github-cards {
         grid-template-columns: 100%;
-        grid-template-rows: repeat(3, 1fr);
         row-gap: 20px;
     }
 }

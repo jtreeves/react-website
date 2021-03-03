@@ -49,7 +49,10 @@ function Twitter() {
         <main>
             <SectionHeading heading="Recent Tweets from Twitter" />
 
-            <div className="three-columns">
+            <div 
+                className="three-columns"
+                id="tweet-cards"
+            >
                 {tweets}
             </div>
 
