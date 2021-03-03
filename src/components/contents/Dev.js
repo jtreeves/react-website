@@ -47,7 +47,10 @@ function Dev() {
         <main>
             <SectionHeading heading="Recent Codings from DEV" />
 
-            <div className="three-columns">
+            <div 
+                className="three-columns"
+                id="dev-cards"
+            >
                 {posts}
             </div>
 

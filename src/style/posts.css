@@ -289,8 +289,24 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    #dev-cards {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 20px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .blog-card {
         grid-template-columns: 50% 50%;
+    }
+
+    .code-blog-card-body p {
+        display: none;
+    }
+
+    .code-blog-card-body h4 {
+        text-align: center;
     }
 }
