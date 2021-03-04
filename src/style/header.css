@@ -89,3 +89,9 @@ h1 {
         margin: 0;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .social-icons {
+        display: none;
+    }
+}
