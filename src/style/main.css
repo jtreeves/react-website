@@ -61,24 +61,6 @@ main {
     width: 100%;
 }
 
-.adjusting-display-area > * {
-    margin: 20px 0 0 20px;
-}
-
-.adjusting-display-area {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    margin: -20px 0 0 -20px;
-    width: calc(100% + 20px);
-}
-
-.adjusting-contained {
-    flex: 0.5 0.25 30%;
-}
-
 .align-items-start {
     align-items: flex-start;
 }
