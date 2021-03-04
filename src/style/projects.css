@@ -139,6 +139,10 @@
     .project-title {
         font-size: 30px;
     }
+
+    #portfolio-promotion .project-title {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 900px) {
