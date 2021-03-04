@@ -32,6 +32,13 @@ function Testimonials() {
         source={testimonials.thomas.name}
         company={testimonials.thomas.company}
     />
+    
+    const mike = <TestimonialCard 
+        header={testimonials.mike.callout}
+        text={testimonials.mike.quote}
+        source={testimonials.mike.name}
+        company={testimonials.mike.company}
+    />
 
     return (
         <div>
@@ -48,12 +55,12 @@ function Testimonials() {
                     >
                         <div className="single-column">
                             {jeremy}
+                            {nicole}
                         </div>
 
                         <div className="single-column">
-                            {nicole}
+                            {mike}
                             {simone}
-                            
                         </div>
                         
                         <div className="single-column">
@@ -72,6 +79,7 @@ function Testimonials() {
 
                         <div className="single-column">
                             {thomas}
+                            {mike}
                             {simone}
                         </div>
                     </div>
@@ -82,6 +90,7 @@ function Testimonials() {
                     >
                         {jeremy}
                         {thomas}
+                        {mike}
                         {nicole}
                         {simone}
                     </div>

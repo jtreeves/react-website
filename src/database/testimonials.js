@@ -13,6 +13,13 @@ const testimonials = {
         quote: `While I believe everyone on our team provided unique value in creating our full-stack application "Kaleidoscope," Jackson's role as git-master and backend-engineer was definitely the reason our project did not fly off the rails. With Jackson, there is a natural thoroughness to his work process that I have seldom seen before, and as a result, he certainly provided the scaffolding that enabled us to get this project finished. From documentation and task delegation, to database modeling and code testing, Jackson did everything with a "measure twice, cut once" approach. As a result, his code was always DRY and easy to understand. It's working with people like Jackson that make group projects a breeze, and I could only hope that I get to work with more people like him moving forward.`
     },
     
+    mike: {
+        name: "Mike Zarra",
+        company: "General Assembly",
+        callout: "Resourceful and Generous",
+        quote: "Jackson Reeves is among the most resourceful and generous students I've had the privilege of teaching. Throughout the 12-week software engineering bootcamp, I watched Jackson grow into an excellent developer. His questions are always engaging and crafted to retrieve the most useful contextual information. Jackson has his own methods of organizing learning resources and materials, but the most admirable thing about him is his willingness to share all of that carefully curated content. Jackson is a true team player. He is a one-of-a-kind software engineer, and anyone would be lucky to have him on their team."
+    },
+    
     nicole: {
         name: "Nicole Hamilton",
         company: "General Assembly",
