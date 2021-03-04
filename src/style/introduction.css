@@ -102,3 +102,28 @@
         height: 300px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .floater-icon-nav-intro {
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+    }
+    
+    .floater-icon-nav-intro i {
+        transform: scale(0.75);
+    }
+
+    .floater-text-intro {
+        font-size: 15px;
+        margin-top: -10px;
+    }
+
+    .introduction-columns-first {
+        justify-content: flex-end;
+    }
+    
+    .introduction-columns-last {
+        justify-content: flex-start;
+    }
+}
