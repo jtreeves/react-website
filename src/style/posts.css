@@ -285,6 +285,7 @@
     
     .tweet-card-date {
         float: right;
+        margin-top: 0;
     }
 }
 
@@ -326,6 +327,7 @@
     
     .resource-blog-card-date {
         float: right;
+        margin-top: 0;
     }
 }
 
@@ -347,6 +349,7 @@
     
     .git-card-date {
         float: right;
+        margin-top: 0;
     }
 
     .code-blog-card-footer {
@@ -361,6 +364,7 @@
     
     .code-blog-card-date {
         float: right;
+        margin-top: 0;
     }
 }
 
@@ -375,5 +379,43 @@
 
     .code-blog-card-body h4 {
         text-align: center;
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .blog-card {
+        grid-template-columns: 100%;
+        height: auto;
+    }
+
+    .blog-card-side {
+        border-bottom: 3px solid #000080;
+        border-right: none;
+        height: 100px;
+    }
+    
+    .blog-card:hover .blog-card-side {
+        border-bottom: 3px solid #007ba7;
+    }
+
+    .blog-card-body h4 {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .resource-blog-card-footer, .code-blog-card-footer, .tweet-card-footer, .git-card-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .resource-blog-card-button, .code-blog-card-button, .tweet-card-button, .git-card-button {
+        width: 100%;
+    }
+    
+    .resource-blog-card-date, .code-blog-card-date, .tweet-card-date, .git-card-date {
+        margin-top: 10px;
     }
 }
