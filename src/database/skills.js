@@ -183,7 +183,7 @@ const skills = {
         'regressions'
     ],
 
-    'PyPi': [
+    'PyPI': [
         'regressionz',
         'regressions'
     ],

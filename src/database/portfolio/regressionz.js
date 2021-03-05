@@ -40,7 +40,7 @@ const regressionz = {
         'Git': 'Used Git to send code to GitHub',
         'GitHub': 'Used GitHub to store code',
         'Heroku': 'Deployed site on Heroku',
-        'PyPi': 'Accessed libraries from PyPi',
+        'PyPI': 'Accessed libraries from PyPI',
         'Python': 'Wrote code in Python to be able to use previously made Python library',
         'Postgres': 'Used Postgres to handle SQL database when deployed on Heroku',
         'SQL': 'Stored database via SQL',

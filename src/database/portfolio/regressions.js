@@ -5,7 +5,7 @@ const regressions = {
 
     description: 'An algorithm library',
 
-    summary: `A collection of Python algorithms for fitting data to different functional models by using matrices. This library is publically available via PyPi's database of libraries. It contains all the code for determining regression equations, as well as the code for evaluating said regressions and presenting their results in a raw format.`,
+    summary: `A collection of Python algorithms for fitting data to different functional models by using matrices. This library is publically available via PyPI's database of libraries. It contains all the code for determining regression equations, as well as the code for evaluating said regressions and presenting their results in a raw format.`,
 
     inspiration: 'I wanted a single library that people could download to calculate a variety of regression models. When I researched it, I could not find one that contained all the models that I wanted, especially sinusoidal and logistic models.',
 
@@ -30,13 +30,13 @@ const regressions = {
 
     skills: {
         'Algorithms': 'Wrote separate algorithms for each type of regression model',
-        'Command Line': 'Uploaded library to PyPi via the command line',
+        'Command Line': 'Uploaded library to PyPI via the command line',
         'Computer Science': 'Relied on fundamental skills from computer science to build library',
         'Functional Programming': 'Used functions as the primary data type in all files, and returned functions as certain results',
         'Git': 'Used Git to store code base of library on GitHub',
         'GitHub': 'Stored code for library on GitHub',
         'NumPy': 'Used NumPy to avoid defining more mathematical functions than necessary and occasionally as an alternative to personally-built, time-inefficient versions',
-        'PyPi': 'Made library available for public use by uploading it to PyPi',
+        'PyPI': 'Made library available for public use by uploading it to PyPI',
         'Python': `Relied on Python's strength when it comes to math and statistics to build algorithms designed for that particular academic field`,
         'Version Control': 'Managed release versions of the library',
         'Visual Studio Code': 'Used Visual Studio Code to write the library'
@@ -44,7 +44,7 @@ const regressions = {
 
     type: 'library',
 
-    host: 'PyPi',
+    host: 'PyPI',
 
     image: '/images/projects/regressions/main.png',
 

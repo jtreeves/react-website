@@ -33,7 +33,7 @@ const types = {
         'Git', 
         'GitHub', 
         'Heroku',
-        'PyPi',
+        'PyPI',
         'NPM',
         'Mongo Atlas',
         'Command Line',
