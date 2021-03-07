@@ -1,4 +1,4 @@
-function extractFromPost(text, length) {
+function extractFromMediumPost(text, length) {
     const bodyIndex = text.indexOf('</figure>') + 9
     const bodyInitial = text.substring(bodyIndex)
     const bodyArray = bodyInitial.split(' ')
@@ -14,4 +14,11 @@ function extractFromPost(text, length) {
     return sections
 }
 
-export default extractFromPost
+function extractFromTumblrPost(text, length) {
+    const bodyArray = text.split(' ')
+    const bodyCutOff = bodyArray.slice(0, length)
+    const bodyString = bodyCutOff.join(' ') + '...'
+    return bodyString
+}
+
+export { extractFromMediumPost, extractFromTumblrPost }

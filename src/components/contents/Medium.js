@@ -4,7 +4,7 @@ import axios from 'axios'
 import MediumCard from '../cards/MediumCard'
 import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
-import extractFromPost from '../../utilities/post'
+import extractFromMediumPost from '../../utilities/post'
 import convertTime from '../../utilities/time'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
@@ -18,7 +18,7 @@ function Medium() {
                 REACT_APP_SERVER_URL + '/medium'
             )
             const resultArray = result.data.posts.items.map((post, index) => {
-                const textSubstrings = extractFromPost(post.content, 40)
+                const textSubstrings = extractFromMediumPost(post.content, 40)
                 const date = convertTime(post.isoDate)
                 return (
                     <div 
