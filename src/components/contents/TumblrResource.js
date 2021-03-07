@@ -4,8 +4,8 @@ import axios from 'axios'
 import TumblrResourceCard from '../cards/TumblrResourceCard'
 import Button from '../elements/Button'
 import SectionHeading from '../sections/SectionHeading'
-import extractFromTumblrPost from '../../utilities/post'
 import convertTime from '../../utilities/time'
+import extractFromPost from '../../utilities/post'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
@@ -19,7 +19,7 @@ function TumblrResources() {
             )
             const resultArray = result.data.posts.map((post, index) => {
                 const body = post.description
-                const textSubstring = extractFromTumblrPost(body, 10)
+                const textSubstring = extractFromPost('tumblr', body, 10)
                 const date = post.date
                 const correctTime = convertTime(date)
                 return (
