@@ -33,6 +33,13 @@ function Testimonials() {
         company={testimonials.thomas.company}
     />
     
+    const alan = <TestimonialCard 
+        header={testimonials.alan.callout}
+        text={testimonials.alan.quote}
+        source={testimonials.alan.name}
+        company={testimonials.alan.company}
+    />
+    
     const mike = <TestimonialCard 
         header={testimonials.mike.callout}
         text={testimonials.mike.quote}
@@ -60,11 +67,12 @@ function Testimonials() {
 
                         <div className="single-column">
                             {mike}
-                            {simone}
+                            {alan}
                         </div>
                         
                         <div className="single-column">
                             {thomas}
+                            {simone}
                         </div>
                     </div>
                     
@@ -75,6 +83,7 @@ function Testimonials() {
                         <div className="single-column">
                             {jeremy}
                             {nicole}
+                            {alan}
                         </div>
 
                         <div className="single-column">
@@ -90,6 +99,7 @@ function Testimonials() {
                     >
                         {jeremy}
                         {thomas}
+                        {alan}
                         {mike}
                         {nicole}
                         {simone}
