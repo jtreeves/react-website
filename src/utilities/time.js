@@ -7,7 +7,7 @@ function convertTime(date) {
     const second = parseInt(date.slice(17, 19))
     const time = second + 60 * minute + 3600 * hour
     let convertTime = null
-    if (month === 12 || month === 1 || month === 2 || (month === 11 && day >= 4) || (month === 3 && day <= 12)) {
+    if (month === 12 || month === 1 || month === 2 || (month === 11 && day >= 4) || (month === 3 && day <= 11)) {
         convertTime = time - 3600 * 5
     } else {
         convertTime = time - 3600 * 4
