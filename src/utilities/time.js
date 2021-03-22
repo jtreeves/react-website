@@ -6,7 +6,12 @@ function convertTime(date) {
     const minute = parseInt(date.slice(14, 16))
     const second = parseInt(date.slice(17, 19))
     const time = second + 60 * minute + 3600 * hour
-    const convertTime = time - 3600 * 5
+    let convertTime = null
+    if (month === 12 || month === 1 || month === 2 || (month === 11 && day >= 4) || (month === 3 && day <= 12)) {
+        convertTime = time - 3600 * 5
+    } else {
+        convertTime = time - 3600 * 4
+    }
     let correctTime = null
     let correctDay = null     
     if (convertTime < 0) {
