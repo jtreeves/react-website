@@ -1,4 +1,16 @@
 const experience = {
+    generalAssistant: {
+        company: 'General Assembly',
+        position: 'Software Engineering Teaching Assistant',
+        link: 'https://generalassemb.ly',
+        image: '/images/companies/general-assembly.png',
+        date: 'March 2021–present',
+        items: [
+            'Help clients master skills in JavaScript, SQL, and Python',
+            'Debug errors and refactor code to optimize performance'
+        ]
+    },
+    
     hyperionDirector: {
         company: 'Hyperion Academics',
         position: 'Director',

@@ -87,6 +87,14 @@ function Resume() {
         link={education.program.link}
     />
 
+    const generalAssistant = <CompanyCard 
+        company={experience.generalAssistant.company}
+        position={experience.generalAssistant.position}
+        responsibilities={experience.generalAssistant.items}
+        date={experience.generalAssistant.date}
+        link={experience.generalAssistant.link}
+    />
+    
     const hyperionDirector = <CompanyCard 
         company={experience.hyperionDirector.company}
         position={experience.hyperionDirector.position}
@@ -174,6 +182,7 @@ function Resume() {
                             {experienceHeading}
 
                             <div className="single-column">
+                                {generalAssistant}
                                 {hyperionDirector}
                                 {tutorSenior}
                                 {magazineDigital}
@@ -226,6 +235,7 @@ function Resume() {
                                 {experienceHeading}
 
                                 <div className="single-column">
+                                    {generalAssistant}
                                     {hyperionDirector}
                                     {tutorSenior}
                                     {magazineDigital}
@@ -264,6 +274,7 @@ function Resume() {
                         {experienceHeading}
                         
                         <div className="single-column">
+                            {generalAssistant}
                             {hyperionDirector}
                             {tutorSenior}
                             {magazineDigital}
