@@ -27,9 +27,9 @@ function FavoriteProjects() {
                 />
 
                 <ProjectHighlightCard 
-                    image={projects.readThisNext.image}
-                    name={projects.readThisNext.name}
-                    description={projects.readThisNext.description}
+                    image={projects.learnMath.image}
+                    name={projects.learnMath.name}
+                    description={projects.learnMath.description}
                 />
             </div>
             

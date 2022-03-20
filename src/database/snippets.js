@@ -333,4 +333,39 @@ const tiresiasSecondSnippet = `if (!clicked) {
   )
 }`
 
-export { kaleidoscopeFirstSnippet, kaleidoscopeSecondSnippet, matchesAndPatchesFirstSnippet, matchesAndPatchesSecondSnippet, readThisNextFirstSnippet, readThisNextSecondSnippet, regressionsFirstSnippet, regressionsSecondSnippet, regressionzFirstSnippet, regressionzSecondSnippet, tiresiasFirstSnippet, tiresiasSecondSnippet }
+const learnMathFirstSnippet = `export default reactive(<IScore>{
+    value: 0,
+    increment(points: number) {
+        this.value += points
+    },
+    decrement(points: number) {
+        this.value -= points
+    },
+    reset() {
+        this.value = 0
+    }
+})`
+
+const learnMathSecondSnippet = `function useLandingPages(): LandingPagesComposable {
+    const router: Router = useRouter()
+
+    function goHome(): void {
+        router.push('/home')
+    }
+
+    function playGame(): void {
+        router.push('/question')
+    }
+
+    function readInstructions(): void {
+        router.push('/instructions/1')
+    }
+
+    return {
+        goHome,
+        playGame,
+        readInstructions
+    }
+}`
+
+export { kaleidoscopeFirstSnippet, kaleidoscopeSecondSnippet, matchesAndPatchesFirstSnippet, matchesAndPatchesSecondSnippet, readThisNextFirstSnippet, readThisNextSecondSnippet, regressionsFirstSnippet, regressionsSecondSnippet, regressionzFirstSnippet, regressionzSecondSnippet, tiresiasFirstSnippet, tiresiasSecondSnippet, learnMathFirstSnippet, learnMathSecondSnippet }

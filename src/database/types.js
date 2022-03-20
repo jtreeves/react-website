@@ -1,6 +1,7 @@
 const types = {
     languages: [
         'JavaScript', 
+        'TypeScript',
         'Python', 
         'SQL',
         'HTML', 
@@ -11,7 +12,9 @@ const types = {
         'Node', 
         'React', 
         'Express',
+        'Vue',
         'Flask',
+        'Jest',
         'Mocha',
         'Sass'
     ],
@@ -32,9 +35,10 @@ const types = {
     tools: [
         'Git', 
         'GitHub', 
-        'Heroku',
-        'PyPI',
         'NPM',
+        'Heroku',
+        'Netlify',
+        'PyPI',
         'Mongo Atlas',
         'Command Line',
         'Visual Studio Code'

@@ -35,6 +35,7 @@ const skills = {
     ],
 
     'Command Line': [
+        'learnMath',
         'tiresias', 
         'regressionz',
         'regressions', 
@@ -53,6 +54,7 @@ const skills = {
     ],
 
     'CSS': [
+        'learnMath',
         'matchesAndPatches'
     ],
 
@@ -63,7 +65,8 @@ const skills = {
     
     'Error Handling': [
         'tiresias', 
-        'kaleidoscope', 
+        'kaleidoscope',
+        'regressions',
         'readThisNext',
         'matchesAndPatches'
     ],
@@ -83,6 +86,7 @@ const skills = {
     ],
 
     'Git': [
+        'learnMath',
         'tiresias', 
         'regressionz',
         'regressions', 
@@ -92,6 +96,7 @@ const skills = {
     ],
 
     'GitHub': [
+        'learnMath',
         'tiresias', 
         'regressionz',
         'regressions', 
@@ -108,6 +113,7 @@ const skills = {
     ],
 
     'HTML': [
+        'learnMath',
         'matchesAndPatches'
     ],
 
@@ -122,6 +128,11 @@ const skills = {
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'
+    ],
+
+    'Jest': [
+        'learnMath',
+        'tiresias'
     ],
 
     'Mocha': [
@@ -150,13 +161,19 @@ const skills = {
         'readThisNext'
     ],
 
+    'Netify': [
+        'learnMath'
+    ],
+
     'Node': [
+        'learnMath',
         'tiresias', 
         'kaleidoscope', 
         'readThisNext'
     ],
     
     'NPM': [
+        'learnMath',
         'tiresias', 
         'kaleidoscope', 
         'readThisNext'
@@ -167,6 +184,7 @@ const skills = {
     ],
 
     'Object-Oriented Programming': [
+        'learnMath',
         'tiresias', 
         'kaleidoscope', 
         'readThisNext',
@@ -216,10 +234,16 @@ const skills = {
     ],
     
     'Test-Driven Development': [
+        'learnMath',
         'kaleidoscope'
     ],
 
+    'TypeScript': [
+        'learnMath'
+    ],
+
     'User Experience Design': [
+        'learnMath',
         'tiresias', 
         'kaleidoscope', 
         'readThisNext',
@@ -233,12 +257,17 @@ const skills = {
     ],
     
     'Visual Studio Code': [
+        'learnMath',
         'tiresias', 
         'regressionz',
         'regressions', 
         'kaleidoscope', 
         'readThisNext',
         'matchesAndPatches'
+    ],
+
+    'Vue': [
+        'learnMath'
     ],
 
     'Wireframing': [

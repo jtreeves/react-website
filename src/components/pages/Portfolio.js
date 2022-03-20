@@ -1,7 +1,7 @@
 import PageOpener from '../sections/PageOpener'
 import SectionHeading from '../sections/SectionHeading'
 import ProjectsList from '../elements/ProjectsList'
-import CurrentProject from '../sections/CurrentProject'
+// import CurrentProject from '../sections/CurrentProject'
 import Button from '../elements/Button'
 
 import '../../style/projects.css'
@@ -32,7 +32,7 @@ function Portfolio() {
 
                     <div className="blank-space" />
 
-                    <CurrentProject />
+                    {/* <CurrentProject /> */}
                 </main>
             </div>
 
