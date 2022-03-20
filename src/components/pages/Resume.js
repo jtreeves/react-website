@@ -87,6 +87,14 @@ function Resume() {
         link={education.program.link}
     />
 
+    const associateConsultant = <CompanyCard 
+        company={experience.associateConsultant.company}
+        position={experience.associateConsultant.position}
+        responsibilities={experience.associateConsultant.items}
+        date={experience.associateConsultant.date}
+        link={experience.associateConsultant.link}
+    />
+
     const generalAssistant = <CompanyCard 
         company={experience.generalAssistant.company}
         position={experience.generalAssistant.position}
@@ -169,24 +177,25 @@ function Resume() {
                         </div>
 
                         <div>
+                            {experienceHeading}
+
+                            <div className="single-column">
+                                {associateConsultant}
+                                {generalAssistant}
+                                {hyperionDirector}
+                                {tutorSenior}
+                                {magazineDigital}
+                                {magazineEditor}
+                            </div>
+
+                            <div className="blank-space" />
+
                             {educationHeading}
 
                             <div className="single-column">
                                 {certificate}
                                 {bachelor}
                                 {program}
-                            </div>
-
-                            <div className="blank-space" />
-
-                            {experienceHeading}
-
-                            <div className="single-column">
-                                {generalAssistant}
-                                {hyperionDirector}
-                                {tutorSenior}
-                                {magazineDigital}
-                                {magazineEditor}
                             </div>
                         </div>
                     </div> 
@@ -235,6 +244,7 @@ function Resume() {
                                 {experienceHeading}
 
                                 <div className="single-column">
+                                    {associateConsultant}
                                     {generalAssistant}
                                     {hyperionDirector}
                                     {tutorSenior}
@@ -261,6 +271,17 @@ function Resume() {
 
                         <div className="blank-space" />
 
+                        {experienceHeading}
+                        
+                        <div className="single-column">
+                            {associateConsultant}
+                            {generalAssistant}
+                            {hyperionDirector}
+                            {tutorSenior}
+                            {magazineDigital}
+                            {magazineEditor}
+                        </div>
+                        
                         {educationHeading}
 
                         <div className="single-column">
@@ -270,16 +291,6 @@ function Resume() {
                         </div>
 
                         <div className="blank-space" />
-
-                        {experienceHeading}
-                        
-                        <div className="single-column">
-                            {generalAssistant}
-                            {hyperionDirector}
-                            {tutorSenior}
-                            {magazineDigital}
-                            {magazineEditor}
-                        </div>
 
                         <div className="blank-space" />
                         
