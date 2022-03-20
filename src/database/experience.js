@@ -1,4 +1,16 @@
 const experience = {
+    associateConsultant: {
+        company: 'Slalom',
+        position: 'Associate Consultant and Salesforce Developer',
+        link: 'https://www.slalom.com',
+        image: '/images/companies/slalom.png',
+        date: 'June 2021–present',
+        items: [
+            'Build TypeScript React apps',
+            'Manage Salesforce apps'
+        ]
+    },
+    
     generalAssistant: {
         company: 'General Assembly',
         position: 'Software Engineering Teaching Assistant',
